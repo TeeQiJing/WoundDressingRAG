@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdaSense — Wound Dressing AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --bg:        #070d14;
+            --surface:   #0d1b2a;
+            --surface2:  #112236;
+            --border:    #1e3a52;
+            --accent:    #00c8ff;
+            --accent2:   #0084a8;
+            --text:      #e2eff8;
+            --muted:     #5b7b95;
+            --t-color:   #ff7043;
+            --i-color:   #ef5350;
+            --m-color:   #42a5f5;
+            --e-color:   #66bb6a;
+            --font-main: 'DM Sans', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-main);
+            min-height: 100vh;
+            padding: 40px 20px 80px;
+        }
+
+        /* ── scanline texture overlay ── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0,200,255,0.012) 2px,
+                rgba(0,200,255,0.012) 4px
+            );
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .wrapper { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; }
+
+        /* ── header ── */
+        .logo-row {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 6px;
+        }
+        .logo-mark {
+            width: 36px; height: 36px; border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent2), var(--accent));
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-mono); font-size: 14px; font-weight: 500;
+            color: var(--bg);
+        }
+        .logo-name {
+            font-family: var(--font-mono); font-size: 18px;
+            color: var(--accent); letter-spacing: 0.08em;
+        }
+        .page-sub {
+            font-size: 13px; color: var(--muted);
+            margin-bottom: 36px; padding-left: 48px;
+        }
+
+        /* ── TIME grid ── */
+        .time-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 620px) { .time-grid { grid-template-columns: 1fr; } }
+
+        .time-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 14px;
+            padding: 18px 20px;
+            position: relative;
+            transition: border-color 0.2s;
+        }
+        .time-card:focus-within { border-color: var(--accent); }
+
+        .time-letter {
+            position: absolute; top: 14px; right: 16px;
+            font-family: var(--font-mono); font-size: 22px; font-weight: 500;
+            opacity: 0.18;
+        }
+        .time-card[data-t="T"] .time-letter { color: var(--t-color); }
+        .time-card[data-t="I"] .time-letter { color: var(--i-color); }
+        .time-card[data-t="M"] .time-letter { color: var(--m-color); }
+        .time-card[data-t="E"] .time-letter { color: var(--e-color); }
+
+        .time-card label {
+            font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+            text-transform: uppercase; color: var(--muted);
+            display: block; margin-bottom: 10px;
+        }
+        .time-card[data-t="T"] label { color: var(--t-color); }
+        .time-card[data-t="I"] label { color: var(--i-color); }
+        .time-card[data-t="M"] label { color: var(--m-color); }
+        .time-card[data-t="E"] label { color: var(--e-color); }
+
+        .field-name {
+            font-size: 15px; font-weight: 500; color: var(--text);
+            margin-bottom: 4px;
+        }
+        .field-desc {
+            font-size: 12px; color: var(--muted); margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        /* ── select styling ── */
+        select, textarea {
+            width: 100%;
+            background: var(--bg);
+            border: 0.5px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-family: var(--font-main);
+            font-size: 13px;
+            padding: 9px 12px;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        select:focus, textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px rgba(0,200,255,0.15);
+        }
+        .select-wrap { position: relative; }
+        .select-wrap::after {
+            content: '▾';
+            position: absolute; right: 11px; top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted); font-size: 12px;
+            pointer-events: none;
+        }
+
+        /* ── notes row ── */
+        .notes-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 20px;
+            transition: border-color 0.2s;
+        }
+        .notes-card:focus-within { border-color: var(--accent); }
+        .notes-card label {
+            font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+            text-transform: uppercase; color: var(--muted);
+            display: block; margin-bottom: 10px;
+        }
+        textarea { height: 80px; resize: none; }
+
+        /* ── submit ── */
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent2) 0%, var(--accent) 100%);
+            color: var(--bg);
+            font-family: var(--font-mono);
+            font-size: 14px; font-weight: 500;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+        .btn-submit:hover { opacity: 0.9; }
+        .btn-submit:active { transform: scale(0.99); }
+        .btn-submit:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        /* ── profile preview pill row ── */
+        .profile-pills {
+            display: flex; flex-wrap: wrap; gap: 8px;
+            margin-top: 16px; min-height: 28px;
+        }
+        .pill {
+            font-family: var(--font-mono); font-size: 11px;
+            padding: 4px 10px; border-radius: 20px;
+            border: 0.5px solid; opacity: 0.85;
+        }
+        .pill-T { color: var(--t-color); border-color: var(--t-color); background: rgba(255,112,67,0.08); }
+        .pill-I { color: var(--i-color); border-color: var(--i-color); background: rgba(239,83,80,0.08); }
+        .pill-M { color: var(--m-color); border-color: var(--m-color); background: rgba(66,165,245,0.08); }
+        .pill-E { color: var(--e-color); border-color: var(--e-color); background: rgba(102,187,106,0.08); }
+
+        /* ── loader ── */
+        #loader {
+            display: none; text-align: center; padding: 32px 0;
+        }
+        .pulse-ring {
+            width: 48px; height: 48px; margin: 0 auto 12px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: var(--accent);
+            border-right-color: var(--accent);
+            animation: spin 0.9s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loader-text { font-size: 13px; color: var(--muted); font-family: var(--font-mono); }
+
+        /* ── response card ── */
+        #responseCard {
+            display: none;
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            margin-top: 24px;
+            animation: fadeUp 0.35s ease;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .rec-header {
+            display: flex; align-items: center; gap: 10px;
+            border-bottom: 0.5px solid var(--border);
+            padding-bottom: 14px; margin-bottom: 20px;
+        }
+        .rec-dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 8px var(--accent);
+        }
+        .rec-title {
+            font-family: var(--font-mono); font-size: 13px;
+            color: var(--accent); letter-spacing: 0.08em;
+        }
+
+        /* ── markdown output ── */
+        .markdown-body { font-size: 14px; line-height: 1.75; color: var(--text); }
+        .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+            font-size: 15px; font-weight: 600; color: var(--accent);
+            margin: 18px 0 8px;
+        }
+        .markdown-body strong { color: #ffffff; }
+        .markdown-body ul, .markdown-body ol {
+            padding-left: 20px; margin: 8px 0;
+        }
+        .markdown-body li { margin-bottom: 5px; }
+        .markdown-body p { margin-bottom: 10px; }
+        .markdown-body blockquote {
+            border-left: 3px solid var(--accent2);
+            padding-left: 14px; color: var(--muted);
+            margin: 10px 0;
+        }
+        .markdown-body hr {
+            border: none; border-top: 0.5px solid var(--border);
+            margin: 16px 0;
+        }
+        .markdown-body code {
+            background: var(--surface2); border-radius: 4px;
+            padding: 2px 6px; font-family: var(--font-mono);
+            font-size: 12px;
+        }
+
+        /* ── source chips ── */
+        .source-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+        .source-chip {
+            font-size: 11px; font-family: var(--font-mono);
+            padding: 3px 10px; border-radius: 4px;
+            background: var(--surface2); color: var(--muted);
+            border: 0.5px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- Header -->
+    <div class="logo-row">
+        <div class="logo-mark">VS</div>
+        <span class="logo-name">VerdaSense</span>
+    </div>
+    <div class="page-sub">Clinical Wound Dressing Recommendation — T.I.M.E. Assessment</div>
+
+    <!-- T.I.M.E. Cards -->
+    <div class="time-grid">
+
+        <!-- T — Tissue -->
+        <div class="time-card" data-t="T">
+            <span class="time-letter">T</span>
+            <label>Tissue type</label>
+            <div class="field-name">Wound bed tissue</div>
+            <div class="field-desc">Predominant tissue visible in the wound bed</div>
+            <div class="select-wrap">
+                <select id="tissue" onchange="updatePills()">
+                    <option value="">— select —</option>
+                    <option value="Necrotic (black/brown eschar)">Necrotic (black/brown eschar)</option>
+                    <option value="Slough (yellow/fibrinous tissue)">Slough (yellow/fibrinous tissue)</option>
+                    <option value="Granulation (red/pink beefy tissue)">Granulation (red/pink beefy tissue)</option>
+                    <option value="Epithelialising (new pink skin forming)">Epithelialising (new pink skin forming)</option>
+                    <option value="Mixed (slough and granulation)">Mixed (slough and granulation)</option>
+                    <option value="Mixed (necrotic and slough)">Mixed (necrotic and slough)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- I — Infection -->
+        <div class="time-card" data-t="I">
+            <span class="time-letter">I</span>
+            <label>Infection / Inflammation</label>
+            <div class="field-name">Infection status</div>
+            <div class="field-desc">Clinical signs of infection or inflammation</div>
+            <div class="select-wrap">
+                <select id="infection" onchange="updatePills()">
+                    <option value="">— select —</option>
+                    <option value="Not infected (no clinical signs)">Not infected (no clinical signs)</option>
+                    <option value="Locally infected (erythema, warmth, swelling at wound edge)">Locally infected (erythema, warmth, swelling)</option>
+                    <option value="Spreading infection (cellulitis, lymphangitis)">Spreading infection (cellulitis, lymphangitis)</option>
+                    <option value="Systemic infection (fever, raised WBC, sepsis signs)">Systemic infection (fever, raised WBC, sepsis)</option>
+                    <option value="Suspected biofilm (recalcitrant, non-healing)">Suspected biofilm (recalcitrant, non-healing)</option>
+                    <option value="Inflammation only (no infection, periwound erythema)">Inflammation only (periwound erythema)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- M — Moisture -->
+        <div class="time-card" data-t="M">
+            <span class="time-letter">M</span>
+            <label>Moisture balance</label>
+            <div class="field-name">Exudate level</div>
+            <div class="field-desc">Amount and type of wound exudate</div>
+            <div class="select-wrap">
+                <select id="moisture" onchange="updatePills()">
+                    <option value="">— select —</option>
+                    <option value="Dry (no exudate, desiccated wound bed)">Dry (no exudate, desiccated)</option>
+                    <option value="Low exudate (moist wound bed, minimal drainage)">Low exudate (moist, minimal drainage)</option>
+                    <option value="Moderate exudate (frequent dressing changes needed)">Moderate exudate (frequent changes)</option>
+                    <option value="High exudate (copious drainage, maceration risk)">High exudate (copious, maceration risk)</option>
+                    <option value="High exudate with periwound maceration">High exudate with periwound maceration</option>
+                    <option value="Haemoserous exudate (blood-tinged drainage)">Haemoserous (blood-tinged drainage)</option>
+                    <option value="Purulent exudate (thick, cloudy, malodorous)">Purulent exudate (cloudy, malodorous)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- E — Edge -->
+        <div class="time-card" data-t="E">
+            <span class="time-letter">E</span>
+            <label>Edge / Epithelial</label>
+            <div class="field-name">Wound edge status</div>
+            <div class="field-desc">Progression of wound edge and surrounding skin</div>
+            <div class="select-wrap">
+                <select id="edge" onchange="updatePills()">
+                    <option value="">— select —</option>
+                    <option value="Advancing (wound actively healing, epithelial migration visible)">Advancing (actively healing)</option>
+                    <option value="Non-advancing (stalled wound edge, no epithelial migration)">Non-advancing (stalled/no migration)</option>
+                    <option value="Rolled/epibole (rolled-under wound edges blocking healing)">Rolled/epibole (rolled under edge)</option>
+                    <option value="Undermined (wound extends under surrounding skin)">Undermined (extends under skin)</option>
+                    <option value="Macerated periwound skin (soggy, white surrounding tissue)">Macerated periwound skin</option>
+                    <option value="Fibrotic/callused edge (hard, indurated wound margin)">Fibrotic/callused edge</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Notes -->
+    <div class="notes-card">
+        <label>Additional clinical notes (optional)</label>
+        <textarea id="notes" placeholder="e.g. Diabetic foot ulcer, patient on antibiotics, wound size 3×4cm, wound location plantar heel..."></textarea>
+    </div>
+
+    <!-- Profile preview pills -->
+    <div class="profile-pills" id="profilePills"></div>
+
+    <!-- Submit -->
+    <div style="margin-top:20px">
+        <button class="btn-submit" onclick="submitAssessment()" id="btnSubmit">
+            run_clinical_analysis()
+        </button>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="pulse-ring"></div>
+        <div class="loader-text">Retrieving clinical guidelines...</div>
+    </div>
+
+    <!-- Response -->
+    <div id="responseCard">
+        <div class="rec-header">
+            <div class="rec-dot"></div>
+            <span class="rec-title">CLINICAL_RECOMMENDATION.md</span>
+        </div>
+        <div class="markdown-body" id="markdownOutput"></div>
+        <div class="source-chips" id="sourceChips"></div>
+    </div>
+
+</div>
+
+<script>
+    function updatePills() {
+        const fields = [
+            { id: 'tissue',    label: 'T', cls: 'pill-T' },
+            { id: 'infection', label: 'I', cls: 'pill-I' },
+            { id: 'moisture',  label: 'M', cls: 'pill-M' },
+            { id: 'edge',      label: 'E', cls: 'pill-E' },
+        ];
+        const container = document.getElementById('profilePills');
+        container.innerHTML = '';
+        fields.forEach(f => {
+            const val = document.getElementById(f.id).value;
+            if (val) {
+                const short = val.split('(')[0].trim();
+                const pill = document.createElement('span');
+                pill.className = `pill ${f.cls}`;
+                pill.textContent = `${f.label}: ${short}`;
+                container.appendChild(pill);
+            }
+        });
+    }
+
+    async function submitAssessment() {
+        const tissue    = document.getElementById('tissue').value;
+        const infection = document.getElementById('infection').value;
+        const moisture  = document.getElementById('moisture').value;
+        const edge      = document.getElementById('edge').value;
+        const notes     = document.getElementById('notes').value.trim();
+
+        if (!tissue || !infection || !moisture || !edge) {
+            alert('Please complete all four T.I.M.E. fields before submitting.');
+            return;
+        }
+
+        const loader       = document.getElementById('loader');
+        const responseCard = document.getElementById('responseCard');
+        const btn          = document.getElementById('btnSubmit');
+
+        loader.style.display = 'block';
+        responseCard.style.display = 'none';
+        btn.disabled = true;
+
+        // Build structured form payload
+        const formData = new FormData();
+        formData.append('tissue',    tissue);
+        formData.append('infection', infection);
+        formData.append('moisture',  moisture);
+        formData.append('edge',      edge);
+        formData.append('notes',     notes);
+
+        try {
+            const resp = await fetch('/get_recommendation', { method: 'POST', body: formData });
+            const data = await resp.json();
+
+            document.getElementById('markdownOutput').innerHTML = marked.parse(data.result);
+
+            // Source chips
+            const chipsEl = document.getElementById('sourceChips');
+            chipsEl.innerHTML = '';
+            if (data.sources && data.sources.length > 0) {
+                const unique = [...new Set(data.sources)];
+                unique.forEach(s => {
+                    const chip = document.createElement('span');
+                    chip.className = 'source-chip';
+                    chip.textContent = s;
+                    chipsEl.appendChild(chip);
+                });
+            }
+
+            responseCard.style.display = 'block';
+        } catch (err) {
+            document.getElementById('markdownOutput').innerHTML =
+                `<p style="color:#ef5350">Error: ${err.message}</p>`;
+            responseCard.style.display = 'block';
+        } finally {
+            loader.style.display = 'none';
+            btn.disabled = false;
+        }
+    }
+</script>
+</body>
+</html>
