@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VerdaSense — Wound Dressing AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --bg:       #070d14;
+      --surface:  #0d1b2a;
+      --surface2: #112236;
+      --border:   #1e3a52;
+      --accent:   #00c8ff;
+      --accent2:  #0084a8;
+      --text:     #e2eff8;
+      --muted:    #5b7b95;
+      --t-color:  #ff7043;
+      --i-color:  #ef5350;
+      --m-color:  #42a5f5;
+      --e-color:  #66bb6a;
+      --high:     #22c55e;
+      --medium:   #f59e0b;
+      --low:      #ef4444;
+      --font:     'DM Sans', sans-serif;
+      --mono:     'DM Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+      padding: 40px 20px 80px;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,200,255,.012) 2px, rgba(0,200,255,.012) 4px);
+      pointer-events: none; z-index: 0;
+    }
+
+    .wrapper { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+
+    /* ── Header ── */
+    .logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+    .logo-mark {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--bg);
+    }
+    .logo-name { font-family: var(--mono); font-size: 18px; color: var(--accent); letter-spacing: .08em; }
+    .page-sub  { font-size: 13px; color: var(--muted); margin-bottom: 36px; padding-left: 48px; }
+
+    /* ══════════════════════════════════════════════════════════════
+       TISSUE IMAGE PIPELINE  (T card — full-width)
+    ══════════════════════════════════════════════════════════════ */
+    .time-card {
+      background: var(--surface); border: 0.5px solid var(--border);
+      border-radius: 14px; padding: 18px 20px; position: relative;
+      transition: border-color .2s;
+    }
+    .time-card:focus-within { border-color: var(--accent); }
+    .time-letter {
+      position: absolute; top: 14px; right: 16px;
+      font-family: var(--mono); font-size: 22px; font-weight: 500; opacity: .18;
+    }
+    .time-card[data-t="T"] .time-letter { color: var(--t-color); }
+    .time-card[data-t="I"] .time-letter { color: var(--i-color); }
+    .time-card[data-t="M"] .time-letter { color: var(--m-color); }
+    .time-card[data-t="E"] .time-letter { color: var(--e-color); }
+
+    .time-card label {
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; display: block; margin-bottom: 10px;
+    }
+    .time-card[data-t="T"] label { color: var(--t-color); }
+    .time-card[data-t="I"] label { color: var(--i-color); }
+    .time-card[data-t="M"] label { color: var(--m-color); }
+    .time-card[data-t="E"] label { color: var(--e-color); }
+
+    .field-name { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+    .field-desc { font-size: 12px; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
+
+    /* ── Image upload zone ── */
+    .upload-zone {
+      border: 1.5px dashed var(--border); border-radius: 10px;
+      padding: 28px; text-align: center; cursor: pointer;
+      transition: border-color .2s, background .2s; position: relative;
+    }
+    .upload-zone:hover { border-color: var(--accent2); background: rgba(0,200,255,.03); }
+    .upload-zone.drag-over { border-color: var(--accent); background: rgba(0,200,255,.06); }
+    .upload-zone input[type=file] {
+      position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%;
+    }
+    .upload-icon { font-size: 28px; margin-bottom: 8px; }
+    .upload-text { font-size: 13px; color: var(--muted); }
+    .upload-text span { color: var(--accent); }
+
+    /* ── Pipeline stages ── */
+    .pipeline-stages {
+      display: none; margin-top: 16px; gap: 8px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .pipeline-stages.visible { display: grid; }
+    @media (max-width: 600px) { .pipeline-stages { grid-template-columns: repeat(2, 1fr); } }
+
+    .stage-chip {
+      font-family: var(--mono); font-size: 10px;
+      padding: 5px 8px; border-radius: 6px; text-align: center;
+      border: 0.5px solid var(--border); color: var(--muted);
+      background: var(--surface2); transition: all .3s;
+    }
+    .stage-chip.active  { border-color: var(--accent); color: var(--accent); }
+    .stage-chip.done    { border-color: var(--high);   color: var(--high);   }
+    .stage-chip.error   { border-color: var(--low);    color: var(--low);    }
+    .stage-chip .stage-label { display: block; font-weight: 500; }
+    .stage-chip .stage-sub   { display: block; font-size: 9px; opacity: .7; margin-top: 2px; }
+
+    /* ── Bbox canvas area ── */
+    .bbox-area {
+      display: none; margin-top: 16px; position: relative;
+    }
+    .bbox-area.visible { display: block; }
+
+    .canvas-wrap {
+      position: relative; display: inline-block;
+      max-width: 100%; line-height: 0;
+    }
+    #previewImg {
+      max-width: 100%; max-height: 420px;
+      border-radius: 8px; display: block;
+      border: 0.5px solid var(--border);
+    }
+    #bboxCanvas {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      border-radius: 8px; cursor: crosshair;
+    }
+
+    .bbox-controls {
+      display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap;
+      align-items: center;
+    }
+    .bbox-info {
+      font-family: var(--mono); font-size: 11px; color: var(--muted);
+      flex: 1; min-width: 200px;
+    }
+    .bbox-info span { color: var(--accent); }
+
+    /* ── GMM result area ── */
+    .gmm-result {
+      display: none; margin-top: 16px;
+    }
+    .gmm-result.visible { display: block; }
+
+    .gmm-images {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;
+    }
+    @media (max-width: 500px) { .gmm-images { grid-template-columns: 1fr; } }
+
+    .gmm-img-wrap { position: relative; }
+    .gmm-img-wrap img {
+      width: 100%; border-radius: 8px; display: block;
+      border: 0.5px solid var(--border);
+    }
+    .gmm-img-label {
+      position: absolute; bottom: 6px; left: 8px;
+      font-family: var(--mono); font-size: 10px;
+      background: rgba(7,13,20,.8); color: var(--muted);
+      padding: 2px 7px; border-radius: 4px;
+    }
+
+    .gmm-legend {
+      display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 11px; font-family: var(--mono);
+    }
+    .legend-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+
+    .gmm-confidence-row {
+      font-size: 11px; font-family: var(--mono); color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .gmm-confidence-row span { color: var(--accent); }
+
+    /* ── Tissue sliders ── */
+    .tissue-sliders { display: flex; flex-direction: column; gap: 10px; }
+    .slider-row { display: flex; flex-direction: column; gap: 4px; }
+    .slider-label-row {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .slider-name  { font-size: 12px; font-weight: 500; }
+    .slider-value {
+      font-family: var(--mono); font-size: 12px; font-weight: 500;
+      min-width: 36px; text-align: right;
+    }
+    .necrotic-val    { color: #888; }
+    .slough-val      { color: #ffd93d; }
+    .granulation-val { color: #6bcb77; }
+
+    input[type=range] {
+      width: 100%; -webkit-appearance: none; appearance: none;
+      height: 4px; border-radius: 4px; outline: none;
+      background: var(--border); cursor: pointer;
+    }
+    input[type=range].necrotic    { accent-color: #666; }
+    input[type=range].slough      { accent-color: #ffd93d; }
+    input[type=range].granulation { accent-color: #6bcb77; }
+
+    .tissue-bar {
+      display: flex; height: 8px; border-radius: 4px;
+      overflow: hidden; margin-top: 10px; gap: 2px;
+    }
+    .tissue-bar-seg { height: 100%; border-radius: 4px; transition: flex .3s ease; }
+    .seg-necrotic    { background: #555; }
+    .seg-slough      { background: #ffd93d; }
+    .seg-granulation { background: #6bcb77; }
+    .tissue-bar-empty { background: var(--border); border-radius: 4px; }
+
+    .tissue-total-warn {
+      font-size: 11px; font-family: var(--mono); color: var(--low);
+      margin-top: 6px; display: none;
+    }
+
+    .auto-filled-badge {
+      display: none; font-family: var(--mono); font-size: 10px;
+      color: var(--high); border: 0.5px solid var(--high);
+      background: rgba(34,197,94,.08); border-radius: 4px;
+      padding: 2px 8px; margin-left: 8px; vertical-align: middle;
+    }
+    .auto-filled-badge.visible { display: inline-block; }
+
+    /* ── TIME grid ── */
+    .time-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;
+    }
+    @media (max-width: 620px) { .time-grid { grid-template-columns: 1fr; } }
+
+    /* ── Select / textarea ── */
+    select, textarea {
+      width: 100%; background: var(--bg); border: 0.5px solid var(--border);
+      border-radius: 8px; color: var(--text); font-family: var(--font);
+      font-size: 13px; padding: 9px 12px;
+      appearance: none; -webkit-appearance: none; outline: none;
+      transition: border-color .2s;
+    }
+    select:focus, textarea:focus {
+      border-color: var(--accent); box-shadow: 0 0 0 1px rgba(0,200,255,.15);
+    }
+
+    /* ── Toggle buttons ── */
+    .toggle-group { display: flex; gap: 8px; }
+    .toggle-btn {
+      flex: 1; padding: 9px 12px; border: 0.5px solid var(--border);
+      border-radius: 8px; background: var(--bg); color: var(--muted);
+      font-family: var(--font); font-size: 13px; cursor: pointer;
+      text-align: center; transition: all .2s; user-select: none;
+    }
+    .toggle-btn:hover { border-color: var(--accent2); color: var(--text); }
+    .toggle-btn.selected {
+      border-color: var(--accent); color: var(--accent);
+      background: rgba(0,200,255,.08);
+    }
+    .toggle-btn.selected-warn {
+      border-color: var(--i-color); color: var(--i-color);
+      background: rgba(239,83,80,.08);
+    }
+
+    /* ── Notes card ── */
+    .notes-card {
+      background: var(--surface); border: 0.5px solid var(--border);
+      border-radius: 14px; padding: 18px 20px; margin-bottom: 20px;
+      transition: border-color .2s;
+    }
+    .notes-card:focus-within { border-color: var(--accent); }
+    .notes-card label {
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 10px;
+    }
+    textarea { height: 80px; resize: none; }
+
+    /* ── Profile pills ── */
+    .profile-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; min-height: 28px; }
+    .pill {
+      font-family: var(--mono); font-size: 11px;
+      padding: 4px 10px; border-radius: 20px; border: 0.5px solid; opacity: .85;
+    }
+    .pill-T { color: var(--t-color); border-color: var(--t-color); background: rgba(255,112,67,.08); }
+    .pill-I { color: var(--i-color); border-color: var(--i-color); background: rgba(239,83,80,.08); }
+    .pill-M { color: var(--m-color); border-color: var(--m-color); background: rgba(66,165,245,.08); }
+    .pill-E { color: var(--e-color); border-color: var(--e-color); background: rgba(102,187,106,.08); }
+
+    /* ── Buttons ── */
+    .btn {
+      padding: 9px 18px; border: 0.5px solid; border-radius: 8px;
+      font-family: var(--mono); font-size: 12px; cursor: pointer;
+      transition: all .2s; display: inline-flex; align-items: center; gap: 6px;
+      user-select: none;
+    }
+    .btn-primary {
+      border-color: var(--accent); color: var(--accent);
+      background: rgba(0,200,255,.08);
+    }
+    .btn-primary:hover { background: rgba(0,200,255,.15); }
+    .btn-secondary {
+      border-color: var(--border); color: var(--muted); background: transparent;
+    }
+    .btn-secondary:hover { border-color: var(--accent2); color: var(--text); }
+    .btn-danger {
+      border-color: var(--low); color: var(--low); background: transparent;
+    }
+    .btn-danger:hover { background: rgba(239,68,68,.08); }
+    .btn:disabled { opacity: .4; cursor: not-allowed; pointer-events: none; }
+
+    .btn-submit {
+      width: 100%; padding: 14px; border: none; border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent2) 0%, var(--accent) 100%);
+      color: var(--bg); font-family: var(--mono); font-size: 14px; font-weight: 500;
+      letter-spacing: .06em; cursor: pointer; transition: opacity .2s, transform .1s;
+      margin-top: 20px;
+    }
+    .btn-submit:hover  { opacity: .9; }
+    .btn-submit:active { transform: scale(.99); }
+    .btn-submit:disabled { opacity: .4; cursor: not-allowed; }
+
+    /* ── Alert / status messages ── */
+    .status-msg {
+      font-family: var(--mono); font-size: 12px; padding: 10px 14px;
+      border-radius: 8px; margin-top: 10px; display: none;
+    }
+    .status-msg.info    { background: rgba(0,200,255,.08); border: 0.5px solid var(--accent2); color: var(--accent); }
+    .status-msg.success { background: rgba(34,197,94,.08);  border: 0.5px solid var(--high);   color: var(--high); }
+    .status-msg.warning { background: rgba(245,158,11,.08); border: 0.5px solid var(--medium); color: var(--medium); }
+    .status-msg.error   { background: rgba(239,68,68,.08);  border: 0.5px solid var(--low);    color: var(--low); }
+    .status-msg.visible { display: block; }
+
+    /* ── Loader ── */
+    #loader { display: none; text-align: center; padding: 32px 0; }
+    .pulse-ring {
+      width: 48px; height: 48px; margin: 0 auto 12px; border-radius: 50%;
+      border: 2px solid transparent;
+      border-top-color: var(--accent); border-right-color: var(--accent);
+      animation: spin .9s linear infinite;
+    }
+    .mini-ring {
+      width: 14px; height: 14px; border-radius: 50%;
+      border: 2px solid transparent;
+      border-top-color: currentColor; border-right-color: currentColor;
+      animation: spin .7s linear infinite; display: inline-block;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loader-text { font-size: 13px; color: var(--muted); font-family: var(--mono); }
+
+    /* ── Response card ── */
+    #responseCard {
+      display: none; background: var(--surface); border: 0.5px solid var(--border);
+      border-radius: 14px; padding: 28px; margin-top: 24px;
+      animation: fadeUp .35s ease;
+    }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+    .rec-header {
+      display: flex; align-items: center; gap: 10px;
+      border-bottom: 0.5px solid var(--border); padding-bottom: 14px; margin-bottom: 20px;
+    }
+    .rec-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+    .rec-title { font-family: var(--mono); font-size: 13px; color: var(--accent); letter-spacing: .08em; }
+
+    .confidence-row { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+    .confidence-badge {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      padding: 4px 12px; border-radius: 20px; border: 0.5px solid;
+    }
+    .conf-HIGH   { color: var(--high);   border-color: var(--high);   background: rgba(34,197,94,.10); }
+    .conf-MEDIUM { color: var(--medium); border-color: var(--medium); background: rgba(245,158,11,.10); }
+    .conf-LOW    { color: var(--low);    border-color: var(--low);    background: rgba(239,68,68,.10); }
+    .conf-score  { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+    .fusion-notes {
+      background: var(--surface2); border: 0.5px solid var(--border);
+      border-radius: 8px; padding: 10px 14px; margin-bottom: 16px;
+    }
+    .fusion-notes p {
+      font-size: 11px; font-family: var(--mono); color: var(--muted);
+      line-height: 1.7; margin: 0;
+    }
+    .fusion-notes p::before { content: "• "; color: var(--accent2); }
+
+    .markdown-body { font-size: 14px; line-height: 1.75; color: var(--text); }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+      font-size: 15px; font-weight: 600; color: var(--accent); margin: 18px 0 8px;
+    }
+    .markdown-body strong { color: #fff; }
+    .markdown-body ul, .markdown-body ol { padding-left: 20px; margin: 8px 0; }
+    .markdown-body li  { margin-bottom: 5px; }
+    .markdown-body p   { margin-bottom: 10px; }
+    .markdown-body blockquote {
+      border-left: 3px solid var(--accent2); padding-left: 14px;
+      color: var(--muted); margin: 10px 0;
+    }
+    .markdown-body hr { border: none; border-top: 0.5px solid var(--border); margin: 16px 0; }
+    .markdown-body code {
+      background: var(--surface2); border-radius: 4px;
+      padding: 2px 6px; font-family: var(--mono); font-size: 12px;
+    }
+
+    .source-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .source-chip {
+      font-size: 11px; font-family: var(--mono); padding: 3px 10px;
+      border-radius: 4px; background: var(--surface2); color: var(--muted);
+      border: 0.5px solid var(--border);
+    }
+
+    /* Divider */
+    .section-divider {
+      border: none; border-top: 0.5px solid var(--border); margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="logo-row">
+    <div class="logo-mark">VS</div>
+    <span class="logo-name">VerdaSense</span>
+  </div>
+  <div class="page-sub">Clinical Wound Dressing Recommendation — T.I.M.E. Assessment</div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       T — TISSUE via Image Pipeline
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="time-card" data-t="T" style="margin-bottom: 16px;">
+    <span class="time-letter">T</span>
+    <label>Tissue composition</label>
+    <div class="field-name">
+      Wound image analysis
+      <span class="auto-filled-badge" id="autoFilledBadge">auto-filled</span>
+    </div>
+    <div class="field-desc">
+      Upload a wound photo — YOLO will detect the wound, you can confirm or redraw the bounding box,
+      then MobileSAM segments the wound region and GMM classifies tissue types automatically.
+      You can still adjust the sliders after auto-fill.
+    </div>
+
+    <!-- Upload zone -->
+    <div class="upload-zone" id="uploadZone">
+      <input type="file" id="imageFile" accept="image/*" onchange="onImageSelected(event)" />
+      <div class="upload-icon">🩹</div>
+      <div class="upload-text">Drop wound image or <span>click to upload</span></div>
+    </div>
+
+    <!-- Pipeline stage chips -->
+    <div class="pipeline-stages" id="pipelineStages">
+      <div class="stage-chip" id="stage-upload">
+        <span class="stage-label">Upload</span>
+        <span class="stage-sub">image received</span>
+      </div>
+      <div class="stage-chip" id="stage-yolo">
+        <span class="stage-label">YOLO</span>
+        <span class="stage-sub">wound detect</span>
+      </div>
+      <div class="stage-chip" id="stage-sam">
+        <span class="stage-label">MobileSAM</span>
+        <span class="stage-sub">segmentation</span>
+      </div>
+      <div class="stage-chip" id="stage-gmm">
+        <span class="stage-label">GMM</span>
+        <span class="stage-sub">tissue classify</span>
+      </div>
+    </div>
+
+    <div class="status-msg" id="pipelineStatus"></div>
+
+    <!-- Bbox drawing canvas -->
+    <div class="bbox-area" id="bboxArea">
+      <div class="canvas-wrap" id="canvasWrap">
+        <img id="previewImg" src="" alt="wound preview" />
+        <canvas id="bboxCanvas"></canvas>
+      </div>
+      <div class="bbox-controls">
+        <div class="bbox-info" id="bboxInfo">
+          Draw a box around the wound, or use the suggested bbox.
+        </div>
+        <button class="btn btn-secondary" onclick="clearBbox()">Clear box</button>
+        <button class="btn btn-primary" id="btnRunAnalysis" onclick="runAnalysis()" disabled>
+          <span class="mini-ring" id="analysisSpinner" style="display:none"></span>
+          Run analysis
+        </button>
+        <button class="btn btn-danger" onclick="resetPipeline()">Reset</button>
+      </div>
+    </div>
+
+    <!-- GMM result images + sliders -->
+    <div class="gmm-result" id="gmmResult">
+      <div class="gmm-images">
+        <div class="gmm-img-wrap">
+          <img id="overlayImg" src="" alt="Segmentation overlay" />
+          <span class="gmm-img-label">wound region</span>
+        </div>
+        <div class="gmm-img-wrap">
+          <img id="gmmImg" src="" alt="GMM tissue map" />
+          <span class="gmm-img-label">tissue map</span>
+        </div>
+      </div>
+
+      <div class="gmm-legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#000;border:1px solid #666"></div>
+          <span>Necrotic</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#ff0"></div>
+          <span>Slough</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#f00"></div>
+          <span>Granulation</span>
+        </div>
+      </div>
+
+      <div class="gmm-confidence-row" id="gmmConfRow"></div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- Sliders (editable even after auto-fill) -->
+    <div style="margin-bottom:6px; font-size:12px; color:var(--muted)">
+      Adjust tissue composition if needed — sliders are always editable.
+    </div>
+    <div class="tissue-sliders">
+      <div class="slider-row">
+        <div class="slider-label-row">
+          <span class="slider-name" style="color:#888">Necrotic</span>
+          <span class="slider-value necrotic-val" id="necrotic-val">0%</span>
+        </div>
+        <input type="range" class="necrotic" id="necrotic-pct" min="0" max="100" value="0" step="5"
+               oninput="updateTissue()" />
+      </div>
+      <div class="slider-row">
+        <div class="slider-label-row">
+          <span class="slider-name" style="color:#ffd93d">Slough</span>
+          <span class="slider-value slough-val" id="slough-val">0%</span>
+        </div>
+        <input type="range" class="slough" id="slough-pct" min="0" max="100" value="0" step="5"
+               oninput="updateTissue()" />
+      </div>
+      <div class="slider-row">
+        <div class="slider-label-row">
+          <span class="slider-name" style="color:#6bcb77">Granulation</span>
+          <span class="slider-value granulation-val" id="granulation-val">100%</span>
+        </div>
+        <input type="range" class="granulation" id="granulation-pct" min="0" max="100" value="100" step="5"
+               oninput="updateTissue()" />
+      </div>
+    </div>
+
+    <div class="tissue-bar" id="tissue-bar">
+      <div class="tissue-bar-seg seg-granulation" style="flex: 100;"></div>
+    </div>
+    <div class="tissue-total-warn" id="tissue-warn">Total exceeds 100%. Please adjust sliders.</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       I M E — manual toggles (unchanged)
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="time-grid">
+
+    <!-- I — Infection -->
+    <div class="time-card" data-t="I">
+      <span class="time-letter">I</span>
+      <label>Infection status</label>
+      <div class="field-name">Clinical signs of infection</div>
+      <div class="field-desc">Based on clinical assessment.</div>
+      <div class="toggle-group">
+        <div class="toggle-btn selected" id="inf-no"
+             onclick="selectToggle('infection', 'Not Infected', this)">Not Infected</div>
+        <div class="toggle-btn" id="inf-yes"
+             onclick="selectToggle('infection', 'Infected', this, true)">Infected</div>
+      </div>
+      <input type="hidden" id="infection" value="Not Infected" />
+    </div>
+
+    <!-- M — Moisture -->
+    <div class="time-card" data-t="M">
+      <span class="time-letter">M</span>
+      <label>Moisture / exudate</label>
+      <div class="field-name">Exudate level</div>
+      <div class="field-desc">Amount of wound drainage.</div>
+      <div class="toggle-group">
+        <div class="toggle-btn" id="moist-low"
+             onclick="selectToggle('moisture', 'Low', this)">Low</div>
+        <div class="toggle-btn selected" id="moist-mod"
+             onclick="selectToggle('moisture', 'Moderate', this)">Moderate</div>
+        <div class="toggle-btn" id="moist-high"
+             onclick="selectToggle('moisture', 'High', this)">High</div>
+      </div>
+      <input type="hidden" id="moisture" value="Moderate" />
+    </div>
+
+    <!-- E — Edge -->
+    <div class="time-card" data-t="E" style="grid-column: 1 / -1;">
+      <span class="time-letter">E</span>
+      <label>Edge / epidermal margin</label>
+      <div class="field-name">Wound edge progression</div>
+      <div class="field-desc">Whether epithelial migration is active.</div>
+      <div class="toggle-group">
+        <div class="toggle-btn selected" id="edge-adv"
+             onclick="selectToggle('edge', 'Advancing', this)">Advancing</div>
+        <div class="toggle-btn" id="edge-non"
+             onclick="selectToggle('edge', 'Non Advancing', this)">Non Advancing</div>
+      </div>
+      <input type="hidden" id="edge" value="Advancing" />
+    </div>
+
+  </div>
+
+  <!-- Additional Notes -->
+  <div class="notes-card">
+    <label>Additional clinical notes (optional)</label>
+    <textarea id="notes"
+      placeholder="e.g. Diabetic foot ulcer, patient on antibiotics, wound size 3×4 cm, plantar heel location…"></textarea>
+  </div>
+
+  <!-- Profile pills preview -->
+  <div class="profile-pills" id="profilePills"></div>
+
+  <!-- Submit -->
+  <button class="btn-submit" onclick="submitAssessment()" id="btnSubmit">
+    run_clinical_analysis()
+  </button>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="pulse-ring"></div>
+    <div class="loader-text">Retrieving clinical guidelines…</div>
+  </div>
+
+  <!-- Response -->
+  <div id="responseCard">
+    <div class="rec-header">
+      <div class="rec-dot"></div>
+      <span class="rec-title">CLINICAL_RECOMMENDATION.md</span>
+    </div>
+    <div class="confidence-row">
+      <span class="confidence-badge" id="confBadge">—</span>
+      <span class="conf-score" id="confScore"></span>
+    </div>
+    <div class="fusion-notes" id="retrievalNotes" style="display:none"></div>
+    <div class="markdown-body" id="markdownOutput"></div>
+    <div class="source-chips" id="sourceChips"></div>
+  </div>
+
+</div>
+
+<script>
+  // ═══════════════════════════════════════════════════════════════
+  // CONFIG
+  // Points to the segmentation server (app_v2_gmm_v4.py on port 7860)
+  // ═══════════════════════════════════════════════════════════════
+  const SEG_SERVER = 'http://localhost:7860';
+
+  // ═══════════════════════════════════════════════════════════════
+  // STATE
+  // ═══════════════════════════════════════════════════════════════
+  const state = {
+    imageFile:       null,    // File object
+    imageBlob:       null,    // same file as Blob (for re-use)
+    naturalW:        0,
+    naturalH:        0,
+    displayW:        0,
+    displayH:        0,
+    suggestedBbox:   null,    // {x1,y1,x2,y2} in natural px
+    confirmedBbox:   null,    // {x1,y1,x2,y2} in natural px (after confirm/draw)
+    drawing:         false,
+    drawStart:       null,    // {x,y} in display px
+    drawCurrent:     null,
+    gmmConfidence:   0,
+    tissueCountsFromGMM: null,
+  };
+
+  const toggleState = {
+    infection: 'Not Infected',
+    moisture:  'Moderate',
+    edge:      'Advancing',
+  };
+
+  // ═══════════════════════════════════════════════════════════════
+  // STAGE HELPERS
+  // ═══════════════════════════════════════════════════════════════
+  function setStage(id, status) {
+    // status: '' | 'active' | 'done' | 'error'
+    const el = document.getElementById('stage-' + id);
+    if (!el) return;
+    el.classList.remove('active', 'done', 'error');
+    if (status) el.classList.add(status);
+  }
+
+  function showStatus(msg, type = 'info') {
+    const el = document.getElementById('pipelineStatus');
+    el.textContent = msg;
+    el.className = `status-msg ${type} visible`;
+  }
+
+  function hideStatus() {
+    document.getElementById('pipelineStatus').className = 'status-msg';
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // IMAGE SELECTED → YOLO DETECT
+  // ═══════════════════════════════════════════════════════════════
+  async function onImageSelected(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    state.imageFile = file;
+    state.imageBlob = file;
+
+    // Show pipeline stages
+    document.getElementById('pipelineStages').classList.add('visible');
+    setStage('upload', 'done');
+    setStage('yolo',   'active');
+    setStage('sam',    '');
+    setStage('gmm',    '');
+
+    // Show image preview + canvas
+    const img = document.getElementById('previewImg');
+    img.src = URL.createObjectURL(file);
+    img.onload = async () => {
+      state.naturalW = img.naturalWidth;
+      state.naturalH = img.naturalHeight;
+
+      const canvas = document.getElementById('bboxCanvas');
+      canvas.width  = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+
+      document.getElementById('bboxArea').classList.add('visible');
+      setupCanvasDrawing();
+
+      // Hide previous GMM result
+      document.getElementById('gmmResult').classList.remove('visible');
+      document.getElementById('autoFilledBadge').classList.remove('visible');
+      document.getElementById('btnRunAnalysis').disabled = true;
+
+      showStatus('Running YOLO wound detection…', 'info');
+
+      // Call /detect
+      try {
+        const fd = new FormData();
+        fd.append('file', file);
+        const resp = await fetch(`${SEG_SERVER}/detect`, { method: 'POST', body: fd });
+        const data = await resp.json();
+
+        if (!data.is_wound) {
+          setStage('yolo', 'error');
+          showStatus(`No wound detected. ${data.message}`, 'error');
+          document.getElementById('btnRunAnalysis').disabled = true;
+          return;
+        }
+
+        setStage('yolo', 'done');
+        state.suggestedBbox = data.bbox;   // {x1,y1,x2,y2} in natural px
+        state.confirmedBbox = data.bbox;
+
+        showStatus(
+          `Wound detected (${(data.confidence * 100).toFixed(0)}% confidence). ` +
+          `Bbox shown — confirm or redraw, then click Run analysis.`,
+          'success'
+        );
+
+        drawBbox(state.suggestedBbox, '#00c8ff', 'YOLO suggestion');
+        document.getElementById('bboxInfo').innerHTML =
+          `Suggested bbox: <span>[${Object.values(data.bbox).map(v=>v.toFixed(0)).join(', ')}]</span> — ` +
+          `redraw to adjust or click Run analysis to proceed.`;
+        document.getElementById('btnRunAnalysis').disabled = false;
+
+      } catch (err) {
+        setStage('yolo', 'error');
+        showStatus(`Detection error: ${err.message}`, 'error');
+      }
+    };
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // CANVAS BBOX DRAWING
+  // ═══════════════════════════════════════════════════════════════
+  function setupCanvasDrawing() {
+    const canvas = document.getElementById('bboxCanvas');
+    const img    = document.getElementById('previewImg');
+
+    function getDisplayScale() {
+      // canvas CSS size != natural size when image is scaled by CSS
+      const rect  = canvas.getBoundingClientRect();
+      return {
+        sx: state.naturalW / rect.width,
+        sy: state.naturalH / rect.height,
+      };
+    }
+
+    function clientToNatural(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      const { sx, sy } = getDisplayScale();
+      return {
+        x: (clientX - rect.left)  * sx,
+        y: (clientY - rect.top)   * sy,
+      };
+    }
+
+    canvas.onmousedown = (e) => {
+      state.drawing  = true;
+      state.drawStart = clientToNatural(e.clientX, e.clientY);
+      state.drawCurrent = { ...state.drawStart };
+    };
+
+    canvas.onmousemove = (e) => {
+      if (!state.drawing) return;
+      state.drawCurrent = clientToNatural(e.clientX, e.clientY);
+      redrawCanvas();
+    };
+
+    canvas.onmouseup = (e) => {
+      if (!state.drawing) return;
+      state.drawing = false;
+      const end = clientToNatural(e.clientX, e.clientY);
+
+      const x1 = Math.min(state.drawStart.x, end.x);
+      const y1 = Math.min(state.drawStart.y, end.y);
+      const x2 = Math.max(state.drawStart.x, end.x);
+      const y2 = Math.max(state.drawStart.y, end.y);
+
+      if ((x2 - x1) > 10 && (y2 - y1) > 10) {
+        state.confirmedBbox = { x1, y1, x2, y2 };
+        document.getElementById('bboxInfo').innerHTML =
+          `Custom bbox: <span>[${[x1,y1,x2,y2].map(v=>v.toFixed(0)).join(', ')}]</span>`;
+        document.getElementById('btnRunAnalysis').disabled = false;
+        showStatus('Custom bbox drawn. Click Run analysis to proceed.', 'info');
+      }
+      redrawCanvas();
+    };
+
+    // Touch support
+    canvas.ontouchstart = (e) => {
+      e.preventDefault();
+      canvas.onmousedown(e.touches[0]);
+    };
+    canvas.ontouchmove = (e) => {
+      e.preventDefault();
+      canvas.onmousemove(e.touches[0]);
+    };
+    canvas.ontouchend = (e) => {
+      e.preventDefault();
+      canvas.onmouseup(e.changedTouches[0]);
+    };
+  }
+
+  function redrawCanvas() {
+    const canvas = document.getElementById('bboxCanvas');
+    const ctx    = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw suggested (faint)
+    if (state.suggestedBbox && state.confirmedBbox !== state.suggestedBbox) {
+      
+      (ctx, state.suggestedBbox, 'rgba(0,200,255,0.25)', 1);
+    }
+
+    // Draw confirmed / in-progress
+    const bbox = state.drawing
+      ? normaliseDraw(state.drawStart, state.drawCurrent)
+      : state.confirmedBbox;
+
+    if (bbox) {
+      drawBboxOnCtx(ctx, bbox, '#00c8ff', 10);
+    }
+  }
+
+  function normaliseDraw(start, current) {
+    return {
+      x1: Math.min(start.x, current.x),
+      y1: Math.min(start.y, current.y),
+      x2: Math.max(start.x, current.x),
+      y2: Math.max(start.y, current.y),
+    };
+  }
+
+  function drawBboxOnCtx(ctx, bbox, color, lineWidth = 10) {
+    const { x1, y1, x2, y2 } = bbox;
+    ctx.strokeStyle = color;
+    ctx.lineWidth   = lineWidth;
+    ctx.setLineDash([6, 3]);
+    ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+    ctx.setLineDash([]);
+
+    // Corner marks
+    const cs = 10;
+    ctx.fillStyle = color;
+    [[x1,y1],[x2,y1],[x1,y2],[x2,y2]].forEach(([cx,cy]) => {
+      ctx.fillRect(cx - 3, cy - 3, 6, 6);
+    });
+  }
+
+  function drawBbox(bbox, color = '#00c8ff', label = '') {
+    const canvas = document.getElementById('bboxCanvas');
+    const ctx    = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBboxOnCtx(ctx, bbox, color, 10);
+
+    if (label) {
+      ctx.font      = '24px DM Mono, monospace';
+      ctx.fillStyle = color;
+      ctx.fillText(label, bbox.x1 + 4, bbox.y1 - 6);
+    }
+  }
+
+  function clearBbox() {
+    const canvas = document.getElementById('bboxCanvas');
+    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+    state.confirmedBbox = state.suggestedBbox;  // revert to suggestion
+    if (state.suggestedBbox) {
+      drawBbox(state.suggestedBbox, '#00c8ff', 'YOLO suggestion');
+    }
+    document.getElementById('bboxInfo').textContent =
+      'Bbox cleared — showing YOLO suggestion. Draw to replace.';
+  }
+
+  function resetPipeline() {
+    state.imageFile = null;
+    state.imageBlob = null;
+    state.suggestedBbox   = null;
+    state.confirmedBbox   = null;
+    state.tissueCountsFromGMM = null;
+    state.gmmConfidence   = 0;
+
+    document.getElementById('imageFile').value = '';
+    document.getElementById('pipelineStages').classList.remove('visible');
+    document.getElementById('bboxArea').classList.remove('visible');
+    document.getElementById('gmmResult').classList.remove('visible');
+    document.getElementById('autoFilledBadge').classList.remove('visible');
+    document.getElementById('btnRunAnalysis').disabled = true;
+    hideStatus();
+
+    ['upload','yolo','sam','gmm'].forEach(s => setStage(s, ''));
+    updateTissue();
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // RUN ANALYSIS → MobileSAM + GMM
+  // ═══════════════════════════════════════════════════════════════
+  async function runAnalysis() {
+    if (!state.imageFile || !state.confirmedBbox) return;
+
+    const btn = document.getElementById('btnRunAnalysis');
+    const spinner = document.getElementById('analysisSpinner');
+    btn.disabled = true;
+    spinner.style.display = 'inline-block';
+
+    setStage('sam', 'active');
+    setStage('gmm', '');
+    showStatus('Running MobileSAM segmentation…', 'info');
+    document.getElementById('gmmResult').classList.remove('visible');
+
+    try {
+      const fd = new FormData();
+      fd.append('file', state.imageFile);
+      fd.append('bbox', JSON.stringify([
+        state.confirmedBbox.x1,
+        state.confirmedBbox.y1,
+        state.confirmedBbox.x2,
+        state.confirmedBbox.y2,
+      ]));
+
+      const resp = await fetch(`${SEG_SERVER}/cluster_tissue`, { method: 'POST', body: fd });
+      const data = await resp.json();
+
+      if (!data.success) {
+        setStage('sam', 'error');
+        showStatus(`Analysis failed: ${data.error || data.message}`, 'error');
+        btn.disabled = false;
+        spinner.style.display = 'none';
+        return;
+      }
+
+      if (!data.mask_accepted) {
+        setStage('sam', 'error');
+        showStatus(
+          `Low segmentation confidence (${(data.mobilesam_conf * 100).toFixed(0)}%). ` +
+          `Try adjusting or redrawing the bounding box.`,
+          'warning'
+        );
+        btn.disabled = false;
+        spinner.style.display = 'none';
+        return;
+      }
+
+      setStage('sam', 'done');
+      setStage('gmm', 'done');
+
+      // Show images
+      document.getElementById('overlayImg').src = 'data:image/webp;base64,' + data.overlay_b64;
+      document.getElementById('gmmImg').src      = 'data:image/webp;base64,' + data.gmm_b64;
+      document.getElementById('gmmResult').classList.add('visible');
+
+      // Store GMM info
+      state.tissueCountsFromGMM = data.tissue_counts;
+      state.gmmConfidence       = data.tissue_confidence;
+
+      document.getElementById('gmmConfRow').innerHTML =
+        `GMM tissue confidence: <span>${(data.tissue_confidence * 100).toFixed(1)}%</span>` +
+        ` &nbsp;|&nbsp; MobileSAM: <span>${(data.mobilesam_conf * 100).toFixed(1)}%</span>`;
+
+      // Auto-fill sliders
+      autoFillSliders(data.tissue_counts);
+
+      showStatus('Tissue analysis complete. Sliders have been auto-filled — adjust if needed.', 'success');
+      document.getElementById('autoFilledBadge').classList.add('visible');
+
+    } catch (err) {
+      setStage('sam', 'error');
+      setStage('gmm', 'error');
+      showStatus(`Analysis error: ${err.message}`, 'error');
+    } finally {
+      btn.disabled = false;
+      spinner.style.display = 'none';
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // AUTO-FILL SLIDERS from GMM tissue_counts
+  // tissue_counts: {"Necrotic": %, "Slough": %, "Granulation": %}
+  // Percentages are already normalised to 100% by the server.
+  // We round to nearest 5 so sliders snap cleanly.
+  // ═══════════════════════════════════════════════════════════════
+  function autoFillSliders(tissue_counts) {
+    let n = Math.round((tissue_counts['Necrotic']    || 0) / 5) * 5;
+    let s = Math.round((tissue_counts['Slough']      || 0) / 5) * 5;
+    let g = Math.round((tissue_counts['Granulation'] || 0) / 5) * 5;
+
+    // Clamp to [0,100] and correct rounding drift
+    n = Math.max(0, Math.min(100, n));
+    s = Math.max(0, Math.min(100, s));
+    g = Math.max(0, Math.min(100, g));
+
+    const total = n + s + g;
+    if (total !== 100) {
+      // Adjust granulation to absorb rounding error
+      g = Math.max(0, g + (100 - total));
+    }
+
+    document.getElementById('necrotic-pct').value    = n;
+    document.getElementById('slough-pct').value      = s;
+    document.getElementById('granulation-pct').value = g;
+    updateTissue();
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // TISSUE SLIDERS
+  // ═══════════════════════════════════════════════════════════════
+  function updateTissue() {
+    const n = parseInt(document.getElementById('necrotic-pct').value);
+    const s = parseInt(document.getElementById('slough-pct').value);
+    const g = parseInt(document.getElementById('granulation-pct').value);
+    const total = n + s + g;
+
+    document.getElementById('necrotic-val').textContent    = n + '%';
+    document.getElementById('slough-val').textContent      = s + '%';
+    document.getElementById('granulation-val').textContent = g + '%';
+
+    const warn = document.getElementById('tissue-warn');
+    warn.style.display = (total !== 100) ? 'block' : 'none';
+
+    const bar = document.getElementById('tissue-bar');
+    if (total === 0) {
+      bar.innerHTML = '<div class="tissue-bar-seg tissue-bar-empty" style="flex:1"></div>';
+    } else {
+      bar.innerHTML = `
+        ${n > 0 ? `<div class="tissue-bar-seg seg-necrotic"    style="flex:${n}"></div>` : ''}
+        ${s > 0 ? `<div class="tissue-bar-seg seg-slough"      style="flex:${s}"></div>` : ''}
+        ${g > 0 ? `<div class="tissue-bar-seg seg-granulation" style="flex:${g}"></div>` : ''}
+      `;
+    }
+    updatePills();
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // TOGGLE BUTTONS (I, M, E)
+  // ═══════════════════════════════════════════════════════════════
+  function selectToggle(field, value, el, isWarn = false) {
+    const group = el.closest('.toggle-group');
+    group.querySelectorAll('.toggle-btn').forEach(b => {
+      b.classList.remove('selected', 'selected-warn');
+    });
+    el.classList.add(isWarn ? 'selected-warn' : 'selected');
+    toggleState[field] = value;
+    document.getElementById(field).value = value;
+    updatePills();
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // PROFILE PILLS
+  // ═══════════════════════════════════════════════════════════════
+  function updatePills() {
+    const n = parseInt(document.getElementById('necrotic-pct').value);
+    const s = parseInt(document.getElementById('slough-pct').value);
+    const g = parseInt(document.getElementById('granulation-pct').value);
+
+    const container = document.getElementById('profilePills');
+    container.innerHTML = '';
+
+    const add = (cls, text) => {
+      const pill = document.createElement('span');
+      pill.className = `pill ${cls}`;
+      pill.textContent = text;
+      container.appendChild(pill);
+    };
+
+    add('pill-T', `T: N${n}% S${s}% G${g}%`);
+    add('pill-I', `I: ${toggleState.infection}`);
+    add('pill-M', `M: ${toggleState.moisture}`);
+    add('pill-E', `E: ${toggleState.edge}`);
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // SUBMIT TO RAG SERVER
+  // ═══════════════════════════════════════════════════════════════
+  async function submitAssessment() {
+    const n = parseInt(document.getElementById('necrotic-pct').value);
+    const s = parseInt(document.getElementById('slough-pct').value);
+    const g = parseInt(document.getElementById('granulation-pct').value);
+
+    if (n + s + g !== 100) {
+      alert('Tissue percentages must total exactly 100%. Please adjust the sliders.');
+      return;
+    }
+
+    const infection = document.getElementById('infection').value;
+    const moisture  = document.getElementById('moisture').value;
+    const edge      = document.getElementById('edge').value;
+    const notes     = document.getElementById('notes').value.trim();
+
+    const loader       = document.getElementById('loader');
+    const responseCard = document.getElementById('responseCard');
+    const btn          = document.getElementById('btnSubmit');
+
+    loader.style.display       = 'block';
+    responseCard.style.display = 'none';
+    btn.disabled               = true;
+
+    const formData = new FormData();
+    formData.append('necrotic_pct',      n);
+    formData.append('slough_pct',        s);
+    formData.append('granulation_pct',   g);
+    formData.append('infection',         infection);
+    formData.append('moisture',          moisture);
+    formData.append('edge',              edge);
+    formData.append('notes',             notes);
+    formData.append('tissue_confidence', state.gmmConfidence);
+
+    try {
+      const resp = await fetch('/get_recommendation', { method: 'POST', body: formData });
+      const data = await resp.json();
+
+      const badge = document.getElementById('confBadge');
+      badge.textContent = data.confidence_label || '—';
+      badge.className   = 'confidence-badge conf-' + (data.confidence_label || 'LOW');
+
+      document.getElementById('confScore').textContent =
+        data.confidence_score != null
+          ? `${Math.round(data.confidence_score * 100)}% confidence`
+          : '';
+
+      const fusionEl = document.getElementById('retrievalNotes');
+      if (data.retrieval_notes && data.retrieval_notes.length > 0) {
+        fusionEl.innerHTML = data.retrieval_notes.map(n => `<p>${n}</p>`).join('');
+        fusionEl.style.display = 'block';
+      } else {
+        fusionEl.style.display = 'none';
+      }
+
+      document.getElementById('markdownOutput').innerHTML =
+        marked.parse(data.result || '');
+
+      const chipsEl = document.getElementById('sourceChips');
+      chipsEl.innerHTML = '';
+      if (data.sources && data.sources.length > 0) {
+        [...new Set(data.sources)].forEach(src => {
+          const chip = document.createElement('span');
+          chip.className   = 'source-chip';
+          chip.textContent = src;
+          chipsEl.appendChild(chip);
+        });
+      }
+
+      responseCard.style.display = 'block';
+      responseCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    } catch (err) {
+      document.getElementById('markdownOutput').innerHTML =
+        `<p style="color:var(--low)">Error: ${err.message}</p>`;
+      document.getElementById('responseCard').style.display = 'block';
+    } finally {
+      loader.style.display = 'none';
+      btn.disabled         = false;
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // INIT
+  // ═══════════════════════════════════════════════════════════════
+  updateTissue();
+
+  // Drag-and-drop on upload zone
+  const zone = document.getElementById('uploadZone');
+  zone.addEventListener('dragover',  e => { e.preventDefault(); zone.classList.add('drag-over'); });
+  zone.addEventListener('dragleave', ()  => zone.classList.remove('drag-over'));
+  zone.addEventListener('drop', e => {
+    e.preventDefault();
+    zone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) {
+      const input = document.getElementById('imageFile');
+      // Manually trigger the onImageSelected flow
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      input.files = dt.files;
+      onImageSelected({ target: { files: [file] } });
+    }
+  });
+</script>
+</body>
+</html>

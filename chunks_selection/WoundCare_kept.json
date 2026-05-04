@@ -1,0 +1,1293 @@
+{
+  "meta": {
+    "total_chunks": 146,
+    "kept_count": 78,
+    "skipped_count": 68,
+    "chunk_params": {
+      "max_characters": 3000,
+      "new_after_n_chars": 2400,
+      "combine_under_n_chars": 500
+    }
+  },
+  "kept_ids_by_source": {
+    "Wound_Care_Manual.pdf": [
+      12,
+      13,
+      14,
+      16,
+      19,
+      24,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      84,
+      85,
+      87,
+      89,
+      90,
+      91,
+      92,
+      93,
+      95,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      141,
+      144
+    ]
+  },
+  "kept_chunks": [
+    {
+      "chunk_id": 12,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        19,
+        20
+      ],
+      "char_count": 653,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "2‐3. Etiology of Wound\n\n>\n\na\n\n=)\n\n.\n\nF tt .; =\n\na\n\n©.\n\nbd\n\nTraumatic Wound\n\nPressure Ulcer\n\nVasculitic Ulcer\n\nSurgical Wound\n\naaé Diabetic Foot Ulcer Neuropathic Ulcer Venous Ulcer\n\nArterial Ulcer\n\nMalignant Ulcer\n\nFigu ure 2.1 Different etio ology of wo ound\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 7\n\n2‐4. Wound Healing\n\nDefinition:\n\nWound healing is a complex series of reactions and interactions among cells and “mediators” in four distinct and overlapping phases.\n\nPhases of wound healing:\n\nWound undergoes 4 phases of healing:\n\n1. Haemostasis\n\nInflammation (0‐3 days)\n\n3. Proliferation (3‐24 days)\n\n4. Maturation (24 – 365 days)"
+    },
+    {
+      "chunk_id": 13,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        20,
+        21
+      ],
+      "char_count": 1148,
+      "time_tags": [
+        "T",
+        "E"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "As shown in Figure 2.2 and Table 2.1\n\nType of wound healing:\n\nWound healing by primary intention:\n\n1. Primary healing: when a clean surgical/traumatic wound is closed primarily; healing with minimal scar formation.\n\n2. Delayed primary healing: closure of wound 3‐5 days after the initial debridement and dressing of the wound (before granulation tissue formation).\n\nWound healing by secondary intention:\n\nSecondary healing: When there is extensive tissue loss with inability to oppose edges. Healing is with granulation, contraction and re‐epithelialisation; resulting in scar formation.\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 8\n\ng\n\nPhases of wound healing\n\nn\n\ni\n\nl\n\na\n\ne\n\nh\n\nd\n\nn\n\nu\n\no\n\nw\n\nf\n\no\n\ns\n\ne\n\ns\n\na\n\nh\n\nP\n\nHaemostasis & Coagulation ation Proliferation Matupation\n\nClot Growth Collagen deposition Collagen cross-linking\n\nMajor event formation factor Collagen cross-linking Hemostasis elaboration\n\nInflammatory\n\nRepair phase Proliferation he\n\nRemodeling [|\n\nFibroblasts |\n\n7 /\n\nCellular influx oS ha\n\nMacrophages\n\nNeutrophils\n\nVascular response [ Vasodilation / /\n\n, Vasoconstriction\n\nInjury 3d 7d 3 weeks 1-2 years\n\nTime"
+    },
+    {
+      "chunk_id": 14,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        21,
+        22,
+        23
+      ],
+      "char_count": 1364,
+      "time_tags": [
+        "T"
+      ],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "Figure 2.2 Summary on phases of wound healing\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 9\n\nTime\n\nTable 2.1 Phases of wound healing\n\nPhases Haemostasis Inflammation Proliferation Maturation Time Immediate Day 1‐3 Day 2 – Week 3 1 Week – several weeks Key cells Platelets Neutrophils Fibroblast Macrophages Process • Vasoconstriction • Vasodilatation • Fibroblast • Collagen involved • Platelet adhesion • Activation of migration degradation and complement • Reconstitution (type III ) degranulation cascade of dermis • Collagen • Platelet • Infiltration of ‐ Fibroplasia synthesis aggregation wound with ‐ Angiogenesis (type I ) • Activation of neutrophils and • Re‐ coagulation monocytes ephitelialization cascade • Phagocytosis of • Wound bacteria, contraction foreign body and cells debris Outcome Fibrin clot Healthy wound • Granulation Increased bed tissue tissue strength • New epithelium • Contracted wound\n\n2‐5. Factors Affecting Wound Healing\n\n1. Local Factors\n\n7 Tissue oxygenation\n\n7 Infection\n\n7 Foreign body\n\n7 Venous insufficiency\n\n2. Systemic Factors\n\n7 Advancing age\n\n7 Obesity\n\n7 Ischaemia\n\n7 Malnutrition\n\nDisease: Diabetes, Anaemia,\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 10\n\nMedications: Glucocorticoid steroids, NSAIDs, Chemotherapy\n\n7 Alcohol and smoking\n\nImmuno‐deficiency: Cancer, radiation therapy, AIDS"
+    },
+    {
+      "chunk_id": 16,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        25,
+        26
+      ],
+      "char_count": 1535,
+      "time_tags": [
+        "T",
+        "M",
+        "E"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "3‐1. Wound Assessment\n\nGeneral assessment:\n\nThe general assessment is to identify and eliminate any underlying causes or contributing factors which may impede the wound healing process; the causes include:\n\nAge (extremes of age )\n\nDiseases or co morbidities (e.g. diabetes mellitus , renal impairment )\n\n• Medication (steroids , chemotherapy )\n\n• Obesity\n\nNutrition (refer to chapter on nutrition)\n\nImpaired blood supply (refer to chapter on arterial and venous ulcers )\n\nLifestyle (smoking , alcohol)\n\nLocal wound assessment (Figure 3.1):\n\nLocal assessment is an ongoing process and should include:\n\nA review of the wound history (How, What, When, Where, Who)\n\nAssessment of the physical wound characteristics\n\nlocation, size, base/depth\n\n− presence of pain\n\ncondition of the wound bed\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 13\n\nSIZE\n\nmeasure wound surface area (length, width, depth)\n\n-\n\n-\n\nSURROUNDING SKIN -assess for signs of : infection/ ischaemia, maceration, crepitus\n\nWOUND\n\nASSESSMENT\n\nFigure 3.1 Local w wound ass sessment\n\n*T.I.M M.E. ‐ Princ ciples of W Wound Be ed Assessm ment and Preparati ion:\n\nT: tissue e viable -\n\nI: infection/\n\ninflammation\n\nand\n\nesigns\n\nand\n\ngranulation\n\nand\n\nesigns\n\nepithelial\n\nnew\n\nsymptoms infecton\n\nof\n\nnew\n\nNon viable necrotic, tissue\n\neg;\n\neg;\n\n-\n\nslough\n\nof pus,\n\npresence\n\npain, Malodour\n\nM: Moisture Imbalance\n\neexudate level dry/minimal or moderate/wet\n\nE: epidermal margin\n\neadvancing *non advancin 8\n\nS E C T I O N A : B A S I C W W O U N D P R I N C I P L E | 14"
+    },
+    {
+      "chunk_id": 19,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        31,
+        32
+      ],
+      "char_count": 1382,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "in Wound Care\n\n4 Wound Infection and Bacteriology\n\n4‐1. Pathway of Wound Infection\n\nCONTAMINATION Presence of microorganisms that do not multiply or cause Clinical problems\n\nCOLONIZATION Presence of multiplying microorganism with no overt host immunologic reaction\n\nLOCAL INFECTION Presence of inflammatory response and tissue injury due to the ability of the multiplying microorganism to invade viable surrounding tissues\n\nSYSTEMIC INFECTION The presence of the microorganisms in the blood stream causing systemic immune response\n\nExposed wound surfaces provides ideal culture medium for a wide varieties of microorganisms to contaminate and colonized. Multiplication of bacteria within a wound can reach a state of ‘critical colonization’ where the bacteria will invade viable tissues and leads to infection.\n\nThe abundance and diversity of bacteria in any wound depends on wound type, depth, location, the quality of the tissues, the level of tissue perfusion, and host immune response.\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 19\n\nCross Contamination Antibiotic resistanc Acrohos Angerobes Pathogenic Dense population M S Barteria working together to Call dansity-dapencdarnt enhance survival, growth communication via signal and virulence malecules, facilitating survival in new environment (e.9., biofilms, . a Wound Infection virulence factors, antibiotics)"
+    },
+    {
+      "chunk_id": 24,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        37,
+        38,
+        39
+      ],
+      "char_count": 1414,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "4‐5. An ntibiotic T Treatment t\n\nAntibiotics should only be given when there is evidence of wound infection\n\nShould follow the antibiotic guideline\n\nEmpirical treatment should cover the possible organisms as stated in the table 4-2 above or follow the local antimicrobial pattern and should be changed according to the C&S results\n\nPoint t to Remem mber:\n\n• Surface sw wab has th he lowest clinical va alue\n\n• Sample sh hould be t taken whe en indicate ed\n\n• Correct sa ampling te echnique is pertinen nt for opt imal yield\n\n• Antibiotic c treatme ent only i initiated when ind dicated an nd must follow guideline\n\nS E C T I O N A : B A S I C W W O U N D P R I N C I P L E | 25\n\nReference\n\n1. Bowler P. G, Duerden B. I & Armstrong D. G. Wound Microbiology and Associated. Approaches to Wound Management. Clin. Microbiol. Rev, Vol 14, No 2, pp 244 – 269\n\n2. Jousimies – Somer H, et al. Anaerobic Bacteriology Manual, 2002, 6th Ed. Helsinki: Star Publishing Company.\n\n3. Winn WC, et al. Koneman’s Color Atlas and Textbook of Diagnostic Microbiology, 2006, 6TH Ed. Baltimore: Lippincott Milliams & Wilkins\n\n4. Wound Care Guidelines, Bolton Primary Care Nhs Trust & Bolton Hospitals Nhs Trust. www.bolton.nhs.uk/Library/policies/Nurswc001.pdf\n\nS E C T I O N A : B A S I C W O U N D P R I N C I P L E | 26\n\nR E T P A H C 55 Nutrition in Wound Care Pn Harizah Mohd Yaacob / Pn Mageswary Lapshmanan/ Pn Nurul Huda Ibrahim"
+    },
+    {
+      "chunk_id": 44,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        66,
+        67
+      ],
+      "char_count": 1368,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "77 Management of Acute Wound\n\nAIMS:\n\n1. To be able to perform correct assessment of the depth and extent of burn injury\n\n2. To know when to refer to Specialist Hospital\n\n3. To be able to manage minor burn wounds in a local setting\n\nSCOPE:\n\nFor the purpose of this manual, we specifically refer to patients who can be managed in a non‐specialized centre\n\n7a‐1. Introduction\n\nBurn injury is a surgical emergency, which requires prompt and aggressive treatment. The management of burns requires a multi‐disciplinary approach in order to obtain the best aesthetic and functional outcome.\n\nThe aim of modern burn management after the initial resuscitation is to achieve early wound closure and prevent burn sepsis. Early tangential excision and skin grafting is very important to prevent the occurrence of hypertrophic scarring and the resultant disabling contractures which are often difficult to treat and time consuming.\n\nCauses of burn:\n\n1. Thermal (flame)\n\n2. Hot liquids (scalds)\n\n3. Chemical (acids, alkalis, corrosives)\n\nElectrical and lightning\n\n5. Radiation\n\n6. Inhalation\n\n7. Friction (abrasion)\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 54\n\nDepth of Burn Injury\n\nDepending upon the depth of tissue damage, burns may be classified as either superficial or deep. In practice, all burns are a mixture of areas of different depth."
+    },
+    {
+      "chunk_id": 45,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        67,
+        68
+      ],
+      "char_count": 1120,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Table 7a.1 Diagnosis of Burn Depth\n\n. . nd Partial thickness (2° degree)\n\nEpidermal (1° degree) Superficial dermal\n\nDeep dermal\n\nFull thickness (3' degree)\n\nHyperemia\n\nPale pink\n\nBlotchy red\n\nWhite leathery\n\nPresent\n\nCapillary refill\n\nSensation Very painful\n\nAbsent\n\nPa \" fe &\n\n* Patients with deep dermal and full thickness (3rd degree) burn require immediate referral to specialist hospital\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 55\n\n7a‐2. Management of the Burn Wound\n\n1. Bu urn injury y is a med dical eme ergency. A After imm ediate fir rst aid ha s been giv ven, the p principles of prima ary and se econdary survey an nd simulta aneous re esuscitatio on should be follow ed as per ATLS prin nciples (Ai rway, Bre athing, Ci rculation, Disability y, Exposur e, and Flu uid Resusc itation).\n\n2. Th he burn ar reas are as ssessed us sing the Lu und and B Browder c hart Figur re 7a‐1. Th his will he lp to iden ntify patie nts that n need to be e referred to a spec cialized m edical fac cility (see Table 7a a‐2) and to start f fluid resu scitation as per Pa arkland Fo ormula."
+    },
+    {
+      "chunk_id": 46,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        68,
+        69,
+        70
+      ],
+      "char_count": 2742,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Figure 7 7a.1 The L und and B Browder Ch hart\n\nThe Lun nd and Bro owder char rt for the a ssessment t of the total body su rface area of burns (TBSA).\n\nNote: a areas of ery ythema are e not includ ded\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 56\n\nCriteria for Injuries Requiring Referral to Specialist Hospital\n\n1. Full thickness burns greater than 5% TBSA in any age group;\n\n2. Partial thickness burns > 10% TBSA in patients in paediatric age groups and adult > 50 years of age;\n\n3. Partial thickness burns > 15% TBSA in all groups;\n\n4. Burns involving the face, hands, feet, genitalia, perineum and over joints; 5. Electrical burns, including lightning injury;\n\n6. Chemical burns with serious functional and cosmetic impairment;\n\n7. Suspicion of inhalational injury\n\n8. Burn injury in patients with pre‐existing medical disorders that could complicate management, prolong recovery or increase the mortality rate;\n\n9. Any burn patient with concomitant trauma (e.g. fractures or intra‐ abdominal injuries);\n\n10. Burn injury in patients who require special social, emotional, and/or long‐ term rehabilitative support, including cases of suspected child abuse, substance abuse, etc.\n\n*Adopted from American Burn Association Criteria for referral to Burn Center\n\n3. In extensive burns, the appropriate treatment is to cover the wound with a clean sheet or plastic cling wrap before transfer. Do not cover the burns with Silver Sulfadiazine (SSD) as it may mask the depth of burns. Remember to keep the patient warm.\n\n4. Cover minor burns with dressings such as paraffin gauze moistened with sterile normal saline or 0.1% aqueous chlorhexidine solution.\n\n5. Do not constrict limb circulation with tight dressings. It is important to elevate the involved extremities.\n\n6. Since burn injury is a wound, local protocol for tetanus must be followed.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 57\n\n7. Ad dequate pain relie ef must be provided (refer to chapter on pain m anageme nt).\n\n8. If the burn ns appea r to be epiderma al or sup erficial p artial thic ckness, co ontinue w with either r topical a antimicrob bial dressi ings (SSD) ), paraffin n gauze or r any avai ilable mod dern wou und dressi ngs until the woun nd heals ( (please re efer to the e chapter o on wound dressing material). .\n\n9. If f the burn s are full t thickness, , or deep partial thi ickness w hich are u unlikely to o heal wi thin 3 we eeks, you may wan nt to refe er to a sp pecialist h hospital where pat w tient may require tangentia al excision n and spl it‐thickne ss skin g rafting (Fi gure 7a.2 )\n\nFigure 7 7a.2 Tange ential excis sion of part tial thickne ss burn wo ound until viable tiss sue."
+    },
+    {
+      "chunk_id": 47,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        70
+      ],
+      "char_count": 714,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "10. T There is n o need for prophylactic antibiotics unless there is evidence of in nfection.\n\n11. R Remembe r the imp portance of splinti ng the af ffected jo oints to p prevent co ontracture es. Patien nt must co ontinue w ith rehabi litation up pon discha arge.\n\n12. T\n\nThe use o of pressure e garmen ts may co ontinue fo or up to o one year or two d epending on the s severity o f the hype ertrophic s scarring.\n\n13. A\n\nAll patient ts must b e followe d up for at least s ix months s to one y year to d etect an y develo oping con ntractures s and hy ypertroph ic scars which warrants a w referral t o a plastic c surgeon. .\n\nS E C T I O O N B : C O O N C E P T O F W O U U N D C A R E M A N A G E M E N T | 58"
+    },
+    {
+      "chunk_id": 48,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        71
+      ],
+      "char_count": 1017,
+      "time_tags": [
+        "T"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Indications for Referral to Specialist Hospital after Failure of Conservative Management\n\ni. No progress of healing after 3 weeks of treatment.\n\nii. Presence of slough, necrotic patch or infection.\n\niii. Occurrence of hypertrophic scarring and early contractures.\n\nPoints to remember • Know how to assess severity of burn injury • Know when to refer to Specialist Hospital\n\nReferences\n\n1. Rajiv Sood, Bruce M Achauer. Achauer and Sood’s Burn Surgery: Reconstruction and Rehabilitation: Elsevier: 50‐76; 2006.\n\n2. John L Hunt, Gary F Purdue, Ross I S Zbar. Burns: Acute Burns, Burn Surgery, And Postburn Reconstruction. Selected Readings in Plastic Surgery 9(12), 2000.\n\n3. Jeffrey J Roth, William B Hughes. The Essential Burn Unit Handbook: Quality Medical Publishing; 2004.\n\n4. Greenfield LJ, Mulholland M, Oldham KT, Zelenock GB, Lillemoe KD. Surgery, Scientific Principles and Practice , 2nd ed. Philadelphia: Lippincott‐ Raven, 1997.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 59"
+    },
+    {
+      "chunk_id": 49,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        72,
+        73,
+        74
+      ],
+      "char_count": 2577,
+      "time_tags": [
+        "E"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "77 Management of Acute Wound\n\nCHAPTER\n\nR\n\nE\n\nT\n\nP\n\nA\n\nH\n\nC\n\nAIM:\n\nTo achieve wound healing in the quickest possible manner with minimal morbidity and best cosmetic results\n\nSCOPE:\n\nWounds caused by trauma\n\n7b‐1. Clinical Assessment\n\nHistory\n\nMain Points:\n\n• Time elapsed since injury\n\n• Mechanism of injury\n\nCleanliness of wound and possibility of retained foreign body\n\n•\n\nAMPLE (Allergy, Medication, Past History, Last Meal, Environment)\n\nExamination\n\na. Inspection\n\n• Anatomical location and possibility of associated more serious injuries (especially neck, chest, abdomen)\n\nSize wound edge and tissue loss\n\n• Cleanliness\n\n• Viability\n\nb. Palpation\n\n• Crepitus or foreign bodies\n\n• Neurovascular status\n\n• Tendons and movement\n\nInvestigations\n\nX‐ray if indicated for possible foreign bodies or suspected bone fracture\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 60\n\n7b‐2. Treatment\n\nPrinciples\n\nreat life or limb threatening conditions first\n\nnitial management of the patient is as per ATLS principles.\n\n3. W Wounds w which are bleeding torrentia ally and/o or will lea ad to circu ulatory d istress are e included d under th he ATLS p principles. All other r wounds will be tr reated exp pectantly after sett ling prima ary survey condition ns.\n\nManag gement of f Bleeding g Wounds in Primary Survey\n\n1. St top bleed ing in the e fastest a nd simple est manne er first rat her than c closure o f the w wound e specially if othe th hreatening g conditio ons are pre esent. r life\n\n2. O Options to stop blee eding inclu\n\nude:\n\n> direct\n\n>\n\npressure c\n\ncompress\n\n> direct pressure compression\n\nion\n\n> haemostatic sutures\n\nures\n\nF Figure 7b.1 1 Bleeding p post traum ma wound\n\n> Tourniquet for special situations (controversial and to be applied with a specialist consult)\n\n> Artery forceps especially for scalp wounds or laceration involving major vessels e.g. limb vessels.\n\n> Haemostatic materials if available (expensive)\n\ne)\n\nLocal o or Genera al Anaesth hesia\n\nDepen ndent upo on site and d size of w wounds, a allergic co onstraints, patient factors e.g. ag ge or patie ent’s prefe erence.\n\nS E C T I O O N B : C O O N C E P T O F W O U U N D C A R R E M A N A A G E M E N T | 61\n\nToilet a and debride ement\n\n1. Th orough irr igation wit th normal saline (ref er respect ive chapte er: cleansin ng sol lution)\n\n2. Re move fore eign mater ials and di\n\nrt\n\n3. De ebride unhe ealthy tiss sue\n\nPrimary y closure\n\n1. Aim m for this i in all cases s if possible\n\n2. Te nsion free closure\n\ne\n\nFigure 7b. .2 Surgical w wound closure w ith suture"
+    },
+    {
+      "chunk_id": 50,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        74,
+        75
+      ],
+      "char_count": 2421,
+      "time_tags": [
+        "T"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "3. Po ssible met thods inclu ude:\n\nSuture\n\ne\n\nSkin ad dhesive str rip\n\nSkin gl ue\n\nDelayed d Primary Closure\n\n1. De eﬁnition: cl losure of th he wound after 72-h our\n\n2. Us ually for th he followin ng conditio ons:\n\n• Minim mal tissue loss\n\n• Dirty wounds e .g. bites, c ontaminat ted environ nment\n\n• More e than 12 h hours from m time of in njury\n\nSeconda ary healing\n\ng\n\nWhen t there is ext t tis ssue loss w with inabili ty to oppo ose wound d edges an nd allow he ealing by g granulation n\n\nDressin\n\ngs\n\nAny bar rrier dress ing availab ble that do oes not sti ck to the w wound an d has som me adsorbe ent proper rties (refer to chapte r on dressi ing materia als)\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 62\n\nAdvice on discharge\n\n• Kee ep wound dry, shower allowed after 48 hours but avoid soaking wo unds\n\nAvoid getting wound dirty\n\nAvoid exposure to direct sunlight especially for facial wounds\n\n• Dre essing may y be removed after 48 hours\n\n• See ek medica l help if w wound is f foul smelling, there is extreme pain or e extensive discharge e\n\n• Dat te for rem moval of su utures if u used. Othe erwise can n allow gl ue and skin n adhesiv e strip to o drop of ff by itsel f or after r wound healed visu ually\n\n7b‐3. P Precautio\n\nns\n\nSpecia al Situatio ns Which May Nee ed Speciali ist Consul lt / referral\n\n•\n\nFac cial wound ds especia lly to eyel ear r, Vermillio on border of lip\n\nlid,\n\n• Sus spected ne erve or ten ndon injur\n\nry\n\n• Dee ep wound s in areas e.g. neck, , che est, abdom men\n\n•\n\nJoin\n\nnts\n\nJoints\n\npes\n\n•\n\nElec ctrical or s severe cru ush injurie\n\nes\n\nFigu ure 7b.3 Cr rush injury y of the leg foll owing mot tor vehicle e accident\n\nCases which nee ed close fo ollow up a after prim mary closu ure\n\n• Inf fection pro one area e e.g. perine\n\neum\n\n• Deg gloving inj juries whe ere viabili ty may be e suspect\n\n• Ped dicled wou unds wher re viability y may be s suspect es specially with nar rrow base\n\n•\n\nPat ients with h significan nt co‐mor rbid e.g. D iabetes, imm munocom promised condition ns, malnou urished, o n medicat tions whi ich may im mpair hea ling e.g. st teroids, ch hemother apy\n\n•\n\nWo ound infec cted after primary c losure sho ould be op pened up, dra ined and dressed a nd let it h eal by sec condary in ntention. Ant tibiotic mi ght be co nsidered.\n\nS E C T I O O N B : C O O N C E P T O F W O U U N D C A R R E M A N A A G E M E N T | 63"
+    },
+    {
+      "chunk_id": 51,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        75,
+        76,
+        77
+      ],
+      "char_count": 1396,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "g\n\n7b‐3. Adjuncts\n\n1. Antibiotics: In the wound context generally not needed, except for a possible single prophylactic dose before primary closure. No substitute for surgery. Exceptions where empirical antibiotics may be needed include:\n\nCommunication with bone fractures or joint space\n\nii. Areas with difficulty in adequate debridment e.g. near tendons and fascial spaces of hands\n\niii. Delayed treatment >6 hours\n\nInvolving entry into a hollow viscus organ esp GIT\n\nv. Immunocompromised patients\n\nvi. Clostridial prone wounds soil contamination wound\n\nChoice of antibiotic > refer National Antibiotic Guidelines\n\n3. Antitetanus: according to local protocol\n\nSplints : for immobilisation in special situations\n\n5. Colostomy for certain perineal wounds\n\n6. Continous bladder drainage when indicated\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 64\n\nTRAUMATIC WOUND\n\nPrimary\n\nsurvey conditions\n\nABCDE e.g. Airway, Chest, Abdomen, Pelvis, Long Bone\n\nAny life or limb threatening conditions including bleeding wounds?\n\nYes\n\nTreat first\n\nNo\n\nCan wound be closed primarily?\n\nYes\n\nClose primarily & dress\n\nNo\n\nDressing and Reassessment\n\nCan wound be closed as delayed primary?\n\nYes\n\nNo\n\nDressing & for healing by secondarv intention\n\nFigure 7b.4 Algorithm for management of traumatic wound\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 65"
+    },
+    {
+      "chunk_id": 52,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        78,
+        79,
+        80
+      ],
+      "char_count": 2010,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Points to remember\n\n• All traumatic wounds have risk of infection\n\nReferences\n\n1. Adam J. Singer, M.D., Judd E. Hollander, M.D., and James V. Quinn, M.D. N. Evaluation and Management of Traumatic Lacerations Engl J Med 1997; 337:1142‐1148\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 66\n\nR\n\nE\n\nT\n\nP\n\nA\n\n:\n\nH\n\nC\n\n8 Management of Chronic Wound\n\n8a‐1. Introduction\n\nFigure 8a.1 Diabetic foot Ulcer\n\n• Diabetic foot is a foot that exhibits any pathology that results directly from diabetes mellitus or any long‐term (or \"chronic\") complication of diabetes mellitus (Jeffcoate & Harding, 2003).\n\n• Diabetic foot implies that the pathophysiological process of diabetes mellitus does something to the foot that puts it at increased risk for “tissue damage” and the resultant increase in morbidity and maybe amputation (Payne & Florkowski, 1998).\n\nIncidence of Diabetic Foot Ulcer\n\n•\n\nStudies have indicated that diabetic patients have up to a 25% lifetime risk of developing a foot ulcer.\n\n• The annual incidence of diabetic foot ulcers is ~ 3% to as high as 10%. (Armstrong and Lavery, 1998)\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 67\n\nPathophysiology of Diabetic Foot Ulcer\n\nDiabetic are prone to foot ulceration due to:\n\n• Neuropathy‐ leads to skin dryness and cracks, foot deformity and loss of protective sense in the foot\n\n• Microangiopathy/vascular disease‐ lead to poor blood supply to the toes and foot and then ulcerate easily\n\n• Immunopathy‐ Defects in leukocyte function (leukocyte phagocytosis, neutrophil dysfunction) and also deficient white cell chemotaxis and adherence\n\nClinical Presentation\n\n• Soft tissue infections (superficial to deep tissue infection e.g. cellulitis, necrotizing fasciitis, etc.)\n\n• Osteomyelitis (bone infection)\n\nSeptic arthritis (joint infection)\n\n•\n\nGangrene (dry or wet)\n\n• Chronic non‐healing ulcer\n\nCombination of more than one of the above mentioned condition\n\n8a‐2. Assessment of Diabetic Foot Ulcer"
+    },
+    {
+      "chunk_id": 53,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        80,
+        81
+      ],
+      "char_count": 798,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "1. History:\n\n• Diabetic history\n\n•\n\nPrevious ulcer or amputation\n\n•\n\nSymptoms of peripheral neuropathy\n\n•\n\nSymptoms of peripheral vascular/ischemic problem\n\n• Contributing factors\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 68\n\nOther complications of diabetes (eyes, kidney, heart etc).\n\n• Current ulcer\n\n2. Examination:\n\nThorough and carefully examine the whole foot for the following:‐\n\n•\n\nPrevious amputation/ulcer\n\n• Deformity and footwear\n\nInspect web spaces ‐ signs of infection or wound\n\nHypercallosity or nail deformity or paronychia\n\n•\n\nPresent of peripheral neuropathy with tuning folks, also monofilament and position sense.\n\nPeripheral pulses ‐ peripheral vascular disease\n\n• Ankle‐brachial index (ABSI)\n\n• Other relevant systems (renal, eye, heart etc)"
+    },
+    {
+      "chunk_id": 55,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        83,
+        84,
+        85,
+        86
+      ],
+      "char_count": 2410,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Figu ure 8a.2 D iabetic foo ot at differ ent Wagne er's Classif fication\n\nS E C T I O O N B : C O O N C E P T O F W O U U N D C A R R E M A N A A G E M E N T | 71\n\nFoot at risk of ulceration\n\n• History of ulceration\n\nPresence of neuropathy\n\nPresence of peripheral vascular disease\n\nPresence of foot deformity\n\nInappropriate footwear\n\n• Skin lesion\n\n• Nail pathology\n\n•\n\nDuration of diabetes\n\nProlonged standing or walking\n\n• Type of occupation\n\n8a‐5. Management of Diabetic Foot Ulcer\n\nObjective:\n\n• Control infection\n\n• Ulcer/wound management\n\n• Prevent amputation\n\n• Maintain pre‐morbid foot/lower extremity function as much as possible\n\n•\n\nPrevent recurrent ulcer\n\n1. General management:\n\nA multidisciplinary approach\n\nGood diabetic control\n\n• Systemic antibiotics (according to CPG on Antibiotic Guideline and also culture and sensitivity of the infected tissue)\n\n• Optimise other co‐morbid complications.\n\n•\n\nAdvise to stop smoking\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 72\n\n2. Local management:\n\n• Wound/ulcer management: depending on severity of wound; vascularity and also presence of infection.\n\n• .Debride infected/necrotic tissue follow by wound management (refer Wound care Algorithm in Chapter 17)\n\nDo not hesitate to perform re‐debridement if indicated.\n\nAmputation may be the treatment of choice.\n\n• Minimize risk of re‐infection\n\n• If indicated reestablished adequate blood supply (refer to chapter on arterial ulcer).\n\n• Off loading with contact cast etc (Appendix 2).\n\nGood foot care and foot wear (Appendix 3)\n\nIf no signs of healing after 2 weeks of treatment, reevaluate and looks for the cause.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 73\n\nPatient with diabetic foot wound\n\nCleanse, debride and probe wound\n\nDetermine the depth and tissues involved; REFER\n\nChapter on wound assessment and documentation\n\nAssess for neuropathy and foot deformity\n\nAssess for ischemia (pedal pulses), ABSI\n\nAssess for evidence of infection\n\nYes\n\nIs the wound clinically infected?\n\nStabilised and optimized\n\nWound-care\n\npatient; prepare patient for surgical debridement/\n\ne\n\nOff load foot pressure\n\namputation\n\ne\n\nProper foot-ware\n\ne\n\nObtain tissue from infected\n\ne\n\nGood glycemic control By\n\nwound for C&S, and blood\n\nculture (if patient in sepsis)\n\ne\n\n= Consult vascular surgeon if necessary\n\ne\n\n. ota: Start appropriate antibiotics"
+    },
+    {
+      "chunk_id": 56,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        86
+      ],
+      "char_count": 655,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "e\n\nNo antimicrobial needed\n\n(MOH Antibiotic guideline)\n\ne\n\n§=©Adjust antibiotic according to\n\ntissue or blood culture report\n\nReassess and re-debridement if\n\nnecessary\n\nYes\n\nIs wound healing?\n\nMonitor till heal\n\nSecondary wound closure if\n\nindicated\n\nRe-evaluate wound management\n\nReinforced preventive foot care\n\nCheck patient’s wound-care\n\ncompliance\n\n• Re‐evaluate present of infection\n\n• Re‐evaluate vascular status‐‐‐> refer\n\nvascular surgeon\n\n•\n\nConsider for repeat foot radiograph\n\nReference: Lipsky BA, Berendt AR, Deery HG, Embil JM, Joseph WS, Karchmer AW, et al. Diagnosis and treatment of diabetic foot infections. Clin Infect Dis 2004;39:889."
+    },
+    {
+      "chunk_id": 57,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        86,
+        87
+      ],
+      "char_count": 1046,
+      "time_tags": [
+        "M"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "Figure 8a.2 Treatment Algorithm of a Patient with a Diabetic Foot Wound\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 74\n\nDiabetic foot‐care\n\n• Foot inspection‐ minimally once a day\n\n• Use lukewarm (air suam), not hot water to wash feet\n\n• Use gentle soap to bath/wash feet\n\n• Apply moisturizer to avoid dry feet – be careful with the web space and not too much (causing skin maceration)\n\n• Proper nail cutting, avoid cutting too close/digging nail fold.\n\n• Wear clean, dry socks (NEVER use heating pad or hot water bottle) to keep foot warm\n\n• Avoid walk barefooted.\n\n• Wear comfortable well fitting shoe (not too tight or too loose), evening is the best time to buy shoe. Refer to Foot Care in Appendix 3\n\n• Shake out shoes and feel the inside before wearing\n\n• Never treat corns or calluses themselves\n\n• Good diabetic control\n\n• Stop smoking\n\n• Periodic foot examination by relevant personals\n\n• Keep the blood flowing to feet (elevate, wiggers toes, moving ankle) , avoid cross‐leg or hanging leg/feet too long"
+    },
+    {
+      "chunk_id": 58,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        87,
+        88,
+        89
+      ],
+      "char_count": 1067,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Point to remember:\n\n• Good glycemic control, regular foot assessment; including vascular and neurological assessment; to prevent diabetic foot ulcer.\n\n• The main underlying cause of diabetic foot ulcer is chronic pressure‐ think of off loading.\n\n• Diabetic foot ulcer need multidisciplinary approach\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 75\n\nReferences\n\n1.\n\nJames Teh, Tony Berendt, Benjamin A Lipsky. Investigating suspected bone infection in the diabetic foot. BMJ 2009;339:b4690.\n\n2. Warren Clayton, Jr.Tom A. Elasy. A Review of the Pathophysiology, Classification, and Treatment of Foot Ulcers in Diabetic Patients. Clinical Diabetes Spring 2009 vol. 27 no. 252‐58.\n\n3.\n\nArmstrong DG. And Lavery LA. Diabetic Foot Ulcers: Prevention, Diagnosis and Classification. Am Fam. Physician. 1998 Mar 15; 57(6):1325‐1332.\n\n4.\n\nFrykberg RG. Diabetic Foot Ulcers: Pathogenesis and Management. Am Fam. Physician. 2002 Nov 1; 66(9):1655‐1663.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 76\n\nR E T P A H C"
+    },
+    {
+      "chunk_id": 59,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        89
+      ],
+      "char_count": 534,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "88 Management of Chronic Wound\n\n8b‐1. Introduction\n\nVenous ulcer is the commonest cause of leg ulcer and it contributes to a significant socio‐economic disability in the population as it affects the quality of life. It is due to presence of venous hypertension in the lower limbs.\n\n8b‐2. Classification\n\nThere are two major groups of venous ulcer, with different treatment options and outcomes.\n\n1. Ulcer secondary to primary varicose veins\n\n• In this group of patients, treating the varicosities will usually result in ulcer healing."
+    },
+    {
+      "chunk_id": 60,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        89,
+        90,
+        91
+      ],
+      "char_count": 1988,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "2. Ulcer secondary to deep venous incompetence\n\n• Post‐phlebitic syndromes contribute to a big proportion of this group and treatment is aimed to improve healing rate and reducing recurrence of the ulcer.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 77\n\n8b‐3. Risk Factors and Associated Factors\n\nRisk fa actors for c chronic ve enous ulce er:\n\n1. V Varicose ve eins\n\n2. D Deep vein t thrombos sis\n\n3. C\n\nhronic ve\n\nnous insuf\n\nfficiency\n\ninsufficiency\n\n4. P\n\noor calf m\n\nmuscle fun\n\nction\n\nfunction\n\n5. O Obesity\n\n6. H\n\nHistory of l\n\nleg injury\n\n7.\n\nFa\n\namily hist\n\nory\n\nFig gure 8b.1 V Venous ulc the e Gaiter's a area er over\n\nAssoci\n\nated facto\n\nors:\n\nAssociated\n\n1. Dia\n\nbetes me\n\nllitus\n\n2. Hea\n\nart failure\n\n3. Hyp\n\npertension\n\nn\n\nHypertension\n\n4. Ren\n\nnal disease\n\ne\n\n5. Rhe eumatoid arthritis\n\nS E C T I O O N B : C O O N C E P T O F W O U U N D C A R R E M A N A A G E M E N T | 78\n\n8b‐4. Diagnosis\n\nDiagnosis of venous ulcer is made based on history and physical examination.\n\nHistory:\n\n1. Risk factors\n\n• Above listed risk factors should be identified\n\n2. History of deep vein thrombosis\n\n• Documented or suggestive history of previous DVT\n\nSymptoms of chronic venous insufficiency\n\n• Calf heaviness after prolonged standing\n\nExamination:\n\n1. Examination of the ulcer/wound\n\n• Typical site: just above the medial malleolus – the Gaiter’s area.\n\n• Leg edema, thickening and hyperpigmentation (lipodermatosclerosis) of the surrounding skin.\n\n2. Varicose veins\n\n• May or may not be present. These may just be telengeactasia, spider veins or varicosities along the long or short saphenous veins\n\n3. Peripheral arterial pulses\n\n• Palpate and confirm distal pulses to exclude arterial disease\n\n8b‐5. Investigations\n\nA duplex ultrasound scan is required in patients suspected to have ulcer secondary to deep venous incompetence\n\n• To look for deep vein patency and incompetence\n\n• To identify sapheno‐femoral or sapheno‐popliteal junction incompetence"
+    },
+    {
+      "chunk_id": 61,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        91,
+        92
+      ],
+      "char_count": 1167,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "• To identify and localize incompetent perforators\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 79\n\n8b‐6. Treatment\n\nLeg elevation and compression bandaging are the most important components of treatment. It is crucial to exclude peripheral arterial disease before commencing on compression therapy.\n\n1. Elevation of the leg\n\n• Reduces leg edema and promote wound healing\n\n• Elevate higher than the heart level\n\n2. Graduated compression stockings and compression bandages\n\n• Multi‐layer compression (4 layer or 2 layer) is used during the acute phase\n\n• Graduated compression stockings can be used once the wound is more dry\n\n3. For local management of a venous ulcer refer to Wound Care Algorithm in Chapter 17\n\n4. In cases of venous ulcer secondary to primary varicose veins, patients should be referred for surgical intervention with high saphenous vein ligation once the acute phase and infection is under control.\n\n5. Pharmacotherapy\n\n• Venotonic agents, e.g. Micronised flavinoids aids in the venous flow\n\n• Hemorheologic agents, e.g. Pentoxifylline\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 80"
+    },
+    {
+      "chunk_id": 62,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        93
+      ],
+      "char_count": 740,
+      "time_tags": [
+        "M"
+      ],
+      "has_table": true,
+      "has_image": true,
+      "is_english": true,
+      "text": "Four Layer Compression Bandage\n\nFirst layer Second layer Material Orthopedic wool Cotton crepe bandage Function Adsorbs exudate Redistribute pressure Further adsorb exudate Smoothen orthopedic wool layer Third layer Fourth layer Elastic, extensible bandage (20 – 40 mmHg) Cohesive bandage First layer of elastic compression Second layer of elastic compression\n\nThe first and second layers being applied\n\nThe third and fourth layers being applied\n\nFigure 8b.2 Four‐layer compression bandage\n\n6. Pharmacotherapy\n\n• Venotonic agents, e.g. Micronised flavinoids aids in the venous flow\n\n•\n\nHemorheologic agents, e.g. Pentoxifylline\n\nLife‐style modification to reduce rate of recurrence\n\n• Change of work\n\nWeight reduction and dietary counseling"
+    },
+    {
+      "chunk_id": 63,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        93,
+        94,
+        95
+      ],
+      "char_count": 1603,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Conclusion\n\nVenous ulcer is one of the common causes of le.g. ulcer and it causes a significant socio‐economic disability. It is crucial to identify ulcers that are due to primary varicose veins for surgical intervention. Otherwise, treatment involves a long‐term management plan aimed to hasten healing and reduce recurrence.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 81\n\nPoints to remember:\n\n• Leg elevation and compression therapy are two important components of treatment\n\n• Important to differentiate between ulcer secondary to primary varicose veins or deep venous incompetence\n\n• Need to exclude arterial disease before commencing treatment\n\nReferences\n\n1. David Bergqvist, MD, PhD, Christina Lindholm, RN, PhD, and Olle Nelzén MD, PhD. Chronic leg ulcers: The impact of venousdisease. J Vasc Surg 1999;29:752‐5.\n\n2. Blair SD, Wright DDI, Backhouse CM, Riddle E, McCollum CN. Sustained compression and healing of chronic venous ulcers. BMJ 1988;297:1159‐ 61\n\n3. Maria T. Szewczyk et.al. Comparison of the effectiveness of compression stockings and layer compression systems in venous ulceration treatment. Arch Med Sci 2010; 6, 5: 793‐799\n\n4. Michael S. Weingarten. State‐of‐the‐Art Treatment of Chronic Venous Disease. Clinical Infectious Diseases 2001; 32:949–54\n\n5. Lyseng‐Williamson KA, Perry CM. Micronised purified flavonoid fraction: a review of its use in chronic venous insufficiency, venous ulcers and haemorrhoids. Drugs. 2003;63(1):71‐100\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 82\n\n8 Management of Chronic Wound"
+    },
+    {
+      "chunk_id": 64,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        95,
+        96
+      ],
+      "char_count": 1733,
+      "time_tags": [
+        "T"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "8c‐1. Introduction\n\nArterial ulcers are ischemic ulcers in patients with peripheral vascular disease. Reduced blood supply to the affected limb impedes healing and causes delay or non‐healing of the ulcer. It is crucial to identify arterial ulcers, as the management would involve revascularization to improve the circulation of the affected limb to achieve wound healing.\n\n8c‐2. Risk Factors\n\nRisk factors for chronic limb ischemia include:\n\n1. Diabetes mellitus\n\n2. Smoking\n\n3. Dyslipidemia\n\n4. Male\n\n5.\n\nElderly\n\n6. Hypertension\n\n7. Hyperviscosity and hypercoaguable states\n\n8c‐3. Diagnosis\n\nDiagnosis of arterial ulcer is based on history and physical examination.\n\nRelevant History:\n\n1. Risk factors.\n\n• Identify the above listed risk factors.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 83\n\n1. Sym mptoms of f chronic li imb ischem mia.\n\n• I ntermitten nt claudic ation – p ain in the e calf mus scles with exercise and relieved by r y rest.\n\n• R Rest pain – – persisten nt pain (crit tical limb is schemia)\n\n2. His story of pr evious min nor or majo or amputa\n\nation\n\n• A A patient with prev vious majo or amputa ation on the contr ra‐lateral limb re equires mo ore aggres sive effort ts to salvag ge the curr rently affec cted limb\n\n3. His story of pr evious vas scular inter rvention\n\n• A A non‐heal ing or rec current wo ound indic cates re‐ste enosis or thrombos is of previous int p tervention n\n\n5. Non‐ healing of a previous s minor or major am putation w wound.\n\nClinical Examinat tion:\n\n1. E xaminatio n of the ul cer/wound d\n\n• Pale bas se and edg es with slo ough\n\n• Void of g granulatio n tissue\n\n• Dry ulce er with surr rounding inflamm mation\n\n• Sites – P Pressure po oints, toes"
+    },
+    {
+      "chunk_id": 65,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        96,
+        97
+      ],
+      "char_count": 1395,
+      "time_tags": [],
+      "has_table": true,
+      "has_image": true,
+      "is_english": true,
+      "text": "Figure 8c.1 1 Left foot a arterial ulce er\n\n2. S igns of chr ronic limb ischaemia\n\n• Muscle a atrophy of f the affect ted limb\n\n• Hair loss s and hype erpigmenta ation\n\nFemoral\n\n>>\n\n1.\n\nExa\n\namination\n\nof the per\n\nripheral pu\n\nulses\n\nDig\n\ngital palpat\n\ntion of the\n\ne periphera\n\nal pulses.\n\n• Two plu s (++) indic cates norm mal pulse\n\n• One plus s (+) indica ates weak\n\npulse\n\n• Negative e (‐) indica tes absent t pulse\n\nCocumentation of\n\ndigital palpation\n\nS E C T\n\nI O N B : C C O N C E P T T O F W O U U N D C A R R E M A N A G E M E N T\n\n| 84\n\n2. Exa amination with a han nd‐held Do oppler dev ice\n\nWavefor rm ABSI Triphasi ic ≥0.9 – Biphasic c 0.4 – 0 Monoph hasic ≤ 0.4 Interpr retation 1.3 Normal l .9 Periphe eral vascular d disease Critical l limb ischaem mia\n\n* Note t that ABSI may y be normal o vessels a as in diabetic a and some rena or high with c l failure patien alcified nts.\n\nof\n\nGCoecumentation Doppler signais\n\n• Wavefor rm of the e Doppler r signals a and meas urement of the an nkle‐ brachial systolic in ndex (ABS I) gives an n indicatio n of the s severity of f the disease in the vess sels.\n\n3.\n\nTo e pressure e measurem ment (whe en availabl e)\n\n• In patien nts with ca alcified ves ssels, wher re the ABS SI maybe n normal or h high, toe pre essure me easuremen nt would be more e accurate e to indi icate presenc e or absen nce of perip pheral vasc cular disea ase."
+    },
+    {
+      "chunk_id": 66,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        97,
+        98,
+        99
+      ],
+      "char_count": 2900,
+      "time_tags": [],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "8c‐4. In vestigatio\n\nns\n\nNon‐he aling ulcer rs with abs sent pulses s or abnorm mal ABSI re equire rad iological imaging g to establi ish the leve el of diseas se and to p plan subse equent inte ervention. Imaging g options a available in ncludes dup plex ultras sound scan n, CT angio graphy, M R angiogr raphy and D DS angiogr raphy. Cho oice of inve estigation d depends o n availabil ity and suit tability. Fo oot X‐ray m may be indi cated to e xclude und derlying os steomyelit is\n\n8c‐5. Tr\n\nreatment\n\n1. Re ‐vascularis sation of d iseased ve essel\n\n• To resto ore/improv ve the circu ulation to t the distal i schaemic l limb\n\n• Can be a achieved v ia open by ypass surge ery, angiop plasty or in n combinat\n\ntion\n\n2. Wo ound debr ridement / minor am putation a and wound d care\n\n• Following revascular rization, st tandard wo ound care procedure es as in Wo ound Care Algor rithm in Ch hapter 17\n\n• Special ca re to be ta aken to avo oid compre ession ban dages and leg elevat\n\ntion\n\nS E C T\n\nI O N B : C C O N C E P T T O F W O U U N D C A R R E M A N A G E M E N T | 85\n\n3. Pharmacotherapy\n\n• Anti‐platelet therapy\n\n• Statins\n\n• Antibiotics when indicated\n\n• Analgesia (refer chapter on pain management)\n\n4. Life‐style modification\n\n• Stop smoking\n\n• Diabetic control\n\n• Dietary counseling\n\n5. Major amputation\n\n• Primary amputation to be considered in non‐salvageable limb, or patients with non‐re‐constructible disease and patients with poor cardiac function\n\n6. Rehabilitation\n\n• Aim of treatment is for patients to ambulate and resume daily activities\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 86\n\nTable 8c.1 Phases of amputee rehabilitation\n\n1. Pre‐operative Medical and body condition assessment, patient education, surgical‐level discussion, functional expectations, phantom limb discussion 2. Amputation Residual‐limb length determination, myoplastic surgery/dressing closure, soft‐tissue coverage, nerve handling, rigid dressing application, limb reconstruction 3. Acute postsurgical Wound healing, pain control, proximal body motion, emotional support, phantom limb discussion 4. Pre‐prosthetic Residual‐limb shaping, shrinking, increasing muscle strength, restoring patient’s sense of control (figure of 8 stump bandaging) 5.Prosthetic Prosthetic prescription will depend on patient prescription/fabrication cognitive status, medical status, functional status and socioeconomic status 6. Prosthetic training Prosthetic management and training to increase wearing time and functional use 7.Community Resumption of family and community roles; integration regaining emotional equilibrium; developing healthy coping strategies, recreational activities 8.Vocational Assessment and training for vocational activities, rehabilitation assessment of further education needs or job\n\nmodification\n\n9. Follow‐up\n\nLifelong prosthetic, functional, and medical"
+    },
+    {
+      "chunk_id": 67,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        99,
+        100,
+        101
+      ],
+      "char_count": 811,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "assessment; emotional support\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 87\n\nARTERIAL ULCER Condition Normal of Peripheral pulses Weak/ Absent Normal / ABSI High WOUND DEBRIDEMENT & CARE Toe pressure normal Toe pressure not available/reduced Revascularization Imaging Reduced\n\n* In patients with normal toe pressure, allow 2‐4 weeks for wound to heal before referring for re‐assessment with further imaging\n\nFigure 8c.2 Algorithm for management of arterial ulcer\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 88\n\nConclusion\n\nIt is crucial to identify an arterial (ischaemic) ulcer, as the management of such an ulcer is different. Prompt intervention to improve the blood supply to the affected limb is important for healing of an ischemic ulcer."
+    },
+    {
+      "chunk_id": 68,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        101
+      ],
+      "char_count": 549,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "Points to remember:\n\n• Arterial ulcer is a reflection of a systemic disease. Care should be taken to assess the cardiovascular system.\n\n• It is crucial to check for the peripheral pulses in all legs with ulcers. Absent pulses will require further assessment to exclude ischaemic ulcer\n\n• Once identified, patients with ischaemic ulcers will require vascular intervention or revascularization\n\n• Leg elevation and compression bandages must be avoided in all cases of suspected ischemic ulcers\n\n• Pain management – ischaemic ulcer is extremely painful"
+    },
+    {
+      "chunk_id": 69,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        101,
+        102
+      ],
+      "char_count": 562,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "References\n\n1. Inter‐Society Consensus for the Management of Peripheral Arterial Disease (TASC II) European Journal Vascular and Endovascular SurgeryVol 33, Supplement 1, 2007\n\n2. Hiatt WR. Medical Treatment of peripheral arterial disease and claudication. N Eng J Med. 2001;344:1608–21\n\n3. J Am Podiatr Med Assoc 91(1): 13‐22,2001) Alberto Esquenazi, MD,RobertDiGiacomo, PT\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 89\n\nR E T P A H C 88 Management of Chronic Wound d) Pressure Ulcer Dr Khairiah Mohd Yatim/ Dr Zairizam Zakaria"
+    },
+    {
+      "chunk_id": 72,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        105
+      ],
+      "char_count": 602,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "What is the best management of pressure ulcer?\n\n1. Prevention is paramount\n\n7 Prevention is the main modality in the management of pressure ulcer.\n\n7 Proper bed positioning and turns every 2 hours (Figure 8d.4 and figure 8d.5)\n\n7\n\nBony prominence should be checked once or twice a day by the care giver.\n\n7 To provide the appropriate type of mattress-overlay or chair cushion to reduce pressure during sitting or lying.\n\n7\n\nBest managed by a dedicated, multi‐disciplinary team who has special interest in wound management.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 93"
+    },
+    {
+      "chunk_id": 73,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        106
+      ],
+      "char_count": 599,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "2. General treatment\n\nRestoration of tissue perfusion by relief of pressure\n\n7 Treatment of underlying systemic problem e.g Anemia, Hypoprotenemia, Diabetes Mellitus\n\n7\n\nTreatment of reflex spasms‐ e.g. Baclofen, Diazepam and Tizanidine\n\n7 Preventing or treating infection (refer national antibiotic guidelines)\n\nImprovement in general health and nutrition.\n\nFigure 8d.4 Make sure the head end of the bed is propped up to not more than 30 degrees\n\n_\n\nFigure 8d.5 Always provide appropriate padding to the pressure areas\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 94"
+    },
+    {
+      "chunk_id": 74,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        107
+      ],
+      "char_count": 1096,
+      "time_tags": [
+        "T",
+        "E"
+      ],
+      "has_table": true,
+      "has_image": true,
+      "is_english": true,
+      "text": "Table 8d.1 Staging of Pressure Ulcer\n\nStage I:\n\nIntact skin with non‐blanchable redness of a localized area usually over a bony prominence. Darkly pigmented skin may not have visible blanching; its color may differ from the surrounding area. Stage II: Partial thickness loss of dermis presenting as a shallow open ulcer with a red pink wound bed, without slough. May also present as an intact or open/ruptured serum‐filled blister. Stage III: Full thickness tissue loss. Subcutaneous fat may be visible but bone, tendon or muscle is not exposed. Slough may be present but does not obscure the depth of tissue loss. May include undermining and tunneling. Stage IV: Full thickness tissue loss with exposed bone, tendon or muscle. Slough or eschar may be present on some parts of the wound bed. Often include undermining and tunneling. Unstageable: Full thickness tissue loss in which the base of the ulcer is covered by slough (yellow, tan, gray, green\n\nor brown) and/or eschar (tan, brown or black) in the\n\nwound bed.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 95"
+    },
+    {
+      "chunk_id": 75,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        108
+      ],
+      "char_count": 590,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Suspected Deep Tissue Injury:\n\nPurple or maroon localized area of discolored intact skin or blood‐filled blister due to damage of underlying soft tissue from pressure and/or shear. The area may be preceded by tissue that is painful, firm, mushy, boggy, warmer or cooler as compared to adjacent tissue.\n\n7 Optimization of functional status and improving quality of life - role for Rehabilitation Physician, Occupational Therapist and Physiotherapist\n\n7 Cooperation with other services -role of psychologist, psychiatrist, social service worker\n\nPrevention of new ulcer development/recurrence"
+    },
+    {
+      "chunk_id": 76,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        108,
+        109,
+        110
+      ],
+      "char_count": 1876,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "3. Local treatment\n\n7 Conservative: Management of wounds - please refer algorithm on wound care\n\n7 Surgical: Please refer chapter on principle of wound closure and wound debridement\n\nPoints to remember:\n\n• Prevention is the most important in pressure ulcer management\n\n• Small skin lesion may hide a large underlying wounds\n\n• Management requires multidiscipline approach and family support\n\n• Not all pressure ulcer patients are suitable for surgical intervention\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 96\n\nReferences\n\n1. Plastic Surgery Second Edition (Mathes), 2006, Volume VI, Pg 1317‐1353\n\n2. Salcido R.,Goldman R., Prevention and Management of Pressure Ulcers and Other Chronic Wounds,:645‐661 Phys. Med. &Rehab.,2nd ed. Braddom RL.\n\n3. http://www.npuap.org/resources/educational‐and‐clinical‐ resources/npuap‐pressure‐ulcer‐stagescategories/\n\n4. BergstromN,BradenBJ,LaguzzaA,HolmanV.The Braden Scale predicting pressure sore risk. Nurs Res. 1987;36(4):205‐210. for\n\n5. KatrinBalzer, Claudia Pohl, Theo Dassen, Rudd Halfens: The Norton, Waterlow, Braden, and Care Dependency Scales Comparing Their Validity When Identifying Patients’ Pressure Sore Risk. Journal of Wound, Ostomy and Continence Nursing:2007;34(4):389‐398.\n\n6. Linden, O., Greenway, R. M., and Piazza, J. M. Pressure distribution on the surface of the human body. I. Evaluation in lying and sitting positions using a “bed of springs and nails”. Arch. Phys. Med. Rehabil. 46: 378, 1965.\n\n7. Enis J, Sarmiento A: The pathophysiology and management of pressure sores. Othop Rev 2:26, 1973\n\n8. Maklebust J: Pressure ulcers: etiology and prevention. NursClin North Am 22:359, 1987\n\n9. Special thanks to Mohd. Asrul b. Mohd Noh . Illustrator\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 97\n\nR E T P A H C\n\n99 Management of\n\nNon‐Healing Ulcer"
+    },
+    {
+      "chunk_id": 77,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        110,
+        111
+      ],
+      "char_count": 1027,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "9‐1. Definition\n\nAny wound that has no signs of healing process within 2‐4weeks after intervention by proper wound management team.\n\nFeatures of non‐healing wound:\n\n•\n\nSize remain the same\n\n• Persistent discharge\n\nArbitrary guide only (use personal clinical judgement to decide)\n\n9‐2. Causes\n\nUsually multifactorial but can be broadly classified into the following factors\n\n1. Patient/Systemic:\n\n• Malnutrition\n\nPoorly controlled comorbid conditions e.g Diabetes\n\n• Smoking\n\n• Hygiene\n\nMedication e.g Steroids/Chemotherapy\n\n• Pressure wounds\n\n•\n\nPatient immobility factors e.g. paraplegia\n\n•\n\nAppliance related e.g. poor fitting shoes\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 98\n\nDr Andre Das\n\n2. Disease/Local:\n\n• Arterial\n\n• Venous\n\nMixed Arterial and Venous\n\n• Infective e.g.\n\n1) +/‐ Biofilms\n\n2) Osteomyelitis\n\n3) Chronic infections e.g. TB/Fungal\n\nImmunopathic including Pyoderma Gangrenosum\n\n• Malignancy\n\n• Post radiation\n\nSystemic disease e.g. Connective Tissue Disease\n\n• Idiopathic"
+    },
+    {
+      "chunk_id": 78,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        111,
+        112
+      ],
+      "char_count": 801,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "9‐3. Management\n\nGoals of Management\n\n• Timely healing of wounds with minimal morbidity and best cosmetic and functional outcome\n\n• Prevent recurrences\n\n• Improve Quality of Life\n\nPrinciples of Management\n\n•\n\nMultidisciplinary Approach\n\n•\n\nCareful Documentation of Progress of the Wound\n\n•\n\nUtilisation of appropriate adjuncts where applicable\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 99\n\nIdentify the cause if possible and treat\n\n•\n\nTreat associated symptoms e.g. pain\n\n• Consider Lifestyle Modifications\n\n•\n\nRisk factor reduction to prevent recurrences\n\nClinical Assessment\n\nHistory\n\nMain Points:\n\n•\n\nDuration of wound\n\n• Symptoms caused by wounds\n\n• Disability caused by wound\n\n•\n\nCo‐morbid history\n\n• Medications\n\n• Previous treatment\n\n• Lifestyle\n\n• Occupation"
+    },
+    {
+      "chunk_id": 79,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "char_count": 1879,
+      "time_tags": [
+        "I",
+        "M",
+        "E"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Examination\n\nColor, Odor, Texture and Warmth are signs of infection\n\n1. Inspection\n\n•\n\nAnatomical location especially whether over the lower limbs\n\n•\n\nClues from the ulcer to suggest cause eg punched edges suggest arterial, rolled edges suggest malignancy\n\n• Area of ulcer\n\n•\n\nCleanliness and associated unhealthy tissues\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 100\n\nAssociated signs of disease eg trophic nail changes\n\n•\n\nSuspicions of Pathergy (an immunopathic condition which is treated by immunosuppression) e.g violeceous edges\n\nPicture of violeceous edges\n\n*Courtesy of Hardin Md Universiti of Iowa\n\n2. Palpation\n\nTenderness to suggest associated infection\n\n• Neurovascular status\n\n• Tendons and movement\n\nInvestigations\n\nX‐ray for suspected bony involvement\n\nDuplex for suspected vascular\n\nBiopsy for suspected malignancy or chronic infection\n\nDeep tissue cultures for suspected infections\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 101\n\n9‐4. Treatment\n\nToilet and debridement of Unhealthy Tissues and/or Biofilm:\n\n• Surgical\n\n• Hydrotherapy\n\n• Enzymatic/Chemical\n\n• Biological\n\nDressing\n\n• Special wounds may require special dressing e.g. compression bandaging (refer to chapter on respective ulcer)\n\nChoice depends on local situation and resources\n\n• Dressing is targeted to the current wound condition e.g. exudative requires absorbent dressings\n\n9‐5. Precautions\n\n• Arterial ulcers are systemic disease which need to be looked into especially the cardiovascular state\n\n• Malignancy may be secondary to the chronic ulcer i.e. Marjolin’s ulcer\n\nNote any contraindications in specific treatment e.g.\n\ni. Graduated Compression Stockings cannot be used for arterial disease\n\nDebridement of pathergic wounds\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 102\n\n9‐6. Adjuncts"
+    },
+    {
+      "chunk_id": 80,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        115
+      ],
+      "char_count": 636,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "1. Antibiotics:\n\n7\n\nChoice depends on disease, site, suspected pathogens and local sensitivity patterns.\n\nDuration depends on similar reasons and the response pattern.\n\nIdeally obtain deep tissue cultures before stating antibiotics.\n\nRoutine swab culture is generally discouraged.\n\nConsider empirical antibiotics in the following situations\n\ni. Local conditions eg thickened skins in lipodermatosclerosis make it difficult to diagnose infections\n\nii. Immunocompromised patients who may not show signs or symptoms of sepsis\n\n2. Analgesics\n\n3. Pentoxifylline for special ischemic ulcers\n\n4. Off load devices for pressure associated ulcers"
+    },
+    {
+      "chunk_id": 81,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        115,
+        116
+      ],
+      "char_count": 971,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "5. Stop Smoking\n\n6.\n\nSplints: for immobilisation in special situations\n\n7. Colostomy for certain perineal wounds\n\n8. Continuos Bladder Drainage (CBD) for certain situations\n\n9. Hyperbaric chamber if available for indicated wounds\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 103\n\n9‐7. Palliative Care\n\nIn the event the wound cannot be healed for whatever reason, consider palliative care\n\nNon‐healing Wounds Any Life Threatening Local/Systemic Yes Manage the condition Condition? No Discuss with Diagnosis certain? No patient about trial of treating No suspected cause? Yes Yes Treat Optimise Optimise Treat Systemic Condition Local Conditions underlying cause Yes Wound healed? No Patient wants further curative attempts Yes No Preventive steps Palliative for future care recurrences Specialist referral\n\nFigure 9.1 Algorithm for treating non‐healing wounds\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 104"
+    },
+    {
+      "chunk_id": 82,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        117,
+        118
+      ],
+      "char_count": 1065,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Point to Remember:\n\n• You should recognize when a wound can be termed non‐healing and may need specialised intervention.\n\n• Palliative care may be appropriate in certain situations. The possibility of malignant change in such ulcers must also be remembered.\n\nReferences\n\n1. ABC of arterial and venous disease: ulcerated lower limb BMJ volume 320 10JUNE2000\n\n2. The Non Healing Wound(Review) MMW Fortschr Med. 2004 Oct 28;146(44):45‐8.(Translated from German)\n\n3. Care of chronic wounds in palliative care and end‐of‐life patients Int Wound J. 2010 Aug;7(4):214‐35.\n\n4. Complex Wounds Clinics (Sao Paulo). 2006 Dec;61(6):571‐8.\n\n5. Diagnosis and treatment of pyoderma gangrenosum BMJ VOLUME 333 22 JULY 2006\n\n6. Outcomes in controlled and comparative studies on nonhealing wounds: recommendations to improve the quality of evidence in wound management. Journal of Wound Care Vol 19 No 6 June 2010\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 105\n\nR E T P A H C 1100 Management of Life‐Threatening Wounds Dr Mohammad Anwar Hau Abdullah"
+    },
+    {
+      "chunk_id": 84,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        120,
+        121
+      ],
+      "char_count": 711,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "•\n\nPlain x‐ray of the affected foot/leg: soft tissue swelling and presence of air.\n\nUltrasound: to rule out DVT; demonstrate fluid/edema in the soft tissue.\n\n10‐6. Management\n\nFundamental to the successful treatment of necrotising fasciitis (and gas gangrene) is early diagnosis, early administration of appropriate antibiotics, and rapid surgical debridement.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 108\n\nGeneral\n\n• Early systemic broad‐spectrum antibiotics which must cover the most likely organisms. The antibiotic is then switched according to the tissue bacteriology report.\n\n• Other general supportive managements depending on the patients’ presentation and condition."
+    },
+    {
+      "chunk_id": 85,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        121,
+        122,
+        123,
+        124
+      ],
+      "char_count": 2143,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Local\n\n• Aggressive wide, extensive surgical excision and drainage to remove all infected, necrotic tissue and fascia or muscles until clean, healthy, pearly gray fascia or muscles is identified in all margins of the wound should be performed as soon as the diagnosis of necrotizing fasciitis or gas gangrene is made to arrest the infection process.\n\n• Do not hesitate to perform repeated debridement if clinically indicated or even in doubt.\n\n• In small percentage of patient amputation may be necessary or indicated in order to save life.\n\n• If available, hyperbaric oxygen therapy may be used as adjuvant treatment.\n\n• Post‐debridement; the general management of the wound follows the flow chart in “Chapter 17: Algorithm for Wound Care Treatment”.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 109\n\n10‐7. Clinical photos\n\nNecrotising heamorrhagic\n\nfasciitis with\n\nblisters\n\nNecrotising fasciitis:\n\npost debridement\n\nNecrotising fasciitis with\n\nlarge heamorrhagic blisters\n\nPost debridement, the very much better\n\nwound is\n\nPost-debridement, the wound is clean and ready for skin grafting.\n\nNecrotising fasciitis involving distal thigh and proximal part of lefg.\n\nFigu ure 10.1 Cl linical pho tos of necr rotizing fas sciitis\n\nS E C T I O O N B : C O O N C E P T O F W O U U N D C A R R E M A N A G E M E N T | 110\n\nPatient with life threatening infection\n\nPatient with life threatening infection\n\nVital signs\n\nSigns of sepsis\n\nHydration status\n\nCo-morbid illness\n\nExtensive wound\n\ndebridement and\n\nwound-care\n\nRepeated wound\n\nStabilised patient\n\ndebridement and\n\nTreat and optimized co-\n\nwound-care\n\nmorbid illness\n\nMay need amputation\n\nImproved hydration and\n\nanaemic level\n\nCorrect metabolic status\n\nStart I/V antibiotic\n\nWound care, and wound bed preparation for secondary wound closure\n\nFigure 10.2 Flow chart in management of life‐threatening wound\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 111\n\nPoint to Remember:\n\n• Necrotising fasciitis is a potentially life threatening infection.\n\n• Early diagnosis and prompt treatment is the most crucial for patient’s prognosis"
+    },
+    {
+      "chunk_id": 87,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        125
+      ],
+      "char_count": 649,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "1111 Analgesia for Wound Dressing Related Procedures Dr Kavita Bhojwani/ Dr Mary Cardosa/ Dr Harijah Wahidin\n\nR E T P A H C\n\nDr Kavita Bhojwani/ Dr Mary Cardosa/ Dr Harijah Wahidin\n\n11‐1. Introduction\n\n‘Pain is an important aspect of wound care. “Unresolved pain negatively affects wound healing and has an impact on the quality of life. Pain at wound dressing procedures can be managed by a combination of accurate assessment, suitable dressing choices, skilled wound management and individualized analgesic regimens. For therapeutic as well as humanitarian reasons, it is vital that clinicians know how to assess, evaluate and manage pain (ref 2)’"
+    },
+    {
+      "chunk_id": 89,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        127,
+        128
+      ],
+      "char_count": 2615,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "11‐4. Management\n\n1. Background Pain\n\nNon‐pharmacological management\n\na. Splinting\n\nb. Immobilization\n\nc. Relaxation / imagery\n\nPharmacological management\n\nAnalgesics are given according to the severity (pain score) of pain. (Refer analgesic ladder in Appendix 6 and List of Drugs used as analgesics in Appendix 7)\n\nRegular (6 ‐ 8 hourly) Oral Paracetamol\n\n+/‐\n\nRegular NSAIDS or COX2 inhibitors (dosage depends on the drug);\n\n• Caution in patients with thrombocytopenia, coagulopathies, asthma and renal, hepatic or cardiac impairment.\n\n• Contraindicated for patients with hypovolemia, active peptic ulceration or with a history of sensitivity to aspirin or other NSAIDS.\n\n+/‐\n\nc. Regular (6 ‐ 8 hourly) Weak opioids (Dihydrocodeine (DF118) or Tramadol)\n\n• Dosage to follow the analgesic ladder, depending on the level of pain (mild, moderate or severe)\n\n**\n\nIn patients who are unable to take orally, the above drugs may be replaced by any of the following\n\nRegular (6 ‐ 8 hourly) Rectal Paracetamol\n\nRegular (8 hourly) Rectal Diclofenac\n\n• COX2 inhibitor – IV Parecoxib (but can only be given for maximum of 2 days)\n\n• Regular Subcutaneous Morphine 2.5‐5 mg (4 hourly) or Tramadol 50‐100 mg (6hourly) (max dose for tramadol is 400mg in a day)\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 115\n\n“* For patients with severe pain refer to Acute Pain Service (APS) or anaesthesiologist if no APS available.\n\n“* As all analgesics are associated with adverse effects, it is important to be aware of the contraindications and potential adverse effects and to treat side effects (e.g. nausea/vomiting) when they occur.\n\n2. Incident Pain\n\nAll patients must be allowed to have “PRN” doses of analgesics to cover incident pain.\n\nThe actual analgesic and the dose depend on the analgesia prescribed for the background pain.\n\nHowever, if there is a lot of breakthrough pain present, it will be necessary to review the background analgesics.\n\nNon‐pharmacological management\n\nAdequate preparation of the patient\n\nb. Relaxation / imagery\n\nPharmacological management\n\na. For patients not requiring any regular analgesics (i.e. background pain is none or mild), a. prescribe PRN Paracetamol or NSAID (e.g. diclofenac)\n\nb. For patients on regular paracetamol and/or NSAIDs ( max dose for diclofenac is 50 mg 3 doses) or COXIBs, prescribe PRN Tramadol 50 mg or DF118 30‐60 mg\n\nc. For patients on regular PCM plus NSAIDs/COXIBs plus weak opioid (Tramadol or DF118) ‐ prescribe additional (PRN) dose of the weak opioid (maximum dose of tramadol is 400 mg / day and maximum dose of DF118 is 240 mg / day)"
+    },
+    {
+      "chunk_id": 90,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        128,
+        129
+      ],
+      "char_count": 1328,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "d. Patients requiring strong opioids (e.g. morphine) should be co‐managed with the APS or anaesthesiologist.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 116\n\n3. Procedural Pain\n\na. Non‐pharmacological management:\n\n• Adequate preparation of the patient\n\n• Use of non‐traumatic dressings\n\n• Soaking dressings before removal\n\n• Allowing patient control (e.g. allowing the patient to determine the time of the dressing)\n\n• Relaxation / imagery\n\nb. Pharmacological management:\n\nMost analgesics can be administered before a painful event. Analgesia may be continued post‐procedure, but if wound pain persists and is poorly controlled, background medication should be reviewed\n\ni. Oral route\n\n> Paracetamol and NSAIDs should be given at least 1 hour prior to the procedure. It can be given together with oral weak opioids like DF118 or Tramadol\n\n> When pain is difficult to control, strong opioids like immediate release formulations of oxycodone (Oxynorm 5- 10mg 4hrly PRN) and aqueous morphine (2.5-5mg 4hrly PRN)\n\n> May also be administered orally half an hour prior to the procedure\n\nii. Subcutaneous route\n\nUsed for severe pain during the procedure, when the above oral analgesics are inadequate to control the pain.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 117"
+    },
+    {
+      "chunk_id": 91,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        130
+      ],
+      "char_count": 961,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "S/C Morphine\n\nTo be given at least 30 minutes before the procedure is performed\n\nDose depends on age of patient and severity of pain\n\ne.g. < 65yrs : 5mg ‐10mg\n\n> 65yrs : 2.5mg ‐5mg\n\niii. Intravenous route\n\nCaution: All the following should only be given by doctors who have been trained in the administration of the analgesic to be used.\n\nIV morphine 0.5 ‐1 mg bolus\n\nAnalgesia may be achieved using the morphine pain protocol (appendix 9). This involves the administration of IV morphine 0.5 ‐1 mg bolus, repeated every 5 minutes, titrated to effect (i.e. a reduction in pain score) and monitoring for side effects (drowsiness and respiratory depression) using the respiratory rate and the sedation score. (Appendix 8 ). Monitoring of SpO2 can also be done if available. If PCA is available, IV PCA morphine with a bolus dose of 1‐2 mg and a lockout interval of 5 minutes may be used during the procedure, with the advice of the Acute Pain Service anaesthetist"
+    },
+    {
+      "chunk_id": 92,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        130,
+        131
+      ],
+      "char_count": 1233,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "IV Fentanyl 0.5 mcg/kg\n\nslow bolus to be given 5‐10 minutes before the procedure, repeated during the procedure if necessary, up to a maximum of 2 mcg/kg (total dose), with the advice of the Acute Pain Service anaesthetist If PCA is available, IV PCA fentanyl with a bolus dose of 10‐20 mcg and a lockout interval of 2‐3 minutes may be used during the procedure, with the advice of the Acute Pain Service anaesthetist\n\nNote:\n\ni)\n\nThe difference between IV morphine and IV fentanyl is in the onset and duration of action, with IV fentanyl having a faster onset but shorter\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 118\n\nduration of action. Fentanyl is also more potent than morphine and can rapidly cause profound sedation and respiratory depression.\n\nii)\n\nBefore removing the dressing, assess the pain by pressing over the wound. If the patient gives a pain score of 3 or more, further analgesia is required.\n\nIV Ketamine\n\n0.25 ‐ 0.5 mg/kg titrated to effect.\n\n>\n\nUsually used in children, but may be used in adults in selected cases.\n\nNote that the patient may have hallucinations with the use of this drug and IV midazolam 1‐2 mg may have to be used concomitantly\n\nIV. Topical local anaesthethics"
+    },
+    {
+      "chunk_id": 93,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        131,
+        132,
+        133
+      ],
+      "char_count": 2716,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "Lignocaine\n\nLignocaine (2% in 5‐10 mls of normal saline)\n\nPlain lignocaine max dose 3mg/kg body wt;\n\nLignocaine with adrenaline max dose is 7mg/kg body wt\n\n>\n\nSoaked gauze over the wound; allow to sit on the wound for 3‐5 mins before procedure.\n\n> Can provide a degree of numbness.\n\nv. Inhalational\n\nMethoxyflurane (Penthrox)\n\n> Used as an inhaler 5 minutes prior to procedure\n\nEach inhaler can be used multiple times by the same patient\n\nThe maximum dose of methoxyflurane via the inhaler is:\n\n3mL to 6 mL for a single episode of severe pain\n\n15mL in any 7 day period (5 x 3mL bottles)\n\nCan only be used once in 48 hours (alternate day administration)\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 119\n\n“* Contraindications\n\n• Severe renal impairment with reduced glomerular infiltration rate (GFR) <30 mL per minute\n\n• Renal failure\n\n• Hypersensitivity to fluorinated anaesthetics\n\n• Cardiovascular instability\n\n• A history of possible adverse reactions in either patient or relatives\n\n• Patients unable to hold the inhaler due to impaired consciousness/cooperation\n\n• Patients who are intoxicated with alcohol or illicit drugs\n\n• Patients with respiratory depression, airway obstruction or airway burns\n\n• Patients susceptible to or having a family history of Malignant Hyperthermia\n\n• Concurrent use of tetracycline and other antibiotics of known nephrotoxic potential are not recommended as it may result in fatal renal toxicity\n\n“* Precautions\n\n• Diabetic patients\n\n• Liver disease\n\nUncontrolled Pain\n\nPatients whose pain is not controlled despite all the above methods should be referred to the Acute Pain team (APS). There are other methods including the use of regional blocks (e.g. epidural, peripheral nerve block) which can be used in selected cases but this can only be done with the appropriate expertise and monitoring.\n\nAntiemetics\n\nNausea and vomiting are common side effect of opioids.\n\nThere is no need to stop the opioids but it is necessary to treat the nausea\n\nand vomiting with antiemetics.\n\nS E C T I O N B : C O N C E P T O F W O U N D C A R E M A N A G E M E N T | 120\n\n•\n\nMetoclopramide (maxalon)\n\n10‐20mg IV/SC/oral ‐ give one dose stat and repeat if necessary 6‐8hrly\n\nIf the patient continues to vomit or have nausea, then use\n\n• Odansetron 4mgIV – give one dose stat and repeat if necessary 8 hrly\n\nOR\n\n• Granisetron 1mg IV ‐ give one dose stat and repeat if necessary 8 hrly\n\nPatient Education\n\nIt is necessary to educate patients with regards to their analgesic usage. They must understand that in the beginning for the first 3‐7 days, they will require to take their analgesics on a regular basis and then as the wound heals, it can be on a PRN basis."
+    },
+    {
+      "chunk_id": 95,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        135,
+        136
+      ],
+      "char_count": 1294,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Dr Mohamed Yusof\n\nChapter 17 Algorithm for Wound Care Treatment\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 123\n\nR E T P A H C\n\n1122 Standard Operating\n\nProcedure on Wound Dressing\n\nMatron Leong Foong Khuan\n\nObjectives:\n\nEnsure healthcare personnel perform wound dressing using principles of aseptic technique to prevent or minimize transmission of microorganisms during wound care procedures.\n\n121. Introduction\n\nWound dressing is a core nursing responsibility which utilizes aseptic technique. The goal of aseptic technique is to minimize the risk of introducing pathogenic organisms into a wound and to prevent the transfer of pathogens from the wound to other patients or staff. It is also employed to maximize and maintain asepsis and is applicable in any clinical setting.\n\nThe need for dressing or wound care depends on the type of wound which includes incision wound, abrasions, pressure ulcers, ulcers, wound at site of drains and others.\n\nThe attending health care personnel may require different wound technique for each type of wounds. However, the choice of wound dressing should be large enough to cover and protect the wound site and tissue around it. It should allow air circulation, safely secured to prevent slippage and is comfortable to patient."
+    },
+    {
+      "chunk_id": 98,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        140,
+        141
+      ],
+      "char_count": 777,
+      "time_tags": [
+        "T",
+        "M"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Reference\n\n1. Nicol, M. (2008).Aseptic Dressing Technique.www.cetl.org.uk/learning\n\n2. Ministry Of Health Malaysia, Policies and Procedures on Infection Control”, 2nd edition (2010)\n\n3. Nursing Division, Ministry Of Health. National Nursing Audit, Version 4(2011)\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 2 8\n\nR E T P A H C 1133 Wound Cleansing Dr Zairudin Abdulah Zawawi\n\n131. Definition\n\nWound cleansing is a process of removing inflammatory contaminants from the wound surface. These contaminants can impede healing and increase risk of infection.\n\nThe contaminants are:\n\n1. Necrotic tissues\n\nPWwnNeP\n\n2. Excess exudates\n\n3. Foreign objects\n\n4. Infected tissues\n\nSolutions used in wound cleansing can be either non‐antiseptic or antiseptic."
+    },
+    {
+      "chunk_id": 99,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        141
+      ],
+      "char_count": 612,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "13‐2. Non antiseptic solutions\n\nNon‐antiseptic solutions are used to clean wounds. Commonly used non‐ antiseptic solutions are:\n\n1. Normal saline\n\nPreferred cleanser for most types of wounds (physiologic and safe)\n\nLess effective in dirty and necrotic wounds\n\nNot advisable in MRSA and Pseudomonas infected wound\n\n•\n\nOnce the container is opened, it should be used within 24 hours\n\n2. Water for irrigation\n\n•\n\nLess physiologic compared to normal saline but still safe to be used\n\n•\n\nCan be used in MRSA and Pseudomonas infected wound\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 2 9"
+    },
+    {
+      "chunk_id": 100,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        142
+      ],
+      "char_count": 738,
+      "time_tags": [
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "133. Antiseptic solutions\n\nAntiseptic solutions are used to clean the wound which are dirty and infected. Commonlly used antiseptic solutions are:\n\nChlorhexidine gluconate 1:200 in aqueous solution\n\n• Effective against Gram positive bacteria, fungi and also enveloped viruses.\n\n•\n\nLess effective against Gram negative bacteria.\n\nHas both bactericidal and bacterostatic action.\n\n•\n\nReadily available in healthcare setting.\n\n2. Super‐oxidized solution\n\nGood bactericidal, virucidal, fungicidal and spongicidal.\n\nAlso blocks the inflammatory process.\n\nMay help in biofilm removal.\n\nTwo components in this solution are oxidized water and chlorine.\n\n• The oxidized water is broken down into oxygen, ozone and other oxidized species.\n\n• Costly."
+    },
+    {
+      "chunk_id": 101,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        142,
+        143,
+        144
+      ],
+      "char_count": 1440,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Polyhexamethylene biguanide (PHMB) solution\n\nHelps to soften and remove the slough.\n\nIt can remove and reduce the biofilm formation\n\n• Less painful.\n\n• Costly.\n\nThese solutions besides painful on application also cause harm to the normal tissues if used as dressing solutions (cytotoxic), however a short term use may be permissible\n\n• Povidone iodine\n\n• Hydrogen peroxide\n\n• Sodium hypochlorite\n\n• Acetic acid\n\n•\n\nEusol\n\ne Eusol\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 0\n\nReferences\n\n1. Atiyeh BS, Dibo SA, Hayek SN. Wound cleansing, topical antiseptics and wound healing. Int Wound J 2009; 6:420–430\n\n2. Ennis WJ, Valdes W, Salzman S, Fishman D, Meneses P. Trauma and wound care. 2004;291‐307.\n\n3. Chisholm CD, Cordell WH, Rogers K, Woods JR. Comparison of a new pressurized saline canister versus syringe irrigation for laceration cleansing in the emergency department. Ann Emerg Med. Nov 1992;21(11):1364‐7. [Medline].\n\n4. Watt BE, Proudfoot AT, Vale JA. Hydrogen peroxide poisoning. Toxicol Rev. 2004;23(1):51‐7. [Medline].\n\n5. Leyden JJ, Bartelt NM. Comparison of topical antibiotic ointments, a wound protectant, and antiseptics for the treatment of human blister wounds contaminated with Staphylococcus aureus. J Fam Pract. Jun 1987;24(6):601‐4. [Medline].\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 1\n\nR E T P A H C 14 Types of Dressing Dr Harikrishna K.R Nair"
+    },
+    {
+      "chunk_id": 102,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        144
+      ],
+      "char_count": 520,
+      "time_tags": [
+        "M"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "141. Dressing Purpose\n\nProtect wound from trauma and microbial contamination\n\n• Reduce pain\n\n• Maintain temperature & moisture of wound\n\nAbsorb drainage & debride the wound\n\nControl & Prevent haemorrhage (pressure dressing)\n\nProvide psychological comfort\n\nIdeal/optimum dressing\n\n• Remove excess exudates\n\n• Waterproof\n\n• Maintain moist wound healing environment\n\n•\n\nTrauma protection\n\nAllows gaseous exchange if appropriate\n\n• Non adherent\n\nProvide barrier to pathogens\n\n• Safe & easy to use\n\nProvide thermal insulation"
+    },
+    {
+      "chunk_id": 103,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        144
+      ],
+      "char_count": 267,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "142. Dressing Categories\n\n1. Conventional/ Inert\n\n2. Modern/ Advanced/ Active Dressings\n\nConventional/ Inert\n\nGauze –soaked with normal saline / antiseptic\n\n•\n\nGamgee as secondary dressing\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 2"
+    },
+    {
+      "chunk_id": 104,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        145,
+        146,
+        147
+      ],
+      "char_count": 2997,
+      "time_tags": [
+        "T",
+        "I",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "Modern/ Advanced/ Active Dressings\n\nDRESSINGS PURPOSE ADVANTAGES 1. Film Protect Adherent against contamination Transparent with and friction measurement grid Maintain Bacterial barrier moist surface Waterproof Prevent evaporation Breathable Facilitate assessment 2. Hydrogel Rehydrate , Comfortable debride and deslough the Provide moist wound environment and reduce pain Promote moist healing Rehydrate eschar Cavity filling Desloughing agent Promotes granulation DISADVANTAGES PRACTICAL USAGE Fluid collection Apply the film over the site Possibility of making sure stripping away there is no air newly formed under it epithelium on removal To remove the film, stretch the film and pull slowly from the edges Frequency of dressing change: 2‐5 days depending on the wound Need secondary Apply the dressing hydrogel on the wound bed as a Maceration of primary dressing the skin around the wound Frequency of dressing change: 2‐3 days\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 3\n\nPRACTICAL\n\nDRESSINGS 3. Hydro‐ colloid 4. Calcium Alginate PURPOSE ADVANTAGES DISADVANTAGES USAGE Provide moist Cleans and Unpleasant Apply the environment debrides by odour adhesive side autolysis onto the wound Absorb Forms a yellow without exudates Easy to use liquid gel touching the wound bed Bacterial Cost effective Difficult to use barrier in cavities A yellow liquid is Promotes seen after the granulation Maceration of dressing is left in tissue skin around situ which needs wound to be cleansed Effective for low to moderate Frequency of exuding wounds dressing change: 2 to 5 days Waterproof Absorb wound Economical and Not helpful for Available in exudates and easy to apply dry wounds sheet or rope maintain form moisture Biodegradable Need secondary dressing Effective to stop Haemostatic bleeding properties The residue of the biodegradable product has to be washed off during the cleansing process\n\nFrequency of\n\ndressing change:\n\n2 to 5 days\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 4\n\nDRESSINGS 5. Foams 6. Hydrofibre 7. Charcoal 8. Silver PURPOSE ADVANTAGES DISADVANTAGES PRACTICAL USAGE Absorbent Conforms to Can adhere to Foam dressing is body contours wounds if used as a Cushioning Designed for cavity wounds Highly absorbent exudates dries out secondary dressing or as cavity fillers. Frequency of Provides dressing change: protection 2 to 3 days or Bacterial and waterproof longer if for offloading Manage heavy Longer wear Not helpful for The hydrofibre exuding time dry wounds will become gel‐ wounds like layer which Comfortable and Needs can be easily Maintains non traumatic secondary removed moist healing upon removal dressings environment Frequency of Reduce risk of dressing change: maceration Can be use on 2 to 5 days infected wounds Odour Reduces odour Needs Frequency of absorbent secondary dressing change: dressing 2 days To reduce Locally acting Some silver Place the bacterial dressings do dressing with"
+    },
+    {
+      "chunk_id": 105,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        147,
+        148
+      ],
+      "char_count": 1007,
+      "time_tags": [],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "bioburden in\n\nNo known\n\ndiscolour the\n\nthe side with\n\ninfected\n\nresistance\n\nwound\n\nsilver facing the\n\nwounds\n\nwound bed\n\nBactericidal\n\nFrequency of\n\ndressing change:\n\n2 to 3 days\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 5\n\nDRESSINGS PURPOSE ADVANTAGES DISADVANTAGES PRACTICAL USAGE 9. Multi‐ To manage Antiseptic Not for heavily Frequency of function moisture property exudative dressing change: dressing (Polymeric membrane dressing ) imbalance (from dry to moderate) Has surfactant which helps to cleanse the wounds. 2 to 5 days wound when it is applied Offloading property 10. Composite According to multifunction Same as Frequency of dressing components individual dressing change: (combination of of the components 2 to 5 days 2 or more dressing materials listed above materials) 11. Other Not widely used – some may be used in specialised center\n\nadvanced\n\ne.g Collagen, matrix and regenerative dressings, cultured epidermis,\n\ndressings\n\ngrowth factors , stem cells"
+    },
+    {
+      "chunk_id": 106,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        148,
+        149
+      ],
+      "char_count": 567,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Points to remember:\n\n• Know your dressing material well and use it judiciously\n\n• All wounds need to be cleansed thoroughly before applying any types of dressing materials\n\nReferences\n\n1. Harikrishna K.R.Nair. Compendium of Wound Care Dressings in Malaysia. Volume 1 (2012)\n\n2. Harikrishna K.R.Nair. Compendium of Wound Care Dressings in Malaysia. Volume 2 (2013)\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 6\n\nR E T P A H C 1155 Wound Debridement Dr.Mohamed Yusof Hj Abdul Wahab / Dr.Harikrishna K.R Nair/ Dr.Zairudin Abdullah Zawawi"
+    },
+    {
+      "chunk_id": 107,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        149,
+        150,
+        151
+      ],
+      "char_count": 2696,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "151. Introduction\n\nIt is a process of removal of non viable tissue and contaminants from a wound to promote healing.\n\nMethods of debridement:\n\n• Surgical\n\n• Autolytic\n\n• Enzymatic\n\n• Mechanical\n\n• Biological\n\n• Hydrostatic\n\n152. Surgical Debridement\n\nRemoval of necrotic tissue by sharp debridement using a scalpel, scissors, curette, Humby knife, electrical dermatome or other instrument to cut necrotic tissue from a wound as to prepare the wound bed for optimum healing.\n\nIndications\n\n. Extensive Devitalized Tissue\n\n. Signs of advancing soft tissue infections or sepsis\n\n. Presence of thick adherent eschar\n\n. Callous formation\n\nrea 4\n\nFigure 15.1 Thick Eschar\n\nFigure 15.2 Extensive devitalized tissue\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 7\n\nSpecialist consultation may be required in the following condition:\n\n1. Vascular insufficiency (lack of blood flow impairs healing)\n\n2. Gangrenous wound\n\n3. Unidentifiable structures (risk of injuring vital structures eg. nerves)\n\n4. Coagulopathy (risk of bleeding. Debridement better handled in tertiary centres)\n\n5. Stable heel ulcer (if firmly adherent, lack of inflammation, lack of drainage, eschar that does not feel soft and boggy)\n\n6. Fungating/ malignant wounds (treatment may involve extensive dissection or removal of entire anatomical part. Debridement is non‐ curative)\n\n7. Necrotic tissues near and/or involving neurovascular structures 8. Wounds of hand and face\n\nAssessment of Wounds Indicated for Surgical Debridement\n\nAll wounds intended for debridement must be assessed with regards to its suitability for surgical debridement. The following factors may be used as a guideline:‐\n\n1. The nature of the necrotic or ischemic tissue and the best debridement procedure to follow\n\nThe risk of spreading infection and the use of antibiotics\n\nNO WN\n\nThe presence of underlying medical conditions causing the wound\n\nThe extent of ischemia in the wound tissues\n\n5. The location of the wound in the body\n\nThe type of analgesia to be used during the procedure\n\n7. Possible complications\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 3 8\n\nBasic Pr rinciples of f Surgical D Debrideme ent\n\n1. De ebride in st tages to m inimize da mage to h ealthy tiss ue.\n\n2. Sta aying with in a given facial pla ne during debridem ment avoid s spreadin ng ba cteria into o the lower r layers. If a fascial p plane is rea ached, one e must sto op an d reassess s the situat tion to det termine if w whether d eeper deb bridement is ne eded.\n\n3. Sm mall bleede ers can be e stopped with the applicatio on of pres ssure whil le lar rge bleede rs require diathermy y or ligation n of vessel s."
+    },
+    {
+      "chunk_id": 109,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        153,
+        154
+      ],
+      "char_count": 708,
+      "time_tags": [
+        "T"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "15‐3. Autolytic Debridement\n\nDefinition\n\n• The process by which the wound bed utilizes phagocytes and proteolytic enzymes to remove non‐viable tissue\n\n•\n\nThis process can be promoted and enhanced by maintaining a moist wound environment.\n\nMode of Action\n\nHydrogel\n\n• Gently rehydrates dry necrotic tissue\n\n• Provides moist wound healing environment\n\n• Softens necrotic tissue\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 1\n\n15‐4. Enzymatic Debridement\n\n• The use of topically applied enzymatic agents is to stimulate the breakdown of non‐viable tissue\n\n•\n\nFaster debridement process compared to autolytic\n\nExamples are Clostridiopeptidase A , honey and fibrinolysin with DNAse"
+    },
+    {
+      "chunk_id": 110,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        154
+      ],
+      "char_count": 536,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "15‐5. Mechanical Debridement\n\n1. Wet To Dry Gauze\n\nUsage of gauze to peel the necrotic tissue from the wound bed This procedure can be very painful\n\n2. Scrubbing\n\nUsing the blunt edge of the scalpel or forceps to remove biofilm and debris\n\n3. Whirlpool\n\nThis utilizes low pressure water force to cleanse and debride the wound bed. Less harmful to normal cells.\n\n4. Wound Irrigation\n\nUsing non antiseptic cleansing solution to irrigate and debride the wound.\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 2"
+    },
+    {
+      "chunk_id": 111,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        155
+      ],
+      "char_count": 854,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "156. Biological Debridement\n\nMaggot Debridement Therapy (MDT) is one of the modality in managing wounds. There are two species which are used in MDT i.e Lucilia cuprina (Malaysia and tropical country) and Lucilia sericata (temperate country).\n\nDefinition of MDT:\n\nThe use of STERILE maggots for the debridement of wounds in humans\n\n• This therapy is :\n\n1. Hypoallergenic\n\n2. Non‐invasive\n\n3. Effective\n\nMechanisms of action:\n\n• Remove slough\n\n‐\n\nproteases dissolve necrotic and infective material\n\n(Vistnes 1981, Constable 1994, Case 1994)\n\nStimulate wound healing\n\n‐ promote granulation & epithelialization (Horobin 2003, 2006, Nigam 2006)\n\n• Disinfect the wound\n\ningest bacteria e.g Proteus sp. (Klaus L 2003)\n\n‐ pH changes\n\nantibacterial substance (<1kD) (Kerridge A 2005)\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 3"
+    },
+    {
+      "chunk_id": 112,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        156,
+        157,
+        158
+      ],
+      "char_count": 1685,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Contraindications:\n\n1. Wounds needing urgent debridement\n\n2. Bleeding wounds\n\nNOU RBWN\n\n3. Poor vascularity\n\n4. Abscesses\n\nEntomophobia (an abnormal and persistent fear of insects)\n\nFistula, joints, deep cavities\n\n7. Near neurovascular bundles\n\nHydrostatic Debridement\n\nHIGH POWER HYDROSTATIC DEBRIDER\n\nPowered instrument for surgical debridement of wounds\n\nExcise tissue with a stream of saline\n\n•\n\nCombined localised vacuum removing excised tissue immediately\n\nHolds, cuts and removes tissue at the same time\n\n• Hydrostatic debridement is more precise and more selective than a scalpel\n\n•\n\nEnable surgeon to precisely target (through different power settings) and removes devitalised tissue and contaminants and at the same time preserves collateral healthy tissue\n\nFigure 15.4 High Power Hydrostatic Debrider\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 4\n\nPoints to remember:\n\n• Wound debridement is paramount to create a stable wound\n\nReferences\n\n1. Comprehensive Wound Management 2nd ed; Glenn L.Irion , Phd. PT.CWS\n\n2. Sharp Debridement; Vince Lepak, PT, MPH, CWS\n\n3. Loehne, H.B. (2002). Wound debridement and irrigation. In L.C.Kloth and J.M. McCulloch\n\n4. Bergstrom,N.,Bennet,M.A.,Carlson,C.E.,et al(1994).Treatment of pressure ulcers.\n\n5. Leaper D (2002) Sharp technique for wound debridement World Wide Wounds December\n\n6. NICE (2001) Guidelines on Pressure ulcer risk assessment and prevention NICE London\n\n7. Guidelines for the Assessment and Management of Wounds(2006);NHS\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 5\n\nR E T P A H C\n\n1166 Adjunctive Teatment\n\na) Honey Dressing\n\nDr. Mohamad Izani Ibrahim"
+    },
+    {
+      "chunk_id": 113,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        158
+      ],
+      "char_count": 1284,
+      "time_tags": [
+        "T",
+        "I"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "16a1. Introduction\n\n1. Honey has been rediscovered to have medicinal value in treating wounds. Numerous studies have compared honey with other modern dressings in managing various type of wounds.\n\n2. Honey is mainly used to promote granulation and epithelization of a wound for secondary intention healing or to be followed by further surgical procedure for soft tissue coverage, e.g: split skin graft, full thickness skin graft, flaps.\n\n3. Honey has antibacterial effects which are attributed to its high osmolarity, low pH, hydrogen peroxide content, and presence of other uncharacterized compounds.\n\n4. There are various types of honey in the market. They consist of raw honey, commercial honey and therapeutic honey.\n\n• Raw honey\n\no enzymes is maintained\n\no Risk of having clostridial spores.\n\n• Commercial honey\n\no Enzymes are destroyed by pasteurization\n\no Still have the properties of osmotic effects\n\n• Therapeutic honey\n\nIs the most suitable to be used in wound dressing.\n\no Prepared specifically for medical use and are sterilized through an irradiation process that does not damage their constituents o However it is more expensive\n\no Also available in the form of pre‐impregnated dressing pads\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 6"
+    },
+    {
+      "chunk_id": 114,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        159
+      ],
+      "char_count": 587,
+      "time_tags": [
+        "M"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "Possible general benefits and functions of honey are:\n\n• antimicrobial property\n\npromote enzymatic debridement\n\ndeodorize malodorous wounds\n\nstimulate growth of wound tissues to accelerate healing\n\n• stimulate anti‐inflammatory activity that reduces pain, edema and exudates\n\nminimizes hypertrophic scar\n\npromote moist wound healing\n\n• contains low level hydrogen peroxide which stimulates fibroblast proliferation and angiogenesis\n\nAdverse effects (rare)\n\nIt consists of:\n\na) Allergy\n\nb) Transient stinging sensation in some patients – mainly in wounds with severe inflammatory process."
+    },
+    {
+      "chunk_id": 115,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        159,
+        160
+      ],
+      "char_count": 1549,
+      "time_tags": [
+        "M"
+      ],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "Contraindication for honey dressing\n\na) History of allergy and sensitive to bee sting, honey products.\n\nb) Dry, necrotic wounds‐ honey can cause further drying of the wound.\n\n16a2. Principles of Honey dressing\n\na) Application of honey‐ it is best to spread the honey on a dressing and apply the honey directly onto the wound.\n\nb) Dressing pads preimpregnated with honey are commercially available and provide an effective and less messy alternative.\n\nc)\n\nThe amount of honey to be used depends on the amount of fluid exudates of the wound as well as the wound size.\n\nd) Large amount of exudates needs more honey to be applied. Typically 20ml of honey is used on a 10cm x 10cm dressing.\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 7\n\ne) Frequency of dressing: once daily up to every 3 days. The frequency of dressing changes depends on how rapidly the honey is being diluted by the exudates. The more the exudates the more the frequency.\n\nf)\n\nIn high exudates wounds, the frequency of dressing will be less frequent as the honey starts to work on healing the wound.\n\ng) On changing of the honey dressing, the removal of the dressing should be easy. If not, this shows that the amount of honey or frequency of dressing is inadequate and should be increased.\n\nh) Occlusive (waterproof) or absorbent secondary dressings help to prevent honey oozing out from the wound (occlusive dressing better as it keeps more of the honey in contact with the wound)\n\nPressure bandaging is used over honey dressing for varicose ulcers."
+    },
+    {
+      "chunk_id": 116,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        160,
+        161,
+        162
+      ],
+      "char_count": 2641,
+      "time_tags": [
+        "T",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": true,
+      "is_english": true,
+      "text": "Steps in Performing Honey Dressing\n\n1. Prepare equipments a) honey b) gauze/cotton c) occlusive dressing(if use) d) dressing set 2. Wound cleansing should follow standard procedure mentioned in wound cleansing section Application of honey‐ it is best to spread the honey on a dressing and apply the honey directly onto the wound Dressing pads preimpregnated with honey are commercially available and provide an effective and less messy alternative\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 8\n\n3. Estimate amount of honey according to wound\n\nsize and exudates. The amount of honey depends on the amount of fluid exudates of the wound as well as the wound size. Large amount of exudates needs more honey to be applied. Typically 20ml of honey is used on a 10cm x 10cm dressing. Dressing frequency can be as frequent as once daily up to every 3 days. It depends on how rapidly the honey is being diluted by the exudates. The more the exudates the more the frequency. 4. Soak gauze/cotton into the honey using dressing forceps 5. Apply the gauze/cotton soaked honey onto the wound up to the edges. It can also be applied onto the surrounding skin to reduce local inflammation. On changing of the honey dressing, the removal of the dressing should be easy. If not, this shows that the amount of honey or frequency of dressing is inadequate and should be increased 6. Apply several more layers of gauze onto this gauze soaked hone. Apply bandage on the dressing or an occlusive dressing. Occlusive (waterproof) or absorbent secondary\n\ndressings help to prevent honey oozing out from\n\nthe wound (occlusive dressing better as it keeps\n\nmore of the honey in contact with the wound).\n\nPressure bandaging is used over honey dressing\n\nfor varicose ulcers.\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 4 9\n\nPoint to Remember:\n\n• Although it has debridement activity, its main functions are to promote granulation and epithelization of a wound.\n\n• Any type of honey can be used, but the most suitable is the therapeutic honey.\n\n• Honey dressing is not a substitute for a proper surgical debridement.\n\nReferences\n\n1. Blomfield R. Honey for decubitus ulcers. J Am Med Assoc ;224(6):905, 1973. 2. Bulman MW. Honey as a surgical dressing. Middlesex Hosp J ;55:188‐189, 1955.\n\n3. Chung Ly, Schmidt Rj, Hamlyn Pf, Sagar Bf, Andrews Am, Turner Td. Biocompatibility of potential wound management products: hydrogen peroxide generation by fungal chitin/chitosans and their effects on the proliferation of murine L929 fibroblasts in culture. Journal of Biomedical Material Research 39, 300‐307, 1998."
+    },
+    {
+      "chunk_id": 127,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        174,
+        175,
+        176,
+        177
+      ],
+      "char_count": 2277,
+      "time_tags": [
+        "T",
+        "I",
+        "M"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Points to remember:\n\n• NPWT is only an adjunct to the management of chronic, acute and difficult wounds and it is not a panacea.\n\n• NPWT prepares wound bed for a greater chance of successful closure. • NPWT does not replace surgical procedures\n\nReferences\n\n1. Attinger,C. E., Janis, J. E., Steinberg, J., et al. Clinical approach to wounds: Debridement and wound bed preparation including the use of dressings and wound‐healing adjuvants. PRS. June supplement 2006. 117: 72s‐109s, 2006\n\n2. Argenta, L. C., Morykwas, M. K., Marks, M. W., et al. Vacuum‐Assisted Closure: State of clinic art. PRS. June supplement 2006. 117: 127s‐142s, 2006\n\n3. Willy, C. The theory and practice of Vacuum therapy. Scientific basis, indications for use, case reports, practical advice. Lindqvist book‐ publishing ulm 2006, Germany.\n\n4. Peinemann F, Sauerland S: Negative pressure wound therapy – systemic review of randomized controlled trials. Dtsch Arztebl Int 2011; 108(22): 381‐9.\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 6 2\n\nR E T P A H C 1177 Algorithm for Wound Care Treatment Dr Mohammad Anwar Hau Abdullah\n\nThe algorithm is theoretically developed based on T.I.M.E. concept; it intends to be a simple quick practical guide in general principles of wound bed preparation and wound care; for those health care providers who are not familiar with wound management.\n\nWound Care Algorithm\n\nPATIENT ASSESSMENT\n\nLOCAL (WOUND)\n\nFACTOR\n\nManagement of systemic\n\nillness, e.g. Diabetic control,\n\nWound Assessment: “TIME\n\nimproved nutrition status and\n\nPRINCIPLE”\n\netc\n\nLife style modification e.g. quit\n\nsmoking\n\nPain management\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 6 3\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R E | 1 TISSUE NECROSIS/ SLOUGH WOUND INFECTION MOISTURE/ EXUDATE WOUND TYPE <25% No Yes Moderate/ wet Dry/ Dry/ minimal minimal 1 2 3 WOUND Wound Assessment Moderate/ wet Dry/ minimal 4 5 No >25% Moderate/ wet 6 Dry/ minimal 7 Yes Moderate/ wet 8\n\n6\n\nv9\n\n4\n\nFigure 17.1 Wound Care Algorithm\n\nS\n\n-2 NOILOIAS I1VIILIVUd\n\nE\n\nC\n\nT\n\nI\n\nO\n\nN\n\nC\n\n:\n\nP\n\nR\n\nA\n\nC\n\nT\n\nI\n\nC\n\nA\n\nL\n\nA\n\nS\n\nP E C T I N W O U N D C A R E | 1 6 5\n\nTreatment recommendation based on the flow chart of Wound Care Algorithm:"
+    },
+    {
+      "chunk_id": 128,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        177,
+        178
+      ],
+      "char_count": 1915,
+      "time_tags": [
+        "T",
+        "I",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "WOUND TYPE Wound description Dressing material suggested/recommended (refer to chapter on dressing materials) Antibiotic 1 Clean, healthy All types of dressing material No granulating wound except, silver, charcoal and special advanced dressing materials. 2 Clean and wet wound 1. Foam May or may not, 2. Alginate based on the 3. Hydroﬁber underlying cause. 4. Polymeric membrane 3 Dry, infected wound with 1. Tulle Yes, based on C&S < 25% slough/necrotic tissue (most likely vascular in origin) 2. Hydrogel 3. Hydrocolloid 4. Silver dressing report of infected tissue 5. Iodine base dressing Surgical procedure suggested/ recommended 1. Ready for secondary wound closure 2. If the wound is small, continue dressing till the wound heals by secondary intention 3. Frequency of wound dressing varies depending on type of wound and also dressing material used 1. Find underlying cause 2. Treat underlying cause if necessary 1. Debridement may be needed\n\nT\n\nr\n\ne\n\na\n\nt\n\nm\n\ne\n\nn\n\nt\n\ns\n\ns\n\ns\n\nW\n\nr\n\nl\n\nl\n\nl\n\no\n\no\n\no\n\ne\n\nW\n\ne\n\nu\n\nu\n\nu\n\nc\n\nt\n\ng\n\ng\n\ng\n\no\n\no\n\n,\n\nh\n\nh\n\nh\n\ni\n\nm\n\nu\n\nn\n\n/\n\n/\n\n/\n\nn\n\nf\n\nm\n\nn\n\nn\n\nn\n\ne\n\nd\n\ne\n\ne\n\ne\n\nc\n\ne\n\nc\n\nc\n\nc\n\nd\n\nt\n\nn\n\nr\n\nr\n\nr\n\ne\n\ne\n\no\n\no\n\no\n\nd\n\nd\n\ns\n\nti\n\nti\n\nti\n\na\n\nc\n\nw\n\nt\n\nc\n\nc\n\nc\n\nr\n\ni\n\ni\n\no\n\no\n\nti\n\nti\n\nti\n\np\n\nu\n\nn\n\ns\n\ns\n\ns\n\nt\n\ni\n\nn\n\ns\n\ns\n\ns\n\no\n\nb\n\nu\n\nu\n\nu\n\nd\n\nn\n\na\n\ne\n\ne\n\ne\n\ns\n\ne\n\nd\n\no\n\n6\n\n5\n\n4\n\n3\n\n2\n\n1\n\n4\n\n3\n\n2\n\n3\n\n2\n\n1\n\n1\n\n(\n\nr\n\nn\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\ne\n\ns\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\nf\n\nu\n\ne\n\nt\n\nI\n\nP\n\nH\n\nS\n\nF\n\nA\n\nH\n\nP\n\nF\n\nP\n\nH\n\nA\n\nH\n\nr\n\no\n\nh\n\ng\n\ni\n\no\n\no\n\no\n\nl\n\nt\n\ny\n\no\n\no\n\nl\n\nl\n\ny\n\ny\n\ny\n\nd\n\ne\n\ng\n\ng\n\no\n\nv\n\ng\n\na\n\nl\n\nD\n\nd\n\na\n\nl\n\nl\n\nd\n\nd\n\nd\n\ny\n\ni\n\ni\n\ne\n\nc\n\ne\n\ny\n\ny\n\ni\n\nm\n\nf\n\nn\n\nn\n\nm\n\nr\n\nn\n\nh\n\nr\n\nr\n\nr\n\nr\n\nm\n\nl\n\nm\n\nm\n\nr\n\ns\n\no\n\na\n\ne\n\ne\n\no\n\no\n\no\n\na\n\no\n\na\n\nt\n\np\n\nﬁ\n\nt\n\ne\n\ns\n\nﬁ\n\nc\n\ng\n\nw\n\ne\n\nt\n\ne\n\ne\n\nb\n\nt\n\ne\n\ns\n\ne\n\nb\n\nr\n\no\n\nTreatment recommendation based on the flow chart of Wound Care Algorithm:\n\ne\n\ne\n\nd\n\nb\n\nr\n\nr\n\na\n\ni\n\ni\n\nr\n\ni\n\ni\n\ne\n\nl\n\nn\n\nl\n\nc\n\nc\n\ne\n\n/\n\nc\n\nc\n\ns\n\nl\n\no\n\no\n\nr\n\nr\n\nh\n\ng\n\nr\n\ne\n\nn\n\nm"
+    },
+    {
+      "chunk_id": 129,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        178,
+        179
+      ],
+      "char_count": 2243,
+      "time_tags": [
+        "T",
+        "I",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "e m m i a d d c Dressing material m d e r e e r WOUND Surgical procedure suggested/ o e r t m m m a s e m Wound description Antibiotic s suggested/recommended o t s i b b b n recommended TYPE e f s m r g r r (refer to chapter on dressing materials) r i W a n a a i m e a n g n n n a l o e e e t Wet, infected wound 1. Alginate 1. Debridement may be needed. Yes, based on d e 4 u r e i n a d l with < 25% C&S report of d s 2. Foam ) C slough/necrotic tissue infected tissue a i u b M C Y N 3. Silver n r e n a & o f a e s s d e S y , e 4. Hydroﬁber c e A A b d r t o r e n e l a l r g o y p d 5. Polymeric membrane s t i o m n i e o n b ti r d r g a t i i s t 6. Iodine base dressing o h t y o s c h o t e u a n n i m f c e u o s : t e , . Dry, non-infected 1. Hydrogel No 1. Debridement is needed 5 1 1 2 1 wound with >25% 2. Hydrocolloid . . . . S u d M d S D D slough/necrotic tissue u 3. Polymeric membrane e e r e e a g r b b b b y g i r r r r c i i i i i n c a d d d d a e l e e e e r l e p e m m / m m Wet, non-infected 1. Alginate 1. Surgical/mechanical May or may not, 6 d m c r o e e o e e r e n n c n n m wound with > 25% based on the e 2. Foam c e t t t t p h m d i i m e s a slough/necrotic tissue underlying cause. s u a 3. Polymeric membrane 2. May need repeated e n r a n r t e n i e y e e c c d a d e b s 4. Hydroﬁber debridement o e l u d e m d e g n m d g e\n\nS E C T I O N C : P R A C T I C A L A S P E C T I N W O U N D C A R\n\ndebridement is recommended.\n\ne\n\ne\n\ne\n\ns\n\nn\n\nd\n\nt\n\nd\n\ne\n\ne\n\nE\n\ne\n\nd\n\nd\n\nd\n\n|\n\n.\n\n/\n\n.\n\n1\n\n6\n\n6\n\n|\n\n991\n\nT\n\nr\n\ne\n\na\n\nt\n\nm\n\ne\n\nn\n\nt\n\nr\n\ne\n\nc\n\no\n\nm\n\nm\n\ne\n\nn\n\nd\n\na\n\nt\n\ni\n\no\n\nn\n\nb\n\na\n\ns\n\ne\n\nd\n\no\n\n7\n\n6\n\n5\n\n4\n\n3\n\n2\n\n4\n\n3\n\n2\n\n1\n\n1\n\n5\n\n(\n\nr\n\nn\n\ne\n\ns\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\nf\n\nu\n\ne\n\nt\n\nI\n\nc\n\nP\n\nF\n\nH\n\nS\n\nA\n\nI\n\nH\n\nH\n\nS\n\nP\n\nr\n\nh\n\ng\n\no\n\no\n\nh\n\no\n\ni\n\ni\n\nt\n\no\n\no\n\nl\n\ny\n\ny\n\ny\n\ne\n\nl\n\nl\n\ng\n\no\n\nd\n\nd\n\ng\n\nv\n\nv\n\nD\n\na\n\na\n\nl\n\nl\n\nd\n\nd\n\nd\n\nc\n\ne\n\ny\n\ny\n\ni\n\ni\n\ni\n\ne\n\ne\n\nf\n\nr\n\nm\n\nn\n\nn\n\nn\n\nh\n\nr\n\nr\n\nr\n\nr\n\nl\n\nm\n\nm\n\nc\n\ns\n\nr\n\nr\n\ne\n\no\n\no\n\no\n\na\n\no\n\na\n\ne\n\ne\n\nt\n\no\n\np\n\ns\n\nd\n\nd\n\nﬁ\n\nc\n\ng\n\nw\n\ne\n\nt\n\ne\n\ne\n\na\n\nt\n\nb\n\nb\n\ns\n\ne\n\no\n\ne\n\ne\n\nr\n\nr\n\nd\n\nb\n\nr\n\nr\n\nl\n\ni\n\na\n\na\n\ne\n\ne\n\nr\n\ni\n\ni\n\nl\n\nn\n\nl\n\nc\n\ne\n\n/\n\nc\n\nc\n\nl\n\no\n\ns\n\ns\n\ns\n\ns\n\no\n\nr\n\nh\n\ng\n\nr\n\nn\n\ne\n\ne\n\ns\n\ns\n\ne\n\nm\n\nm\n\ni\n\na\n\ni\n\ni\n\nd\n\nd\n\nc\n\nm\n\nn\n\nn\n\nd\n\nd\n\nr\n\ne\n\nr\n\ne\n\no\n\ne\n\ng\n\ng\n\nt\n\nr\n\nr"
+    },
+    {
+      "chunk_id": 130,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        179
+      ],
+      "char_count": 1569,
+      "time_tags": [
+        "T",
+        "I",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "Treatment recommendation based on the flow chart of Wound Care Algorithm:\n\nb\n\nb\n\nn\n\ne\n\nf\n\nm\n\ns\n\ns\n\ng\n\nr\n\nr\n\nr\n\ni\n\ni\n\nW\n\na a i n n m Dressing material e a n n WOUND Surgical procedure suggested/ g g n a l o e e t Wound description Antibiotic d e u suggested/recommended r e recommended TYPE i n a d (refer to chapter on dressing materials) l d s ) C 1. Silver dressing Yes, based on 1. Surgical/mechanical Dry, infected wound 7 a i C Y i C Y n n r e e & & f f e s s C&S report of with > 25% e e S S 2. Hydrogel debridement is strongly , , c c A A b b r r t t e e infected tissue slough/necrotic tissue n e e l a a g 3. Hydrocolloid recommended. p p d d s s t o i e e o o b ti ti r d d r r i 4. Iodine base dressing i s s t t o t o o s s h o o t u u n n i m f f c e e 5. Polymeric membrane : 1 2 1 1. Alginate Wet, infected wound Yes, based on 1. Surgical/mechanical 8 . . . S u d M r r d S d S C&S report of with > 25% 2. Silver dressing debridement is strongly e e u u e e e r c c a g r r b b b o o y g g infected tissue slough/necrotic tissue i r r r c 3. Hydroﬁber recommended. m m i i i i i n c c a d d d a a e l m m e e e r l l e p e m m m 4. Foam 2. May need repeated / / e e d m m c r n n o e e e o r e e d d n n n c 5. Polymeric membrane debridement m e c c e e e t t t p h h m d d d i i e s s a a 6. charcoal . . u a e n n s s r t n t t i i e e c c r r d 7. Iodine base dressing o o a a d s e l l n n u d g g g l l g y y\n\nS\n\nE\n\nC\n\nT\n\nI\n\nO\n\nN\n\nC\n\n:\n\nP\n\nR\n\nA\n\nC\n\nT\n\nI\n\nC\n\nA\n\nL\n\nA\n\nS\n\nP E C T I N W O U N D C A R E | 1 6 7\n\ne\n\ns\n\nt\n\ne\n\nd\n\n/\n\n-9 NOILOIAS 1VIDILIVUd"
+    },
+    {
+      "chunk_id": 131,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        180,
+        181
+      ],
+      "char_count": 506,
+      "time_tags": [],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "Appendix 1\n\nVITAMIN AND MINERAL CONTENT IN MULTIVITAMIN TABLET (ADULT)\n\nVitamin/ Mineral\n\nDosage\n\nVitamin A 5000 IU Vitamin D 400 IU Thiamine 3.5 mg Riboflavine 2.5 mg Pyridoxine 2.5 mg Cyanocobalamin 5 µg Nicotinamide 25 mg Ascorbic acid 50 mg Calcium pantothenate 4 mg Folic acid 0.5 mg Calcium 25 mg Copper 0.75 mg Iron 5 mg Iodine 0.05 mg Manganese 0.5 mg Magnesium 0.5 mg Phosphorus 20 mg Potassium 1 mg Zinc 2 mg\n\n1 tablet of Vitamin C = 50 mg\n\ntablet of Folic Acid = 5 mg\n\nAPPENDIX | 168\n\nAppendix 2"
+    },
+    {
+      "chunk_id": 132,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        181
+      ],
+      "char_count": 1081,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "OFF‐LOADING FOR DIABETIC FOOT WOUND\n\nIntroduction\n\nNeuro pathic ulc cers are th he prime precipitan nt of diab betes‐relat ted ampu tations of the lower ext tremity. T he centra l goal of a any treatm ment prog ram desig gned to heal th hese woun nds is effe ective redu uction in p pressure (o off‐loadin g).\n\nWhy is s off‐loadi ing neede ed?\n\nElevate ed planta r pressure e is a cau usative fac ctor in the e develop pment of p plantar ulcers in diabet ic patient s. Many s tructural abnormal lities in a diabetic f oot for an exa ample claw w toe defo ormity and d Charcot’ ’s neuroar rthropath y are amo ong the abnorm malities th hat can c ause sign ificant dis sruption t to the arc chitecture of the foot a nd elevat te local fo oot pressu ures. Onc e an ulce er has form med, unle ess the ulcerat ted area is off‐load ded, heal ing may b be chroni cally dela yed, even n in an adequ ately perf fused lim b. After a an ulcer is s healed, the risk of recurre ence is high (4 40% in a median of 4 mon nths) show wing the need for continuo us off‐ loadin g in these e patients."
+    },
+    {
+      "chunk_id": 133,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        181,
+        182
+      ],
+      "char_count": 807,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Comm mon metho ods to off‐ ‐load the foot inclu ude;\n\n1. Bed rest\n\n2. Whe eel chair\n\n3. Crut tch‐assiste ed gait\n\n4. Tota al contact casts\n\n5. Felt ed foam\n\n6. Rem movable ca ast walker rs\n\nTotal contac T ct casts\n\nFelted foam\n\novable cast\n\nRemo\n\nAPPEND\n\nDIX | 169\n\nReferences\n\n1. Pecoraro RE, Reiber GE, Burgess EM. Pathways to diabetic limb amputation: basis for prevention. Diabetes Care 13: 513–521, 1990\n\n2. David G. Armstrong, DPN1234, Hienvu C. Nguyen, DPN2,Lawrence A. Lavery, DPN, MPH2, Carine H.M. van Schie, PHD3,Andrew J.M. Boulton, MD3 and Lawrence B. Harkless, DPN2. Off‐Loading the Diabetic Foot Wound A randomized clinical trial\n\n3. Wu SC, Crews RT, Armstrong DG. The pivotal role of offloading in the management of neuropathic foot ulceration. Curr Diab Rep 5:423–429, 2005.\n\nAPPENDIX | 170"
+    },
+    {
+      "chunk_id": 141,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        192,
+        193
+      ],
+      "char_count": 2114,
+      "time_tags": [],
+      "has_table": true,
+      "has_image": false,
+      "is_english": true,
+      "text": "Appendix 7\n\nFORMULATIONS AND DOSAGE OF COMMONLY USED ANALGESICS\n\nDRUG\n\nFORMULATION\n\nDOSAGE\n\nAVAILABLE Paracetamol Tablet 500mg, Suspension 500mg/5ml, 500 mg – 1gm qid Suppositories NSAIDs Diclofenac Tablet 50mg & 25mg, Oral 25 ‐ 50mg tds, (max 3 IM injections doses/day) Suppositories 12.5mg, IM 25‐50mgs tds ( max 25mg, (50mg & 100mg)* 3doses/day) (not encouraged) Gel Sup: 50mg‐100mg stat Topical: PRN Mefenamic Acid Capsule 250mg 250 mg – 500mg tds (Ponstan) Ibuprofen ( Brufen) Tablet 200mg & 400mg* 200 mg – 400 mg tds Naproxen Tablet 250mg, 550mg 500mg‐550 mg bd (Naprosyn, Synflex) Ketoprofen Capsule 100mg *, Oral: 100mg daily, IV: 100mg bd (Orudis, Oruvail) Injection 100mg, Patch: 30mg ‐ 60mg bd, Topical: Patch 30mg, Gel PRN Meloxicam (Mobic) Tab 7.5mg Daily or bd COX 2 inhibitors Celecoxib Capsule 200 mg, 400mg 200 mg bd /400mg OD (max 1 week) Etoricoxib Tablet 90 mg & 120 mg 120 mg daily (max 1 week) Parecoxib Injection 20 mg/ml 40 mg bd ( 20 mg bd for elderly) max for 2 days WEAK OPIOIDs Tramadol Capsule 50mg, Injection 50mg ‐100mg tds or qid (max 50mg/ml 400mg/day)\n\nIM not encouraged\n\nAPPENDIX | 180\n\nDihydrocodeine (DF118) STRONG OPIOIDs Morphine ( 1st line ) Oxycodone Pethidine Use of pethidine is not encouraged due to the risk of norpethidine toxicity and higher addiction potential. Fentanyl FOR APS USE ONLY Tablet 30 mg Tablet SR 10mg,30mg Aqueous 10mg / 5ml Injection 10 mg/ml, Tablet SR Oxycontin, 10mg,20mg Immediate release – Capsule. Oxynorm 5mg,10 mg Injection 50mg/ml 100mg/2ml Injection 50 mcg/ml, Patch 25 mcg/h, 50 mcg/h 30mg‐60mg qid (max 360mg/day) SR morphine for severe background pain Aq morphine to be given at least 30 minutes prior to procedure Inj ‐ to be given Subcut. 30 minutes prior to procedure Dosage: # < 60yrs : 5mg ‐10mg > 60yrs : 2.5mg ‐5mg SR Oxycontin 10‐20mg bd for severe background pain IR oxynorm 5‐10mg 4 hrly IV/ IM / SC <60 yrs 50mg‐100 mg 4hrly >60yrs 25mg‐50mg 4hrly Reduce dose in renal and hepatic impairment IV only to be prescribed by APS team. Patch to be used for severe\n\nbackground pain in cancer pain;\n\nNOT in Acute Pain\n\nAPPENDIX | 181"
+    },
+    {
+      "chunk_id": 144,
+      "source": "Wound_Care_Manual.pdf",
+      "pages": [
+        195
+      ],
+      "char_count": 785,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "Naloxone\n\nNaloxone is a pure opioid antagonist.\n\nIt is available in ampoules of 0.4 mg/ml (adult dose) or 0.02 mg/ml (paediatric dose).\n\nDoses for treating opioid‐induced respiratory depression:\n\n• Adult 0.1 – 0.4 mg IV/IM/SC; IV dose may be repeated every 1‐2 minutes\n\n• Paediatric 0.01 mg/kg IV (maximum 0.4 mg), repeat every 2 minutes.\n\nThe half life of naloxone is 45‐60 minutes; this is important to know because when used to antagonize respiratory depression due to morphine, the effect of naloxone may wear out before the effect of morphine (half life 3‐4 hours). Therefore, after treating morphine‐induced respiratory depression, the patient has to be monitored closely for at least another 4 hours. Naloxone should be available in every emergency drug trolley.\n\nAPPENDIX | 183"
+    }
+  ]
+}

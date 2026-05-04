@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "total_chunks": 29,
+    "kept_count": 5,
+    "skipped_count": 24,
+    "chunk_params": {
+      "max_characters": 3000,
+      "new_after_n_chars": 2400,
+      "combine_under_n_chars": 500
+    }
+  },
+  "kept_ids_by_source": {
+    "2_garis_panduan_perkhidmatan_penjagaan_luka_di_fasiliti_kesihatan_primer.pdf": [
+      10,
+      11,
+      14,
+      27,
+      28
+    ]
+  },
+  "kept_chunks": [
+    {
+      "chunk_id": 10,
+      "source": "2_garis_panduan_perkhidmatan_penjagaan_luka_di_fasiliti_kesihatan_primer.pdf",
+      "pages": [
+        12,
+        13,
+        14
+      ],
+      "char_count": 809,
+      "time_tags": [
+        "T",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": true,
+      "is_english": true,
+      "text": "TAMAT\n\n11\n\nGARIS PANDUAN PERKHIDMATAN PENJAGAAN LUKA DI FASILITI KESIHATAN PRIMER\n\nPRINSIP ASAS PENILAIAN LUKA\n\nSIZE *T.I.M.E. SKIN Measure wound surface area (Length, width, depth) WOUND ASSESSMENT\n\nSURROUNDING\n\nAssess for signs of\n\ninfection/ ischaemia,\n\nmaceration, crepitus\n\n*T.I.M.E. - Principles of Wound Bed Assessment And Preparation\n\nT : Tissue I : Infection/ M : Moisture E : Epidermal Inflammation imbalance margin • Viable Granulation and new • Signs and symptoms • Exudate level dry/ • Advancing epithelial of infection. Example ; minimal or moderate/ • Non advancing presence of pus, pain, wet • Non viable malodour Necrotic, slough tissue\n\nRujukan : Wound Care Manual (First Edition, 2014), Ministry of Health, m/s 14.\n\n12\n\nGARIS PANDUAN PERKHIDMATAN PENJAGAAN LUKA DI FASILITI KESIHATAN PRIMER"
+    },
+    {
+      "chunk_id": 11,
+      "source": "2_garis_panduan_perkhidmatan_penjagaan_luka_di_fasiliti_kesihatan_primer.pdf",
+      "pages": [
+        14,
+        15
+      ],
+      "char_count": 2566,
+      "time_tags": [
+        "T",
+        "I",
+        "M"
+      ],
+      "has_table": true,
+      "has_image": true,
+      "is_english": true,
+      "text": "ASPEK PENJAGAAN LUKA\n\nWOUND Wound Assessment TISSUE NECROSIS/ <25% >25% SLOUGH WOUND NO YES NO YES INFECTION MOISTURE/ Moderate/ Moderate/ Moderate/ Moderate/ EXUDATE wet wet wet wet Dry/ Dry/ Dry/ Dry/ minimal minimal minimal minimal WOUND 1 2 3 4 5 6 7 8 TYPE\n\nRAWATAN YANG DISARANKAN\n\nTreatment recommendation based on the above flow chart :\n\nWOUND TYPE Wound Description Dressing material suggested/ recommended (refer to chapter on dressing materials) Antibiotic Surgical procedure suggested/ recommended 1 Clean, healthy All types of dressing No 1.Ready for secondary granulating wound material except silver, wound closure charcoal and special 2.If the wound is small, advanced dressing continue dressing till materials. the wound heals by secondary intention 3.Frequency of wound dressing varies depending on type of wound and also dressing material used 2 Clean and wet wound 1. Foam May or may not, based 1.Find underlying cause 2. Alginate on the underlying cause 2.Treat underlying cause 4. Hydrofiber if nessary 5. Polymeric membrane\n\n13\n\nGARIS PANDUAN PERKHIDMATAN PENJAGAAN LUKA DI FASILITI KESIHATAN PRIMER\n\n3 Dry, infected wound 1.Tulle Yes based on C&S 1. Debridement may be with <25% slough/ 2.Hydrogel report of infected tissue needed necrotic tissue (most 3.Hydrocolloid likely vascular in origin) 4.Silver dressing 5.Iodine base dressing 4 Wet, infected wound 1.Alginate Yes based C&S report 1. Debridement may be with <25% slough/ 2.Foam of infected tissue needed necrotic tissue 3.Silver 4.Hydrofiber 5.Polymeric membrane 6.Iodine base dressing 5 Dry, infected wound 1.Hydrogel No 1. Debridement is with >25% slough/ 2.Hydrocolloid needed necrotic tissue 3.Polymeric membrane 6 Wet, non-infected 1. Alginate May or may not, 1. Surgical/ mechanical wound with >25% 2.Foam based on the debridement slough/ necrotic tissue 3.Polymeric membrane underlying cause recommended 4.Hydrofiber 2. May need repeated debridement 7 Dry, infected wound 1. Silver dressing Yes based C&S report 1. Surgical/ mechanical with >25% slough/ 2.Hydrogel of infected tissue debridement is necrotic tissue 3.Hydrocolloid strongly recommended 4.Iodine base dressing 5.Polymeric membrane 8 Wet, infected wound 1.Alginate Yes based C&S report 1. Surgical/ mechanical with >25% slough/ 2.Silver dressing of infected tissue debridement is necrotic tissue 3.Hydrofiber strongly recommended 4.Foam 2. May need repeated 5.Polymeric membrane debridement 6.Charcoal 7.Iodine base dressing is\n\nRujukan : Wound Care Manual (First Edition, 2014), Ministry of Health m/s. 164 - 167"
+    },
+    {
+      "chunk_id": 14,
+      "source": "2_garis_panduan_perkhidmatan_penjagaan_luka_di_fasiliti_kesihatan_primer.pdf",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "char_count": 539,
+      "time_tags": [
+        "T",
+        "M"
+      ],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "meneruskan rawatan.\n\n15\n\nGARIS PANDUAN PERKHIDMATAN PENJAGAAN LUKA DI FASILITI KESIHATAN PRIMER\n\nPANDUAN ILUSTRASI JENIS LUKA\n\nNecrotic/ Slough Tissue\n\nGranulation Tissue\n\nEpithelial Tissue\n\n• Granulation Tissue\n\n- Red, cobblestone/ beefy\n\n- Only in full thickness wounds\n\n• Epithelial Tissue\n\n- Regrowth of epidermis\n\n- Pink or pearly\n\n- Smooth, shiny\n\nPresence of Exudates On Tissue\n\nPresence of Infection On Tissue\n\nRujuk : Wound Care Manual (2014)\n\n16\n\nGARIS PANDUAN PERKHIDMATAN PENJAGAAN LUKA DI FASILITI KESIHATAN PRIMER\n\nLampiran 1"
+    },
+    {
+      "chunk_id": 27,
+      "source": "2_garis_panduan_perkhidmatan_penjagaan_luka_di_fasiliti_kesihatan_primer.pdf",
+      "pages": [
+        33
+      ],
+      "char_count": 782,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": false,
+      "is_english": true,
+      "text": "RUJUKAN\n\n1. Is the use of modern versus conventional wound dressings warranted after primary knee and hip arthroplasty? Results of a Prospective Comparative Study. Zarghooni K, Bredow J, Siewe J, Deutloff N, Meyer HS, Lohmann C.\n\n2. Effectiveness of Advanced versus Conventional Wound Dressings on Healing of Chronic Wounds: Systematic Review and Meta-Analysis K. Heyer a M. Augustin a K. Protz b K. Herberger a C. Spehr a S.J. Rustenbach a\n\n3. Advances in wound care. Wound Dressings and Comparative Effectiveness Data Aditya Sood,1,* Mark S. Granick,1 and Nancy L. Tomaselli2\n\n4. Wound Care Manual, First Edition, 2014. Ministry of Health Malaysia\n\n5. Manual on Pressure Injury Prevention Care Bundle, Hospital Kuala Lumpur\n\n6. ASEAN Plus Guidelines Management of Diabetic Wounds."
+    },
+    {
+      "chunk_id": 28,
+      "source": "2_garis_panduan_perkhidmatan_penjagaan_luka_di_fasiliti_kesihatan_primer.pdf",
+      "pages": [
+        33,
+        35
+      ],
+      "char_count": 1269,
+      "time_tags": [],
+      "has_table": false,
+      "has_image": true,
+      "is_english": true,
+      "text": "Glosari\n\n1. Wound - A wound is an injury to the integument or to the underlying structures; It is visible result of individual cell death or damage; that may or may not result in a loss of skin integrity whereby physiological function of the tissue is impaired.\n\n2. Ulcer - An interruption of continuity of an epithelial surface with an inflamed base.It is usually a result of an underlying or internal etiology.\n\n3. Diabetic foot - Diabetic foot is a foot that exhibits any pathology that results directly from diabetes mellitus or any long term (or \"chronic\") complication of - diabetes mellitus (Jeffcoate & Harding, 2003).\n\n4. Acute wound - sudden disruption of skin integrity usually caused by traumatic event or surgery\n\n5. Chronic Wound - A chronic wound is a wound that does not heal in an orderly set of stages and in a predictable amount of time the way most wounds do\n\n6. Non-healing wound: Any wound that has no signs of healing process within 2 to 4 weeks after appropriate intervention.\n\n7. Debridement - Debridement is the medical removal of dead, damaged, or infected tissue to improve the healing potential of the remaining healthy tissue\n\n32\n\nBahagian Pembangunan Kesihatan Keluarga Kementerian Kesihatan Malaysia 2019\n\n978-967- | | | Il 789675\"322150"
+    }
+  ]
+}

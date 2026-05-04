@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "total_chunks": 19,
+    "kept_count": 19,
+    "ai_summarised": 0,
+    "extraction": "PyMuPDF native text blocks (3-column aware); Table 1 + Table 2 hardcoded from PDF",
+    "chunking": "page-targeted section extraction; one dressing one chunk (prose + Table 2 combined)",
+    "pages_used": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tables_used": [
+      "Table 1 (Wound categories)",
+      "Table 2 (Dressing types)"
+    ],
+    "chunk_params": {
+      "max_characters": 2400,
+      "min_characters": 80
+    },
+    "note": "Use ai_summary field for reference_contexts in RAGAS testset and as page_content in ChromaDB. ai_summary == text when ENABLE_AI_SUMMARY=False."
+  },
+  "kept_ids_by_source": {
+    "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf": [
+      "65414974ff6f",
+      "e33a690e240a",
+      "2dc1f26b6233",
+      "4b741bf1a512",
+      "6e34c2b50050",
+      "55569f16010f",
+      "18fdcc9d34d9",
+      "6555b7728ccc",
+      "5116098922da",
+      "0d0a9fc09c73",
+      "f7b66b783d4d",
+      "c9b68759e2a8",
+      "e5409b86f782",
+      "a1968343e3ba",
+      "38f855618fe2",
+      "0c49aa8d13c4",
+      "ca472c44f89b",
+      "751c661d8c3c",
+      "10c6b59b1aff"
+    ]
+  },
+  "kept_chunks": [
+    {
+      "chunk_id": "65414974ff6f",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Background & Objective",
+      "parent_section": "Article Context",
+      "chunk_index": 0,
+      "char_count": 780,
+      "text": "Background\nAcute open wounds constitute a \nsignificant part of general practice. With \nan expanding global market of dressing \nproducts, selection of wound dressings \nremains an area of concern among \ndoctors entering general practice.\nObjective\nThe aim of this article is to describe a \npractical guide for choosing appropriate \ndressings when treating acute open \nwounds in general practice.\nDiscussion\nAlthough dressing is an essential element \nof standard wound care, it is important to \nremember that dressing alone does not \nheal the wound. Judicious selection of \ndressings based on wound characteristics, \nphysical properties of dressings and their \ncosts, shelf life and availability are \nimportant for delivering appropriate care \ntowards timely healing of acute wounds.",
+      "ai_summary": "Background\nAcute open wounds constitute a \nsignificant part of general practice. With \nan expanding global market of dressing \nproducts, selection of wound dressings \nremains an area of concern among \ndoctors entering general practice.\nObjective\nThe aim of this article is to describe a \npractical guide for choosing appropriate \ndressings when treating acute open \nwounds in general practice.\nDiscussion\nAlthough dressing is an essential element \nof standard wound care, it is important to \nremember that dressing alone does not \nheal the wound. Judicious selection of \ndressings based on wound characteristics, \nphysical properties of dressings and their \ncosts, shelf life and availability are \nimportant for delivering appropriate care \ntowards timely healing of acute wounds."
+    },
+    {
+      "chunk_id": "e33a690e240a",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Introduction – Acute Wound Context",
+      "parent_section": "Article Context",
+      "chunk_index": 0,
+      "char_count": 2092,
+      "text": "A SUPERFICIAL OPEN WOUND with loss of \nepithelial lining is described as an ulcer. \nHowever, the words ‘open wound’ and \n‘ulcer’ are often used interchangeably. \nIn this article, an acute wound/ulcer is \ndefined as an injury to the skin that occurs \nsuddenly following an accident or surgical \ninjury and is expected to heal through an \norderly and timely reparative process.1,2\nPatients with acute wounds of the skin \n(eg minor cuts, lacerations, puncture \nwounds, skin tears, animal bites, small \nburns) constitute a significant proportion \nof patients who present to general practice. \nPatients with diabetes may present with \nsmall and minor skin breakdowns, as \nthese minor wounds have the potential \nto become serious and require attention \nto address systemic issues as well. The \nappropriate treatment of acute wounds \ninvolves avoiding deterrents to normal \nhealing and preventing complications \nthat may lead to conversion to a chronic \nwound,2 which is a major burden on \nthe healthcare system. In Australia, the \nestimated annual cost was $3 billion \nin 2014.3\nTeaching of wound care, including \nselection of wound dressings, as part of \nthe undergraduate medical curriculum \noccurs in some medical schools4 and \nremains an area of concern among doctors \nentering general practice.5 The focus \nof this article is to provide a practical\nFocus  |  Clinical\noverview for general practitioners (GPs) \nwhen choosing an appropriate dressing for \nacute open wounds, with the assumption \nthat holistic assessment of the patient and \nthe wound, and other important aspects \nof treatment (eg tetanus prophylaxis, \nneed for antibiotics, wound cleansing and \ndebridement),6,7 have been addressed. \nDressings for puncture wounds/\nneedlestick injuries and animal/human \nbites are not included here because of their \ncomplex management, often requiring \nnon-GP specialist consultation and care. \nDescriptions of dressings for post-surgical \nwounds6 and minor burns in general \npractice8 are available in earlier issues \nof Australian Journal of General Practice \nand Australian Family Physician.",
+      "ai_summary": "A SUPERFICIAL OPEN WOUND with loss of \nepithelial lining is described as an ulcer. \nHowever, the words ‘open wound’ and \n‘ulcer’ are often used interchangeably. \nIn this article, an acute wound/ulcer is \ndefined as an injury to the skin that occurs \nsuddenly following an accident or surgical \ninjury and is expected to heal through an \norderly and timely reparative process.1,2\nPatients with acute wounds of the skin \n(eg minor cuts, lacerations, puncture \nwounds, skin tears, animal bites, small \nburns) constitute a significant proportion \nof patients who present to general practice. \nPatients with diabetes may present with \nsmall and minor skin breakdowns, as \nthese minor wounds have the potential \nto become serious and require attention \nto address systemic issues as well. The \nappropriate treatment of acute wounds \ninvolves avoiding deterrents to normal \nhealing and preventing complications \nthat may lead to conversion to a chronic \nwound,2 which is a major burden on \nthe healthcare system. In Australia, the \nestimated annual cost was $3 billion \nin 2014.3\nTeaching of wound care, including \nselection of wound dressings, as part of \nthe undergraduate medical curriculum \noccurs in some medical schools4 and \nremains an area of concern among doctors \nentering general practice.5 The focus \nof this article is to provide a practical\nFocus  |  Clinical\noverview for general practitioners (GPs) \nwhen choosing an appropriate dressing for \nacute open wounds, with the assumption \nthat holistic assessment of the patient and \nthe wound, and other important aspects \nof treatment (eg tetanus prophylaxis, \nneed for antibiotics, wound cleansing and \ndebridement),6,7 have been addressed. \nDressings for puncture wounds/\nneedlestick injuries and animal/human \nbites are not included here because of their \ncomplex management, often requiring \nnon-GP specialist consultation and care. \nDescriptions of dressings for post-surgical \nwounds6 and minor burns in general \npractice8 are available in earlier issues \nof Australian Journal of General Practice \nand Australian Family Physician."
+    },
+    {
+      "chunk_id": "2dc1f26b6233",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Wound Dressings – General Principles",
+      "parent_section": "Wound Dressings",
+      "chunk_index": 0,
+      "char_count": 1962,
+      "text": "Wound dressings\nAlthough dressing is an essential element \nof standard wound care, it is important to \nremember that dressing alone does not \nheal the wound. \nIdeally a wound dressing aims to \npromote healing or prevent further tissue \ndamage. A good dressing accomplishes \nmultiple goals, including providing \nan appropriate level of moisture and \nserving as a barrier to bacterial invasion. \nAdditional benefits of an ideal dressing \nmay include thermal insulation, \ndebridement, enzymatic and growth factor\nsupplementation, gas exchange facilitation \nand protection of free nerve endings to \nreduce pain.9\nThe French military surgeon Ambroise \nParé revolutionised the field of wound \ndressings when he abandoned the use of \nboiling oil and successfully applied his \nown concoction of egg yolk, rose oil and \nturpentine on wounds.10 Much later, the \nexperimental work of George Winter in \n1962 led to the foundation of modern-day \nmoisture-retaining semipermeable \ndressings.11\nNormal wound healing follows a typical \npattern of progression: haemostasis, \ninflammation, proliferation and \nremodelling. In open cutaneous wounds, \nit is usually described in three processes: \nepithelialisation, connective tissue \ndeposition and contraction.12 No single \ndressing is suitable for the management \nof all types of wounds. Dressings may \nneed to be selected depending on the \nwound’s stage in the healing cycle.\nTable 1. Wound categories with recommended dressings\nMinor cut/laceration\nCover with a low-absorbent dressing that \nprevents further trauma and absorbs exudate \n(dry island dressing).\nHence, an understanding of the healing \nprocess combined with knowledge of \nthe properties of the various available \ndressings is essential.\nWounds covered with moisture-\nretentive dressings and ointments \nheal faster than exposed or traditional \ngauze-covered wounds.13 Occlusive \ndressings allow for maintenance of a \nbalanced moist environment on the \nulcer surface.",
+      "ai_summary": "Wound dressings\nAlthough dressing is an essential element \nof standard wound care, it is important to \nremember that dressing alone does not \nheal the wound. \nIdeally a wound dressing aims to \npromote healing or prevent further tissue \ndamage. A good dressing accomplishes \nmultiple goals, including providing \nan appropriate level of moisture and \nserving as a barrier to bacterial invasion. \nAdditional benefits of an ideal dressing \nmay include thermal insulation, \ndebridement, enzymatic and growth factor\nsupplementation, gas exchange facilitation \nand protection of free nerve endings to \nreduce pain.9\nThe French military surgeon Ambroise \nParé revolutionised the field of wound \ndressings when he abandoned the use of \nboiling oil and successfully applied his \nown concoction of egg yolk, rose oil and \nturpentine on wounds.10 Much later, the \nexperimental work of George Winter in \n1962 led to the foundation of modern-day \nmoisture-retaining semipermeable \ndressings.11\nNormal wound healing follows a typical \npattern of progression: haemostasis, \ninflammation, proliferation and \nremodelling. In open cutaneous wounds, \nit is usually described in three processes: \nepithelialisation, connective tissue \ndeposition and contraction.12 No single \ndressing is suitable for the management \nof all types of wounds. Dressings may \nneed to be selected depending on the \nwound’s stage in the healing cycle.\nTable 1. Wound categories with recommended dressings\nMinor cut/laceration\nCover with a low-absorbent dressing that \nprevents further trauma and absorbs exudate \n(dry island dressing).\nHence, an understanding of the healing \nprocess combined with knowledge of \nthe properties of the various available \ndressings is essential.\nWounds covered with moisture-\nretentive dressings and ointments \nheal faster than exposed or traditional \ngauze-covered wounds.13 Occlusive \ndressings allow for maintenance of a \nbalanced moist environment on the \nulcer surface."
+    },
+    {
+      "chunk_id": "4b741bf1a512",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Wound Dressings – General Principles",
+      "parent_section": "Wound Dressings",
+      "chunk_index": 1,
+      "char_count": 1324,
+      "text": "The natural moisture in a \nwound contains proteins and cytokines \nthat facilitate autolytic debridement, \nangiogenesis, formation of granulation \ntissue and keratinocyte migration.14\nThe ideal wound dressing should \nfacilitate collagen synthesis and epithelial \nregeneration by removing deterrents that \ndelay healing, including bacteria, exudate, \nexternal trauma and other barriers.15 It \nshould also have a prolonged storage time, \nbe inexpensive and have minimal or no \nantigenicity, toxicity or carcinogenicity.12 \nInvolving patients in dressing choices\nSkin tears\nApply silicone-covered foam dressing directly over \nthe wound.\nIf bleeding, apply haemostatic alginate dressing \nas primary dressing under a silicone-coated \nfoam dressing.\nPostoperative wounds\nFor wounds without exudate, dress over sutures \nwith a film or thin hydrocolloid.\nFor wounds with exudate, apply a bordered \nlow‐absorbent dressing (dry island dressing).\nDiabetic foot \nApply a primary antimicrobial dressing product \nwith secondary dressing according to exudate:\n1.\t low exudate – low-absorbent pad\n2.\tmoderate exudate – silicone foam\n3.\thigh exudate – absorbent pad.\nhelps to maximise compliance, ensures \nminimising impact of dressings on \nactivities of daily living16 and optimises \nfollow-up care through telehealth, when \ndeemed suitable.",
+      "ai_summary": "The natural moisture in a \nwound contains proteins and cytokines \nthat facilitate autolytic debridement, \nangiogenesis, formation of granulation \ntissue and keratinocyte migration.14\nThe ideal wound dressing should \nfacilitate collagen synthesis and epithelial \nregeneration by removing deterrents that \ndelay healing, including bacteria, exudate, \nexternal trauma and other barriers.15 It \nshould also have a prolonged storage time, \nbe inexpensive and have minimal or no \nantigenicity, toxicity or carcinogenicity.12 \nInvolving patients in dressing choices\nSkin tears\nApply silicone-covered foam dressing directly over \nthe wound.\nIf bleeding, apply haemostatic alginate dressing \nas primary dressing under a silicone-coated \nfoam dressing.\nPostoperative wounds\nFor wounds without exudate, dress over sutures \nwith a film or thin hydrocolloid.\nFor wounds with exudate, apply a bordered \nlow‐absorbent dressing (dry island dressing).\nDiabetic foot \nApply a primary antimicrobial dressing product \nwith secondary dressing according to exudate:\n1.\t low exudate – low-absorbent pad\n2.\tmoderate exudate – silicone foam\n3.\thigh exudate – absorbent pad.\nhelps to maximise compliance, ensures \nminimising impact of dressings on \nactivities of daily living16 and optimises \nfollow-up care through telehealth, when \ndeemed suitable."
+    },
+    {
+      "chunk_id": "6e34c2b50050",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Description of Dressings – Overview",
+      "parent_section": "Wound Dressings",
+      "chunk_index": 0,
+      "char_count": 663,
+      "text": "Description of dressings\nDressings can be divided into several \ngeneric categories.17 Described here are \nthe commonly used dressings suitable \nfor acute open wounds (Table 1) from \ntheir initial stage of haemostasis (day \none) to epithelialisation (approximately \non day 12), with a summary in Table 2. \nDressings may be left intact for up to seven \ndays depending on the wound type and \nlocation, assessment of the wound bed \nand patient, the volume of exudate and \nthe ability of the dressing to contain the \nexudate and protect the surrounding skin. \nDisturbances to wound temperature and \ngranulating tissue is minimised by less \nfrequent dressing changes.17",
+      "ai_summary": "Description of dressings\nDressings can be divided into several \ngeneric categories.17 Described here are \nthe commonly used dressings suitable \nfor acute open wounds (Table 1) from \ntheir initial stage of haemostasis (day \none) to epithelialisation (approximately \non day 12), with a summary in Table 2. \nDressings may be left intact for up to seven \ndays depending on the wound type and \nlocation, assessment of the wound bed \nand patient, the volume of exudate and \nthe ability of the dressing to contain the \nexudate and protect the surrounding skin. \nDisturbances to wound temperature and \ngranulating tissue is minimised by less \nfrequent dressing changes.17"
+    },
+    {
+      "chunk_id": "55569f16010f",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Table 1 – Skin tears",
+      "parent_section": "Table 1: Wound Categories",
+      "chunk_index": 0,
+      "char_count": 826,
+      "text": "TABLE 1 — Wound Category: Skin tears\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Skin tears\n\nDressings Recommended:\n  Apply silicone-covered foam dressing directly over the wound.\nIf bleeding, apply haemostatic alginate dressing as primary dressing under a silicone-coated foam dressing.\n\nSpecial Comments / Clinical Notes:\n  Do not use any adhesive products on fragile skin as they may contribute to further skin tears, especially on forearms and hands of the elderly.\nUsing a barrier wipe under the foam aids to secure application, reduce maceration and protect the skin on removal of the dressing.\nRemover wipes should also be used when removing a dressing from fragile skin.\nRemoval of the dressing should be done in a direction that does not disturb viable tissue edges and flaps.",
+      "ai_summary": "TABLE 1 — Wound Category: Skin tears\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Skin tears\n\nDressings Recommended:\n  Apply silicone-covered foam dressing directly over the wound.\nIf bleeding, apply haemostatic alginate dressing as primary dressing under a silicone-coated foam dressing.\n\nSpecial Comments / Clinical Notes:\n  Do not use any adhesive products on fragile skin as they may contribute to further skin tears, especially on forearms and hands of the elderly.\nUsing a barrier wipe under the foam aids to secure application, reduce maceration and protect the skin on removal of the dressing.\nRemover wipes should also be used when removing a dressing from fragile skin.\nRemoval of the dressing should be done in a direction that does not disturb viable tissue edges and flaps."
+    },
+    {
+      "chunk_id": "18fdcc9d34d9",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Table 1 – Minor cut / laceration",
+      "parent_section": "Table 1: Wound Categories",
+      "chunk_index": 0,
+      "char_count": 506,
+      "text": "TABLE 1 — Wound Category: Minor cut / laceration\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Minor cut / laceration\n\nDressings Recommended:\n  Cover with a low-absorbent dressing that prevents further trauma and absorbs exudate (dry island dressing).\n\nSpecial Comments / Clinical Notes:\n  Check for diabetes and the presence of at least two signs or symptoms of inflammation (redness, warmth, induration, pain/tenderness) or purulent secretions indicating infection.",
+      "ai_summary": "TABLE 1 — Wound Category: Minor cut / laceration\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Minor cut / laceration\n\nDressings Recommended:\n  Cover with a low-absorbent dressing that prevents further trauma and absorbs exudate (dry island dressing).\n\nSpecial Comments / Clinical Notes:\n  Check for diabetes and the presence of at least two signs or symptoms of inflammation (redness, warmth, induration, pain/tenderness) or purulent secretions indicating infection."
+    },
+    {
+      "chunk_id": "6555b7728ccc",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Table 1 – Postoperative wounds",
+      "parent_section": "Table 1: Wound Categories",
+      "chunk_index": 0,
+      "char_count": 447,
+      "text": "TABLE 1 — Wound Category: Postoperative wounds\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Postoperative wounds\n\nDressings Recommended:\n  For wounds without exudate, dress over sutures with a film or thin hydrocolloid.\nFor wounds with exudate, apply a bordered low-absorbent dressing (dry island dressing).\n\nSpecial Comments / Clinical Notes:\n  In case of wound dehiscence, organise prompt surgical review.",
+      "ai_summary": "TABLE 1 — Wound Category: Postoperative wounds\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Postoperative wounds\n\nDressings Recommended:\n  For wounds without exudate, dress over sutures with a film or thin hydrocolloid.\nFor wounds with exudate, apply a bordered low-absorbent dressing (dry island dressing).\n\nSpecial Comments / Clinical Notes:\n  In case of wound dehiscence, organise prompt surgical review."
+    },
+    {
+      "chunk_id": "5116098922da",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Table 1 – Small superficial burns",
+      "parent_section": "Table 1: Wound Categories",
+      "chunk_index": 0,
+      "char_count": 421,
+      "text": "TABLE 1 — Wound Category: Small superficial burns\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Small superficial burns\n\nDressings Recommended:\n  After initial first aid treatment, cover burns area with hydrogel or hydrocolloid or film.\n\nSpecial Comments / Clinical Notes:\n  Refer to burns specialist for burns that are deep or infected or located on hands, feet, face or genitalia.",
+      "ai_summary": "TABLE 1 — Wound Category: Small superficial burns\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Small superficial burns\n\nDressings Recommended:\n  After initial first aid treatment, cover burns area with hydrogel or hydrocolloid or film.\n\nSpecial Comments / Clinical Notes:\n  Refer to burns specialist for burns that are deep or infected or located on hands, feet, face or genitalia."
+    },
+    {
+      "chunk_id": "0d0a9fc09c73",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Table 1 – Diabetic foot",
+      "parent_section": "Table 1: Wound Categories",
+      "chunk_index": 0,
+      "char_count": 636,
+      "text": "TABLE 1 — Wound Category: Diabetic foot\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Diabetic foot\n\nDressings Recommended:\n  Apply a primary antimicrobial dressing product with secondary dressing according to exudate:\n  1. low exudate – low-absorbent pad\n  2. moderate exudate – silicone foam\n  3. high exudate – absorbent pad.\n\nSpecial Comments / Clinical Notes:\n  Check pedal pulses and sensation; if there is poor perfusion, referral to a diabetic foot clinic or vascular surgeon is recommended.\nSilicone foams on feet, if applied, should be without borders and anchored with tape or bandages.",
+      "ai_summary": "TABLE 1 — Wound Category: Diabetic foot\nSource: AJGP 2022, Table 1. Wound categories with recommended dressings\n\nWound Type: Diabetic foot\n\nDressings Recommended:\n  Apply a primary antimicrobial dressing product with secondary dressing according to exudate:\n  1. low exudate – low-absorbent pad\n  2. moderate exudate – silicone foam\n  3. high exudate – absorbent pad.\n\nSpecial Comments / Clinical Notes:\n  Check pedal pulses and sensation; if there is poor perfusion, referral to a diabetic foot clinic or vascular surgeon is recommended.\nSilicone foams on feet, if applied, should be without borders and anchored with tape or bandages."
+    },
+    {
+      "chunk_id": "f7b66b783d4d",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types – Film Dressings",
+      "parent_section": "Dressing Types",
+      "chunk_index": 0,
+      "char_count": 941,
+      "text": "Dressing Type: Film Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Permeable to gas but impermeable to bacteria and liquid. Useful on superficial wounds with minimum exudate.\n  Limitations & Cautions: May be traumatic on removal.\n  Wear Time: 1–4 days\n\nDETAILED DESCRIPTION (section text):\n  Film dressings – these materials are \nsemipermeable and demonstrate \nbeneficial effect in the healing of \nsuperficial burns, minor abrasions \nand lacerations. Many now include a \nskin-safe adhesive to reduce the risk \nof trauma in fragile skin; however, \ncaution should be taken if the \npatient has particularly vulnerable \nskin. It may be advisable to use a \nskin protectant (barrier) product \nunderneath the dressing to avoid any \nharm. Film dressings are most useful \nfor postoperative wounds healing by \nprimary intention as they facilitate easy \nmonitoring of the wound.18\n•",
+      "ai_summary": "Dressing Type: Film Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Permeable to gas but impermeable to bacteria and liquid. Useful on superficial wounds with minimum exudate.\n  Limitations & Cautions: May be traumatic on removal.\n  Wear Time: 1–4 days\n\nDETAILED DESCRIPTION (section text):\n  Film dressings – these materials are \nsemipermeable and demonstrate \nbeneficial effect in the healing of \nsuperficial burns, minor abrasions \nand lacerations. Many now include a \nskin-safe adhesive to reduce the risk \nof trauma in fragile skin; however, \ncaution should be taken if the \npatient has particularly vulnerable \nskin. It may be advisable to use a \nskin protectant (barrier) product \nunderneath the dressing to avoid any \nharm. Film dressings are most useful \nfor postoperative wounds healing by \nprimary intention as they facilitate easy \nmonitoring of the wound.18\n•"
+    },
+    {
+      "chunk_id": "c9b68759e2a8",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types – Foam Dressings",
+      "parent_section": "Dressing Types",
+      "chunk_index": 0,
+      "char_count": 820,
+      "text": "Dressing Type: Foam Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Suitable for moderately exudating wounds, skin tears, skin grafts and donor sites.\n  Limitations & Cautions: Nonsilicone types should be avoided in patients with fragile skin.\n  Wear Time: Up to seven days\n\nDETAILED DESCRIPTION (section text):\n  Foam dressings – these are film \ndressings with the addition of \nabsorbency. They are made from \nhydrophilic silicone or polyurethane \nthat is in contact with the wound and \nan outer hydrophobic gas-permeable \nbacking. They can absorb a large \namount of exudate, are suitable for \nburns and deep ulcers and may be left \nfor a week. There is some evidence of \nbetter healing of skin tears with foam \ndressings when compared with film.17\n•",
+      "ai_summary": "Dressing Type: Foam Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Suitable for moderately exudating wounds, skin tears, skin grafts and donor sites.\n  Limitations & Cautions: Nonsilicone types should be avoided in patients with fragile skin.\n  Wear Time: Up to seven days\n\nDETAILED DESCRIPTION (section text):\n  Foam dressings – these are film \ndressings with the addition of \nabsorbency. They are made from \nhydrophilic silicone or polyurethane \nthat is in contact with the wound and \nan outer hydrophobic gas-permeable \nbacking. They can absorb a large \namount of exudate, are suitable for \nburns and deep ulcers and may be left \nfor a week. There is some evidence of \nbetter healing of skin tears with foam \ndressings when compared with film.17\n•"
+    },
+    {
+      "chunk_id": "e5409b86f782",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types – Low-Adherent / Low-Absorbent Dressings",
+      "parent_section": "Dressing Types",
+      "chunk_index": 0,
+      "char_count": 733,
+      "text": "Dressing Type: Low-Adherent / Low-Absorbent Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Passive breathable dressing for low-exudating wounds. Protection over sutures or shallow wounds.\n  Limitations & Cautions: Not suitable for fragile papery skin as adhesive border can cause skin tear on removal. Not showerproof. Require secondary dressings for absorbing exudate – added cost.\n  Wear Time: 1–4 days\n\nDETAILED DESCRIPTION (section text):\n  Low-adherent, low-absorbent \ndressings – such dressings are useful\nfor small wounds (fingertip injuries and \ntoenail avulsion) with minimal exudate \nand require a secondary absorbent \ndressing such as cotton gauge.19\n•",
+      "ai_summary": "Dressing Type: Low-Adherent / Low-Absorbent Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Passive breathable dressing for low-exudating wounds. Protection over sutures or shallow wounds.\n  Limitations & Cautions: Not suitable for fragile papery skin as adhesive border can cause skin tear on removal. Not showerproof. Require secondary dressings for absorbing exudate – added cost.\n  Wear Time: 1–4 days\n\nDETAILED DESCRIPTION (section text):\n  Low-adherent, low-absorbent \ndressings – such dressings are useful\nfor small wounds (fingertip injuries and \ntoenail avulsion) with minimal exudate \nand require a secondary absorbent \ndressing such as cotton gauge.19\n•"
+    },
+    {
+      "chunk_id": "a1968343e3ba",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types – Hydrocolloid Dressings",
+      "parent_section": "Dressing Types",
+      "chunk_index": 0,
+      "char_count": 863,
+      "text": "Dressing Type: Hydrocolloid Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: The sheet form of the dressing is self-adhesive and waterproof, and it does not need a secondary dressing, which makes this dressing type easy to use.\n  Limitations & Cautions: Low absorbency, produce unpleasant odour during removal.\n  Wear Time: Up to seven days\n\nDETAILED DESCRIPTION (section text):\n  Hydrocolloid dressings – in the presence \nof wound exudate, hydrocolloid \ndressings absorb liquid and form a gel, \nmaintaining a moist environment. They \nare ideal for abrasions, postoperative \nwounds and shallow ulcers.15 They \nadhere well to high-friction areas \n(eg heels, elbows). In some cases, \nhydrocolloid dressings may produce a \ndistinctive odour, usually due to product \nbreakdown and not infection.18\n•",
+      "ai_summary": "Dressing Type: Hydrocolloid Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: The sheet form of the dressing is self-adhesive and waterproof, and it does not need a secondary dressing, which makes this dressing type easy to use.\n  Limitations & Cautions: Low absorbency, produce unpleasant odour during removal.\n  Wear Time: Up to seven days\n\nDETAILED DESCRIPTION (section text):\n  Hydrocolloid dressings – in the presence \nof wound exudate, hydrocolloid \ndressings absorb liquid and form a gel, \nmaintaining a moist environment. They \nare ideal for abrasions, postoperative \nwounds and shallow ulcers.15 They \nadhere well to high-friction areas \n(eg heels, elbows). In some cases, \nhydrocolloid dressings may produce a \ndistinctive odour, usually due to product \nbreakdown and not infection.18\n•"
+    },
+    {
+      "chunk_id": "38f855618fe2",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types – Alginate Dressings",
+      "parent_section": "Dressing Types",
+      "chunk_index": 0,
+      "char_count": 795,
+      "text": "Dressing Type: Alginate Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Promotes haemostasis in actively bleeding wounds, used in moderate-to-high-exudating wounds, wicks away fluid from the wound, can be used in packing wounds. Available in sheets or ropes.\n  Limitations & Cautions: Will dry firm within 48 hours; may need to be soaked off to remove. Allergic reaction has been reported.\n  Wear Time: Up to two days\n\nDETAILED DESCRIPTION (section text):\n  Alginate dressings – these are highly \nabsorbent and have haemostatic \nproperties because of their calcium \ncontent; they are consequently useful \nfor bleeding wounds. However, they \nrequire a secondary dressing, and there \nhave been reports of allergic reactions.20\n•",
+      "ai_summary": "Dressing Type: Alginate Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: Promotes haemostasis in actively bleeding wounds, used in moderate-to-high-exudating wounds, wicks away fluid from the wound, can be used in packing wounds. Available in sheets or ropes.\n  Limitations & Cautions: Will dry firm within 48 hours; may need to be soaked off to remove. Allergic reaction has been reported.\n  Wear Time: Up to two days\n\nDETAILED DESCRIPTION (section text):\n  Alginate dressings – these are highly \nabsorbent and have haemostatic \nproperties because of their calcium \ncontent; they are consequently useful \nfor bleeding wounds. However, they \nrequire a secondary dressing, and there \nhave been reports of allergic reactions.20\n•"
+    },
+    {
+      "chunk_id": "0c49aa8d13c4",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types – Antimicrobial Dressings",
+      "parent_section": "Dressing Types",
+      "chunk_index": 0,
+      "char_count": 736,
+      "text": "Dressing Type: Antimicrobial Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: The clinical evidence supporting the routine use of antimicrobial dressings is weak.\n  Limitations & Cautions: Bacterial resistance with long-term use. High cost of silver-impregnated dressings.\n  Wear Time: 1–4 days\n\nDETAILED DESCRIPTION (section text):\n  Antimicrobial impregnated dressings – \nproducts currently used contain \niodine or silver (silver sulfadiazine and \nionic silver-impregnated dressings). \nTheir use is limited to contaminated \nwounds. However, they do not provide \nthe necessary moist environment for \noptimal healing, and use should be \nlimited to two weeks or less.19",
+      "ai_summary": "Dressing Type: Antimicrobial Dressings\nSource: AJGP 2022 — Section description + Table 2. Dressing types\n\nPROPERTIES (Table 2):\n  Purpose/Action: The clinical evidence supporting the routine use of antimicrobial dressings is weak.\n  Limitations & Cautions: Bacterial resistance with long-term use. High cost of silver-impregnated dressings.\n  Wear Time: 1–4 days\n\nDETAILED DESCRIPTION (section text):\n  Antimicrobial impregnated dressings – \nproducts currently used contain \niodine or silver (silver sulfadiazine and \nionic silver-impregnated dressings). \nTheir use is limited to contaminated \nwounds. However, they do not provide \nthe necessary moist environment for \noptimal healing, and use should be \nlimited to two weeks or less.19"
+    },
+    {
+      "chunk_id": "ca472c44f89b",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Dressing Types and Costs",
+      "parent_section": "Clinical Practice Considerations",
+      "chunk_index": 0,
+      "char_count": 733,
+      "text": "Dressing types and costs \nThe issue of wound care costs in \ngeneral practice has been highlighted \nby Whitlock et al19 as representing \na financial burden for care providers. \nAustralian general practice faces a dilemma \nover how best to involve GPs and practice \nnurses in treating wounds and in choosing \nbetween affordable lower quality dressings \nor expensive higher quality dressings. \nSome dressings for chronic wounds \nand ulcers are subsidised under the \nRepatriation Pharmaceutical Benefits \nScheme (RPBS) for eligible Department \nof Veterans’ Affairs (DVA) card holders. \nReferral to community nursing services \nmay also provide patients with a range of \ndressing options for a service fee that may \ninclude dressing costs.",
+      "ai_summary": "Dressing types and costs \nThe issue of wound care costs in \ngeneral practice has been highlighted \nby Whitlock et al19 as representing \na financial burden for care providers. \nAustralian general practice faces a dilemma \nover how best to involve GPs and practice \nnurses in treating wounds and in choosing \nbetween affordable lower quality dressings \nor expensive higher quality dressings. \nSome dressings for chronic wounds \nand ulcers are subsidised under the \nRepatriation Pharmaceutical Benefits \nScheme (RPBS) for eligible Department \nof Veterans’ Affairs (DVA) card holders. \nReferral to community nursing services \nmay also provide patients with a range of \ndressing options for a service fee that may \ninclude dressing costs."
+    },
+    {
+      "chunk_id": "751c661d8c3c",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Conclusion",
+      "parent_section": "Conclusion",
+      "chunk_index": 0,
+      "char_count": 442,
+      "text": "Conclusion\nInitial dressing selection for patients with \nacute open wounds is important for their \ntimely healing to prevent progression to \na chronic wound, which is more difficult \nand expensive to treat. The process of \nselecting dressings may seem daunting, \nwith numerous existing options. This \narticle provides an evidence-informed \npractical guide to dressing selection for \nacute open wounds in the context of busy \ngeneral practice.",
+      "ai_summary": "Conclusion\nInitial dressing selection for patients with \nacute open wounds is important for their \ntimely healing to prevent progression to \na chronic wound, which is more difficult \nand expensive to treat. The process of \nselecting dressings may seem daunting, \nwith numerous existing options. This \narticle provides an evidence-informed \npractical guide to dressing selection for \nacute open wounds in the context of busy \ngeneral practice."
+    },
+    {
+      "chunk_id": "10c6b59b1aff",
+      "source": "The art and science of selecting appropriate dressings for acute open wounds in general practice.pdf",
+      "section": "Key Points",
+      "parent_section": "Conclusion",
+      "chunk_index": 0,
+      "char_count": 476,
+      "text": "Key points\n•\t Dressing choices for acute open wounds \nrequires an understanding of the normal \nhealing process.\n•\t Selection of a dressing is based on \ncharacteristics of the wound following \nholistic assessment of the patient.\n•\t Costs, availability, source of supply and \nshelf life are important considerations \nfor ordering dressings.\n•\t Involving patients in dressing choices \nhelps to maximise their compliance.\n•\t Judicious use of telehealth is possible \nfor follow up.",
+      "ai_summary": "Key points\n•\t Dressing choices for acute open wounds \nrequires an understanding of the normal \nhealing process.\n•\t Selection of a dressing is based on \ncharacteristics of the wound following \nholistic assessment of the patient.\n•\t Costs, availability, source of supply and \nshelf life are important considerations \nfor ordering dressings.\n•\t Involving patients in dressing choices \nhelps to maximise their compliance.\n•\t Judicious use of telehealth is possible \nfor follow up."
+    }
+  ]
+}

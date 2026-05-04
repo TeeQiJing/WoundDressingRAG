@@ -1,0 +1,234 @@
+﻿synthesizer_name,time_inputs,user_input,reference,reference_contexts,answer,retrieved_contexts
+type1_granulating_dry,"{'necrotic_pct': 0, 'slough_pct': 0, 'granulation_pct': 100, 'infection': 'Not infected', 'moisture': 'Low', 'edge': 'Advancing'}",Wound bed is 100% healthy pink granulation tissue. No slough or necrosis present. No signs of infection. Minimal exudate — wound is almost dry. Wound edges are advancing. Ready for healing by secondary intention.,"Wound Type 1 (Clean, healthy granulating wound — dry/minimal exudate).
+Dressing: All types of dressing material are suitable EXCEPT silver, charcoal, and special advanced dressing materials. Silver and charcoal are contraindicated in clean granulating wounds.
+Suitable options include: Hydrocolloid (2–5 days), Film dressing (2–5 days), Foam as secondary, Tulle/non-adherent dressing.
+Antibiotic: Not indicated.
+Surgery: If wound is small, continue dressing until healing by secondary intention. If ready, wound can proceed to secondary closure.
+Frequency varies depending on dressing type and wound condition.","['Clean, healthy granulating wound: All types of dressing material except silver, charcoal and special advanced dressing materials. No antibiotic. Ready for secondary wound closure or continue dressing till wound heals by secondary intention.', 'Silver, charcoal and special advanced materials should not be used on clean granulating wounds.', 'Frequency of wound dressing varies depending on type of wound and also dressing material used.']",,[]
+type1_granulating_wet,"{'necrotic_pct': 0, 'slough_pct': 5, 'granulation_pct': 95, 'infection': 'Not infected', 'moisture': 'Moderate', 'edge': 'Advancing'}",Wound is predominantly granulating — 95% healthy red cobblestone granulation tissue. Minimal slough at edges. No infection. Moderate exudate. Wound edges advancing. No signs of dehiscence or deterioration.,"Wound Type 1 (Clean, healthy granulating wound — moderate/wet exudate).
+Dressing: All types suitable EXCEPT silver, charcoal, and special advanced dressings. For moderate exudate, foam dressing is appropriate as it is highly absorbent, conforms to body contours, and is designed for moderately exuding wounds. Hydrofibre or alginate are also suitable options.
+Antibiotic: Not indicated.
+Non-silicone foam types should be avoided in patients with fragile skin. Foam frequency: 2–3 days or longer.
+Surgery: Continue dressing until heals by secondary intention or secondary closure if ready.","['Clean, healthy granulating wound: All types of dressing material except silver, charcoal and special advanced dressing materials.', 'Foams: highly absorbent, cushioning, conforms to body contours, bacterial and waterproof. Frequency of dressing change: 2 to 3 days or longer.', 'Foam suitable for moderately exudating wounds, skin tears, skin grafts and donor sites. Nonsilicone types should be avoided in patients with fragile skin.']",,[]
+type2_clean_wet,"{'necrotic_pct': 5, 'slough_pct': 10, 'granulation_pct': 85, 'infection': 'Not infected', 'moisture': 'High', 'edge': 'Advancing'}",Wound is clean with mostly granulation tissue. No clinical infection. High exudate — previous dressing saturated within 24 hours. Minimal slough but no significant necrosis. Wound is healing.,"Wound Type 2 (Clean and wet wound — high exudate).
+Recommended dressings:
+1. Foam — highly absorbent, can be used up to 2–3 days
+2. Alginate — absorbs up to 20 times its own weight; forms a gel on contact with wound fluid; suitable for moderate to heavy exudate; frequency 2–5 days
+3. Hydrofibre — manages heavy exuding wounds, longer wear time, reduces risk of maceration; frequency 2–5 days
+4. Polymeric membrane dressing — manages moisture imbalance, has antiseptic property, frequency 2–5 days
+Antibiotic: May or may not be needed based on underlying cause.
+Surgery: Find and treat underlying cause if necessary.","['Clean and wet wound: 1. Foam  2. Alginate  3. Hydrofiber  4. Polymeric membrane. May or may not need antibiotic based on underlying cause. Find underlying cause and treat if necessary.', 'Alginates partially dissolve on contact with wound fluid to form a gel able to absorb up to 20 times own weight hence recommended for moderate to heavy exudate. Frequency: 2 to 5 days.', 'Hydrofibre: Manage heavy exuding wounds. Maintains moist healing environment. Longer wear time. Reduces risk of maceration. Frequency: 2 to 5 days.']",,[]
+type3_dry_infected_low_necrotic,"{'necrotic_pct': 10, 'slough_pct': 12, 'granulation_pct': 78, 'infection': 'Infected', 'moisture': 'Low', 'edge': 'Non-advancing'}","Dry wound with minimal exudate. Wound bed shows approximately 22% combined slough and necrotic tissue (well under 25%). Clinically infected — erythema, warmth, increased pain. No exudate visible. Most likely vascular in origin. Wound edges not advancing.","Wound Type 3 (Dry, infected wound with <25% slough/necrotic tissue — most likely vascular in origin).
+Recommended dressings:
+1. Tulle — non-adherent primary dressing for lightly exuding wounds
+2. Hydrogel — rehydrates, debrids and desloughs; provides moist environment; promotes granulation; frequency 2–3 days
+3. Hydrocolloid — provides moist environment, absorbs exudate, promotes autolysis; frequency 2–5 days
+4. Silver dressing — reduces bacterial bioburden in infected wounds; bactericidal with no known resistance; frequency 2–3 days
+5. Iodine base dressing — broad spectrum bacteriostatic activity; AVOID in patients with thyroid disorders (iodine absorbed systemically)
+Antibiotic: Yes, based on culture and sensitivity (C&S) report of infected tissue.
+Surgery: Debridement may be needed.","['Dry, infected wound with <25% slough/necrotic tissue (most likely vascular in origin): 1.Tulle  2.Hydrogel  3.Hydrocolloid  4.Silver dressing  5.Iodine base dressing. Yes antibiotic based on C&S report. Debridement may be needed.', 'Silver: To reduce bacterial bioburden in infected wounds. Bactericidal with no known resistance. Frequency: 2 to 3 days.', 'Hydrogel: Rehydrate, debride and deslough the wound. Promotes moist healing, cavity filling. Frequency: 2 to 3 days.', 'Iodine may be absorbed systematically — should be avoided in patients with thyroid disorders.']",,[]
+type3_iodine_contraindication,"{'necrotic_pct': 8, 'slough_pct': 15, 'granulation_pct': 77, 'infection': 'Infected', 'moisture': 'Low', 'edge': 'Non-advancing'}","Dry infected wound, <25% slough. Clinician considering cadexomer iodine. Patient has hypothyroidism and is on levothyroxine. Is iodine dressing appropriate for this patient?","Wound Type 3 (Dry infected, <25% slough/necrotic).
+CONTRAINDICATED: Iodine-based dressings should NOT be used in patients with thyroid disorders because iodine may be absorbed systemically, which is particularly hazardous for patients on levothyroxine or with hypothyroidism.
+Alternative from the Type 3 dressing list:
+1. Silver dressing — bactericidal, no known resistance, no thyroid interaction risk; frequency 2–3 days
+2. Hydrogel — rehydrates dry wound, promotes autolytic debridement; frequency 2–3 days
+3. Hydrocolloid — promotes autolysis, moist environment; frequency 2–5 days
+Antibiotic: Yes, based on C&S report.
+Debridement may be needed.","['Because iodine may be absorbed systematically, it should be avoided in patients with thyroid disorders.', 'Silver: To reduce bacterial bioburden in infected wounds. Locally acting. Bactericidal with no known resistance. Frequency: 2 to 3 days.', 'Dry, infected wound with <25% slough/necrotic tissue: 1.Tulle 2.Hydrogel 3.Hydrocolloid 4.Silver dressing 5.Iodine base dressing.']",,[]
+type4_wet_infected_low_necrotic,"{'necrotic_pct': 12, 'slough_pct': 10, 'granulation_pct': 78, 'infection': 'Infected', 'moisture': 'High', 'edge': 'Advancing'}","Wet wound with high exudate. Clinically infected — purulent discharge, erythema around wound margin. About 22% combined slough and necrosis (less than 25% non-viable tissue). Heavily draining.","Wound Type 4 (Wet, infected wound with <25% slough/necrotic tissue).
+Recommended dressings:
+1. Alginate — highly absorbent, haemostatic; absorbs up to 20× weight; suitable for moderate to heavy exudate; frequency 2–5 days
+2. Foam — highly absorbent, cushioning, conforms to body contours; frequency 2–3 days
+3. Silver — reduces bacterial bioburden in infected wounds; bactericidal with no known resistance; frequency 2–3 days
+4. Hydrofibre — manages heavy exuding wounds; can be used on infected wounds; frequency 2–5 days
+5. Polymeric membrane dressing — antiseptic property; frequency 2–5 days
+6. Iodine base dressing — avoid if patient has thyroid disorder
+Antibiotic: Yes, based on C&S report of infected tissue.
+Surgery: Debridement may be needed.","['Wet, infected wound with <25% slough/necrotic tissue: 1.Alginate 2.Foam 3.Silver 4.Hydrofiber 5.Polymeric membrane 6.Iodine base dressing. Antibiotic: Yes based on C&S report. Debridement may be needed.', 'Hydrofibre: Manage heavy exuding wounds. Maintains moist healing environment. Can be used on infected wounds. Frequency 2 to 5 days.', 'Silver: To reduce bacterial bioburden in infected wounds. Bactericidal. No known resistance. Frequency: 2 to 3 days.', 'Alginates: absorb up to 20 times own weight hence recommended for moderate to heavy level of exudate. Frequency 2-5 days.']",,[]
+type5_dry_noninfected_high_necrotic,"{'necrotic_pct': 45, 'slough_pct': 25, 'granulation_pct': 30, 'infection': 'Not infected', 'moisture': 'Low', 'edge': 'Non-advancing'}",Dry wound with no exudate. Wound bed has 45% black necrotic tissue and 25% yellow slough — total 70% non-viable tissue (well over 25%). No clinical signs of infection. Wound edges stalled.,"Wound Type 5 (Dry, non-infected wound with >25% slough/necrotic tissue).
+Recommended dressings:
+1. Hydrogel — primary choice; gently rehydrates dry necrotic tissue; softens necrotic tissue; promotes autolytic debridement by providing moist wound healing environment; needs secondary dressing; frequency 2–3 days
+2. Hydrocolloid — provides moist environment; cleans and debrids by autolysis; promotes granulation tissue; effective for low to moderate exuding wounds; frequency 2–5 days
+3. Polymeric membrane dressing — manages moisture imbalance (dry to moderate); antiseptic property; frequency 2–5 days
+Antibiotic: NOT indicated (wound is non-infected).
+Surgery: Debridement IS needed given >25% non-viable tissue. Autolytic debridement via hydrogel can be initiated while awaiting or in addition to mechanical/surgical debridement.","['Dry, non-infected wound with >25% slough/necrotic tissue: 1.Hydrogel 2.Hydrocolloid 3.Polymeric membrane. No antibiotic. Debridement is needed.', 'Hydrogel: Rehydrate, debride and deslough the wound. Promote moist healing, cavity filling. Comfortable, provides moist environment and reduces pain. Rehydrate eschar. Desloughing agent. Promotes granulation. Needs secondary dressing. Frequency: 2 to 3 days.', 'Autolytic debridement: the process by which the wound bed utilizes phagocytes and proteolytic enzymes to remove non-viable tissue. Hydrogel gently rehydrates dry necrotic tissue, provides moist wound healing environment, softens necrotic tissue.']",,[]
+type6_wet_noninfected_high_necrotic,"{'necrotic_pct': 10, 'slough_pct': 50, 'granulation_pct': 40, 'infection': 'Not infected', 'moisture': 'High', 'edge': 'Non-advancing'}",Wet wound with heavy exudate. Wound bed has 60% combined slough and necrotic tissue (over 25% threshold). Predominantly fibrinous slough with some necrosis. No clinical infection signs. Wound not progressing.,"Wound Type 6 (Wet, non-infected wound with >25% slough/necrotic tissue).
+Recommended dressings:
+1. Alginate — highly absorbent, haemostatic; absorbs up to 20× weight; suitable for moderate to heavy exudate; frequency 2–5 days; needs secondary dressing
+2. Foam — highly absorbent, cushioning, bacterial and waterproof barrier; frequency 2–3 days
+3. Polymeric membrane dressing — manages moisture imbalance, has surfactant which helps cleanse; frequency 2–5 days
+4. Hydrofibre — manages heavy exuding wounds; maintains moist healing environment; reduces maceration risk; frequency 2–5 days
+Antibiotic: May or may not be needed based on underlying cause.
+Surgery: Surgical/mechanical debridement is RECOMMENDED. May need repeated debridement. Refer as appropriate — wound type 6 is one of the wound types that should be referred to hospital if extensive.","['Wet, non-infected wound with >25% slough/necrotic tissue: 1.Alginate 2.Foam 3.Polymeric membrane 4.Hydrofiber. May or may not need antibiotic. Surgical/mechanical debridement is recommended. May need repeated debridement.', 'Wound types 6, 7 and 8 (wet non-infected >25%, dry infected >25%, wet infected >25%) should be referred to hospital.', 'Alginates: absorb up to 20 times own weight. Available in sheet or rope form. Effective to stop bleeding. Residue of biodegradable product has to be washed off during cleansing. Frequency: 2 to 5 days.']",,[]
+type7_dry_infected_high_necrotic,"{'necrotic_pct': 40, 'slough_pct': 30, 'granulation_pct': 30, 'infection': 'Infected', 'moisture': 'Low', 'edge': 'Non-advancing'}","Dry wound — no exudate visible. 70% non-viable tissue (40% black necrotic, 30% slough), well over 25% threshold. Clinically infected — erythema, warmth, increased pain, wound not progressing. Wound edges stalled.","Wound Type 7 (Dry, infected wound with >25% slough/necrotic tissue).
+REFERRAL INDICATED: Wound type 7 should be referred to hospital.
+Recommended dressings (interim management):
+1. Silver dressing — primary antimicrobial choice; reduces bacterial bioburden; bactericidal with no known resistance; frequency 2–3 days
+2. Hydrogel — rehydrates dry necrotic tissue; autolytic debridement; frequency 2–3 days
+3. Hydrocolloid — moist environment, promotes autolysis; frequency 2–5 days
+4. Iodine base dressing — AVOID in thyroid disorders
+5. Polymeric membrane dressing — frequency 2–5 days
+Antibiotic: Yes, based on C&S report of infected tissue.
+Surgery: Surgical/mechanical debridement is STRONGLY recommended for >25% non-viable infected tissue.","['Dry, infected wound with >25% slough/necrotic tissue: 1.Silver dressing 2.Hydrogel 3.Hydrocolloid 4.Iodine base dressing 5.Polymeric membrane. Antibiotic: Yes based on C&S report. Surgical/mechanical debridement is strongly recommended.', 'Wound types 6, 7 and 8 require referral to hospital: extensive surgical debridement needed, systemic complications, sepsis, cellulitis.', 'Silver: To reduce bacterial bioburden in infected wounds. Locally acting. No known resistance. Bactericidal. Frequency: 2 to 3 days.']",,[]
+type8_wet_infected_high_necrotic,"{'necrotic_pct': 30, 'slough_pct': 35, 'granulation_pct': 35, 'infection': 'Infected', 'moisture': 'High', 'edge': 'Non-advancing'}","Complex wound — heavy exudate, clinically infected with purulent discharge. 65% non-viable tissue (30% necrotic, 35% slough) — over 25% threshold. Wound edges stalled. Malodour noted. Wound not progressing.","Wound Type 8 (Wet, infected wound with >25% slough/necrotic tissue).
+REFERRAL INDICATED: Wound type 8 should be referred to hospital.
+Recommended dressings (interim management):
+1. Alginate — highly absorbent for heavy exudate; frequency 2–5 days
+2. Silver dressing — reduces bacterial bioburden; bactericidal; no known resistance; frequency 2–3 days
+3. Hydrofibre — manages heavy exuding infected wounds; frequency 2–5 days
+4. Foam — highly absorbent; frequency 2–3 days
+5. Polymeric membrane dressing — frequency 2–5 days
+6. Charcoal — odour absorbent; reduces malodour; frequency 2 days; needs secondary dressing
+7. Iodine base dressing — AVOID if thyroid disorder
+Antibiotic: Yes, based on C&S report of infected tissue.
+Surgery: Surgical/mechanical debridement is STRONGLY recommended. May need repeated debridement.","['Wet, infected wound with >25% slough/necrotic tissue: 1.Alginate 2.Silver dressing 3.Hydrofiber 4.Foam 5.Polymeric membrane 6.Charcoal 7.Iodine base dressing. Antibiotic: Yes based on C&S. Surgical/mechanical debridement strongly recommended. May need repeated debridement.', 'Charcoal: odour absorbent. Reduces odour. Needs secondary dressing. Frequency: 2 days.', 'Wound types 6, 7 and 8: need referral — extensive wound care such as surgical debridement, vacuum dressing. Systemic complications such as sepsis and severe cellulitis.']",,[]
+notes_infection_override,"{'necrotic_pct': 5, 'slough_pct': 15, 'granulation_pct': 80, 'infection': 'Not infected', 'moisture': 'Moderate', 'edge': 'Advancing'}","Structured assessment form marked 'not infected' but clinician notes report: wound has become more painful over the last 3 days, there is increased warmth and redness around wound edges, and cloudy exudate was noted today. Patient also complains of foul odour from the wound.","CLINICAL NOTES CONTAIN INFECTION INDICATORS — override applies.
+Despite structured label showing 'not infected', the notes contain multiple infection red flags:
+  — Increased wound pain (sign of acute infection)
+  — Periwaound redness/erythema (sign of local infection)
+  — Wound warmth (sign of inflammation/infection)
+  — Cloudy exudate (bacterial infection indicator)
+  — Foul/offensive wound odour (strong indicator of infection or colonisation)
+
+Treat as infected wound. This maps to Wound Type 4 (Wet, infected, <25% slough/necrotic).
+Recommended dressings: Silver dressing (bactericidal, no known resistance, frequency 2–3 days), or Alginate, Foam, Hydrofibre, or Polymeric membrane dressing.
+Antimicrobial component is MANDATORY based on clinical signs.
+Antibiotic: Yes, based on C&S report.
+Reassess in 48 hours. If spreading erythema, escalate care.","['Silver: To reduce bacterial bioburden in infected wounds. Bactericidal. No known resistance. Frequency: 2 to 3 days.', 'Wet, infected wound with <25% slough/necrotic tissue: 1.Alginate 2.Foam 3.Silver 4.Hydrofiber 5.Polymeric membrane 6.Iodine base dressing.', 'Clinical notes contain infection indicators: foul/offensive wound odour (strong indicator of infection), increased wound pain (sign of acute infection), periWound redness (possible local infection), wound warmth (sign of inflammation/infection), cloudy exudate (bacterial infection indicator).']",,[]
+diabetic_foot_wound,"{'necrotic_pct': 20, 'slough_pct': 30, 'granulation_pct': 50, 'infection': 'Infected', 'moisture': 'Moderate', 'edge': 'Non-advancing'}","Patient is diabetic, type 2. Wound on plantar surface of right foot. Clinically infected — erythema, warmth. 50% non-viable tissue (20% necrotic, 30% slough). Moderate exudate. Wound not progressing. Check pedal pulses requested.","Wound Type 7 (Dry/moderate, infected, >25% slough/necrotic) — diabetic foot.
+REFERRAL REQUIRED: Check pedal pulses and sensation. If there is poor perfusion, referral to a diabetic foot clinic or vascular surgeon is recommended.
+Dressing strategy per AJGP guidelines for diabetic foot:
+Apply a primary antimicrobial dressing product with secondary dressing according to exudate level:
+  — Moderate exudate: silicone foam as secondary
+  — Antimicrobial primary: Silver dressing (bactericidal, no known resistance), or iodine-based (AVOID if thyroid disorder)
+Silicone foams on feet, if applied, should be WITHOUT borders and anchored with tape or bandages.
+Antibiotic: Yes, based on C&S report.
+Surgery: Surgical/mechanical debridement strongly recommended for >25% non-viable infected tissue.","['Diabetic foot: Apply a primary antimicrobial dressing product with secondary dressing according to exudate: 1.low exudate – low-absorbent pad, 2.moderate exudate – silicone foam, 3.high exudate – absorbent pad. Check pedal pulses and sensation; if poor perfusion, referral to diabetic foot clinic or vascular surgeon.', 'Silicone foams on feet, if applied, should be without borders and anchored with tape or bandages.', 'Dry, infected wound with >25% slough/necrotic tissue: 1.Silver dressing 2.Hydrogel 3.Hydrocolloid 4.Iodine base dressing 5.Polymeric membrane. Surgical/mechanical debridement strongly recommended.']",,[]
+diabetic_high_risk_nonhealing,"{'necrotic_pct': 10, 'slough_pct': 20, 'granulation_pct': 70, 'infection': 'Not infected', 'moisture': 'Low', 'edge': 'Non-advancing'}","Patient is diabetic with peripheral neuropathy. Plantar foot wound, not infected currently. Dry wound, minimal exudate. 30% slough and necrosis. Wound has not progressed despite appropriate dressing changes for 6 weeks. Patient is ambulatory — no offloading in use.","Diabetic neuropathic foot ulcer — elevated risk requiring specialist referral.
+Per AJGP guidelines: Check pedal pulses and sensation. If poor perfusion, refer to diabetic foot clinic or vascular surgeon.
+Dressing per wound profile (Wound Type 3/5 — dry, <25–30% slough, no active infection):
+Antimicrobial primary dressing as precaution given diabetic status, with secondary dressing based on low exudate level (low-absorbent pad).
+Silicone foam on feet must be applied WITHOUT borders and anchored with bandages.
+Wound not progressing for 6 weeks = referral indicated.
+Non-healing wound definition: wound with no signs of healing process within 2 to 4 weeks after appropriate intervention.
+Note: dressing alone will not heal a neuropathic plantar ulcer — offloading is essential (total contact cast, removable cast walker, or felt foam).","['Diabetic foot: Apply a primary antimicrobial dressing product with secondary dressing. Check pedal pulses and sensation; if poor perfusion, referral to diabetic foot clinic or vascular surgeon. Silicone foams on feet without borders and anchored with tape or bandages.', 'Non-healing wound: Any wound that has no signs of healing process within 2 to 4 weeks after appropriate intervention.', 'Off-loading: elevated plantar pressure is a causative factor in development of plantar ulcers in diabetic patients. Off-loading methods include total contact casts, removable cast walkers, felt foam.']",,[]
+skin_tear_elderly,"{'necrotic_pct': 0, 'slough_pct': 0, 'granulation_pct': 100, 'infection': 'Not infected', 'moisture': 'Moderate', 'edge': 'Advancing'}","Skin tear on forearm of 82-year-old patient. Flap is intact and viable. Minimal bleeding at edges. Fragile, papery skin around wound. No signs of infection. Previous nurse applied adhesive bordered foam — is this correct?","Skin tear management (AJGP Table 1):
+INCORRECT dressing choice — adhesive bordered foam can cause further skin tears on fragile skin. Correct approach:
+
+Primary dressing: Apply SILICONE-COATED foam dressing directly over the wound.
+  — Reposition the skin flap before applying the dressing.
+  — Do NOT use any ADHESIVE products on fragile skin — they may contribute to further skin tears, especially on forearms and hands of the elderly.
+  — Non-silicone foam types should be avoided in patients with fragile skin.
+
+Barrier wipe: Use a barrier wipe UNDER the foam to secure application, reduce maceration, and protect the skin on removal.
+
+Removal: Use remover wipes when removing the dressing from fragile skin. Remove in a direction that does NOT disturb viable tissue edges and flaps.
+
+If bleeding: Apply haemostatic alginate dressing as PRIMARY under the silicone foam.","['Skin tears: Apply silicone-covered foam dressing directly over the wound. Do not use any adhesive products on fragile skin as they may contribute to further skin tears, especially on forearms and hands of the elderly.', 'Using a barrier wipe under the foam aids to secure application, reduce maceration and protect the skin on removal of the dressing.', 'Remover wipes should be used when removing a dressing from fragile skin. Removal of the dressing should be done in a direction that does not disturb viable tissue edges and flaps.', 'If bleeding, apply haemostatic alginate dressing as primary dressing under a silicone-coated foam dressing. Foam: Nonsilicone types should be avoided in patients with fragile skin.']",,[]
+postoperative_clean,"{'necrotic_pct': 0, 'slough_pct': 0, 'granulation_pct': 100, 'infection': 'Not infected', 'moisture': 'Low', 'edge': 'Advancing'}","Clean postoperative incision, day 3. Healing by primary intention. No exudate visible. Sutured. No signs of infection or dehiscence. Patient wants to shower daily. What dressing is appropriate?","Postoperative wound management (AJGP Table 1):
+For wounds WITHOUT exudate: Dress over sutures with a FILM dressing or thin hydrocolloid.
+
+Film dressing characteristics:
+  — Permeable to gas but impermeable to bacteria and liquid
+  — Transparent, facilitates easy monitoring of the wound
+  — Waterproof — suitable for showering
+  — Most useful for postoperative wounds healing by primary intention
+  — Wear time: 1–4 days
+  — Caution if patient has particularly vulnerable skin — may consider a skin protectant (barrier) product underneath
+
+If wound dehisces: organise prompt surgical review.
+Do NOT use foam or alginate — no exudate present.","['Postoperative wounds: For wounds without exudate, dress over sutures with a film or thin hydrocolloid. In case of wound dehiscence, organise prompt surgical review.', 'Film dressings: permeable to gas but impermeable to bacteria and liquid. Useful on superficial wounds with minimum exudate. Wear time 1-4 days. Most useful for postoperative wounds healing by primary intention as they facilitate easy monitoring of the wound.', 'Films: transparent with measurement grid. Bacterial barrier. Waterproof. Breathable. Frequency of dressing change: 2-5 days depending on wound.']",,[]
+burn_hand_referral,"{'necrotic_pct': 0, 'slough_pct': 5, 'granulation_pct': 95, 'infection': 'Not infected', 'moisture': 'Moderate', 'edge': 'Advancing'}","Small superficial partial-thickness burn from hot water. Wound is on the palm of the right hand. Pink, moist wound bed, blistered. No signs of infection. Initial first aid with cool running water was already done.","Small superficial burn management (AJGP Table 1):
+After initial first aid treatment: cover burns area with HYDROGEL, HYDROCOLLOID, or FILM dressing.
+
+REFERRAL REQUIRED — MANDATORY for hand location:
+Refer to burns specialist for burns located on hands, feet, face, or genitalia, regardless of depth or size. Hand burns always require specialist review.
+
+Dressing options:
+  — Hydrogel: provides moist environment, reduces pain, rehydrates wound bed; frequency 2–3 days
+  — Hydrocolloid: maintains moist environment, promotes autolysis; frequency 2–5 days
+  — Film dressing: transparent for monitoring, waterproof; wear time 1–4 days
+
+Do NOT rupture blisters unless tense and clinically indicated.","['Small superficial burns: After initial first aid treatment, cover burns area with hydrogel or hydrocolloid or film. Refer to burns specialist for burns that are deep or infected or located on hands, feet, face or genitalia.', 'Hydrogel: Rehydrate, debride and deslough the wound. Promote moist healing. Comfortable, provides moist environment and reduces pain. Frequency: 2-3 days.', 'Hydrocolloid: Provide moist environment. Absorb exudates. Bacterial barrier. Cleans and debrids by autolysis. Easy to use. Promotes granulation tissue. Frequency: 2 to 5 days.']",,[]
+dressing_change_saturation,"{'necrotic_pct': 5, 'slough_pct': 10, 'granulation_pct': 85, 'infection': 'Not infected', 'moisture': 'High', 'edge': 'Advancing'}","Foam dressing applied 3 days ago. On examination today: dressing is soiled, fluid has struck through the outer layer, and the edges are curling. When should the dressing be changed?","Change the dressing NOW — immediately.
+
+Per clinical guidelines, a dressing must be changed when ANY of the following are present:
+  1. Dressing is soiled
+  2. Dressing is loose or slipping
+  3. Edges are curling
+  4. Fluid has accumulated / dressing is saturated (strikethrough visible)
+
+All four conditions are present. Change is mandatory regardless of how recently the dressing was applied or what the scheduled frequency is.
+
+Important principle: Manufacturer recommendations on frequency are GUIDELINES only — clinical judgment always takes precedence.
+
+For this wound profile (granulating, high exudate, no infection — Type 2/clean wet): Consider alginate or hydrofibre as PRIMARY under foam to increase absorption capacity and extend wear time. Foam frequency: 2–3 days under normal conditions.","['If the dressing is soiled, loose, slipping or curling at the edges, it is obvious that it should be changed. If there is accumulation of fluid and/or debris and the dressing is saturated, it needs change. If infection is present, increased frequencies of change need to be considered.', 'Most dressings come with manufacturer recommendations on the frequency of change or how long each dressing can maintain its efficacy; however these should only be used as guidelines, clinical judgment still rules.', 'Foam: Frequency of dressing change: 2 to 3 days or longer if for offloading.']",,[]
+npwt_contraindication,"{'necrotic_pct': 50, 'slough_pct': 20, 'granulation_pct': 30, 'infection': 'Infected', 'moisture': 'High', 'edge': 'Non-advancing'}","Large complex wound. 70% non-viable tissue (50% necrotic eschar, 20% slough). Infected with heavy exudate. Surgeon is considering applying NPWT vacuum dressing as the sole treatment. Is NPWT appropriate here?","NPWT is NOT appropriate as sole treatment in this wound, for two reasons:
+
+1. NPWT IS CONTRAINDICATED in necrotic wound bed or eschar — the necrotic tissue acts as a barrier to new tissue growth. This wound has 50% necrotic tissue.
+2. NPWT is an ADJUNCT treatment only. It does not replace surgical procedures and is not a panacea. It prepares the wound bed for a greater chance of successful closure.
+
+Additional NPWT contraindications:
+  — Untreated infection (deep extension of infectious focus)
+  — Clotting disorders (risk of bleeding)
+  — Neoplastic tissue in wound area
+
+Correct approach for this wound (Type 8 — wet, infected, >25% necrotic):
+First: Surgical/mechanical debridement (strongly recommended).
+Interim dressing: Alginate, Silver dressing, Hydrofibre, Foam, Charcoal, Polymeric membrane, or Iodine-based dressing.
+Antibiotic: Yes, based on C&S.
+NPWT may be considered AFTER adequate debridement.","['NPWT contraindications: Clotting disorders, Necrotic wound bed or eschar (barrier to new tissue growth), Untreated infection, Neoplastic tissue in the wound area.', 'NPWT is only an adjunct to the management of chronic, acute and difficult wounds and it is not a panacea. NPWT prepares wound bed for a greater chance of successful closure. NPWT does not replace surgical procedures.', 'Wet, infected wound with >25% slough/necrotic tissue: 1.Alginate 2.Silver dressing 3.Hydrofiber 4.Foam 5.Polymeric membrane 6.Charcoal 7.Iodine base dressing. Surgical/mechanical debridement strongly recommended.']",,[]
+silver_contraindicated_granulating,"{'necrotic_pct': 0, 'slough_pct': 0, 'granulation_pct': 100, 'infection': 'Not infected', 'moisture': 'Low', 'edge': 'Advancing'}","Wound is 100% healthy pink granulation tissue. No slough, no necrosis. Not infected. Dry/minimal exudate. Wound is healing well and edges advancing. Previous clinician applied a silver dressing. Is this appropriate?","INCORRECT dressing choice — silver dressing is contraindicated in this wound.
+
+Per the Wound Care Algorithm (Type 1 — Clean healthy granulating wound):
+All types of dressing material are suitable EXCEPT:
+  — Silver dressings
+  — Charcoal dressings
+  — Special advanced dressing materials
+
+Silver and charcoal are excluded from clean granulating wounds as they are not indicated and may be inappropriate for healthy tissue.
+
+Correct dressing for this wound:
+  — Film dressing (wear time 2–5 days): protects, allows monitoring, waterproof
+  — Hydrocolloid (2–5 days): promotes autolysis, moist environment
+  — Non-adherent silicone or tulle: for lightly exuding or granulating wounds
+  — Foam (2–3 days): if providing cushioning/protection
+No antibiotic needed. Wound may be ready for secondary closure.","['Clean, healthy granulating wound: All types of dressing material except silver, charcoal and special advanced dressing materials. No antibiotic. Ready for secondary wound closure or continue dressing till wound heals by secondary intention.', 'Non-adherent dressings (porous silicone or tulles): often used as primary dressing for lightly exuding or granulating wounds.', 'Frequency of wound dressing varies depending on type of wound and also dressing material used.']",,[]
+time_assessment_mixed_wound,"{'necrotic_pct': 25, 'slough_pct': 25, 'granulation_pct': 50, 'infection': 'Infected', 'moisture': 'Moderate', 'edge': 'Non-advancing'}","50% non-viable tissue: 25% black necrosis, 25% yellow slough. 50% granulation. Infected — pus, pain, malodour. Moderate exudate. Wound edges non-advancing. What does T.I.M.E. assessment indicate and what dressing should be used?","T.I.M.E. Wound Assessment (per Garis Panduan / WCM):
+  T (Tissue): 50% non-viable (25% necrotic + 25% slough) — >25% threshold met. Debridement is needed.
+  I (Infection/Inflammation): Signs present — pus, pain, malodour. Treat as infected.
+  M (Moisture imbalance): Moderate exudate — dressing must manage moisture balance.
+  E (Epidermal margin): Non-advancing — wound is stalled.
+
+Algorithm result: Wound Type 7 (>25% non-viable, infected, dry/moderate) — with moderate exudate trending toward Type 8.
+
+REFERRAL REQUIRED — wound types 7 and 8 should be referred to hospital.
+Interim dressings:
+  Type 7: Silver dressing, Hydrogel, Hydrocolloid, Iodine-based, Polymeric membrane
+  Type 8 (if heavy exudate): + Alginate, Hydrofibre, Foam, Charcoal
+Antibiotic: Yes, based on C&S.
+Surgery: Surgical/mechanical debridement strongly recommended.","['T.I.M.E. Wound Assessment: T=Tissue (viable/non-viable), I=Infection/Inflammation (signs and symptoms such as pus, pain, malodour), M=Moisture imbalance (exudate level dry/minimal or moderate/wet), E=Epidermal margin (advancing or non-advancing).', 'Dry, infected wound with >25% slough/necrotic tissue: Silver dressing, Hydrogel, Hydrocolloid, Iodine base dressing, Polymeric membrane. Surgical/mechanical debridement strongly recommended.', 'Wound types 6, 7 and 8: should be referred to hospital. Require extensive wound care such as surgical debridement, vacuum dressing. Systemic complications such as sepsis and cellulitis.']",,[]
+dressing_selection_heavy_exudate,"{'necrotic_pct': 0, 'slough_pct': 5, 'granulation_pct': 95, 'infection': 'Not infected', 'moisture': 'High', 'edge': 'Advancing'}",Heavily exuding granulating wound. Foam dressing changed daily as it saturates within 24 hours. Periwound skin showing early maceration. What dressing options better manage very heavy exudate?,"For very heavy exudate where foam alone saturates within 24 hours, consider these alternatives or combinations (Wound Type 2 — clean wet wound):
+
+1. ALGINATE (primary dressing):
+   — Absorbs up to 20 times its own weight — highest absorption capacity
+   — Forms a gel on contact with wound fluid that absorbs and contains exudate
+   — Promotes healing by maintaining physiologically moist environment
+   — Available in sheets or rope form; can fill cavities
+   — Always needs a secondary dressing over it
+   — Frequency: 2–5 days
+   — Note: residue must be washed off during cleansing
+
+2. HYDROFIBRE (primary dressing):
+   — Manages heavy exuding wounds
+   — Creates soft cohesive gel that conforms to wound surface
+   — Comfortable and non-traumatic on removal
+   — Reduces risk of maceration
+   — Needs secondary dressing
+   — Frequency: 2–5 days
+
+3. FOAM (secondary or alone):
+   — Highly absorbent but less so than alginate for very heavy exudate
+   — Frequency: 2–3 days
+
+For macerated periwound skin: apply skin protection/barrier before dressing.","['Alginates partially dissolve on contact with wound fluid to form a gel able to absorb up to 20 times own weight. Recommended for moderate to heavy level of exudate. Promote healing by maintaining physiologically moist environment. Available in sheet or rope form. Always covered with secondary dressing. Residue has to be washed off. Frequency: 2 to 5 days.', 'Hydrofibre: Manage heavy exuding wounds. Maintains moist healing environment. Longer wear time. Comfortable and non-traumatic upon removal. Reduces risk of maceration. Needs secondary dressings. Frequency: 2 to 5 days.', 'Foam: Absorbent. Cushioning. Conforms to body contours. Highly absorbent. Provides protection. Bacterial and waterproof. Frequency: 2 to 3 days or longer.']",,[]

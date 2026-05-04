@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "total_chunks": 13,
+    "kept_count": 13,
+    "ai_summarised": 13,
+    "extraction": "PyMuPDF native text blocks + pdfplumber tables (pages 15-16)",
+    "chunking": "manual section-aware — one chunk per logical section / wound type",
+    "pages_used": [
+      14,
+      15,
+      16,
+      18,
+      34
+    ],
+    "pages_skipped": "1-13, 17, 19-33, 35-36 (admin, SOP, forms, appendices)",
+    "chunk_params": {
+      "min_characters": 60
+    },
+    "note": "Use ai_summary field for reference_contexts and ChromaDB page_content."
+  },
+  "kept_ids_by_source": {
+    "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf": [
+      "8409dedeea26",
+      "bd2bb8e1321e",
+      "52ef696853c7",
+      "4643f10b8894",
+      "c0a350e36ecf",
+      "d622ee9f4c9c",
+      "aad7a40107b0",
+      "b4ba04cb08d4",
+      "c4177e98524e",
+      "e75347f9bdb3",
+      "ca7a1e934891",
+      "8bb5168bd7e5",
+      "0cc16688a29a"
+    ]
+  },
+  "kept_chunks": [
+    {
+      "chunk_id": "8409dedeea26",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Wound Assessment — T.I.M.E. Framework",
+      "parent_section": "Wound Assessment",
+      "chunk_index": 0,
+      "char_count": 1171,
+      "text": "PRINSIP ASAS PENILAIAN LUKA — T.I.M.E. Wound Bed Assessment Framework\n\nReference: *T.I.M.E. - Principles of Wound Bed Assessment And Preparation\n(Wound Care Manual, First Edition 2014, Ministry of Health Malaysia, p.14)\n\nEvery wound assessment must evaluate three dimensions:\n\n1. SIZE\n   Measure wound surface area: Length (cm), Width (cm), Depth (cm)\n\n2. SURROUNDING SKIN\n   Assess for signs of: infection, ischaemia, maceration, crepitus\n\n3. T.I.M.E. (four components):\n\n   T — Tissue\n       • Viable tissue: Granulation and new epithelial tissue\n       • Non-viable tissue: Necrotic or slough tissue\n\n   I — Infection / Inflammation\n       • Signs and symptoms of infection:\n         - Presence of pus\n         - Pain / tenderness\n         - Malodour\n\n   M — Moisture imbalance\n       • Exudate level assessment:\n         - Dry / minimal exudate\n         - Moderate / wet exudate\n\n   E — Epidermal margin\n       • Advancing wound edges  (good healing)\n       • Non-advancing wound edges (stalled healing)\n\nThe T.I.M.E. assessment is the cornerstone of the wound type classification used in\nthe Garis Panduan wound care algorithm (see Wound Assessment Algorithm chunk).",
+      "ai_summary": "**Clinical Summary: Wound Assessment Using the T.I.M.E. Framework**\n\nThe T.I.M.E. framework is essential for comprehensive wound assessment and preparation, focusing on three key dimensions: size, surrounding skin, and the T.I.M.E. components.\n\n1. **Size Assessment**: \n   - Measure the wound surface area by recording:\n     - Length (cm)\n     - Width (cm)\n     - Depth (cm)\n\n2. **Surrounding Skin Evaluation**: \n   - Inspect for signs of:\n     - Infection\n     - Ischaemia\n     - Maceration\n     - Crepitus\n\n3. **T.I.M.E. Components**:\n   - **T — Tissue**:\n     - **Viable Tissue**: Presence of granulation and new epithelial tissue.\n     - **Non-viable Tissue**: Presence of necrotic or slough tissue.\n   \n   - **I — Infection / Inflammation**:\n     - Look for signs and symptoms of infection, including:\n       - Presence of pus\n       - Pain or tenderness\n       - Malodour\n\n   - **M — Moisture Imbalance**:\n     - Assess the level of exudate:\n       - Dry or minimal exudate\n       - Moderate or wet exudate\n\n   - **E — Epidermal Margin**:\n     - Evaluate wound edges:\n       - Advancing edges indicate good healing.\n       - Non-advancing edges suggest stalled healing.\n\nThe T.I.M.E. assessment is fundamental for classifying wound types and is integrated into the Garis Panduan wound care algorithm."
+    },
+    {
+      "chunk_id": "bd2bb8e1321e",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Wound Assessment — Decision Algorithm",
+      "parent_section": "Wound Assessment",
+      "chunk_index": 0,
+      "char_count": 1657,
+      "text": "ASPEK PENJAGAAN LUKA — Wound Assessment Algorithm (Decision Tree)\n\nThis algorithm classifies wounds into 8 types using three sequential criteria.\nIt drives the selection of dressing material, antibiotics, and surgical procedures.\n\nDECISION CRITERIA (applied in order):\n\nCriterion 1 — TISSUE NECROSIS / SLOUGH\n  • < 25% necrotic / slough tissue  →  Wound Types 1, 2, 3, 4\n  • > 25% necrotic / slough tissue  →  Wound Types 5, 6, 7, 8\n\nCriterion 2 — WOUND INFECTION (YES / NO)\n  Within <25% necrosis group:\n    • NO infection   →  Types 1, 2\n    • YES infection  →  Types 3, 4\n  Within >25% necrosis group:\n    • NO infection   →  Types 5, 6\n    • YES infection  →  Types 7, 8\n\nCriterion 3 — MOISTURE / EXUDATE LEVEL\n  • Dry / minimal exudate    →  Odd-numbered types  (1, 3, 5, 7)\n  • Moderate / wet exudate   →  Even-numbered types (2, 4, 6, 8)\n\nRESULTING WOUND TYPE MATRIX:\n\n  Wound Type 1: < 25% necrosis | NO infection  | Dry / minimal   exudate\n  Wound Type 2: < 25% necrosis | NO infection  | Moderate / wet  exudate\n  Wound Type 3: < 25% necrosis | YES infection | Dry / minimal   exudate\n  Wound Type 4: < 25% necrosis | YES infection | Moderate / wet  exudate\n  Wound Type 5: > 25% necrosis | NO infection  | Dry / minimal   exudate\n  Wound Type 6: > 25% necrosis | NO infection  | Moderate / wet  exudate\n  Wound Type 7: > 25% necrosis | YES infection | Dry / minimal   exudate\n  Wound Type 8: > 25% necrosis | YES infection | Moderate / wet  exudate\n\nEach wound type has specific dressing, antibiotic and debridement recommendations.\nSee: Wound Types 1–8 Treatment Recommendation chunks.\nNote: Wound types 6, 7, and 8 require referral to hospital.",
+      "ai_summary": "**Wound Assessment Algorithm Summary**\n\nThe wound assessment algorithm classifies wounds into eight types based on three sequential criteria: tissue necrosis/slough, wound infection, and moisture/exudate level. This classification guides the selection of appropriate dressing materials, antibiotics, and surgical interventions.\n\n**Decision Criteria:**\n\n1. **Tissue Necrosis / Slough:**\n   - **< 25% necrotic/slough tissue** → Wound Types 1, 2, 3, 4\n   - **> 25% necrotic/slough tissue** → Wound Types 5, 6, 7, 8\n\n2. **Wound Infection (Yes/No):**\n   - For wounds with < 25% necrosis:\n     - **No infection** → Types 1, 2\n     - **Yes infection** → Types 3, 4\n   - For wounds with > 25% necrosis:\n     - **No infection** → Types 5, 6\n     - **Yes infection** → Types 7, 8\n\n3. **Moisture / Exudate Level:**\n   - **Dry / minimal exudate** → Odd-numbered types (1, 3, 5, 7)\n   - **Moderate / wet exudate** → Even-numbered types (2, 4, 6, 8)\n\n**Resulting Wound Type Matrix:**\n\n- **Wound Type 1:** < 25% necrosis | No infection | Dry / minimal exudate\n- **Wound Type 2:** < 25% necrosis | No infection | Moderate / wet exudate\n- **Wound Type 3:** < 25% necrosis | Yes infection | Dry / minimal exudate\n- **Wound Type 4:** < 25% necrosis | Yes infection | Moderate / wet exudate\n- **Wound Type 5:** > 25% necrosis | No infection | Dry / minimal exudate\n- **Wound Type 6:** > 25% necrosis | No infection | Moderate / wet exudate\n- **Wound Type 7:** > 25% necrosis | Yes infection | Dry / minimal exudate\n- **Wound Type 8:** > 25% necrosis | Yes infection | Moderate / wet exudate\n\n**Treatment Recommendations:**\nEach wound type has specific recommendations for dressings, antibiotics, and debridement. Notably, wound types 6, 7, and 8 require referral to a hospital for further management."
+    },
+    {
+      "chunk_id": "52ef696853c7",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 1",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 948,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 1\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: <25% of wound surface\n  • Wound infection: NO\n  • Moisture/exudate: dry/minimal\n  • Requires hospital referral: No\n\nWound Type 1 Description:\n  Clean, healthy granulating wound — dry/minimal exudate, NO infection, <25% necrosis\n\nRecommended Dressing Materials:\n  All types of dressing material except silver, charcoal and special advanced dressing materials.\n\nAntibiotic Recommendation:\n  No\n\nSurgical / Procedural Recommendation:\n  1.Ready for secondary wound closure 2.If the wound is small, continue dressing till the wound heals by secondary intention 3.Frequency of wound dressing varies depending on type of wound and also dressing material used\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 1 Treatment**\n\n**Wound Type Description:**\n- Clean, healthy granulating wound\n- Characteristics: dry/minimal exudate, no infection, and less than 25% necrosis/slough\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Dry/minimal\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n- All types of dressing materials are suitable except for silver, charcoal, and special advanced dressing materials.\n\n**Antibiotic Recommendation:**\n- No antibiotics are required.\n\n**Surgical/Procedural Recommendations:**\n1. The wound is ready for secondary closure.\n2. For small wounds, continue dressing until healing occurs by secondary intention.\n3. The frequency of dressing changes will vary based on the type of wound and the dressing material used.\n\n**References:**\n- Guidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167."
+    },
+    {
+      "chunk_id": "4643f10b8894",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 2",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 781,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 2\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: <25% of wound surface\n  • Wound infection: NO\n  • Moisture/exudate: moderate/wet\n  • Requires hospital referral: No\n\nWound Type 2 Description:\n  Clean and wet wound — moderate/wet exudate, NO infection, <25% necrosis\n\nRecommended Dressing Materials:\n  1. Foam 2. Alginate 4. Hydrofiber 5. Polymeric membrane\n\nAntibiotic Recommendation:\n  May or may not, based on the underlying cause\n\nSurgical / Procedural Recommendation:\n  1.Find underlying cause 2.Treat underlying cause if nessary\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 2 Treatment**\n\n**Wound Type 2 Description:**\n- Characteristics: Clean and wet wound with moderate exudate, no infection, and less than 25% necrosis/slough.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Moderate/wet\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n1. Foam\n2. Alginate\n3. Hydrofiber\n4. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical / Procedural Recommendation:**\n1. Identify the underlying cause of the wound.\n2. Treat the underlying cause if necessary.\n\n**Reference:**\nGaris Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167."
+    },
+    {
+      "chunk_id": "c0a350e36ecf",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 3",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 780,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 3\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: <25% of wound surface\n  • Wound infection: YES\n  • Moisture/exudate: dry/minimal\n  • Requires hospital referral: No\n\nWound Type 3 Description:\n  Dry, infected wound with <25% slough/necrotic tissue (most likely vascular in origin)\n\nRecommended Dressing Materials:\n  1.Tulle 2.Hydrogel 3.Hydrocolloid 4.Silver dressing 5.Iodine base dressing\n\nAntibiotic Recommendation:\n  Yes based on C&S report of infected tissue\n\nSurgical / Procedural Recommendation:\n  1. Debridement may be needed\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 3 Treatment**\n\n**Wound Type 3 Description:**\nThis type of wound is characterized as a dry, infected wound with less than 25% slough or necrotic tissue, likely of vascular origin. \n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Dry or minimal\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Tulle\n2. Hydrogel\n3. Hydrocolloid\n4. Silver dressing\n5. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019)."
+    },
+    {
+      "chunk_id": "d622ee9f4c9c",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 4",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 754,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 4\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: <25% of wound surface\n  • Wound infection: YES\n  • Moisture/exudate: moderate/wet\n  • Requires hospital referral: No\n\nWound Type 4 Description:\n  Wet, infected wound with <25% slough/necrotic tissue\n\nRecommended Dressing Materials:\n  1.Alginate 2.Foam 3.Silver 4.Hydrofiber 5.Polymeric membrane 6.Iodine base dressing\n\nAntibiotic Recommendation:\n  Yes based C&S report of infected tissue\n\nSurgical / Procedural Recommendation:\n  1. Debridement may be needed\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 4 Treatment**\n\n**Wound Type 4 Description:**\nThis type of wound is characterized as a wet, infected wound with less than 25% slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Silver\n4. Hydrofiber\n5. Polymeric membrane\n6. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019)."
+    },
+    {
+      "chunk_id": "aad7a40107b0",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 5",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 678,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 5\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: >25% of wound surface\n  • Wound infection: NO\n  • Moisture/exudate: dry/minimal\n  • Requires hospital referral: No\n\nWound Type 5 Description:\n  Dry, non-infected wound with >25% slough/necrotic tissue\n\nRecommended Dressing Materials:\n  1.Hydrogel 2.Hydrocolloid 3.Polymeric membrane\n\nAntibiotic Recommendation:\n  No\n\nSurgical / Procedural Recommendation:\n  1. Debridement is needed\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 5**\n\n**Wound Characteristics:**\n- Type: Dry, non-infected wound\n- Necrosis/Slough: Greater than 25% of wound surface\n- Infection: No wound infection present\n- Moisture/Exudate: Dry to minimal\n- Hospital Referral: Not required\n\n**Recommended Dressing Materials:**\n1. Hydrogel\n2. Hydrocolloid\n3. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- No antibiotics are indicated.\n\n**Surgical/Procedural Recommendation:**\n- Debridement is necessary to remove necrotic tissue.\n\n**Reference:** Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167."
+    },
+    {
+      "chunk_id": "b4ba04cb08d4",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 6",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 823,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 6\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: >25% of wound surface\n  • Wound infection: NO\n  • Moisture/exudate: moderate/wet\n  • Requires hospital referral: YES — referral to hospital recommended\n\nWound Type 6 Description:\n  Wet, non-infected wound with >25% slough/necrotic tissue\n\nRecommended Dressing Materials:\n  1. Alginate 2.Foam 3.Polymeric membrane 4.Hydrofiber\n\nAntibiotic Recommendation:\n  May or may not, based on the underlying cause\n\nSurgical / Procedural Recommendation:\n  1. Surgical/ mechanical debridement is recommended 2. May need repeated debridement\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 6**\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of wound surface\n- **Wound Infection:** No infection present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Recommended for further evaluation and treatment\n\n**Wound Type 6 Description:**\nThis type of wound is characterized as a wet, non-infected wound with more than 25% slough or necrotic tissue present.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Polymeric membrane\n4. Hydrofiber\n\n**Antibiotic Recommendation:**\nAntibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is recommended to remove necrotic tissue.\n2. Repeated debridement may be necessary to achieve optimal healing.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167."
+    },
+    {
+      "chunk_id": "c4177e98524e",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 7",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 825,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 7\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: >25% of wound surface\n  • Wound infection: YES\n  • Moisture/exudate: dry/minimal\n  • Requires hospital referral: YES — referral to hospital recommended\n\nWound Type 7 Description:\n  Dry, infected wound with >25% slough/necrotic tissue\n\nRecommended Dressing Materials:\n  1. Silver dressing 2.Hydrogel 3.Hydrocolloid 4.Iodine base dressing 5.Polymeric membrane\n\nAntibiotic Recommendation:\n  Yes based C&S report of infected tissue\n\nSurgical / Procedural Recommendation:\n  1. Surgical/ mechanical debridement is strongly recommended\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 7**\n\n**Wound Description:**\n- This wound is characterized as a dry, infected wound with more than 25% slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of the wound surface is affected.\n- **Wound Infection:** Present.\n- **Moisture/Exudate:** Dry or minimal.\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Silver dressing\n2. Hydrogel\n3. Hydrocolloid\n4. Iodine-based dressing\n5. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n- Surgical or mechanical debridement is strongly recommended to address the necrotic tissue.\n\n**References:**\n- Guidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019)."
+    },
+    {
+      "chunk_id": "e75347f9bdb3",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Treatment Recommendation — Wound Type 8",
+      "parent_section": "Treatment Recommendations (Rawatan yang Disarankan)",
+      "chunk_index": 0,
+      "char_count": 874,
+      "text": "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 8\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: >25% of wound surface\n  • Wound infection: YES\n  • Moisture/exudate: moderate/wet\n  • Requires hospital referral: YES — referral to hospital recommended\n\nWound Type 8 Description:\n  Wet, infected wound with >25% slough/necrotic tissue\n\nRecommended Dressing Materials:\n  1.Alginate 2.Silver dressing 3.Hydrofiber 4.Foam 5.Polymeric membrane 6.Charcoal 7.Iodine base dressing\n\nAntibiotic Recommendation:\n  Yes based C&S report of infected tissue\n\nSurgical / Procedural Recommendation:\n  1. Surgical/ mechanical debridement is strongly recommended 2. May need repeated debridement\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+      "ai_summary": "**Clinical Summary for Wound Type 8**\n\n**Wound Description:**\nWound Type 8 is characterized as a wet, infected wound with more than 25% of the surface area covered by slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** >25% of wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Silver dressing\n3. Hydrofiber\n4. Foam\n5. Polymeric membrane\n6. Charcoal\n7. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is strongly recommended.\n2. Repeated debridement may be necessary.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167."
+    },
+    {
+      "chunk_id": "ca7a1e934891",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Cases Requiring Hospital Referral",
+      "parent_section": "Clinical Management",
+      "chunk_index": 0,
+      "char_count": 1141,
+      "text": "KES YANG PERLU DIRUJUK KE HOSPITAL ATAU LAIN-LAIN INSTITUSI\n(Cases Requiring Referral to Hospital or Other Institution)\n\nWound types that require hospital referral:\n  i.   Luka jenis 6 — Wet, non-infected wound with >25% slough/necrotic tissue\n  ii.  Luka jenis 7 — Dry, infected wound with >25% slough/necrotic tissue\n  iii. Luka jenis 8 — Wet, infected wound with >25% slough/necrotic tissue\n\nCriteria for referral (any of the following):\n\n  • Wound characteristics require extensive care such as:\n    - Surgical debridement\n    - Vacuum (negative pressure) dressing\n    - Other advanced wound procedures\n\n  • Patient has other acute complications.\n\n  • Systemic wound complications such as:\n    - Sepsis\n    - Severe cellulitis\n\n  • Co-morbid disease complications requiring inpatient management:\n    - Heart failure\n    - Renal failure\n    - Other conditions requiring ward admission\n\n  • Other conditions as determined by the State-Level Wound Care Committee\n    (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019, p.14)",
+      "ai_summary": "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)"
+    },
+    {
+      "chunk_id": "8bb5168bd7e5",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Tissue Type Descriptions — Visual Guide",
+      "parent_section": "Wound Assessment",
+      "chunk_index": 0,
+      "char_count": 1328,
+      "text": "PANDUAN ILUSTRASI JENIS LUKA — Tissue Type Visual Guide\n\nThis section describes the visual characteristics of wound tissue types used in\nthe T.I.M.E. wound assessment framework.\n\n1. NECROTIC / SLOUGH TISSUE\n   - Dead, non-viable tissue\n   - May appear black (eschar/necrotic) or yellow/grey (slough)\n   - Requires debridement before wound can progress to healing\n\n2. GRANULATION TISSUE\n   - New connective tissue formed during wound healing\n   - Appearance: Red, cobblestone / beefy texture\n   - Only present in full-thickness wounds\n   - Indicates healthy wound progression\n\n3. EPITHELIAL TISSUE\n   - Regrowth of the epidermis (outermost skin layer)\n   - Appearance: Pink or pearly colour, smooth and shiny\n   - Indicates advanced wound healing / near closure\n\n4. PRESENCE OF EXUDATES ON TISSUE\n   - Exudate is wound fluid that may be serous, sanguineous, or purulent\n   - Level assessed as: dry / minimal  OR  moderate / wet\n   - Heavy exudate requires absorbent dressings (alginate, foam, hydrofiber)\n\n5. PRESENCE OF INFECTION ON TISSUE\n   - Signs: redness, warmth, swelling, pain, purulent discharge, malodour\n   - Infected wounds require antimicrobial dressings (silver, iodine)\n     and may require systemic antibiotics based on culture & sensitivity (C&S)\n\nReference: Wound Care Manual, Ministry of Health Malaysia, 2014.",
+      "ai_summary": "**Clinical Summary: Wound Tissue Types and Care Guidelines**\n\nThis summary outlines the visual characteristics of wound tissue types as per the T.I.M.E. wound assessment framework, along with appropriate care recommendations.\n\n1. **Necrotic / Slough Tissue**\n   - Definition: Dead, non-viable tissue.\n   - Appearance: Can be black (eschar/necrotic) or yellow/grey (slough).\n   - Care Requirement: Requires debridement to facilitate healing.\n\n2. **Granulation Tissue**\n   - Definition: New connective tissue formed during the healing process.\n   - Appearance: Red, with a cobblestone or beefy texture.\n   - Wound Type: Present only in full-thickness wounds.\n   - Significance: Indicates healthy wound progression.\n\n3. **Epithelial Tissue**\n   - Definition: Regrowth of the epidermis, the outermost skin layer.\n   - Appearance: Pink or pearly color, smooth and shiny.\n   - Significance: Indicates advanced wound healing and nearing closure.\n\n4. **Presence of Exudates on Tissue**\n   - Definition: Wound fluid that can be serous, sanguineous, or purulent.\n   - Assessment Levels: Dry/minimal or moderate/wet.\n   - Care Requirement: Heavy exudate necessitates the use of absorbent dressings such as alginate, foam, or hydrofiber.\n\n5. **Presence of Infection on Tissue**\n   - Signs: Redness, warmth, swelling, pain, purulent discharge, and malodour.\n   - Care Requirement: Infected wounds require antimicrobial dressings (e.g., silver, iodine) and may necessitate systemic antibiotics based on culture and sensitivity (C&S) results.\n\n**Reference:** Wound Care Manual, Ministry of Health Malaysia, 2014."
+    },
+    {
+      "chunk_id": "0cc16688a29a",
+      "source": "Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer.pdf",
+      "section": "Clinical Glossary",
+      "parent_section": "Reference",
+      "chunk_index": 0,
+      "char_count": 1325,
+      "text": "GLOSARI — Clinical Glossary (Wound Care Terms)\n\nSource: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\nMinistry of Health Malaysia 2019.\n\n1. Wound - A wound is an injury to the integument or to the underlying structures; It is \n visible result of individual cell death or damage; that may or may not result in \n a loss of skin integrity whereby physiological function of the tissue is impaired.\n\n2. Ulcer - An interruption of continuity of an epithelial surface with an inflamed base.It \n is usually a result of an underlying or internal etiology.\n\n3. Diabetic foot - Diabetic foot is a foot that exhibits any pathology that results directly \n from diabetes mellitus or any long-term (or \"chronic\") complication of \n diabetes mellitus (Jeffcoate & Harding, 2003).\n\n4. Acute wound - sudden disruption of skin integrity usually caused by traumatic event \n or surgery\n\n5. Chronic Wound - A chronic wound is a wound that does not heal in an orderly set of \n stages and in a predictable amount of time the way most wounds do\n\n6. Non-healing wound: Any wound that has no signs of healing process within 2 to 4 \n weeks after appropriate intervention.\n\n7. Debridement - Debridement is the medical removal of dead, damaged, or infected \n tissue to improve the healing potential of the remaining healthy tissue",
+      "ai_summary": "**Clinical Summary: Wound Care Terms**\n\n1. **Wound**: An injury to the integument or underlying structures, characterized by visible cell death or damage. It may or may not compromise skin integrity, leading to impaired physiological function of the tissue.\n\n2. **Ulcer**: A disruption of the continuity of an epithelial surface with an inflamed base, typically resulting from an underlying or internal etiology.\n\n3. **Diabetic Foot**: A foot exhibiting any pathology directly related to diabetes mellitus or its long-term complications, as defined by Jeffcoate & Harding (2003).\n\n4. **Acute Wound**: A sudden disruption of skin integrity, usually caused by a traumatic event or surgical procedure.\n\n5. **Chronic Wound**: A wound that fails to heal in a predictable manner and does not progress through the orderly stages of healing.\n\n6. **Non-healing Wound**: Any wound that shows no signs of healing within 2 to 4 weeks after appropriate intervention.\n\n7. **Debridement**: The medical procedure involving the removal of dead, damaged, or infected tissue to enhance the healing potential of the remaining healthy tissue."
+    }
+  ]
+}

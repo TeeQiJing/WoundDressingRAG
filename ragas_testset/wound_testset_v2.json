@@ -1,0 +1,986 @@
+[
+  {
+    "case_id": "cat_a_type1_dry",
+    "category": "A",
+    "synthesizer_name": "cat_a_type1_dry",
+    "wound_type_expected": 1,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 0,
+      "granulation_pct": 100,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 0%, Slough: 0%, Granulation: 100%\nInfection: Not infected\nMoisture: Low\nEdge: Advancing",
+    "reference": "## Primary Dressing\nFilm dressing or thin hydrocolloid over the granulating wound bed. Film is transparent (facilitates monitoring), waterproof, and changes every 2–5 days. Hydrocolloid provides a moist environment and promotes autolysis; also 2–5 days.\n\n## Secondary Dressing\nNot required for film. Foam may be added for cushioning/protection if wound is at risk of trauma, without using silver or charcoal.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 100% healthy granulation — wound bed is clean; no debridement needed.\n- I (Infection): Not infected — antimicrobial dressings (silver, charcoal) are CONTRAINDICATED on clean granulating wounds.\n- M (Moisture): Low/dry — film or hydrocolloid maintain moisture balance without excess absorption.\n- E (Edge): Advancing — wound is progressing; maintain current dressing strategy.\n\n## Contraindications\nSilver dressings and charcoal dressings must NOT be used — they are excluded from Wound Type 1 by the clinical algorithm. Special advanced dressing materials are also excluded.\n\n## Dressing Change Frequency\nFilm: every 2–5 days. Hydrocolloid: every 2–5 days. Change earlier if soiled, loose, curling, or saturated.\n\n## Application Tips\nApply film without trapping air underneath. Remove by stretching slowly from edges. For small wounds, continue dressing until healed by secondary intention or proceed to secondary closure if wound is ready.\n\n## Clinical Notes\nNo antibiotic required. Referral not indicated.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 1 Treatment**\n\n**Wound Type Description:**\n- Clean, healthy granulating wound\n- Characteristics: dry/minimal exudate, no infection, and less than 25% necrosis/slough\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Dry/minimal\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n- All types of dressing materials are suitable except for silver, charcoal, and special advanced dressing materials.\n\n**Antibiotic Recommendation:**\n- No antibiotics are required.\n\n**Surgical/Procedural Recommendations:**\n1. The wound is ready for secondary closure.\n2. For small wounds, continue dressing until healing occurs by secondary intention.\n3. The frequency of dressing changes will vary based on the type of wound and the dressing material used.\n\n**References:**\n- Guidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**WCM Modern/Advanced Dressing - Film**\n\n**Purpose:** \n- Protects against contamination and friction\n- Maintains a moist surface\n- Prevents evaporation\n- Facilitates assessment of the wound\n\n**Advantages:**\n- Adherent and transparent with a measurement grid\n- Acts as a bacterial barrier\n- Waterproof yet breathable\n\n**Disadvantages:**\n- May allow fluid collection\n- Risk of stripping away newly formed epithelium upon removal\n\n**Practical Usage/Application:**\n- Apply the film directly over the wound site, ensuring no air is trapped underneath.\n- To remove, stretch the film and pull slowly from the edges.\n\n**Frequency of Dressing Change:** \n- Every 2 to 5 days, depending on the condition of the wound. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: Hydrocolloid Dressings**\n\n**Purpose:** Hydrocolloid dressings are designed to provide a moist wound environment, absorb exudates, and serve as a bacterial barrier.\n\n**Indications:** These dressings are effective for low to moderate exuding wounds and promote granulation tissue formation.\n\n**Advantages:**\n- Cleans and debrides wounds through autolysis\n- Easy to use and cost-effective\n- Waterproof, providing protection from external contaminants\n\n**Disadvantages:**\n- May produce an unpleasant odor\n- Forms a yellow liquid gel upon use\n- Can be challenging to apply in wound cavities\n- Risk of maceration of the skin surrounding the wound\n\n**Practical Usage/Application:**\n- Apply the adhesive side of the dressing directly onto the wound without touching the wound bed.\n- A yellow liquid may appear after the dressing is in place, which should be cleansed.\n- Dressing changes should occur every 2 to 5 days, depending on the wound's condition.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "foam",
+      "hydrocolloid",
+      "film",
+      "tulle",
+      "alginate",
+      "hydrofiber",
+      "polymeric_membrane",
+      "hydrogel"
+    ],
+    "contraindicated_dressings": [
+      "silver",
+      "charcoal"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type2_wet",
+    "category": "A",
+    "synthesizer_name": "cat_a_type2_wet",
+    "wound_type_expected": 2,
+    "time_payload": {
+      "necrotic_pct": 5,
+      "slough_pct": 5,
+      "granulation_pct": 90,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 5%, Slough: 5%, Granulation: 90%\nInfection: Not infected\nMoisture: High\nEdge: Advancing",
+    "reference": "## Primary Dressing\nAlginate (sheet or rope form) — absorbs up to 20× its own weight; forms a gel on contact with wound fluid. Suitable for moderate to heavy exudate; frequency 2–5 days. Always requires a secondary dressing. Alternatively, hydrofibre manages heavy exuding wounds, maintains moist healing environment, reduces maceration risk; frequency 2–5 days.\n\n## Secondary Dressing\nFoam — highly absorbent, conforms to body contours, bacterial and waterproof barrier; frequency 2–3 days. Can be used alone if exudate is moderate rather than heavy.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 90% granulation, minimal non-viable tissue — wound is essentially clean.\n- I (Infection): Not infected — no antimicrobial dressing needed.\n- M (Moisture): High exudate — primary need is high-capacity absorption; alginate or hydrofibre are the correct first-line choices.\n- E (Edge): Advancing — wound is progressing normally.\n\n## Contraindications\nSilver and charcoal not indicated (clean wound). Alginate and hydrofibre are NOT suitable for dry wounds — but this wound has high exudate so they are appropriate here.\n\n## Dressing Change Frequency\nAlginate/Hydrofibre: 2–5 days. Foam alone: 2–3 days. Change earlier if dressing is soiled, loose, curling, or saturated.\n\n## Application Tips\nAlginate residue must be washed off during wound cleansing. Polymeric membrane dressing is also suitable as a single-layer option managing moisture imbalance (2–5 days).\n\n## Clinical Notes\nFind and treat the underlying cause of high exudate. Antibiotic not indicated unless underlying cause warrants it. Referral not required.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 2 Treatment**\n\n**Wound Type 2 Description:**\n- Characteristics: Clean and wet wound with moderate exudate, no infection, and less than 25% necrosis/slough.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Moderate/wet\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n1. Foam\n2. Alginate\n3. Hydrofiber\n4. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical / Procedural Recommendation:**\n1. Identify the underlying cause of the wound.\n2. Treat the underlying cause if necessary.\n\n**Reference:**\nGaris Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167.",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Hydrofibre**\n\n**Purpose:** Hydrofibre dressings are designed to manage heavy exuding wounds while maintaining a moist healing environment.\n\n**Advantages:**\n- Extended wear time\n- Comfortable and non-traumatic upon removal\n- Reduces the risk of maceration\n- Can be used on infected wounds\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires secondary dressings\n\n**Practical Usage/Application:** Hydrofibre dressings form a gel-like layer upon absorption, which facilitates easy removal. \n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days. \n\n**Indications:** Heavy exuding wounds, infected wounds.\n\n**Contraindications:** Not appropriate for dry wounds. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Foams**\n\n**Purpose:** Foam dressings are designed for absorbent cushioning of wounds.\n\n**Advantages:**\n- Conforms to body contours\n- Suitable for cavity wounds\n- Highly absorbent\n- Provides protection\n- Bacterial and waterproof\n\n**Disadvantages:**\n- May adhere to wounds if exudate dries out\n\n**Practical Usage/Application:**\nFoam dressings can be utilized as secondary dressings or as fillers for cavity wounds. The recommended frequency for dressing changes is every 2 to 3 days, or longer if used for offloading purposes. \n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "foam",
+      "alginate",
+      "hydrofiber",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [
+      "silver",
+      "charcoal"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type3_dry_infected",
+    "category": "A",
+    "synthesizer_name": "cat_a_type3_dry_infected",
+    "wound_type_expected": 3,
+    "time_payload": {
+      "necrotic_pct": 10,
+      "slough_pct": 12,
+      "granulation_pct": 78,
+      "infection": "Locally infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 10%, Slough: 12%, Granulation: 78%\nInfection: Locally infected\nMoisture: Low\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nSilver dressing — reduces bacterial bioburden in infected wounds; bactericidal with no known resistance; acts locally at the wound site; frequency 2–3 days. Alternatively, hydrogel as primary to rehydrate the dry infected wound bed and promote autolytic debridement; frequency 2–3 days; requires a secondary dressing.\n\n## Secondary Dressing\nNon-adherent tulle or low-absorbent pad if using hydrogel as primary. Hydrocolloid can serve as a combined primary/secondary for low-to-moderate exudate wounds; promotes autolysis; frequency 2–5 days.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 22% non-viable (<25% threshold) — debridement may be needed but urgent surgical referral is not yet mandatory.\n- I (Infection): Infected — antimicrobial dressing is mandatory. Silver is first-line bactericidal choice.\n- M (Moisture): Dry/low — dressing should donate moisture (hydrogel) or manage the dry wound environment without excessive absorption.\n- E (Edge): Non-advancing — wound is stalled; infection is the likely driver.\n\n## Contraindications\nIodine-based dressings should be AVOIDED in patients with thyroid disorders (iodine may be absorbed systemically). Confirm no thyroid history before prescribing.\n\n## Dressing Change Frequency\nSilver: 2–3 days. Hydrogel: 2–3 days. Hydrocolloid: 2–5 days.\n\n## Application Tips\nApply silver dressing with silver side facing the wound bed. For hydrogel, apply directly to wound bed and cover with secondary dressing.\n\n## Clinical Notes\nAntibiotic: YES — based on culture and sensitivity (C&S) report of infected tissue. Debridement may be needed. Referral not indicated for Type 3 (non-viable tissue <25%).",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 3 Treatment**\n\n**Wound Type 3 Description:**\nThis type of wound is characterized as a dry, infected wound with less than 25% slough or necrotic tissue, likely of vascular origin. \n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Dry or minimal\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Tulle\n2. Hydrogel\n3. Hydrocolloid\n4. Silver dressing\n5. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019).",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary of Wound Dressings**\n\n1. **Iodine Dressings**\n   - **Indications**: Useful for infected wounds.\n   - **Contraindications**: Should be avoided in patients with thyroid disorders due to potential systemic absorption of iodine.\n   - **Frequency of Change**: Not specified.\n   - **Safety Warnings**: Monitor for systemic absorption in patients with thyroid issues.\n\n2. **Silver Dressings**\n   - **Forms**: Available as elemental, inorganic, and organic silver, including silver nitrate, silver sulfadiazine, and nanocrystalline silver technology.\n   - **Indications**: Broad spectrum antimicrobial action effective against gram-positive and gram-negative bacteria, yeast, and fungi; also provides toxin and odour control.\n   - **Mechanism**: Inert metallic silver (Ag0) converts to reactive silver ion (Ag+) upon moisture exposure, which interacts with negatively charged particles in wound exudate.\n   - **Frequency of Change**: Newer preparations can be effective for up to 7 days; older silver nitrate preparations required application up to twelve times a day.\n   - **Safety Warnings**: Potential for skin discolouration or irritation (argyria); low toxicity to skin and low rates of bacterial resistance to Ag+.\n\n3. **Honey Dressings**\n   - **Indications**: Shown to improve healing times in mild to moderate superficial and partial thickness burns; limited benefits for other types of ulcers.\n   - **Properties**: Anti-inflammatory, antimicrobial, and debriding properties; stimulates granulation and epithelialization, reduces pain and edema.\n   - **Mechanism**: High sugar content creates a highly osmolar wound environment that inhibits bacterial growth.\n   - **Formulation**: Derived from Leptospermum plants, available as gel or impregnated dressings.\n   - **Frequency of Change**: Not specified.\n   - **Safety Warnings**: None specified."
+    ],
+    "allowed_dressings": [
+      "tulle",
+      "hydrogel",
+      "hydrocolloid",
+      "silver",
+      "iodine"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type4_wet_infected",
+    "category": "A",
+    "synthesizer_name": "cat_a_type4_wet_infected",
+    "wound_type_expected": 4,
+    "time_payload": {
+      "necrotic_pct": 12,
+      "slough_pct": 10,
+      "granulation_pct": 78,
+      "infection": "Locally infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 12%, Slough: 10%, Granulation: 78%\nInfection: Locally infected\nMoisture: High\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nSilver dressing — bactericidal, no known resistance, acts locally; frequency 2–3 days. Combined with alginate to manage heavy exudate (absorbs up to 20× its weight; 2–5 days) or hydrofibre (manages heavy exuding infected wounds; 2–5 days).\n\n## Secondary Dressing\nFoam — highly absorbent, bacterial barrier; frequency 2–3 days. Can be used over alginate or hydrofibre as secondary.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 22% non-viable (<25%) — minimal debridement burden.\n- I (Infection): Infected + high exudate (purulent) — antimicrobial mandatory; silver is first-line. Iodine is an option but avoid in thyroid disorders.\n- M (Moisture): High — alginate or hydrofibre needed for exudate control; foam as secondary or single-layer absorbent.\n- E (Edge): Non-advancing — infection and exudate load are likely drivers.\n\n## Contraindications\nIodine: avoid if patient has thyroid disorder. Occlusive foam without silver should not be used alone on infected wounds.\n\n## Dressing Change Frequency\nSilver: 2–3 days. Alginate/Hydrofibre: 2–5 days. Foam: 2–3 days.\n\n## Application Tips\nAlginate residue must be washed off during cleansing. Hydrofibre forms a gel layer that allows non-traumatic removal.\n\n## Clinical Notes\nAntibiotic: YES — based on C&S report. Debridement may be needed. Referral not required for Type 4 (<25% non-viable).",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 4 Treatment**\n\n**Wound Type 4 Description:**\nThis type of wound is characterized as a wet, infected wound with less than 25% slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Silver\n4. Hydrofiber\n5. Polymeric membrane\n6. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019).",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Hydrofibre**\n\n**Purpose:** Hydrofibre dressings are designed to manage heavy exuding wounds while maintaining a moist healing environment.\n\n**Advantages:**\n- Extended wear time\n- Comfortable and non-traumatic upon removal\n- Reduces the risk of maceration\n- Can be used on infected wounds\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires secondary dressings\n\n**Practical Usage/Application:** Hydrofibre dressings form a gel-like layer upon absorption, which facilitates easy removal. \n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days. \n\n**Indications:** Heavy exuding wounds, infected wounds.\n\n**Contraindications:** Not appropriate for dry wounds. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "foam",
+      "silver",
+      "hydrofiber",
+      "polymeric_membrane",
+      "iodine"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type5_dry_necrotic",
+    "category": "A",
+    "synthesizer_name": "cat_a_type5_dry_necrotic",
+    "wound_type_expected": 5,
+    "time_payload": {
+      "necrotic_pct": 45,
+      "slough_pct": 25,
+      "granulation_pct": 30,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 45%, Slough: 25%, Granulation: 30%\nInfection: Not infected\nMoisture: Low\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nHydrogel — primary choice for dry necrotic wounds; gently rehydrates dry necrotic tissue, promotes autolytic debridement, softens necrotic tissue, reduces pain; needs a secondary dressing; frequency 2–3 days.\n\n## Secondary Dressing\nNon-adherent pad or hydrocolloid. Hydrocolloid can serve as combined dressing: cleans and debrides by autolysis, promotes granulation, effective for low-to-moderate exudate; frequency 2–5 days. Polymeric membrane is also suitable (dry-to-moderate moisture management; 2–5 days).\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 70% non-viable (>25% threshold) — debridement is mandatory.\n- I (Infection): Not infected — no antimicrobial dressing needed.\n- M (Moisture): Dry — hydrogel donates moisture to rehydrate necrotic eschar; alginate/hydrofibre are NOT suitable for dry wounds.\n- E (Edge): Non-advancing — high necrotic burden is likely driving stall.\n\n## Contraindications\nAlginate: NOT suitable for dry wounds. Hydrofibre: NOT appropriate for dry wounds. Silver/charcoal: not indicated (non-infected wound).\n\n## Dressing Change Frequency\nHydrogel: 2–3 days. Hydrocolloid: 2–5 days. Polymeric membrane: 2–5 days.\n\n## Application Tips\nApply hydrogel directly to wound bed; always cover with secondary dressing. Periwound skin may need protection from maceration.\n\n## Clinical Notes\nDebridement IS needed. No antibiotic required. Referral not indicated.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 5**\n\n**Wound Characteristics:**\n- Type: Dry, non-infected wound\n- Necrosis/Slough: Greater than 25% of wound surface\n- Infection: No wound infection present\n- Moisture/Exudate: Dry to minimal\n- Hospital Referral: Not required\n\n**Recommended Dressing Materials:**\n1. Hydrogel\n2. Hydrocolloid\n3. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- No antibiotics are indicated.\n\n**Surgical/Procedural Recommendation:**\n- Debridement is necessary to remove necrotic tissue.\n\n**Reference:** Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167.",
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Wound Debridement Clinical Summary**\n\n**Introduction**  \nWound debridement is the process of removing non-viable tissue and contaminants from a wound to promote healing. Various methods of debridement include:\n\n- Surgical\n- Autolytic\n- Enzymatic\n- Mechanical\n- Biological\n- Hydrostatic\n\n**Surgical Debridement**  \nSurgical debridement involves the removal of necrotic tissue using sharp instruments such as scalpels, scissors, curettes, Humby knives, or electrical dermatomes. This method prepares the wound bed for optimal healing.\n\n**Indications for Surgical Debridement**  \nSurgical debridement is indicated in the following situations:\n1. Extensive devitalized tissue\n2. Signs of advancing soft tissue infections or sepsis\n3. Presence of thick adherent eschar\n4. Callous formation\n\n**Specialist Consultation Required**  \nConsultation with a specialist may be necessary in the following conditions:\n1. Vascular insufficiency (impaired blood flow affecting healing)\n2. Gangrenous wounds\n3. Unidentifiable structures (risk of injuring vital structures such as nerves)\n4. Coagulopathy (risk of bleeding; debridement should be managed in tertiary centers)\n5. Stable heel ulcers (characterized by firm adherence, lack of inflammation, lack of drainage, and eschar that is not soft and boggy)\n6. Fungating or malignant wounds (may require extensive dissection or removal of anatomical parts; debridement is non-curative)\n7. Necrotic tissues near or involving neurovascular structures\n8. Wounds located on the hand and face\n\n**Assessment of Wounds for Surgical Debridement**  \nWounds intended for surgical debridement must be assessed for suitability based on the following factors:\n1. Nature of the necrotic or ischemic tissue and the appropriate debridement procedure\n2. Risk of spreading infection and the need for antibiotics\n3. Presence of underlying medical conditions contributing to the wound\n4. Extent of ischemia in the wound tissues\n5. Location of the wound on the body\n6. Type of analgesia required during the procedure\n7. Possible complications associated with the procedure",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)"
+    ],
+    "allowed_dressings": [
+      "hydrogel",
+      "hydrocolloid",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [
+      "alginate",
+      "silver",
+      "charcoal"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type6_wet_necrotic",
+    "category": "A",
+    "synthesizer_name": "cat_a_type6_wet_necrotic",
+    "wound_type_expected": 6,
+    "time_payload": {
+      "necrotic_pct": 30,
+      "slough_pct": 35,
+      "granulation_pct": 35,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 30%, Slough: 35%, Granulation: 35%\nInfection: Not infected\nMoisture: High\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nAlginate — highly absorbent, haemostatic, forms gel on contact with wound fluid; manages the high exudate load; frequency 2–5 days; needs secondary dressing. Hydrofibre is an alternative: manages heavy exuding wounds, reduces maceration, longer wear time; frequency 2–5 days.\n\n## Secondary Dressing\nFoam — highly absorbent, bacterial barrier; frequency 2–3 days. Polymeric membrane (antiseptic + surfactant cleansing + moisture management; 2–5 days).\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 65% non-viable (>25%) — surgical/mechanical debridement is recommended.\n- I (Infection): Not infected — antimicrobial dressing not required.\n- M (Moisture): High — alginate or hydrofibre are primary exudate managers.\n- E (Edge): Non-advancing — high necrotic burden driving stall.\n\n## Contraindications\nHydrogel and hydrocolloid are not primary choices for high exudate wounds. Polymeric membrane is also not indicated for heavily exudative wounds as sole dressing.\n\n## Dressing Change Frequency\nAlginate/Hydrofibre: 2–5 days. Foam: 2–3 days.\n\n## Application Tips\nAlginate residue must be washed off during cleansing. May need repeated debridement sessions.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 6 must be referred to hospital. Antibiotic: may or may not be needed based on underlying cause.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 6**\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of wound surface\n- **Wound Infection:** No infection present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Recommended for further evaluation and treatment\n\n**Wound Type 6 Description:**\nThis type of wound is characterized as a wet, non-infected wound with more than 25% slough or necrotic tissue present.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Polymeric membrane\n4. Hydrofiber\n\n**Antibiotic Recommendation:**\nAntibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is recommended to remove necrotic tissue.\n2. Repeated debridement may be necessary to achieve optimal healing.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Hydrofibre**\n\n**Purpose:** Hydrofibre dressings are designed to manage heavy exuding wounds while maintaining a moist healing environment.\n\n**Advantages:**\n- Extended wear time\n- Comfortable and non-traumatic upon removal\n- Reduces the risk of maceration\n- Can be used on infected wounds\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires secondary dressings\n\n**Practical Usage/Application:** Hydrofibre dressings form a gel-like layer upon absorption, which facilitates easy removal. \n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days. \n\n**Indications:** Heavy exuding wounds, infected wounds.\n\n**Contraindications:** Not appropriate for dry wounds. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "foam",
+      "polymeric_membrane",
+      "hydrofiber"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type7_dry_infected_necrotic",
+    "category": "A",
+    "synthesizer_name": "cat_a_type7_dry_infected_necrotic",
+    "wound_type_expected": 7,
+    "time_payload": {
+      "necrotic_pct": 40,
+      "slough_pct": 30,
+      "granulation_pct": 30,
+      "infection": "Locally infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 40%, Slough: 30%, Granulation: 30%\nInfection: Locally infected\nMoisture: Low\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nSilver dressing — first-line antimicrobial for infected wounds with high necrotic burden; bactericidal, no known resistance, locally acting; frequency 2–3 days. Hydrogel can be co-applied to rehydrate the dry necrotic tissue and promote autolytic debridement; frequency 2–3 days; needs secondary dressing.\n\n## Secondary Dressing\nHydrocolloid (promotes autolysis, moist environment; 2–5 days) or non-adherent pad.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 70% non-viable (>25%) — surgical debridement strongly recommended.\n- I (Infection): Infected — silver is primary antimicrobial choice. Iodine is an option but avoid in thyroid disorders.\n- M (Moisture): Dry — hydrogel donates moisture; alginate/hydrofibre contraindicated in dry wounds.\n- E (Edge): Non-advancing — combination of infection and necrosis driving stall.\n\n## Contraindications\nIodine: avoid if patient has thyroid disorder. Alginate and hydrofibre: NOT suitable for dry wounds.\n\n## Dressing Change Frequency\nSilver: 2–3 days. Hydrogel: 2–3 days. Hydrocolloid: 2–5 days.\n\n## Application Tips\nApply silver with silver side facing wound bed. Polymeric membrane dressing (antiseptic properties, 2–5 days) is also listed for Type 7.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 7 must be referred to hospital. Antibiotic: YES — based on C&S report. Surgical/mechanical debridement is STRONGLY recommended.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 7**\n\n**Wound Description:**\n- This wound is characterized as a dry, infected wound with more than 25% slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of the wound surface is affected.\n- **Wound Infection:** Present.\n- **Moisture/Exudate:** Dry or minimal.\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Silver dressing\n2. Hydrogel\n3. Hydrocolloid\n4. Iodine-based dressing\n5. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n- Surgical or mechanical debridement is strongly recommended to address the necrotic tissue.\n\n**References:**\n- Guidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019).",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "silver",
+      "hydrogel",
+      "hydrocolloid",
+      "iodine",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_a_type8_wet_infected_necrotic",
+    "category": "A",
+    "synthesizer_name": "cat_a_type8_wet_infected_necrotic",
+    "wound_type_expected": 8,
+    "time_payload": {
+      "necrotic_pct": 30,
+      "slough_pct": 35,
+      "granulation_pct": 35,
+      "infection": "Locally infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 30%, Slough: 35%, Granulation: 35%\nInfection: Locally infected\nMoisture: High\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nSilver dressing as antimicrobial layer (bactericidal, no known resistance; 2–3 days) combined with alginate for heavy exudate management (up to 20× absorption, 2–5 days) or hydrofibre (manages heavy exuding infected wounds; 2–5 days).\n\n## Secondary Dressing\nFoam (highly absorbent, bacterial barrier; 2–3 days). If malodour is present, add charcoal dressing (odour absorbent; needs secondary dressing; frequency 2 days).\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 65% non-viable (>25%) — debridement strongly recommended.\n- I (Infection): Infected with high exudate — antimicrobial mandatory. Silver is bactericidal first-line. Iodine option but avoid in thyroid disorders.\n- M (Moisture): High — alginate or hydrofibre for primary exudate management.\n- E (Edge): Non-advancing — driven by infection and necrotic burden.\n\n## Contraindications\nIodine: avoid if thyroid disorder. Occlusive foam without silver should not be used alone on infected wounds.\n\n## Dressing Change Frequency\nSilver: 2–3 days. Alginate/Hydrofibre: 2–5 days. Foam: 2–3 days. Charcoal: 2 days.\n\n## Application Tips\nAlginate residue must be washed off during cleansing. May need repeated debridement.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 8 must be referred to hospital. Antibiotic: YES — based on C&S report. Surgical/mechanical debridement STRONGLY recommended; may need repeated sessions.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 8**\n\n**Wound Description:**\nWound Type 8 is characterized as a wet, infected wound with more than 25% of the surface area covered by slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** >25% of wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Silver dressing\n3. Hydrofiber\n4. Foam\n5. Polymeric membrane\n6. Charcoal\n7. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is strongly recommended.\n2. Repeated debridement may be necessary.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**WCM Modern/Advanced Dressing - Charcoal**\n\n**Purpose:** The primary function of the Charcoal dressing is to absorb odours associated with wounds.\n\n**Advantages:** This dressing effectively reduces unpleasant odours, enhancing patient comfort.\n\n**Disadvantages:** The Charcoal dressing requires a secondary dressing for secure application.\n\n**Practical Usage / Application:** It is recommended to change the Charcoal dressing every 2 days to maintain optimal wound care.\n\n**Source:** Wound Care Manual, First Edition 2014, Ministry of Health Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "silver",
+      "hydrofiber",
+      "foam",
+      "polymeric_membrane",
+      "charcoal",
+      "iodine"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_iodine_thyroid",
+    "category": "B",
+    "synthesizer_name": "cat_b_iodine_thyroid",
+    "wound_type_expected": 3,
+    "time_payload": {
+      "necrotic_pct": 8,
+      "slough_pct": 15,
+      "granulation_pct": 77,
+      "infection": "Locally infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": "Patient has hypothyroidism, currently on levothyroxine 100mcg OD."
+    },
+    "user_input": "Necrotic: 8%, Slough: 15%, Granulation: 77%\nInfection: Locally infected\nMoisture: Low\nEdge: Non-advancing\nNotes: Patient has hypothyroidism, currently on levothyroxine 100mcg OD.",
+    "reference": "## Primary Dressing\nSilver dressing — SAFE alternative for infection control; bactericidal, no known resistance, locally acting; frequency 2–3 days. Hydrogel can be combined to rehydrate the dry wound; frequency 2–3 days.\n\n## Secondary Dressing\nHydrocolloid (moist environment, autolysis; 2–5 days) or non-adherent pad.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 23% non-viable (<25%) — debridement may be needed.\n- I (Infection): Infected — antimicrobial mandatory. IODINE IS CONTRAINDICATED in this patient.\n- M (Moisture): Dry — silver + hydrogel combination addresses both infection and dryness.\n- E (Edge): Non-advancing — infection is likely driver.\n\n## Contraindications\nIODINE-BASED DRESSINGS ARE CONTRAINDICATED — iodine may be absorbed systemically and must be avoided in patients with thyroid disorders (hypothyroidism, hyperthyroidism, patients on levothyroxine or antithyroid medications).\n\n## Dressing Change Frequency\nSilver: 2–3 days. Hydrogel: 2–3 days. Hydrocolloid: 2–5 days.\n\n## Application Tips\nDocument thyroid status and flag the iodine contraindication clearly in the wound care plan.\n\n## Clinical Notes\nAntibiotic: YES — based on C&S report. Debridement may be needed. Referral not required.",
+    "reference_contexts": [
+      "**Clinical Summary of Wound Dressings**\n\n1. **Iodine Dressings**\n   - **Indications**: Useful for infected wounds.\n   - **Contraindications**: Should be avoided in patients with thyroid disorders due to potential systemic absorption of iodine.\n   - **Frequency of Change**: Not specified.\n   - **Safety Warnings**: Monitor for systemic absorption in patients with thyroid issues.\n\n2. **Silver Dressings**\n   - **Forms**: Available as elemental, inorganic, and organic silver, including silver nitrate, silver sulfadiazine, and nanocrystalline silver technology.\n   - **Indications**: Broad spectrum antimicrobial action effective against gram-positive and gram-negative bacteria, yeast, and fungi; also provides toxin and odour control.\n   - **Mechanism**: Inert metallic silver (Ag0) converts to reactive silver ion (Ag+) upon moisture exposure, which interacts with negatively charged particles in wound exudate.\n   - **Frequency of Change**: Newer preparations can be effective for up to 7 days; older silver nitrate preparations required application up to twelve times a day.\n   - **Safety Warnings**: Potential for skin discolouration or irritation (argyria); low toxicity to skin and low rates of bacterial resistance to Ag+.\n\n3. **Honey Dressings**\n   - **Indications**: Shown to improve healing times in mild to moderate superficial and partial thickness burns; limited benefits for other types of ulcers.\n   - **Properties**: Anti-inflammatory, antimicrobial, and debriding properties; stimulates granulation and epithelialization, reduces pain and edema.\n   - **Mechanism**: High sugar content creates a highly osmolar wound environment that inhibits bacterial growth.\n   - **Formulation**: Derived from Leptospermum plants, available as gel or impregnated dressings.\n   - **Frequency of Change**: Not specified.\n   - **Safety Warnings**: None specified.",
+      "**Clinical Summary for Wound Type 3 Treatment**\n\n**Wound Type 3 Description:**\nThis type of wound is characterized as a dry, infected wound with less than 25% slough or necrotic tissue, likely of vascular origin. \n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Dry or minimal\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Tulle\n2. Hydrogel\n3. Hydrocolloid\n4. Silver dressing\n5. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019).",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "tulle",
+      "hydrogel",
+      "hydrocolloid",
+      "silver"
+    ],
+    "contraindicated_dressings": [
+      "iodine"
+    ],
+    "antibiotic_required": true,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_silver_clean_granulating",
+    "category": "B",
+    "synthesizer_name": "cat_b_silver_clean_granulating",
+    "wound_type_expected": 1,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 0,
+      "granulation_pct": 100,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Advancing",
+      "notes": "Previous clinician applied a silver dressing."
+    },
+    "user_input": "Necrotic: 0%, Slough: 0%, Granulation: 100%\nInfection: Not infected\nMoisture: Low\nEdge: Advancing\nNotes: Previous clinician applied a silver dressing.",
+    "reference": "## Primary Dressing\nFilm dressing — transparent, waterproof, bacterial barrier; frequency 2–5 days. Hydrocolloid is also appropriate — moist environment, autolysis, easy to use; 2–5 days.\n\n## Secondary Dressing\nNot required for film. Foam (without silver) may be added for cushioning.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 100% granulation — clean wound bed; no antimicrobial needed.\n- I (Infection): Not infected — silver is CONTRAINDICATED on clean granulating wounds.\n- M (Moisture): Dry — film or hydrocolloid maintain appropriate moisture balance.\n- E (Edge): Advancing — wound is healing; maintain current strategy.\n\n## Contraindications\nSILVER DRESSING IS INCORRECT — the clinical algorithm explicitly excludes silver, charcoal, and special advanced dressing materials from Wound Type 1 (clean healthy granulating wound).\n\n## Dressing Change Frequency\nFilm: 2–5 days. Hydrocolloid: 2–5 days.\n\n## Clinical Notes\nNo antibiotic required. Referral not indicated.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 1 Treatment**\n\n**Wound Type Description:**\n- Clean, healthy granulating wound\n- Characteristics: dry/minimal exudate, no infection, and less than 25% necrosis/slough\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Dry/minimal\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n- All types of dressing materials are suitable except for silver, charcoal, and special advanced dressing materials.\n\n**Antibiotic Recommendation:**\n- No antibiotics are required.\n\n**Surgical/Procedural Recommendations:**\n1. The wound is ready for secondary closure.\n2. For small wounds, continue dressing until healing occurs by secondary intention.\n3. The frequency of dressing changes will vary based on the type of wound and the dressing material used.\n\n**References:**\n- Guidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**WCM Modern/Advanced Dressing - Film**\n\n**Purpose:** \n- Protects against contamination and friction\n- Maintains a moist surface\n- Prevents evaporation\n- Facilitates assessment of the wound\n\n**Advantages:**\n- Adherent and transparent with a measurement grid\n- Acts as a bacterial barrier\n- Waterproof yet breathable\n\n**Disadvantages:**\n- May allow fluid collection\n- Risk of stripping away newly formed epithelium upon removal\n\n**Practical Usage/Application:**\n- Apply the film directly over the wound site, ensuring no air is trapped underneath.\n- To remove, stretch the film and pull slowly from the edges.\n\n**Frequency of Dressing Change:** \n- Every 2 to 5 days, depending on the condition of the wound. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: Hydrocolloid Dressings**\n\n**Purpose:** Hydrocolloid dressings are designed to provide a moist wound environment, absorb exudates, and serve as a bacterial barrier.\n\n**Indications:** These dressings are effective for low to moderate exuding wounds and promote granulation tissue formation.\n\n**Advantages:**\n- Cleans and debrides wounds through autolysis\n- Easy to use and cost-effective\n- Waterproof, providing protection from external contaminants\n\n**Disadvantages:**\n- May produce an unpleasant odor\n- Forms a yellow liquid gel upon use\n- Can be challenging to apply in wound cavities\n- Risk of maceration of the skin surrounding the wound\n\n**Practical Usage/Application:**\n- Apply the adhesive side of the dressing directly onto the wound without touching the wound bed.\n- A yellow liquid may appear after the dressing is in place, which should be cleansed.\n- Dressing changes should occur every 2 to 5 days, depending on the wound's condition.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "foam",
+      "hydrocolloid",
+      "film",
+      "tulle",
+      "hydrogel"
+    ],
+    "contraindicated_dressings": [
+      "silver",
+      "charcoal"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_skin_tear_fragile",
+    "category": "B",
+    "synthesizer_name": "cat_b_skin_tear_fragile",
+    "wound_type_expected": 1,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 0,
+      "granulation_pct": 100,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Advancing",
+      "notes": "82-year-old patient. Skin tear right forearm. Fragile papery skin. Previous nurse applied adhesive bordered foam dressing."
+    },
+    "user_input": "Necrotic: 0%, Slough: 0%, Granulation: 100%\nInfection: Not infected\nMoisture: Low\nEdge: Advancing\nNotes: 82-year-old patient. Skin tear right forearm. Fragile papery skin. Previous nurse applied adhesive bordered foam dressing.",
+    "reference": "## Primary Dressing\nSilicone-coated foam dressing applied directly over the wound (after repositioning the skin flap). Silicone foam does not adhere to fragile skin and is atraumatic on removal.\n\n## Secondary Dressing\nBarrier wipe applied under the foam to secure application, reduce maceration, and protect periwound skin during removal. If bleeding present, apply haemostatic alginate as primary dressing under the silicone foam.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): Clean, granulating skin tear — no debridement needed.\n- I (Infection): Not infected — no antimicrobial needed.\n- M (Moisture): Low — silicone foam maintains moisture without excess absorption.\n- E (Edge): Advancing — skin flap is viable; reposition before dressing.\n\n## Contraindications\nADHESIVE BORDERED FOAM IS INCORRECT — adhesive products must NOT be used on fragile skin, especially on forearms and hands of the elderly; they may cause further skin tears.\n\n## Application Tips\nUse remover wipes to remove dressing from fragile skin. Remove in a direction that does not disturb viable tissue edges and flaps.\n\n## Clinical Notes\nNo antibiotic required. Referral not indicated.",
+    "reference_contexts": [
+      "**Clinical Summary: Skin Tears**\n\n**Wound Type:** Skin tears\n\n**Recommended Dressings:**\n- Apply silicone-covered foam dressing directly over the wound.\n- If bleeding is present, apply a haemostatic alginate dressing as the primary dressing under the silicone-coated foam dressing.\n\n**Indications:** Use for skin tears, particularly in fragile skin areas.\n\n**Contraindications:** Do not use adhesive products on fragile skin, especially on the forearms and hands of the elderly, as they may cause further skin tears.\n\n**Special Comments / Clinical Notes:**\n- Using a barrier wipe under the foam dressing can aid in securing application, reducing maceration, and protecting the skin during dressing removal.\n- Remover wipes should be utilized when removing a dressing from fragile skin.\n- When removing the dressing, do so in a direction that does not disturb viable tissue edges and flaps.\n\n**Safety Warnings:** Ensure to avoid adhesive products on fragile skin to prevent additional injury.",
+      "**Wound Dressing Summary: Foams (Polyurethane or Silicone)**\n\n**Indications:**  \n- Suitable for a wide range of moderate to highly exudative wounds.  \n- Effective for wounds subjected to sustained or unrelieved pressure.\n\n**Contraindications:**  \n- Occlusive foams without silver should not be used on infected wounds.  \n- Not suitable for dry or eschar-covered wounds.\n\n**Special Considerations:**  \n- May require a secondary dressing to keep in place.\n\n**Examples of Foam Dressings:**  \n- Allevyn  \n- Allevyn Gentle  \n- Mepilex Ag  \n- Mepilex Lite  \n- Biatain Ag  \n- Hydrasorb"
+    ],
+    "allowed_dressings": [
+      "silicone_foam"
+    ],
+    "contraindicated_dressings": [
+      "adhesive_bordered_foam"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_npwt_necrotic_eschar",
+    "category": "B",
+    "synthesizer_name": "cat_b_npwt_necrotic_eschar",
+    "wound_type_expected": 8,
+    "time_payload": {
+      "necrotic_pct": 50,
+      "slough_pct": 20,
+      "granulation_pct": 30,
+      "infection": "Locally infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": "Surgeon is considering applying NPWT vacuum dressing as the sole treatment. 50% black necrotic eschar present."
+    },
+    "user_input": "Necrotic: 50%, Slough: 20%, Granulation: 30%\nInfection: Locally infected\nMoisture: High\nEdge: Non-advancing\nNotes: Surgeon is considering applying NPWT vacuum dressing as the sole treatment. 50% black necrotic eschar present.",
+    "reference": "## Primary Dressing\nNPWT is NOT appropriate as sole treatment. Correct interim dressings for Type 8:\nSilver dressing (bactericidal; 2–3 days) combined with alginate (high exudate absorption; 2–5 days) or hydrofibre (heavy exuding infected wounds; 2–5 days).\n\n## Secondary Dressing\nFoam (bacterial barrier, highly absorbent; 2–3 days). Charcoal if malodour present (2 days, needs secondary dressing).\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 70% non-viable (>25%) with 50% necrotic eschar — surgical debridement is mandatory BEFORE NPWT can be considered.\n- I (Infection): Infected — antimicrobial mandatory; silver is first-line.\n- M (Moisture): High — alginate or hydrofibre for exudate management.\n- E (Edge): Non-advancing.\n\n## Contraindications\nNPWT IS CONTRAINDICATED in necrotic wound bed or eschar — necrotic tissue acts as a barrier to new tissue growth. NPWT is also only an ADJUNCT treatment; it does not replace surgical procedures. Additional NPWT contraindications: clotting disorders, untreated infection, neoplastic tissue in wound area.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 8. Antibiotic: YES — C&S report. Surgical/mechanical debridement STRONGLY recommended first.",
+    "reference_contexts": [
+      "**Clinical Summary: Negative Pressure Wound Therapy (NPWT)**\n\n**Introduction:**  \nNegative Pressure Wound Therapy (NPWT) is an advanced wound care technique that utilizes subatmospheric pressure to enhance healing, addressing limitations of traditional methods and achieving high success rates across various clinical settings.\n\n**Definition:**  \nNPWT involves the application of negative pressure to a wound through a specialized open-cell dressing (foam or gauze) placed directly on the wound and covered with an occlusive film. A vacuum pump delivers negative pressure across the wound surface.\n\n**Components of NPWT Dressing:**\n- Sterile open-cell wound interface (foam or gauze)\n- Pliable vacuum tubing\n- Occlusive adhesive film (for airtight seal)\n- Canister (collection chamber)\n- Vacuum pump\n\n**Mechanism of Action:**\n1. Creates a closed, moist environment conducive to healing and granulation tissue growth while minimizing bacterial contamination.\n2. Reduces wound volume and approximates wound edges.\n3. Removes excess exudate, decreasing bacterial colonization.\n4. Eliminates interstitial fluid, reducing edema and enhancing blood flow.\n5. Stimulates granulation tissue formation through mechanical suction pressure.\n\n**Indications for NPWT:**\n1. Large, clean, and/or exudative wounds awaiting definitive closure.\n2. Fixation of skin grafts (mesh grafts) and tissue flaps.\n\n**Contraindications for NPWT:**\n1. Clotting disorders (risk of bleeding).\n2. Necrotic wound bed or eschar (hinders new tissue growth).\n3. Untreated infections (risk of deep infection).\n4. Neoplastic tissue in the wound area (may promote tumor growth).\n\n**Application Procedure:**\n1. Cut the wound interface to fit the wound shape.\n2. Place the wound interface on the wound bed, ensuring it is flush with the edges.\n3. Position the vented end of the vacuum tubing flush with the wound interface.\n4. Cover the interface and tubing with the occlusive adhesive dressing, ensuring a tight seal.\n5. Connect the tubing to the canister on the vacuum pump.\n6. Program the vacuum pump to the prescribed pressure and suction interval.\n\n**Recommended NPWT Settings:**\n- **Mesh grafts:** 50-75 mmHg continuous negative pressure for 4-5 days.\n- **Pressure ulcers and acute wounds:** Continuous therapy at 50-75 mmHg; 125 mmHg for 48 hours, then switch to intermittent (5 minutes on, 2 minutes off).\n- **Chronic ulcers (venous stasis, arterial insufficiency, neuropathies):** 125 mmHg continuous therapy until base adhesion is achieved.\n\n**Dressing Change Frequency:**  \nEvery 3-5 days or based on fluid characteristics and surrounding skin condition.\n\n**Complications:**  \nComplications are rare with proper patient selection. Possible complications include:\n- Toxic shock syndrome\n- Wound infections (especially anaerobic)\n- Loss of blood and fluid\n\n**Side Effects:**\n1. Granulation tissue ingrowth into the foam.\n2. Pain from suction and dressing changes.\n3. Maceration and pressure damage to adjacent skin.\n4. Reduced perfusion due to pressure on small vessels.\n\n**Key Points:**\n- NPWT is an adjunctive treatment for chronic, acute, and complex wounds, not a standalone solution.\n- It prepares the wound bed for improved closure outcomes.\n- NPWT does not replace surgical interventions.",
+      "**Clinical Summary for Wound Type 8**\n\n**Wound Description:**\nWound Type 8 is characterized as a wet, infected wound with more than 25% of the surface area covered by slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** >25% of wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Silver dressing\n3. Hydrofiber\n4. Foam\n5. Polymeric membrane\n6. Charcoal\n7. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is strongly recommended.\n2. Repeated debridement may be necessary.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "silver",
+      "hydrofiber",
+      "foam",
+      "polymeric_membrane",
+      "charcoal",
+      "iodine"
+    ],
+    "contraindicated_dressings": [
+      "npwt"
+    ],
+    "antibiotic_required": true,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_alginate_dry_wound",
+    "category": "B",
+    "synthesizer_name": "cat_b_alginate_dry_wound",
+    "wound_type_expected": 5,
+    "time_payload": {
+      "necrotic_pct": 40,
+      "slough_pct": 30,
+      "granulation_pct": 30,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": "Previous clinician applied alginate dressing. Wound completely dry — no exudate visible."
+    },
+    "user_input": "Necrotic: 40%, Slough: 30%, Granulation: 30%\nInfection: Not infected\nMoisture: Low\nEdge: Non-advancing\nNotes: Previous clinician applied alginate dressing. Wound completely dry — no exudate visible.",
+    "reference": "## Primary Dressing\nHydrogel — correct choice for this dry necrotic wound; rehydrates necrotic tissue, promotes autolytic debridement; frequency 2–3 days; requires secondary dressing.\n\n## Secondary Dressing\nHydrocolloid (combined debridement and moisture management; 2–5 days) or non-adherent pad. Polymeric membrane is also suitable (dry-to-moderate moisture management; 2–5 days).\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 70% non-viable (>25%) — debridement is needed.\n- I (Infection): Not infected — no antimicrobial needed.\n- M (Moisture): Dry — alginate is INCORRECT for dry wounds.\n- E (Edge): Non-advancing — necrotic burden is the driver.\n\n## Contraindications\nALGINATE IS INCORRECT for dry wounds — it requires exudate to form its gel and provide function. Applied to a dry wound, it provides no benefit.\n\n## Dressing Change Frequency\nHydrogel: 2–3 days. Hydrocolloid: 2–5 days.\n\n## Clinical Notes\nDebridement IS needed. No antibiotic required. Referral not indicated for Type 5.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 5**\n\n**Wound Characteristics:**\n- Type: Dry, non-infected wound\n- Necrosis/Slough: Greater than 25% of wound surface\n- Infection: No wound infection present\n- Moisture/Exudate: Dry to minimal\n- Hospital Referral: Not required\n\n**Recommended Dressing Materials:**\n1. Hydrogel\n2. Hydrocolloid\n3. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- No antibiotics are indicated.\n\n**Surgical/Procedural Recommendation:**\n- Debridement is necessary to remove necrotic tissue.\n\n**Reference:** Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167.",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "hydrogel",
+      "hydrocolloid",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [
+      "alginate"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_honey_dry_necrotic",
+    "category": "B",
+    "synthesizer_name": "cat_b_honey_dry_necrotic",
+    "wound_type_expected": 5,
+    "time_payload": {
+      "necrotic_pct": 50,
+      "slough_pct": 20,
+      "granulation_pct": 30,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": "Clinician considering honey dressing for debridement. Wound is dry with significant necrotic eschar."
+    },
+    "user_input": "Necrotic: 50%, Slough: 20%, Granulation: 30%\nInfection: Not infected\nMoisture: Low\nEdge: Non-advancing\nNotes: Clinician considering honey dressing for debridement. Wound is dry with significant necrotic eschar.",
+    "reference": "## Primary Dressing\nHydrogel — correct choice; gently rehydrates dry necrotic tissue, promotes autolytic debridement, reduces pain; frequency 2–3 days; needs secondary dressing.\n\n## Secondary Dressing\nHydrocolloid (promotes autolysis, moist environment; 2–5 days) or non-adherent pad.\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 70% non-viable — debridement is mandatory.\n- I (Infection): Not infected — no antimicrobial needed.\n- M (Moisture): Dry — need a moisture-donating dressing, not an absorbent.\n- E (Edge): Non-advancing.\n\n## Contraindications\nHONEY IS CONTRAINDICATED for dry necrotic wounds — honey may cause further drying of the wound. Alginate is also contraindicated on dry wounds.\n\n## Clinical Notes\nDebridement IS needed. No antibiotic. No referral required for Type 5.",
+    "reference_contexts": [
+      "**Clinical Summary: Honey Dressing for Wound Care**\n\n**Introduction:**\nHoney has been recognized for its medicinal properties in wound management, particularly in promoting granulation and epithelialization for secondary intention healing or as a precursor to surgical procedures like skin grafts. Its antibacterial effects stem from high osmolarity, low pH, hydrogen peroxide content, and other compounds.\n\n**Types of Honey:**\n1. **Raw Honey:** Contains active enzymes but poses a risk of clostridial spores.\n2. **Commercial Honey:** Enzymes are destroyed through pasteurization but retains osmotic properties.\n3. **Therapeutic Honey:** Best for wound dressing; specifically prepared for medical use, sterilized without damaging constituents, but more expensive. Available as pre-impregnated dressing pads.\n\n**Benefits of Honey Dressing:**\n- Antimicrobial properties\n- Promotes enzymatic debridement\n- Deodorizes malodorous wounds\n- Stimulates tissue growth and accelerates healing\n- Reduces pain, edema, and exudates through anti-inflammatory activity\n- Minimizes hypertrophic scarring\n- Promotes moist wound healing\n- Contains low levels of hydrogen peroxide, stimulating fibroblast proliferation and angiogenesis\n\n**Adverse Effects (Rare):**\n- Allergic reactions\n- Transient stinging sensation, particularly in inflamed wounds\n\n**Contraindications:**\n- History of allergy or sensitivity to bee products\n- Dry, necrotic wounds, as honey may exacerbate dryness\n\n**Principles of Honey Dressing:**\n- Apply honey directly onto a dressing before placing it on the wound.\n- Pre-impregnated honey dressing pads are available for convenience.\n- The amount of honey used should correlate with wound size and exudate levels; typically, 20ml is used for a 10cm x 10cm dressing.\n- Dressing changes may occur daily to every three days, depending on exudate dilution.\n- In high exudate wounds, dressing frequency may decrease as healing progresses.\n- Dressing removal should be easy; difficulty indicates inadequate honey application or frequency.\n- Use occlusive or absorbent secondary dressings to prevent honey leakage; pressure bandaging is recommended for varicose ulcers.\n\n**Steps for Performing Honey Dressing:**\n1. Prepare equipment: honey, gauze/cotton, occlusive dressing (if used), dressing set.\n2. Clean the wound following standard procedures.\n3. Estimate honey amount based on wound size and exudate; apply gauze/cotton soaked in honey to the wound and surrounding skin.\n4. Apply additional layers of gauze and secure with a bandage or occlusive dressing.\n\n**Key Points:**\n- Honey dressing primarily promotes granulation and epithelialization, not a substitute for surgical debridement.\n- Therapeutic honey is the most suitable for wound care.",
+      "**Clinical Summary for Wound Type 5**\n\n**Wound Characteristics:**\n- Type: Dry, non-infected wound\n- Necrosis/Slough: Greater than 25% of wound surface\n- Infection: No wound infection present\n- Moisture/Exudate: Dry to minimal\n- Hospital Referral: Not required\n\n**Recommended Dressing Materials:**\n1. Hydrogel\n2. Hydrocolloid\n3. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- No antibiotics are indicated.\n\n**Surgical/Procedural Recommendation:**\n- Debridement is necessary to remove necrotic tissue.\n\n**Reference:** Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167.",
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "hydrogel",
+      "hydrocolloid",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [
+      "honey"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_postop_clean",
+    "category": "B",
+    "synthesizer_name": "cat_b_postop_clean",
+    "wound_type_expected": 1,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 0,
+      "granulation_pct": 100,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Advancing",
+      "notes": "Clean postoperative incision day 3, healing by primary intention. Sutured. No exudate. Patient wants to shower daily."
+    },
+    "user_input": "Necrotic: 0%, Slough: 0%, Granulation: 100%\nInfection: Not infected\nMoisture: Low\nEdge: Advancing\nNotes: Clean postoperative incision day 3, healing by primary intention. Sutured. No exudate. Patient wants to shower daily.",
+    "reference": "## Primary Dressing\nFilm dressing — best choice for postoperative wounds without exudate; dress over sutures. Transparent for easy monitoring, waterproof (allows daily showering), gas-permeable; wear time 2–5 days. Thin hydrocolloid is also acceptable: moist environment, autolysis, waterproof; 2–5 days.\n\n## Contraindications\nFoam and alginate are NOT indicated — no exudate present.\n\n## Dressing Change Frequency\nFilm: every 2–5 days. Change if soiled, loose, or lifting at edges.\n\n## Application Tips\nFilm is waterproof — showering is permitted with film in place. Apply without trapping air. Remove by stretching slowly from edges.\n\n## Clinical Notes\nIf wound dehisces: organise prompt surgical review. No antibiotic required. Referral not indicated.",
+    "reference_contexts": [
+      "**Clinical Summary: Postoperative Wounds**\n\n**Wound Type:** Postoperative wounds\n\n**Recommended Dressings:**\n- For wounds without exudate: Use a film or thin hydrocolloid dressing over sutures.\n- For wounds with exudate: Apply a bordered low-absorbent dressing (dry island dressing).\n\n**Special Comments / Clinical Notes:**\n- In the event of wound dehiscence, prompt surgical review is necessary.",
+      "**WCM Modern/Advanced Dressing - Film**\n\n**Purpose:** \n- Protects against contamination and friction\n- Maintains a moist surface\n- Prevents evaporation\n- Facilitates assessment of the wound\n\n**Advantages:**\n- Adherent and transparent with a measurement grid\n- Acts as a bacterial barrier\n- Waterproof yet breathable\n\n**Disadvantages:**\n- May allow fluid collection\n- Risk of stripping away newly formed epithelium upon removal\n\n**Practical Usage/Application:**\n- Apply the film directly over the wound site, ensuring no air is trapped underneath.\n- To remove, stretch the film and pull slowly from the edges.\n\n**Frequency of Dressing Change:** \n- Every 2 to 5 days, depending on the condition of the wound. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: Films / Membranes Dressing**\n\n**Indications:**\n- Primary or secondary dressings for minimally exudative or dry wounds\n- Superficial lacerations\n- Difficult anatomical sites, such as over joints\n- Minimally exudative wounds, including thin burn wounds, venous catheter sites, donor sites for split skin grafts, or partial thickness wounds\n\n**Contraindications:**\n- Avoid use in draining or infected wounds\n\n**Special Considerations:**\n- The skin around the wound must be intact to ensure a good seal\n- Can be used as a secondary dressing in combination with alginates or hydrofibers\n\n**Examples:**\n- Tegaderm\n- Opsite"
+    ],
+    "allowed_dressings": [
+      "film",
+      "hydrocolloid"
+    ],
+    "contraindicated_dressings": [
+      "foam",
+      "alginate"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_burns_hand",
+    "category": "B",
+    "synthesizer_name": "cat_b_burns_hand",
+    "wound_type_expected": 1,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 0,
+      "granulation_pct": 100,
+      "infection": "Not infected",
+      "moisture": "Moderate",
+      "edge": "Advancing",
+      "notes": "Small superficial partial-thickness burn from hot water. Located on palm of right hand. First aid (cool running water) already done. Blisters present."
+    },
+    "user_input": "Necrotic: 0%, Slough: 0%, Granulation: 100%\nInfection: Not infected\nMoisture: Moderate\nEdge: Advancing\nNotes: Small superficial partial-thickness burn from hot water. Located on palm of right hand. First aid (cool running water) already done. Blisters present.",
+    "reference": "## Primary Dressing\nHydrogel — after initial first aid; provides moist environment, reduces pain, rehydrates wound bed; frequency 2–3 days. Hydrocolloid is also suitable: maintains moist environment, promotes autolysis; 2–5 days. Film dressing as an alternative for superficial burns: transparent, waterproof; 2–5 days.\n\n## Clinical Notes\nREFERRAL REQUIRED — burns located on hands (and feet, face, genitalia) must be referred to a burns specialist regardless of size or depth. No antibiotic unless signs of infection develop.",
+    "reference_contexts": [
+      "**Wound Category:** Small superficial burns  \n**Wound Type:** Small superficial burns  \n**Recommended Dressings:** Hydrogel, hydrocolloid, or film after initial first aid treatment.  \n**Indications:** Use for small superficial burns following first aid.  \n**Contraindications:** Refer to a burns specialist for deep or infected burns, or those located on hands, feet, face, or genitalia.  \n**Special Comments:** Ensure proper referral for complex cases.  \n**Safety Warnings:** None specified.",
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Hydrocolloid Dressings**\n\n**Purpose:** Hydrocolloid dressings are designed to provide a moist wound environment, absorb exudates, and serve as a bacterial barrier.\n\n**Indications:** These dressings are effective for low to moderate exuding wounds and promote granulation tissue formation.\n\n**Advantages:**\n- Cleans and debrides wounds through autolysis\n- Easy to use and cost-effective\n- Waterproof, providing protection from external contaminants\n\n**Disadvantages:**\n- May produce an unpleasant odor\n- Forms a yellow liquid gel upon use\n- Can be challenging to apply in wound cavities\n- Risk of maceration of the skin surrounding the wound\n\n**Practical Usage/Application:**\n- Apply the adhesive side of the dressing directly onto the wound without touching the wound bed.\n- A yellow liquid may appear after the dressing is in place, which should be cleansed.\n- Dressing changes should occur every 2 to 5 days, depending on the wound's condition.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "hydrogel",
+      "hydrocolloid",
+      "film"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_referral_type6",
+    "category": "B",
+    "synthesizer_name": "cat_b_referral_type6",
+    "wound_type_expected": 6,
+    "time_payload": {
+      "necrotic_pct": 30,
+      "slough_pct": 30,
+      "granulation_pct": 40,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": ""
+    },
+    "user_input": "Necrotic: 30%, Slough: 30%, Granulation: 40%\nInfection: Not infected\nMoisture: High\nEdge: Non-advancing",
+    "reference": "## Primary Dressing\nAlginate — highly absorbent, forms gel on contact with wound fluid; for heavy exudate management; frequency 2–5 days; needs secondary dressing. Hydrofibre is an alternative: manages heavy exuding wounds, reduces maceration; 2–5 days.\n\n## Secondary Dressing\nFoam (highly absorbent, bacterial barrier; 2–3 days) or polymeric membrane (2–5 days).\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 6 must be referred to hospital for extensive wound care (surgical debridement, vacuum dressing, systemic complication management). Antibiotic: may or may not be needed based on underlying cause.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 6**\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of wound surface\n- **Wound Infection:** No infection present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Recommended for further evaluation and treatment\n\n**Wound Type 6 Description:**\nThis type of wound is characterized as a wet, non-infected wound with more than 25% slough or necrotic tissue present.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Polymeric membrane\n4. Hydrofiber\n\n**Antibiotic Recommendation:**\nAntibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is recommended to remove necrotic tissue.\n2. Repeated debridement may be necessary to achieve optimal healing.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "foam",
+      "polymeric_membrane",
+      "hydrofiber"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_b_diabetic_foot",
+    "category": "B",
+    "synthesizer_name": "cat_b_diabetic_foot",
+    "wound_type_expected": 3,
+    "time_payload": {
+      "necrotic_pct": 10,
+      "slough_pct": 15,
+      "granulation_pct": 75,
+      "infection": "Locally infected",
+      "moisture": "Moderate",
+      "edge": "Non-advancing",
+      "notes": "Patient has Type 2 diabetes. Plantar surface right foot. Pedal pulses should be checked. Moderate exudate."
+    },
+    "user_input": "Necrotic: 10%, Slough: 15%, Granulation: 75%\nInfection: Locally infected\nMoisture: Moderate\nEdge: Non-advancing\nNotes: Patient has Type 2 diabetes. Plantar surface right foot. Pedal pulses should be checked. Moderate exudate.",
+    "reference": "## Primary Dressing\nAntimicrobial primary dressing — silver dressing (bactericidal, no known resistance; 2–3 days).\n\n## Secondary Dressing\nSilicone foam for moderate exudate — applied WITHOUT borders on the foot and anchored with tape or bandages (never use adhesive borders on diabetic foot).\n\n## Contraindications\nDo NOT use bordered adhesive foam on feet. Hydrocolloid is not recommended for diabetic foot ulcers.\n\n## Application Tips\nAssess pedal pulses and sensation — if poor perfusion detected, refer to diabetic foot clinic or vascular surgeon.\n\n## Clinical Notes\nAntibiotic: YES — based on C&S report. Referral to diabetic foot clinic if poor perfusion.",
+    "reference_contexts": [
+      "**Clinical Summary: Diabetic Foot Wound Care**\n\n**Wound Type:** Diabetic foot\n\n**Recommended Dressings:**\n- **Primary Dressing:** Antimicrobial dressing product\n- **Secondary Dressing:** Based on exudate level:\n  - **Low Exudate:** Low-absorbent pad\n  - **Moderate Exudate:** Silicone foam\n  - **High Exudate:** Absorbent pad\n\n**Special Comments / Clinical Notes:**\n- Assess pedal pulses and sensation; if poor perfusion is noted, refer to a diabetic foot clinic or vascular surgeon.\n- When using silicone foams on feet, they should be applied without borders and secured with tape or bandages.",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Hydrocolloids**\n\n**Indications:** Hydrocolloid dressings are suitable for the management of dry and desiccated wounds, abrasions, necrotic eschars, wounds with minimal exudates, and superficial or healing wounds.\n\n**Contraindications:** These dressings are not recommended for highly exudative or infected wounds, diabetic foot ulcers, and other wounds that require frequent inspection.\n\n**Special Considerations:** Care should be taken with fragile skin, as there is a potential for maceration of the surrounding skin. When applying hydrocolloid dressings, the size must extend beyond the wound edges to ensure good adherence. Additionally, silver can be applied centrally under the hydrocolloid dressing for antimicrobial effects.\n\n**Examples:** Common hydrocolloid dressings include Duoderm and Comfeel."
+    ],
+    "allowed_dressings": [
+      "silver",
+      "iodine",
+      "silicone_foam"
+    ],
+    "contraindicated_dressings": [
+      "bordered_foam",
+      "hydrocolloid"
+    ],
+    "antibiotic_required": true,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_c_dressing_saturation",
+    "category": "C",
+    "synthesizer_name": "cat_c_dressing_saturation",
+    "wound_type_expected": 2,
+    "time_payload": {
+      "necrotic_pct": 5,
+      "slough_pct": 5,
+      "granulation_pct": 90,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Advancing",
+      "notes": "Foam dressing applied 3 days ago. On examination: dressing is soiled, fluid has struck through (strikethrough), edges are curling. Patient asking if it needs changing."
+    },
+    "user_input": "Necrotic: 5%, Slough: 5%, Granulation: 90%\nInfection: Not infected\nMoisture: High\nEdge: Advancing\nNotes: Foam dressing applied 3 days ago. On examination: dressing is soiled, fluid has struck through (strikethrough), edges are curling. Patient asking if it needs changing.",
+    "reference": "## Primary Dressing\nChange the dressing IMMEDIATELY — all three change criteria are met (soiled, strikethrough, curling edges). Replace with alginate as primary (absorbs up to 20× weight; 2–5 days) or hydrofibre (manages heavy exuding wounds; reduces maceration; 2–5 days) under foam as secondary.\n\n## Secondary Dressing\nFoam — highly absorbent, waterproof; frequency 2–3 days.\n\n## Application Tips\nA dressing MUST be changed when: soiled, loose/slipping, edges curling, or fluid accumulated (strikethrough visible). Scheduled frequency is a guideline only — clinical judgment overrides.\n\n## Clinical Notes\nNo antibiotic required. Referral not indicated for Type 2.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 2 Treatment**\n\n**Wound Type 2 Description:**\n- Characteristics: Clean and wet wound with moderate exudate, no infection, and less than 25% necrosis/slough.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Moderate/wet\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n1. Foam\n2. Alginate\n3. Hydrofiber\n4. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical / Procedural Recommendation:**\n1. Identify the underlying cause of the wound.\n2. Treat the underlying cause if necessary.\n\n**Reference:**\nGaris Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167.",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Foams**\n\n**Purpose:** Foam dressings are designed for absorbent cushioning of wounds.\n\n**Advantages:**\n- Conforms to body contours\n- Suitable for cavity wounds\n- Highly absorbent\n- Provides protection\n- Bacterial and waterproof\n\n**Disadvantages:**\n- May adhere to wounds if exudate dries out\n\n**Practical Usage/Application:**\nFoam dressings can be utilized as secondary dressings or as fillers for cavity wounds. The recommended frequency for dressing changes is every 2 to 3 days, or longer if used for offloading purposes. \n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Hydrofibre**\n\n**Purpose:** Hydrofibre dressings are designed to manage heavy exuding wounds while maintaining a moist healing environment.\n\n**Advantages:**\n- Extended wear time\n- Comfortable and non-traumatic upon removal\n- Reduces the risk of maceration\n- Can be used on infected wounds\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires secondary dressings\n\n**Practical Usage/Application:** Hydrofibre dressings form a gel-like layer upon absorption, which facilitates easy removal. \n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days. \n\n**Indications:** Heavy exuding wounds, infected wounds.\n\n**Contraindications:** Not appropriate for dry wounds. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "foam",
+      "hydrofiber",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_c_malodour_type8",
+    "category": "C",
+    "synthesizer_name": "cat_c_malodour_type8",
+    "wound_type_expected": 8,
+    "time_payload": {
+      "necrotic_pct": 30,
+      "slough_pct": 35,
+      "granulation_pct": 35,
+      "infection": "Locally infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": "Significant malodour noted by nursing staff and patient family. Dressing changes very distressing due to smell."
+    },
+    "user_input": "Necrotic: 30%, Slough: 35%, Granulation: 35%\nInfection: Locally infected\nMoisture: High\nEdge: Non-advancing\nNotes: Significant malodour noted by nursing staff and patient family. Dressing changes very distressing due to smell.",
+    "reference": "## Primary Dressing\nSilver dressing as antimicrobial (bactericidal, no known resistance; 2–3 days) combined with alginate or hydrofibre for heavy exudate management (2–5 days).\n\n## Secondary Dressing\nCharcoal dressing — specifically indicated for malodour management; absorbs odours; frequency 2 days; must have secondary dressing over it. Foam provides additional absorbency.\n\n## Application Tips\nCharcoal dressing must not be cut — cutting disrupts the charcoal layer and reduces odour-absorbing effectiveness.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 8. Antibiotic: YES — C&S. Surgical/mechanical debridement STRONGLY recommended.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 8**\n\n**Wound Description:**\nWound Type 8 is characterized as a wet, infected wound with more than 25% of the surface area covered by slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** >25% of wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Silver dressing\n3. Hydrofiber\n4. Foam\n5. Polymeric membrane\n6. Charcoal\n7. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is strongly recommended.\n2. Repeated debridement may be necessary.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**WCM Modern/Advanced Dressing - Charcoal**\n\n**Purpose:** The primary function of the Charcoal dressing is to absorb odours associated with wounds.\n\n**Advantages:** This dressing effectively reduces unpleasant odours, enhancing patient comfort.\n\n**Disadvantages:** The Charcoal dressing requires a secondary dressing for secure application.\n\n**Practical Usage / Application:** It is recommended to change the Charcoal dressing every 2 days to maintain optimal wound care.\n\n**Source:** Wound Care Manual, First Edition 2014, Ministry of Health Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "silver",
+      "hydrofiber",
+      "foam",
+      "polymeric_membrane",
+      "charcoal",
+      "iodine"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_c_heavy_exudate_maceration",
+    "category": "C",
+    "synthesizer_name": "cat_c_heavy_exudate_maceration",
+    "wound_type_expected": 2,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 5,
+      "granulation_pct": 95,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Advancing",
+      "notes": "Foam dressing saturates within 24 hours. Periwound skin showing early maceration signs. Need better exudate management."
+    },
+    "user_input": "Necrotic: 0%, Slough: 5%, Granulation: 95%\nInfection: Not infected\nMoisture: High\nEdge: Advancing\nNotes: Foam dressing saturates within 24 hours. Periwound skin showing early maceration signs. Need better exudate management.",
+    "reference": "## Primary Dressing\nAlginate — highest absorption capacity; forms a gel that absorbs and contains exudate; frequency 2–5 days; needs secondary dressing. Residue must be washed off during cleansing. Hydrofibre is an equally strong alternative: manages heavy exuding wounds, reduces maceration risk, longer wear time; frequency 2–5 days.\n\n## Secondary Dressing\nFoam — highly absorbent; frequency 2–3 days. Using alginate or hydrofibre as primary under foam significantly extends wear time.\n\n## Application Tips\nApply a skin barrier/protectant to periwound skin before dressing to address existing maceration. Consider polymeric membrane dressing as single-layer option (2–5 days).\n\n## Clinical Notes\nNo antibiotic. Referral not required. Find and treat underlying cause of high exudate.",
+    "reference_contexts": [
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Hydrofibre**\n\n**Purpose:** Hydrofibre dressings are designed to manage heavy exuding wounds while maintaining a moist healing environment.\n\n**Advantages:**\n- Extended wear time\n- Comfortable and non-traumatic upon removal\n- Reduces the risk of maceration\n- Can be used on infected wounds\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires secondary dressings\n\n**Practical Usage/Application:** Hydrofibre dressings form a gel-like layer upon absorption, which facilitates easy removal. \n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days. \n\n**Indications:** Heavy exuding wounds, infected wounds.\n\n**Contraindications:** Not appropriate for dry wounds. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Foams**\n\n**Purpose:** Foam dressings are designed for absorbent cushioning of wounds.\n\n**Advantages:**\n- Conforms to body contours\n- Suitable for cavity wounds\n- Highly absorbent\n- Provides protection\n- Bacterial and waterproof\n\n**Disadvantages:**\n- May adhere to wounds if exudate dries out\n\n**Practical Usage/Application:**\nFoam dressings can be utilized as secondary dressings or as fillers for cavity wounds. The recommended frequency for dressing changes is every 2 to 3 days, or longer if used for offloading purposes. \n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary for Wound Type 2 Treatment**\n\n**Wound Type 2 Description:**\n- Characteristics: Clean and wet wound with moderate exudate, no infection, and less than 25% necrosis/slough.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Moderate/wet\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n1. Foam\n2. Alginate\n3. Hydrofiber\n4. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical / Procedural Recommendation:**\n1. Identify the underlying cause of the wound.\n2. Treat the underlying cause if necessary.\n\n**Reference:**\nGaris Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167."
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "hydrofiber",
+      "foam",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_c_dry_infected_combo",
+    "category": "C",
+    "synthesizer_name": "cat_c_dry_infected_combo",
+    "wound_type_expected": 3,
+    "time_payload": {
+      "necrotic_pct": 10,
+      "slough_pct": 12,
+      "granulation_pct": 78,
+      "infection": "Locally infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": "Wound needs both moisture donation and infection control simultaneously."
+    },
+    "user_input": "Necrotic: 10%, Slough: 12%, Granulation: 78%\nInfection: Locally infected\nMoisture: Low\nEdge: Non-advancing\nNotes: Wound needs both moisture donation and infection control simultaneously.",
+    "reference": "## Primary Dressing\nHydrogel as primary — rehydrates dry infected wound, promotes autolytic debridement; frequency 2–3 days; must have secondary dressing.\n\n## Secondary Dressing\nSilver dressing as antimicrobial secondary layer over hydrogel — bactericidal, no known resistance, locally acting; frequency 2–3 days. This combination addresses both the dry wound environment (hydrogel) and infection (silver) simultaneously.\n\n## Contraindications\nIodine: avoid if thyroid disorder. Alginate/hydrofibre: not suitable for dry wounds.\n\n## Clinical Notes\nAntibiotic: YES — C&S report. Debridement may be needed. Referral not required.",
+    "reference_contexts": [
+      "**Clinical Summary: Hydrogel Dressing for Wound Care**\n\n**Purpose:** Hydrogel dressings are utilized to rehydrate, debride, and deslough wounds, promoting a moist healing environment and facilitating cavity filling.\n\n**Advantages:**\n- Provides comfort to the patient.\n- Maintains a moist environment, which can reduce pain.\n- Rehydrates eschar and acts as a desloughing agent.\n- Promotes granulation tissue formation.\n\n**Disadvantages:**\n- Requires a secondary dressing to secure it in place.\n- Risk of maceration of the skin surrounding the wound.\n\n**Practical Usage/Application:**\n- Hydrogel should be applied directly to the wound bed as a primary dressing.\n- Dressing changes are recommended every 2-3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary for Wound Type 3 Treatment**\n\n**Wound Type 3 Description:**\nThis type of wound is characterized as a dry, infected wound with less than 25% slough or necrotic tissue, likely of vascular origin. \n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Dry or minimal\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Tulle\n2. Hydrogel\n3. Hydrocolloid\n4. Silver dressing\n5. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019)."
+    ],
+    "allowed_dressings": [
+      "tulle",
+      "hydrogel",
+      "hydrocolloid",
+      "silver",
+      "iodine"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_c_time_assessment_mixed",
+    "category": "C",
+    "synthesizer_name": "cat_c_time_assessment_mixed",
+    "wound_type_expected": 7,
+    "time_payload": {
+      "necrotic_pct": 25,
+      "slough_pct": 25,
+      "granulation_pct": 50,
+      "infection": "Locally infected",
+      "moisture": "Moderate",
+      "edge": "Non-advancing",
+      "notes": "50% non-viable tissue: 25% black necrosis, 25% yellow slough. Infected — pus, pain, malodour. Moderate exudate."
+    },
+    "user_input": "Necrotic: 25%, Slough: 25%, Granulation: 50%\nInfection: Locally infected\nMoisture: Moderate\nEdge: Non-advancing\nNotes: 50% non-viable tissue: 25% black necrosis, 25% yellow slough. Infected — pus, pain, malodour. Moderate exudate.",
+    "reference": "## Primary Dressing\nSilver dressing — first-line antimicrobial; bactericidal, no known resistance; 2–3 days. Combined with hydrogel for moisture donation to the necrotic component (2–3 days).\n\n## Secondary Dressing\nHydrocolloid (promotes autolysis for slough removal; 2–5 days) or non-adherent pad. Charcoal may be added given malodour (2 days, needs secondary).\n\n## Rationale by T.I.M.E. Factor\n- T (Tissue): 50% non-viable (>25% threshold) — algorithm routes to Types 7/8. Surgical debridement strongly recommended.\n- I (Infection): Infected with pus and malodour — silver mandatory; charcoal for odour.\n- M (Moisture): Moderate — Type 7 dressing list is primary.\n- E (Edge): Non-advancing.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Types 7 and 8 require hospital referral. Antibiotic: YES — C&S. Surgical/mechanical debridement STRONGLY recommended.",
+    "reference_contexts": [
+      "**Wound Assessment Algorithm Summary**\n\nThe wound assessment algorithm classifies wounds into eight types based on three sequential criteria: tissue necrosis/slough, wound infection, and moisture/exudate level. This classification guides the selection of appropriate dressing materials, antibiotics, and surgical interventions.\n\n**Decision Criteria:**\n\n1. **Tissue Necrosis / Slough:**\n   - **< 25% necrotic/slough tissue** → Wound Types 1, 2, 3, 4\n   - **> 25% necrotic/slough tissue** → Wound Types 5, 6, 7, 8\n\n2. **Wound Infection (Yes/No):**\n   - For wounds with < 25% necrosis:\n     - **No infection** → Types 1, 2\n     - **Yes infection** → Types 3, 4\n   - For wounds with > 25% necrosis:\n     - **No infection** → Types 5, 6\n     - **Yes infection** → Types 7, 8\n\n3. **Moisture / Exudate Level:**\n   - **Dry / minimal exudate** → Odd-numbered types (1, 3, 5, 7)\n   - **Moderate / wet exudate** → Even-numbered types (2, 4, 6, 8)\n\n**Resulting Wound Type Matrix:**\n\n- **Wound Type 1:** < 25% necrosis | No infection | Dry / minimal exudate\n- **Wound Type 2:** < 25% necrosis | No infection | Moderate / wet exudate\n- **Wound Type 3:** < 25% necrosis | Yes infection | Dry / minimal exudate\n- **Wound Type 4:** < 25% necrosis | Yes infection | Moderate / wet exudate\n- **Wound Type 5:** > 25% necrosis | No infection | Dry / minimal exudate\n- **Wound Type 6:** > 25% necrosis | No infection | Moderate / wet exudate\n- **Wound Type 7:** > 25% necrosis | Yes infection | Dry / minimal exudate\n- **Wound Type 8:** > 25% necrosis | Yes infection | Moderate / wet exudate\n\n**Treatment Recommendations:**\nEach wound type has specific recommendations for dressings, antibiotics, and debridement. Notably, wound types 6, 7, and 8 require referral to a hospital for further management.",
+      "**Clinical Summary for Wound Type 7**\n\n**Wound Description:**\n- This wound is characterized as a dry, infected wound with more than 25% slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of the wound surface is affected.\n- **Wound Infection:** Present.\n- **Moisture/Exudate:** Dry or minimal.\n- **Hospital Referral:** Required; referral to a hospital is recommended.\n\n**Recommended Dressing Materials:**\n1. Silver dressing\n2. Hydrogel\n3. Hydrocolloid\n4. Iodine-based dressing\n5. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\n- Surgical or mechanical debridement is strongly recommended to address the necrotic tissue.\n\n**References:**\n- Guidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019).",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149."
+    ],
+    "allowed_dressings": [
+      "silver",
+      "hydrogel",
+      "hydrocolloid",
+      "iodine",
+      "polymeric_membrane",
+      "charcoal"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_c_film_vs_hydrocolloid",
+    "category": "C",
+    "synthesizer_name": "cat_c_film_vs_hydrocolloid",
+    "wound_type_expected": 1,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 0,
+      "granulation_pct": 100,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Advancing",
+      "notes": "Clinician asking: should I use film or hydrocolloid for this clean granulating low-exudate wound? What are the differences?"
+    },
+    "user_input": "Necrotic: 0%, Slough: 0%, Granulation: 100%\nInfection: Not infected\nMoisture: Low\nEdge: Advancing\nNotes: Clinician asking: should I use film or hydrocolloid for this clean granulating low-exudate wound? What are the differences?",
+    "reference": "## Primary Dressing\nBoth film and hydrocolloid are suitable for Wound Type 1 (clean granulating, low exudate):\n- Film: transparent (best for monitoring), waterproof (allows showering), gas-permeable but impermeable to bacteria/liquid; wear time 2–5 days.\n- Hydrocolloid: provides moist environment, promotes autolysis, bacterial barrier, waterproof; wear time 2–5 days. Forms yellow gel — normal, cleanse on change.\n\n## Contraindications\nSilver and charcoal are CONTRAINDICATED for Wound Type 1. Film: avoid in draining or infected wounds. Hydrocolloid: NOT recommended for highly exudative or infected wounds.\n\n## Clinical Notes\nNo antibiotic. Referral not indicated. Consider secondary closure if wound is ready.",
+    "reference_contexts": [
+      "**WCM Modern/Advanced Dressing - Film**\n\n**Purpose:** \n- Protects against contamination and friction\n- Maintains a moist surface\n- Prevents evaporation\n- Facilitates assessment of the wound\n\n**Advantages:**\n- Adherent and transparent with a measurement grid\n- Acts as a bacterial barrier\n- Waterproof yet breathable\n\n**Disadvantages:**\n- May allow fluid collection\n- Risk of stripping away newly formed epithelium upon removal\n\n**Practical Usage/Application:**\n- Apply the film directly over the wound site, ensuring no air is trapped underneath.\n- To remove, stretch the film and pull slowly from the edges.\n\n**Frequency of Dressing Change:** \n- Every 2 to 5 days, depending on the condition of the wound. \n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary: Hydrocolloid Dressings**\n\n**Purpose:** Hydrocolloid dressings are designed to provide a moist wound environment, absorb exudates, and serve as a bacterial barrier.\n\n**Indications:** These dressings are effective for low to moderate exuding wounds and promote granulation tissue formation.\n\n**Advantages:**\n- Cleans and debrides wounds through autolysis\n- Easy to use and cost-effective\n- Waterproof, providing protection from external contaminants\n\n**Disadvantages:**\n- May produce an unpleasant odor\n- Forms a yellow liquid gel upon use\n- Can be challenging to apply in wound cavities\n- Risk of maceration of the skin surrounding the wound\n\n**Practical Usage/Application:**\n- Apply the adhesive side of the dressing directly onto the wound without touching the wound bed.\n- A yellow liquid may appear after the dressing is in place, which should be cleansed.\n- Dressing changes should occur every 2 to 5 days, depending on the wound's condition.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary for Wound Type 1 Treatment**\n\n**Wound Type Description:**\n- Clean, healthy granulating wound\n- Characteristics: dry/minimal exudate, no infection, and less than 25% necrosis/slough\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Dry/minimal\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n- All types of dressing materials are suitable except for silver, charcoal, and special advanced dressing materials.\n\n**Antibiotic Recommendation:**\n- No antibiotics are required.\n\n**Surgical/Procedural Recommendations:**\n1. The wound is ready for secondary closure.\n2. For small wounds, continue dressing until healing occurs by secondary intention.\n3. The frequency of dressing changes will vary based on the type of wound and the dressing material used.\n\n**References:**\n- Guidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**Clinical Summary: Films / Membranes Dressing**\n\n**Indications:**\n- Primary or secondary dressings for minimally exudative or dry wounds\n- Superficial lacerations\n- Difficult anatomical sites, such as over joints\n- Minimally exudative wounds, including thin burn wounds, venous catheter sites, donor sites for split skin grafts, or partial thickness wounds\n\n**Contraindications:**\n- Avoid use in draining or infected wounds\n\n**Special Considerations:**\n- The skin around the wound must be intact to ensure a good seal\n- Can be used as a secondary dressing in combination with alginates or hydrofibers\n\n**Examples:**\n- Tegaderm\n- Opsite"
+    ],
+    "allowed_dressings": [
+      "film",
+      "hydrocolloid",
+      "foam",
+      "tulle"
+    ],
+    "contraindicated_dressings": [
+      "silver",
+      "charcoal"
+    ],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_d_notes_infection_override",
+    "category": "D",
+    "synthesizer_name": "cat_d_notes_infection_override",
+    "wound_type_expected": 4,
+    "time_payload": {
+      "necrotic_pct": 0,
+      "slough_pct": 5,
+      "granulation_pct": 95,
+      "infection": "Not infected",
+      "moisture": "Moderate",
+      "edge": "Advancing",
+      "notes": "Wound has become more painful over 3 days. Increased warmth and redness around wound edges. Cloudy exudate noted today. Patient reports foul odour."
+    },
+    "user_input": "Necrotic: 0%, Slough: 5%, Granulation: 95%\nInfection: Not infected\nMoisture: Moderate\nEdge: Advancing\nNotes: Wound has become more painful over 3 days. Increased warmth and redness around wound edges. Cloudy exudate noted today. Patient reports foul odour.",
+    "reference": "## Primary Dressing\nSilver dressing — despite structured label showing 'Not infected', clinical notes contain multiple infection indicators requiring override. Silver is bactericidal, no known resistance; frequency 2–3 days.\n\n## Secondary Dressing\nFoam based on moderate exudate level (2–3 days).\n\n## Rationale by T.I.M.E. Factor\n- I (Infection): OVERRIDE — notes contain: increased wound pain, periwound erythema, wound warmth, cloudy exudate, foul odour — these are infection red flags. Treat as INFECTED. Maps to Wound Type 4 (wet, infected, <25% non-viable).\n\n## Clinical Notes\nAntibiotic: YES — based on C&S report. Reassess at 48 hours. If spreading erythema, escalate care immediately.",
+    "reference_contexts": [
+      "**Clinical Summary for Wound Type 4 Treatment**\n\n**Wound Type 4 Description:**\nThis type of wound is characterized as a wet, infected wound with less than 25% slough or necrotic tissue.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Less than 25% of the wound surface\n- **Wound Infection:** Present\n- **Moisture/Exudate:** Moderate to wet\n- **Requires Hospital Referral:** No\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Silver\n4. Hydrofiber\n5. Polymeric membrane\n6. Iodine-based dressing\n\n**Antibiotic Recommendation:**\nAntibiotics are recommended based on the culture and sensitivity (C&S) report of the infected tissue.\n\n**Surgical/Procedural Recommendation:**\nDebridement may be necessary to manage the wound effectively.\n\n**References:**\nGuidelines from the Wound Care Manual (2014) and the Ministry of Health Malaysia's Wound Care Guidelines (2019).",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary of Wound Dressings**\n\n1. **Iodine Dressings**\n   - **Indications**: Useful for infected wounds.\n   - **Contraindications**: Should be avoided in patients with thyroid disorders due to potential systemic absorption of iodine.\n   - **Frequency of Change**: Not specified.\n   - **Safety Warnings**: Monitor for systemic absorption in patients with thyroid issues.\n\n2. **Silver Dressings**\n   - **Forms**: Available as elemental, inorganic, and organic silver, including silver nitrate, silver sulfadiazine, and nanocrystalline silver technology.\n   - **Indications**: Broad spectrum antimicrobial action effective against gram-positive and gram-negative bacteria, yeast, and fungi; also provides toxin and odour control.\n   - **Mechanism**: Inert metallic silver (Ag0) converts to reactive silver ion (Ag+) upon moisture exposure, which interacts with negatively charged particles in wound exudate.\n   - **Frequency of Change**: Newer preparations can be effective for up to 7 days; older silver nitrate preparations required application up to twelve times a day.\n   - **Safety Warnings**: Potential for skin discolouration or irritation (argyria); low toxicity to skin and low rates of bacterial resistance to Ag+.\n\n3. **Honey Dressings**\n   - **Indications**: Shown to improve healing times in mild to moderate superficial and partial thickness burns; limited benefits for other types of ulcers.\n   - **Properties**: Anti-inflammatory, antimicrobial, and debriding properties; stimulates granulation and epithelialization, reduces pain and edema.\n   - **Mechanism**: High sugar content creates a highly osmolar wound environment that inhibits bacterial growth.\n   - **Formulation**: Derived from Leptospermum plants, available as gel or impregnated dressings.\n   - **Frequency of Change**: Not specified.\n   - **Safety Warnings**: None specified."
+    ],
+    "allowed_dressings": [
+      "silver",
+      "iodine",
+      "alginate",
+      "foam",
+      "hydrofiber",
+      "polymeric_membrane"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": true,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_d_notes_diabetic_nonhealing",
+    "category": "D",
+    "synthesizer_name": "cat_d_notes_diabetic_nonhealing",
+    "wound_type_expected": 3,
+    "time_payload": {
+      "necrotic_pct": 10,
+      "slough_pct": 20,
+      "granulation_pct": 70,
+      "infection": "Not infected",
+      "moisture": "Low",
+      "edge": "Non-advancing",
+      "notes": "Patient is diabetic with peripheral neuropathy. Plantar foot wound. No infection currently. Dry wound. Wound has not progressed despite appropriate dressings for 6 weeks. No offloading in use."
+    },
+    "user_input": "Necrotic: 10%, Slough: 20%, Granulation: 70%\nInfection: Not infected\nMoisture: Low\nEdge: Non-advancing\nNotes: Patient is diabetic with peripheral neuropathy. Plantar foot wound. No infection currently. Dry wound. Wound has not progressed despite appropriate dressings for 6 weeks. No offloading in use.",
+    "reference": "## Primary Dressing\nAntimicrobial primary dressing as precaution given diabetic status — silver dressing (bactericidal, no known resistance; 2–3 days).\n\n## Secondary Dressing\nLow-absorbent pad for low exudate (per AJGP diabetic foot protocol). Silicone foam if on foot — WITHOUT borders, anchored with tape or bandages.\n\n## Contraindications\nAdhesive bordered foam on feet: CONTRAINDICATED. Hydrocolloid: not recommended for diabetic foot ulcers.\n\n## Application Tips\nCheck pedal pulses and sensation. Dressing alone will not heal a neuropathic plantar ulcer — OFFLOADING IS ESSENTIAL.\n\n## Clinical Notes\nNon-healing wound at 6 weeks — REFERRAL to diabetic foot clinic is required. No systemic antibiotic currently if no infection signs, but monitor closely.",
+    "reference_contexts": [
+      "**Clinical Summary: Diabetic Foot Wound Care**\n\n**Wound Type:** Diabetic foot\n\n**Recommended Dressings:**\n- **Primary Dressing:** Antimicrobial dressing product\n- **Secondary Dressing:** Based on exudate level:\n  - **Low Exudate:** Low-absorbent pad\n  - **Moderate Exudate:** Silicone foam\n  - **High Exudate:** Absorbent pad\n\n**Special Comments / Clinical Notes:**\n- Assess pedal pulses and sensation; if poor perfusion is noted, refer to a diabetic foot clinic or vascular surgeon.\n- When using silicone foams on feet, they should be applied without borders and secured with tape or bandages.",
+      "**Clinical Summary: WCM Modern/Advanced Dressing - Silver**\n\n**Purpose:** The silver dressing is designed to reduce bacterial bioburden in infected wounds.\n\n**Advantages:**\n- Acts locally at the wound site\n- No known resistance to silver\n- Exhibits bactericidal properties\n\n**Disadvantages:**\n- Some silver dressings may cause discoloration of the wound.\n\n**Practical Usage/Application:**\n- Apply the dressing with the silver side facing the wound bed.\n\n**Frequency of Dressing Change:** Change the dressing every 2 to 3 days.\n\n**Source:** Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Hydrocolloids**\n\n**Indications:** Hydrocolloid dressings are suitable for the management of dry and desiccated wounds, abrasions, necrotic eschars, wounds with minimal exudates, and superficial or healing wounds.\n\n**Contraindications:** These dressings are not recommended for highly exudative or infected wounds, diabetic foot ulcers, and other wounds that require frequent inspection.\n\n**Special Considerations:** Care should be taken with fragile skin, as there is a potential for maceration of the surrounding skin. When applying hydrocolloid dressings, the size must extend beyond the wound edges to ensure good adherence. Additionally, silver can be applied centrally under the hydrocolloid dressing for antimicrobial effects.\n\n**Examples:** Common hydrocolloid dressings include Duoderm and Comfeel."
+    ],
+    "allowed_dressings": [
+      "silver",
+      "silicone_foam"
+    ],
+    "contraindicated_dressings": [
+      "bordered_foam",
+      "hydrocolloid"
+    ],
+    "antibiotic_required": false,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_d_notes_malodour_clean",
+    "category": "D",
+    "synthesizer_name": "cat_d_notes_malodour_clean",
+    "wound_type_expected": 2,
+    "time_payload": {
+      "necrotic_pct": 5,
+      "slough_pct": 10,
+      "granulation_pct": 85,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Advancing",
+      "notes": "Wound looks clinically clean but significant malodour reported. No purulence. High exudate. Possible bacterial colonisation."
+    },
+    "user_input": "Necrotic: 5%, Slough: 10%, Granulation: 85%\nInfection: Not infected\nMoisture: High\nEdge: Advancing\nNotes: Wound looks clinically clean but significant malodour reported. No purulence. High exudate. Possible bacterial colonisation.",
+    "reference": "## Primary Dressing\nAlginate (high exudate management; 2–5 days) as primary. If bacterial colonisation suspected despite no frank infection, consider silver as antimicrobial precaution (2–3 days).\n\n## Secondary Dressing\nCharcoal dressing — specifically targets malodour; absorbs odours effectively; frequency 2 days; must have secondary dressing. Foam as final outer secondary (2–3 days).\n\n## Application Tips\nDo not cut charcoal dressing — disrupts the active charcoal layer.\n\n## Clinical Notes\nMonitor for emerging infection signs. No systemic antibiotic currently. Referral not required.",
+    "reference_contexts": [
+      "**WCM Modern/Advanced Dressing - Charcoal**\n\n**Purpose:** The primary function of the Charcoal dressing is to absorb odours associated with wounds.\n\n**Advantages:** This dressing effectively reduces unpleasant odours, enhancing patient comfort.\n\n**Disadvantages:** The Charcoal dressing requires a secondary dressing for secure application.\n\n**Practical Usage / Application:** It is recommended to change the Charcoal dressing every 2 days to maintain optimal wound care.\n\n**Source:** Wound Care Manual, First Edition 2014, Ministry of Health Malaysia, Chapter 14, pp 146–149.",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+      "**Clinical Summary for Wound Type 2 Treatment**\n\n**Wound Type 2 Description:**\n- Characteristics: Clean and wet wound with moderate exudate, no infection, and less than 25% necrosis/slough.\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- Necrosis/slough: <25% of wound surface\n- Wound infection: No\n- Moisture/exudate: Moderate/wet\n- Requires hospital referral: No\n\n**Recommended Dressing Materials:**\n1. Foam\n2. Alginate\n3. Hydrofiber\n4. Polymeric membrane\n\n**Antibiotic Recommendation:**\n- Antibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical / Procedural Recommendation:**\n1. Identify the underlying cause of the wound.\n2. Treat the underlying cause if necessary.\n\n**Reference:**\nGaris Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167."
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "charcoal",
+      "silver",
+      "foam",
+      "hydrofiber"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": false,
+    "answer": "",
+    "retrieved_contexts": []
+  },
+  {
+    "case_id": "cat_d_notes_npwt_adjunct",
+    "category": "D",
+    "synthesizer_name": "cat_d_notes_npwt_adjunct",
+    "wound_type_expected": 6,
+    "time_payload": {
+      "necrotic_pct": 20,
+      "slough_pct": 30,
+      "granulation_pct": 50,
+      "infection": "Not infected",
+      "moisture": "High",
+      "edge": "Non-advancing",
+      "notes": "Surgical debridement was completed yesterday. Wound bed is now clean. Surgeon is considering NPWT. Is NPWT now appropriate post-debridement?"
+    },
+    "user_input": "Necrotic: 20%, Slough: 30%, Granulation: 50%\nInfection: Not infected\nMoisture: High\nEdge: Non-advancing\nNotes: Surgical debridement was completed yesterday. Wound bed is now clean. Surgeon is considering NPWT. Is NPWT now appropriate post-debridement?",
+    "reference": "## Primary Dressing\nNPWT may now be considered as an ADJUNCT following adequate surgical debridement. Interim standard dressings: alginate for heavy exudate (2–5 days) or hydrofibre (2–5 days) while NPWT setup is organised.\n\n## Secondary Dressing\nFoam as secondary (2–3 days) if NPWT not immediately available.\n\n## Contraindications\nNPWT contraindications that must still be checked before proceeding: (1) Clotting disorders, (2) remaining necrotic tissue/eschar in wound bed, (3) neoplastic tissue in wound area. All must be cleared before NPWT is applied.\n\n## Clinical Notes\nREFERRAL REQUIRED — Wound Type 6 warrants hospital management. NPWT is an adjunct, not standalone treatment. No antibiotic if genuinely not infected.",
+    "reference_contexts": [
+      "**Clinical Summary: Negative Pressure Wound Therapy (NPWT)**\n\n**Introduction:**  \nNegative Pressure Wound Therapy (NPWT) is an advanced wound care technique that utilizes subatmospheric pressure to enhance healing, addressing limitations of traditional methods and achieving high success rates across various clinical settings.\n\n**Definition:**  \nNPWT involves the application of negative pressure to a wound through a specialized open-cell dressing (foam or gauze) placed directly on the wound and covered with an occlusive film. A vacuum pump delivers negative pressure across the wound surface.\n\n**Components of NPWT Dressing:**\n- Sterile open-cell wound interface (foam or gauze)\n- Pliable vacuum tubing\n- Occlusive adhesive film (for airtight seal)\n- Canister (collection chamber)\n- Vacuum pump\n\n**Mechanism of Action:**\n1. Creates a closed, moist environment conducive to healing and granulation tissue growth while minimizing bacterial contamination.\n2. Reduces wound volume and approximates wound edges.\n3. Removes excess exudate, decreasing bacterial colonization.\n4. Eliminates interstitial fluid, reducing edema and enhancing blood flow.\n5. Stimulates granulation tissue formation through mechanical suction pressure.\n\n**Indications for NPWT:**\n1. Large, clean, and/or exudative wounds awaiting definitive closure.\n2. Fixation of skin grafts (mesh grafts) and tissue flaps.\n\n**Contraindications for NPWT:**\n1. Clotting disorders (risk of bleeding).\n2. Necrotic wound bed or eschar (hinders new tissue growth).\n3. Untreated infections (risk of deep infection).\n4. Neoplastic tissue in the wound area (may promote tumor growth).\n\n**Application Procedure:**\n1. Cut the wound interface to fit the wound shape.\n2. Place the wound interface on the wound bed, ensuring it is flush with the edges.\n3. Position the vented end of the vacuum tubing flush with the wound interface.\n4. Cover the interface and tubing with the occlusive adhesive dressing, ensuring a tight seal.\n5. Connect the tubing to the canister on the vacuum pump.\n6. Program the vacuum pump to the prescribed pressure and suction interval.\n\n**Recommended NPWT Settings:**\n- **Mesh grafts:** 50-75 mmHg continuous negative pressure for 4-5 days.\n- **Pressure ulcers and acute wounds:** Continuous therapy at 50-75 mmHg; 125 mmHg for 48 hours, then switch to intermittent (5 minutes on, 2 minutes off).\n- **Chronic ulcers (venous stasis, arterial insufficiency, neuropathies):** 125 mmHg continuous therapy until base adhesion is achieved.\n\n**Dressing Change Frequency:**  \nEvery 3-5 days or based on fluid characteristics and surrounding skin condition.\n\n**Complications:**  \nComplications are rare with proper patient selection. Possible complications include:\n- Toxic shock syndrome\n- Wound infections (especially anaerobic)\n- Loss of blood and fluid\n\n**Side Effects:**\n1. Granulation tissue ingrowth into the foam.\n2. Pain from suction and dressing changes.\n3. Maceration and pressure damage to adjacent skin.\n4. Reduced perfusion due to pressure on small vessels.\n\n**Key Points:**\n- NPWT is an adjunctive treatment for chronic, acute, and complex wounds, not a standalone solution.\n- It prepares the wound bed for improved closure outcomes.\n- NPWT does not replace surgical interventions.",
+      "**Clinical Summary for Wound Type 6**\n\n**Clinical Context (T.I.M.E. Algorithm):**\n- **Necrosis/Slough:** Greater than 25% of wound surface\n- **Wound Infection:** No infection present\n- **Moisture/Exudate:** Moderate to wet\n- **Hospital Referral:** Recommended for further evaluation and treatment\n\n**Wound Type 6 Description:**\nThis type of wound is characterized as a wet, non-infected wound with more than 25% slough or necrotic tissue present.\n\n**Recommended Dressing Materials:**\n1. Alginate\n2. Foam\n3. Polymeric membrane\n4. Hydrofiber\n\n**Antibiotic Recommendation:**\nAntibiotics may be considered based on the underlying cause of the wound.\n\n**Surgical/Procedural Recommendation:**\n1. Surgical or mechanical debridement is recommended to remove necrotic tissue.\n2. Repeated debridement may be necessary to achieve optimal healing.\n\n**References:**\nGuidelines from the Ministry of Health Malaysia, 2019; based on the Wound Care Manual, 2014, pp. 164–167.",
+      "**Clinical Summary: Wound Referral Guidelines**\n\nCertain wound types necessitate referral to a hospital or other healthcare institution. These include:\n\n1. **Luka jenis 6**: Wet, non-infected wound with more than 25% slough or necrotic tissue.\n2. **Luka jenis 7**: Dry, infected wound with more than 25% slough or necrotic tissue.\n3. **Luka jenis 8**: Wet, infected wound with more than 25% slough or necrotic tissue.\n\nReferral criteria include any of the following conditions:\n\n- Wound characteristics that require extensive care, such as:\n  - Surgical debridement\n  - Vacuum (negative pressure) dressing\n  - Other advanced wound procedures\n\n- Presence of other acute complications in the patient.\n\n- Systemic wound complications, including:\n  - Sepsis\n  - Severe cellulitis\n\n- Co-morbid disease complications that necessitate inpatient management, such as:\n  - Heart failure\n  - Renal failure\n  - Other conditions requiring ward admission\n\n- Additional conditions as determined by the State-Level Wound Care Committee (Jawatankuasa Penjagaan Luka Peringkat Negeri).\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer, Ministry of Health Malaysia 2019, p.14)",
+      "**Clinical Summary: Calcium Alginate Dressing**\n\n**Purpose:** Calcium alginate dressings are designed to absorb wound exudates while maintaining a moist wound environment.\n\n**Advantages:**\n- Economical and easy to apply\n- Biodegradable\n- Possesses haemostatic properties, making it effective in controlling bleeding\n\n**Disadvantages:**\n- Not suitable for dry wounds\n- Requires a secondary dressing for optimal performance\n\n**Practical Usage/Application:**\n- Available in both sheet and rope forms\n- Effective in managing bleeding wounds\n- Residue from the biodegradable material must be thoroughly washed off during the cleansing process\n\n**Frequency of Dressing Change:** Recommended every 2 to 5 days.\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)"
+    ],
+    "allowed_dressings": [
+      "alginate",
+      "foam",
+      "polymeric_membrane",
+      "hydrofiber"
+    ],
+    "contraindicated_dressings": [],
+    "antibiotic_required": false,
+    "referral_required": true,
+    "answer": "",
+    "retrieved_contexts": []
+  }
+]
