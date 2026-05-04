@@ -1,9 +1,38 @@
+# --- Virtual Environments & System ---
 venv/
 __pycache__/
-*.pyc
 .env
 .ipynb_checkpoints/
-node_modules/
+.vscode/
+*.log
+
+# --- Data & Databases ---
+clinical_pdfs_v2/
+db_wound_care_v2/
+chunks_selection/
+
+# --- Ingestion Artifacts ---
+ingestion_notebooks/
+ingestion_output_ai/
+ingestion_output_no_ai/
+ingestion_full.ipynb
+wound_dressing_rag_ingestion_v2.ipynb
+wound_dressing_rag.ipynb
+
+# --- Evaluation Results (RAGAS & V1 wound apps) ---
+ragas_eval_00/
+ragas_eval_01/
+ragas_eval_02/
+RAGAS_EVAL/
+ragas_testset/
+RAGAS_EVALUATION_GUIDE.md
+
+# --- Application & Visualizers ---
+templates/
+wound_app*.py
+chunk_visualiser_unstructured*.py
+
+# --- Build Artifacts ---
 dist/
 build/
-*.log
+node_modules/
