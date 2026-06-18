@@ -46,7 +46,7 @@
 
     .wrapper { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
 
-    /* ── Header ── */
+    /* Header */
     .logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
     .logo-mark {
       width: 36px; height: 36px; border-radius: 8px;
@@ -57,9 +57,7 @@
     .logo-name { font-family: var(--mono); font-size: 18px; color: var(--accent); letter-spacing: .08em; }
     .page-sub  { font-size: 13px; color: var(--muted); margin-bottom: 36px; padding-left: 48px; }
 
-    /* ══════════════════════════════════════════════════════════════
-       TISSUE IMAGE PIPELINE  (T card — full-width)
-    ══════════════════════════════════════════════════════════════ */
+    /* TIME cards */
     .time-card {
       background: var(--surface); border: 0.5px solid var(--border);
       border-radius: 14px; padding: 18px 20px; position: relative;
@@ -87,7 +85,7 @@
     .field-name { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
     .field-desc { font-size: 12px; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
 
-    /* ── Image upload zone ── */
+    /* Upload zone */
     .upload-zone {
       border: 1.5px dashed var(--border); border-radius: 10px;
       padding: 28px; text-align: center; cursor: pointer;
@@ -102,7 +100,7 @@
     .upload-text { font-size: 13px; color: var(--muted); }
     .upload-text span { color: var(--accent); }
 
-    /* ── Pipeline stages ── */
+    /* Pipeline stages */
     .pipeline-stages {
       display: none; margin-top: 16px; gap: 8px;
       grid-template-columns: repeat(4, 1fr);
@@ -122,10 +120,8 @@
     .stage-chip .stage-label { display: block; font-weight: 500; }
     .stage-chip .stage-sub   { display: block; font-size: 9px; opacity: .7; margin-top: 2px; }
 
-    /* ── Bbox canvas area ── */
-    .bbox-area {
-      display: none; margin-top: 16px; position: relative;
-    }
+    /* Bbox canvas area */
+    .bbox-area { display: none; margin-top: 16px; position: relative; }
     .bbox-area.visible { display: block; }
 
     .canvas-wrap {
@@ -153,52 +149,46 @@
     }
     .bbox-info span { color: var(--accent); }
 
-    /* ── GMM result area ── */
-    .gmm-result {
-      display: none; margin-top: 16px;
-    }
-    .gmm-result.visible { display: block; }
+    /* K-Means result area */
+    .kmeans-result { display: none; margin-top: 16px; }
+    .kmeans-result.visible { display: block; }
 
-    .gmm-images {
+    .result-images {
       display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;
     }
-    @media (max-width: 500px) { .gmm-images { grid-template-columns: 1fr; } }
+    @media (max-width: 500px) { .result-images { grid-template-columns: 1fr; } }
 
-    .gmm-img-wrap { position: relative; }
-    .gmm-img-wrap img {
+    .result-img-wrap { position: relative; }
+    .result-img-wrap img {
       width: 100%; border-radius: 8px; display: block;
       border: 0.5px solid var(--border);
     }
-    .gmm-img-label {
+    .result-img-label {
       position: absolute; bottom: 6px; left: 8px;
       font-family: var(--mono); font-size: 10px;
       background: rgba(7,13,20,.8); color: var(--muted);
       padding: 2px 7px; border-radius: 4px;
     }
 
-    .gmm-legend {
+    .tissue-legend {
       display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;
     }
     .legend-item {
       display: flex; align-items: center; gap: 5px;
       font-size: 11px; font-family: var(--mono);
     }
-    .legend-dot {
-      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
-    }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
-    .gmm-confidence-row {
+    .kmeans-confidence-row {
       font-size: 11px; font-family: var(--mono); color: var(--muted);
       margin-bottom: 10px;
     }
-    .gmm-confidence-row span { color: var(--accent); }
+    .kmeans-confidence-row span { color: var(--accent); }
 
-    /* ── Tissue sliders ── */
+    /* Tissue sliders */
     .tissue-sliders { display: flex; flex-direction: column; gap: 10px; }
     .slider-row { display: flex; flex-direction: column; gap: 4px; }
-    .slider-label-row {
-      display: flex; justify-content: space-between; align-items: center;
-    }
+    .slider-label-row { display: flex; justify-content: space-between; align-items: center; }
     .slider-name  { font-size: 12px; font-weight: 500; }
     .slider-value {
       font-family: var(--mono); font-size: 12px; font-weight: 500;
@@ -240,13 +230,13 @@
     }
     .auto-filled-badge.visible { display: inline-block; }
 
-    /* ── TIME grid ── */
+    /* TIME grid */
     .time-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;
     }
     @media (max-width: 620px) { .time-grid { grid-template-columns: 1fr; } }
 
-    /* ── Select / textarea ── */
+    /* Select / textarea */
     select, textarea {
       width: 100%; background: var(--bg); border: 0.5px solid var(--border);
       border-radius: 8px; color: var(--text); font-family: var(--font);
@@ -258,7 +248,7 @@
       border-color: var(--accent); box-shadow: 0 0 0 1px rgba(0,200,255,.15);
     }
 
-    /* ── Toggle buttons ── */
+    /* Toggle buttons */
     .toggle-group { display: flex; gap: 8px; }
     .toggle-btn {
       flex: 1; padding: 9px 12px; border: 0.5px solid var(--border);
@@ -276,7 +266,7 @@
       background: rgba(239,83,80,.08);
     }
 
-    /* ── Notes card ── */
+    /* Notes card */
     .notes-card {
       background: var(--surface); border: 0.5px solid var(--border);
       border-radius: 14px; padding: 18px 20px; margin-bottom: 20px;
@@ -289,7 +279,7 @@
     }
     textarea { height: 80px; resize: none; }
 
-    /* ── Profile pills ── */
+    /* Profile pills */
     .profile-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; min-height: 28px; }
     .pill {
       font-family: var(--mono); font-size: 11px;
@@ -300,25 +290,18 @@
     .pill-M { color: var(--m-color); border-color: var(--m-color); background: rgba(66,165,245,.08); }
     .pill-E { color: var(--e-color); border-color: var(--e-color); background: rgba(102,187,106,.08); }
 
-    /* ── Buttons ── */
+    /* Buttons */
     .btn {
       padding: 9px 18px; border: 0.5px solid; border-radius: 8px;
       font-family: var(--mono); font-size: 12px; cursor: pointer;
       transition: all .2s; display: inline-flex; align-items: center; gap: 6px;
       user-select: none;
     }
-    .btn-primary {
-      border-color: var(--accent); color: var(--accent);
-      background: rgba(0,200,255,.08);
-    }
+    .btn-primary  { border-color: var(--accent); color: var(--accent); background: rgba(0,200,255,.08); }
     .btn-primary:hover { background: rgba(0,200,255,.15); }
-    .btn-secondary {
-      border-color: var(--border); color: var(--muted); background: transparent;
-    }
+    .btn-secondary { border-color: var(--border); color: var(--muted); background: transparent; }
     .btn-secondary:hover { border-color: var(--accent2); color: var(--text); }
-    .btn-danger {
-      border-color: var(--low); color: var(--low); background: transparent;
-    }
+    .btn-danger   { border-color: var(--low); color: var(--low); background: transparent; }
     .btn-danger:hover { background: rgba(239,68,68,.08); }
     .btn:disabled { opacity: .4; cursor: not-allowed; pointer-events: none; }
 
@@ -333,7 +316,7 @@
     .btn-submit:active { transform: scale(.99); }
     .btn-submit:disabled { opacity: .4; cursor: not-allowed; }
 
-    /* ── Alert / status messages ── */
+    /* Status messages */
     .status-msg {
       font-family: var(--mono); font-size: 12px; padding: 10px 14px;
       border-radius: 8px; margin-top: 10px; display: none;
@@ -344,7 +327,7 @@
     .status-msg.error   { background: rgba(239,68,68,.08);  border: 0.5px solid var(--low);    color: var(--low); }
     .status-msg.visible { display: block; }
 
-    /* ── Loader ── */
+    /* Loader */
     #loader { display: none; text-align: center; padding: 32px 0; }
     .pulse-ring {
       width: 48px; height: 48px; margin: 0 auto 12px; border-radius: 50%;
@@ -361,7 +344,7 @@
     @keyframes spin { to { transform: rotate(360deg); } }
     .loader-text { font-size: 13px; color: var(--muted); font-family: var(--mono); }
 
-    /* ── Response card ── */
+    /* Response card */
     #responseCard {
       display: none; background: var(--surface); border: 0.5px solid var(--border);
       border-radius: 14px; padding: 28px; margin-top: 24px;
@@ -421,10 +404,7 @@
       border: 0.5px solid var(--border);
     }
 
-    /* Divider */
-    .section-divider {
-      border: none; border-top: 0.5px solid var(--border); margin: 20px 0;
-    }
+    .section-divider { border: none; border-top: 0.5px solid var(--border); margin: 20px 0; }
   </style>
 </head>
 <body>
@@ -437,9 +417,7 @@
   </div>
   <div class="page-sub">Clinical Wound Dressing Recommendation — T.I.M.E. Assessment</div>
 
-  <!-- ══════════════════════════════════════════════════════════════
-       T — TISSUE via Image Pipeline
-  ══════════════════════════════════════════════════════════════ -->
+  <!-- T — TISSUE via Image Pipeline -->
   <div class="time-card" data-t="T" style="margin-bottom: 16px;">
     <span class="time-letter">T</span>
     <label>Tissue composition</label>
@@ -449,7 +427,7 @@
     </div>
     <div class="field-desc">
       Upload a wound photo — YOLO will detect the wound, you can confirm or redraw the bounding box,
-      then MobileSAM segments the wound region and GMM classifies tissue types automatically.
+      then MobileSAM segments the wound region and K-Means clustering classifies tissue types automatically.
       You can still adjust the sliders after auto-fill.
     </div>
 
@@ -474,8 +452,8 @@
         <span class="stage-label">MobileSAM</span>
         <span class="stage-sub">segmentation</span>
       </div>
-      <div class="stage-chip" id="stage-gmm">
-        <span class="stage-label">GMM</span>
+      <div class="stage-chip" id="stage-kmeans">
+        <span class="stage-label">K-Means</span>
         <span class="stage-sub">tissue classify</span>
       </div>
     </div>
@@ -501,20 +479,20 @@
       </div>
     </div>
 
-    <!-- GMM result images + sliders -->
-    <div class="gmm-result" id="gmmResult">
-      <div class="gmm-images">
-        <div class="gmm-img-wrap">
+    <!-- K-Means result images -->
+    <div class="kmeans-result" id="kmeansResult">
+      <div class="result-images">
+        <div class="result-img-wrap">
           <img id="overlayImg" src="" alt="Segmentation overlay" />
-          <span class="gmm-img-label">wound region</span>
+          <span class="result-img-label">wound region</span>
         </div>
-        <div class="gmm-img-wrap">
-          <img id="gmmImg" src="" alt="GMM tissue map" />
-          <span class="gmm-img-label">tissue map</span>
+        <div class="result-img-wrap">
+          <img id="kmeansImg" src="" alt="K-Means tissue map" />
+          <span class="result-img-label">tissue map (K-Means)</span>
         </div>
       </div>
 
-      <div class="gmm-legend">
+      <div class="tissue-legend">
         <div class="legend-item">
           <div class="legend-dot" style="background:#000;border:1px solid #666"></div>
           <span>Necrotic</span>
@@ -529,12 +507,12 @@
         </div>
       </div>
 
-      <div class="gmm-confidence-row" id="gmmConfRow"></div>
+      <div class="kmeans-confidence-row" id="kmeansConfRow"></div>
     </div>
 
     <hr class="section-divider" />
 
-    <!-- Sliders (editable even after auto-fill) -->
+    <!-- Sliders -->
     <div style="margin-bottom:6px; font-size:12px; color:var(--muted)">
       Adjust tissue composition if needed — sliders are always editable.
     </div>
@@ -571,9 +549,7 @@
     <div class="tissue-total-warn" id="tissue-warn">Total exceeds 100%. Please adjust sliders.</div>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════════
-       I M E — manual toggles (unchanged)
-  ══════════════════════════════════════════════════════════════ -->
+  <!-- I M E — manual toggles -->
   <div class="time-grid">
 
     <!-- I — Infection -->
@@ -666,27 +642,28 @@
 <script>
   // ═══════════════════════════════════════════════════════════════
   // CONFIG
-  // Points to the segmentation server (app_v2_gmm_v4.py on port 7860)
+  // SEG_SERVER : HuggingFace Space WoundSegmenter (YOLO + MobileSAM + K-Means)
+  // RAG server : same-origin localhost:8000  →  POST /get_recommendation
+  //              compatible with wound_app_02_v4.py and wound_app_v5.py
+  // NOTE: pixels_per_cm is NOT sent from this web frontend
+  //       (reference-line scale tool is mobile/Flutter only)
   // ═══════════════════════════════════════════════════════════════
-  const SEG_SERVER = 'http://localhost:7860';
+  const SEG_SERVER = 'https://qijingtee1227-woundsegmenter.hf.space';
 
   // ═══════════════════════════════════════════════════════════════
   // STATE
   // ═══════════════════════════════════════════════════════════════
   const state = {
-    imageFile:       null,    // File object
-    imageBlob:       null,    // same file as Blob (for re-use)
-    naturalW:        0,
-    naturalH:        0,
-    displayW:        0,
-    displayH:        0,
-    suggestedBbox:   null,    // {x1,y1,x2,y2} in natural px
-    confirmedBbox:   null,    // {x1,y1,x2,y2} in natural px (after confirm/draw)
-    drawing:         false,
-    drawStart:       null,    // {x,y} in display px
-    drawCurrent:     null,
-    gmmConfidence:   0,
-    tissueCountsFromGMM: null,
+    imageFile:            null,
+    naturalW:             0,
+    naturalH:             0,
+    suggestedBbox:        null,   // {x1,y1,x2,y2} in natural px — from YOLO
+    confirmedBbox:        null,   // {x1,y1,x2,y2} in natural px — user-confirmed or drawn
+    drawing:              false,
+    drawStart:            null,
+    drawCurrent:          null,
+    kmeansConfidence:     0,
+    tissueCountsFromKMeans: null,
   };
 
   const toggleState = {
@@ -696,10 +673,9 @@
   };
 
   // ═══════════════════════════════════════════════════════════════
-  // STAGE HELPERS
+  // STAGE CHIP HELPERS
   // ═══════════════════════════════════════════════════════════════
   function setStage(id, status) {
-    // status: '' | 'active' | 'done' | 'error'
     const el = document.getElementById('stage-' + id);
     if (!el) return;
     el.classList.remove('active', 'done', 'error');
@@ -709,7 +685,7 @@
   function showStatus(msg, type = 'info') {
     const el = document.getElementById('pipelineStatus');
     el.textContent = msg;
-    el.className = `status-msg ${type} visible`;
+    el.className = 'status-msg ' + type + ' visible';
   }
 
   function hideStatus() {
@@ -717,76 +693,77 @@
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // IMAGE SELECTED → YOLO DETECT
+  // IMAGE SELECTED → POST /detect  (HFS WoundSegmenter)
   // ═══════════════════════════════════════════════════════════════
   async function onImageSelected(event) {
     const file = event.target.files[0];
     if (!file) return;
 
     state.imageFile = file;
-    state.imageBlob = file;
 
-    // Show pipeline stages
     document.getElementById('pipelineStages').classList.add('visible');
     setStage('upload', 'done');
     setStage('yolo',   'active');
     setStage('sam',    '');
-    setStage('gmm',    '');
+    setStage('kmeans', '');
 
-    // Show image preview + canvas
     const img = document.getElementById('previewImg');
     img.src = URL.createObjectURL(file);
+
     img.onload = async () => {
       state.naturalW = img.naturalWidth;
       state.naturalH = img.naturalHeight;
 
-      const canvas = document.getElementById('bboxCanvas');
+      const canvas  = document.getElementById('bboxCanvas');
       canvas.width  = img.naturalWidth;
       canvas.height = img.naturalHeight;
 
       document.getElementById('bboxArea').classList.add('visible');
       setupCanvasDrawing();
 
-      // Hide previous GMM result
-      document.getElementById('gmmResult').classList.remove('visible');
+      // Reset previous results
+      document.getElementById('kmeansResult').classList.remove('visible');
       document.getElementById('autoFilledBadge').classList.remove('visible');
       document.getElementById('btnRunAnalysis').disabled = true;
 
       showStatus('Running YOLO wound detection…', 'info');
 
-      // Call /detect
       try {
         const fd = new FormData();
         fd.append('file', file);
-        const resp = await fetch(`${SEG_SERVER}/detect`, { method: 'POST', body: fd });
+
+        const resp = await fetch(SEG_SERVER + '/detect', { method: 'POST', body: fd });
         const data = await resp.json();
 
         if (!data.is_wound) {
           setStage('yolo', 'error');
-          showStatus(`No wound detected. ${data.message}`, 'error');
-          document.getElementById('btnRunAnalysis').disabled = true;
+          showStatus('No wound detected. ' + (data.message || ''), 'error');
           return;
         }
 
         setStage('yolo', 'done');
-        state.suggestedBbox = data.bbox;   // {x1,y1,x2,y2} in natural px
+        state.suggestedBbox = data.bbox;   // {x1, y1, x2, y2}
         state.confirmedBbox = data.bbox;
 
         showStatus(
-          `Wound detected (${(data.confidence * 100).toFixed(0)}% confidence). ` +
-          `Bbox shown — confirm or redraw, then click Run analysis.`,
+          'Wound detected (' + (data.confidence * 100).toFixed(0) + '% confidence). ' +
+          'Bbox shown — confirm or redraw, then click Run analysis.',
           'success'
         );
 
         drawBbox(state.suggestedBbox, '#00c8ff', 'YOLO suggestion');
+
         document.getElementById('bboxInfo').innerHTML =
-          `Suggested bbox: <span>[${Object.values(data.bbox).map(v=>v.toFixed(0)).join(', ')}]</span> — ` +
-          `redraw to adjust or click Run analysis to proceed.`;
+          'Suggested bbox: <span>[' +
+          [data.bbox.x1, data.bbox.y1, data.bbox.x2, data.bbox.y2]
+            .map(function(v){ return v.toFixed(0); }).join(', ') +
+          ']</span> — redraw to adjust or click Run analysis to proceed.';
+
         document.getElementById('btnRunAnalysis').disabled = false;
 
       } catch (err) {
         setStage('yolo', 'error');
-        showStatus(`Detection error: ${err.message}`, 'error');
+        showStatus('Detection error: ' + err.message, 'error');
       }
     };
   }
@@ -796,52 +773,42 @@
   // ═══════════════════════════════════════════════════════════════
   function setupCanvasDrawing() {
     const canvas = document.getElementById('bboxCanvas');
-    const img    = document.getElementById('previewImg');
-
-    function getDisplayScale() {
-      // canvas CSS size != natural size when image is scaled by CSS
-      const rect  = canvas.getBoundingClientRect();
-      return {
-        sx: state.naturalW / rect.width,
-        sy: state.naturalH / rect.height,
-      };
-    }
 
     function clientToNatural(clientX, clientY) {
       const rect = canvas.getBoundingClientRect();
-      const { sx, sy } = getDisplayScale();
       return {
-        x: (clientX - rect.left)  * sx,
-        y: (clientY - rect.top)   * sy,
+        x: (clientX - rect.left)  * (state.naturalW / rect.width),
+        y: (clientY - rect.top)   * (state.naturalH / rect.height),
       };
     }
 
-    canvas.onmousedown = (e) => {
-      state.drawing  = true;
-      state.drawStart = clientToNatural(e.clientX, e.clientY);
-      state.drawCurrent = { ...state.drawStart };
+    canvas.onmousedown = function(e) {
+      state.drawing     = true;
+      state.drawStart   = clientToNatural(e.clientX, e.clientY);
+      state.drawCurrent = { x: state.drawStart.x, y: state.drawStart.y };
     };
 
-    canvas.onmousemove = (e) => {
+    canvas.onmousemove = function(e) {
       if (!state.drawing) return;
       state.drawCurrent = clientToNatural(e.clientX, e.clientY);
       redrawCanvas();
     };
 
-    canvas.onmouseup = (e) => {
+    canvas.onmouseup = function(e) {
       if (!state.drawing) return;
       state.drawing = false;
-      const end = clientToNatural(e.clientX, e.clientY);
-
-      const x1 = Math.min(state.drawStart.x, end.x);
-      const y1 = Math.min(state.drawStart.y, end.y);
-      const x2 = Math.max(state.drawStart.x, end.x);
-      const y2 = Math.max(state.drawStart.y, end.y);
+      var end = clientToNatural(e.clientX, e.clientY);
+      var x1 = Math.min(state.drawStart.x, end.x);
+      var y1 = Math.min(state.drawStart.y, end.y);
+      var x2 = Math.max(state.drawStart.x, end.x);
+      var y2 = Math.max(state.drawStart.y, end.y);
 
       if ((x2 - x1) > 10 && (y2 - y1) > 10) {
-        state.confirmedBbox = { x1, y1, x2, y2 };
+        state.confirmedBbox = { x1: x1, y1: y1, x2: x2, y2: y2 };
         document.getElementById('bboxInfo').innerHTML =
-          `Custom bbox: <span>[${[x1,y1,x2,y2].map(v=>v.toFixed(0)).join(', ')}]</span>`;
+          'Custom bbox: <span>[' +
+          [x1, y1, x2, y2].map(function(v){ return v.toFixed(0); }).join(', ') +
+          ']</span>';
         document.getElementById('btnRunAnalysis').disabled = false;
         showStatus('Custom bbox drawn. Click Run analysis to proceed.', 'info');
       }
@@ -849,33 +816,23 @@
     };
 
     // Touch support
-    canvas.ontouchstart = (e) => {
-      e.preventDefault();
-      canvas.onmousedown(e.touches[0]);
-    };
-    canvas.ontouchmove = (e) => {
-      e.preventDefault();
-      canvas.onmousemove(e.touches[0]);
-    };
-    canvas.ontouchend = (e) => {
-      e.preventDefault();
-      canvas.onmouseup(e.changedTouches[0]);
-    };
+    canvas.ontouchstart = function(e) { e.preventDefault(); canvas.onmousedown(e.touches[0]); };
+    canvas.ontouchmove  = function(e) { e.preventDefault(); canvas.onmousemove(e.touches[0]); };
+    canvas.ontouchend   = function(e) { e.preventDefault(); canvas.onmouseup(e.changedTouches[0]); };
   }
 
   function redrawCanvas() {
-    const canvas = document.getElementById('bboxCanvas');
-    const ctx    = canvas.getContext('2d');
+    var canvas = document.getElementById('bboxCanvas');
+    var ctx    = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw suggested (faint)
+    // Draw YOLO suggestion faintly when user has drawn a custom box
     if (state.suggestedBbox && state.confirmedBbox !== state.suggestedBbox) {
-      
-      (ctx, state.suggestedBbox, 'rgba(0,200,255,0.25)', 1);
+      drawBboxOnCtx(ctx, state.suggestedBbox, 'rgba(0,200,255,0.25)', 4);
     }
 
-    // Draw confirmed / in-progress
-    const bbox = state.drawing
+    // Draw active / confirmed bbox
+    var bbox = state.drawing
       ? normaliseDraw(state.drawStart, state.drawCurrent)
       : state.confirmedBbox;
 
@@ -893,39 +850,36 @@
     };
   }
 
-  function drawBboxOnCtx(ctx, bbox, color, lineWidth = 10) {
-    const { x1, y1, x2, y2 } = bbox;
+  function drawBboxOnCtx(ctx, bbox, color, lineWidth) {
     ctx.strokeStyle = color;
-    ctx.lineWidth   = lineWidth;
+    ctx.lineWidth   = lineWidth || 10;
     ctx.setLineDash([6, 3]);
-    ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+    ctx.strokeRect(bbox.x1, bbox.y1, bbox.x2 - bbox.x1, bbox.y2 - bbox.y1);
     ctx.setLineDash([]);
-
     // Corner marks
-    const cs = 10;
     ctx.fillStyle = color;
-    [[x1,y1],[x2,y1],[x1,y2],[x2,y2]].forEach(([cx,cy]) => {
-      ctx.fillRect(cx - 3, cy - 3, 6, 6);
+    [[bbox.x1, bbox.y1], [bbox.x2, bbox.y1],
+     [bbox.x1, bbox.y2], [bbox.x2, bbox.y2]].forEach(function(pt) {
+      ctx.fillRect(pt[0] - 3, pt[1] - 3, 6, 6);
     });
   }
 
-  function drawBbox(bbox, color = '#00c8ff', label = '') {
-    const canvas = document.getElementById('bboxCanvas');
-    const ctx    = canvas.getContext('2d');
+  function drawBbox(bbox, color, label) {
+    var canvas = document.getElementById('bboxCanvas');
+    var ctx    = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBboxOnCtx(ctx, bbox, color, 10);
-
+    drawBboxOnCtx(ctx, bbox, color || '#00c8ff', 10);
     if (label) {
       ctx.font      = '24px DM Mono, monospace';
-      ctx.fillStyle = color;
+      ctx.fillStyle = color || '#00c8ff';
       ctx.fillText(label, bbox.x1 + 4, bbox.y1 - 6);
     }
   }
 
   function clearBbox() {
-    const canvas = document.getElementById('bboxCanvas');
+    var canvas = document.getElementById('bboxCanvas');
     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
-    state.confirmedBbox = state.suggestedBbox;  // revert to suggestion
+    state.confirmedBbox = state.suggestedBbox;
     if (state.suggestedBbox) {
       drawBbox(state.suggestedBbox, '#00c8ff', 'YOLO suggestion');
     }
@@ -934,58 +888,68 @@
   }
 
   function resetPipeline() {
-    state.imageFile = null;
-    state.imageBlob = null;
-    state.suggestedBbox   = null;
-    state.confirmedBbox   = null;
-    state.tissueCountsFromGMM = null;
-    state.gmmConfidence   = 0;
+    state.imageFile              = null;
+    state.suggestedBbox          = null;
+    state.confirmedBbox          = null;
+    state.tissueCountsFromKMeans = null;
+    state.kmeansConfidence       = 0;
 
     document.getElementById('imageFile').value = '';
     document.getElementById('pipelineStages').classList.remove('visible');
     document.getElementById('bboxArea').classList.remove('visible');
-    document.getElementById('gmmResult').classList.remove('visible');
+    document.getElementById('kmeansResult').classList.remove('visible');
     document.getElementById('autoFilledBadge').classList.remove('visible');
     document.getElementById('btnRunAnalysis').disabled = true;
     hideStatus();
 
-    ['upload','yolo','sam','gmm'].forEach(s => setStage(s, ''));
+    ['upload', 'yolo', 'sam', 'kmeans'].forEach(function(s){ setStage(s, ''); });
+
+    // Reset sliders to default
+    document.getElementById('necrotic-pct').value    = 0;
+    document.getElementById('slough-pct').value      = 0;
+    document.getElementById('granulation-pct').value = 100;
     updateTissue();
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // RUN ANALYSIS → MobileSAM + GMM
+  // RUN ANALYSIS → POST /segment  (HFS WoundSegmenter)
+  // Sends: file + bbox JSON array string
+  // Receives: overlay_b64, kmeans_b64, tissue_counts, tissue_confidence,
+  //           mobilesam_conf, mask_accepted, wound_area_px, wound_area_cm2
+  // pixels_per_cm intentionally NOT sent (web has no reference-line tool)
   // ═══════════════════════════════════════════════════════════════
   async function runAnalysis() {
     if (!state.imageFile || !state.confirmedBbox) return;
 
-    const btn = document.getElementById('btnRunAnalysis');
-    const spinner = document.getElementById('analysisSpinner');
-    btn.disabled = true;
+    var btn     = document.getElementById('btnRunAnalysis');
+    var spinner = document.getElementById('analysisSpinner');
+    btn.disabled          = true;
     spinner.style.display = 'inline-block';
 
-    setStage('sam', 'active');
-    setStage('gmm', '');
+    setStage('sam',    'active');
+    setStage('kmeans', '');
     showStatus('Running MobileSAM segmentation…', 'info');
-    document.getElementById('gmmResult').classList.remove('visible');
+    document.getElementById('kmeansResult').classList.remove('visible');
 
     try {
-      const fd = new FormData();
+      var fd = new FormData();
       fd.append('file', state.imageFile);
+      // bbox must be a JSON array string: "[x1, y1, x2, y2]"
       fd.append('bbox', JSON.stringify([
         state.confirmedBbox.x1,
         state.confirmedBbox.y1,
         state.confirmedBbox.x2,
         state.confirmedBbox.y2,
       ]));
+      // pixels_per_cm omitted intentionally
 
-      const resp = await fetch(`${SEG_SERVER}/cluster_tissue`, { method: 'POST', body: fd });
-      const data = await resp.json();
+      var resp = await fetch(SEG_SERVER + '/segment', { method: 'POST', body: fd });
+      var data = await resp.json();
 
       if (!data.success) {
         setStage('sam', 'error');
-        showStatus(`Analysis failed: ${data.error || data.message}`, 'error');
-        btn.disabled = false;
+        showStatus('Analysis failed: ' + (data.error || data.message || 'Unknown error'), 'error');
+        btn.disabled          = false;
         spinner.style.display = 'none';
         return;
       }
@@ -993,66 +957,65 @@
       if (!data.mask_accepted) {
         setStage('sam', 'error');
         showStatus(
-          `Low segmentation confidence (${(data.mobilesam_conf * 100).toFixed(0)}%). ` +
-          `Try adjusting or redrawing the bounding box.`,
+          'Low segmentation confidence (' + (data.mobilesam_conf * 100).toFixed(0) + '%). ' +
+          'Try adjusting or redrawing the bounding box.',
           'warning'
         );
-        btn.disabled = false;
+        btn.disabled          = false;
         spinner.style.display = 'none';
         return;
       }
 
-      setStage('sam', 'done');
-      setStage('gmm', 'done');
+      setStage('sam',    'done');
+      setStage('kmeans', 'done');
 
-      // Show images
+      // Show result images
+      // Server returns overlay_b64 (red mask overlay) and kmeans_b64 (K-Means colour map)
       document.getElementById('overlayImg').src = 'data:image/webp;base64,' + data.overlay_b64;
-      document.getElementById('gmmImg').src      = 'data:image/webp;base64,' + data.gmm_b64;
-      document.getElementById('gmmResult').classList.add('visible');
+      document.getElementById('kmeansImg').src   = 'data:image/webp;base64,' + data.kmeans_b64;
+      document.getElementById('kmeansResult').classList.add('visible');
 
-      // Store GMM info
-      state.tissueCountsFromGMM = data.tissue_counts;
-      state.gmmConfidence       = data.tissue_confidence;
+      // Store K-Means results
+      state.tissueCountsFromKMeans = data.tissue_counts;
+      state.kmeansConfidence       = data.tissue_confidence;
 
-      document.getElementById('gmmConfRow').innerHTML =
-        `GMM tissue confidence: <span>${(data.tissue_confidence * 100).toFixed(1)}%</span>` +
-        ` &nbsp;|&nbsp; MobileSAM: <span>${(data.mobilesam_conf * 100).toFixed(1)}%</span>`;
+      document.getElementById('kmeansConfRow').innerHTML =
+        'K-Means tissue confidence: <span>' + (data.tissue_confidence * 100).toFixed(1) + '%</span>' +
+        ' &nbsp;|&nbsp; MobileSAM: <span>' + (data.mobilesam_conf * 100).toFixed(1) + '%</span>';
 
-      // Auto-fill sliders
+      // Auto-fill sliders from K-Means tissue_counts
       autoFillSliders(data.tissue_counts);
 
       showStatus('Tissue analysis complete. Sliders have been auto-filled — adjust if needed.', 'success');
       document.getElementById('autoFilledBadge').classList.add('visible');
 
     } catch (err) {
-      setStage('sam', 'error');
-      setStage('gmm', 'error');
-      showStatus(`Analysis error: ${err.message}`, 'error');
+      setStage('sam',    'error');
+      setStage('kmeans', 'error');
+      showStatus('Analysis error: ' + err.message, 'error');
     } finally {
-      btn.disabled = false;
+      btn.disabled          = false;
       spinner.style.display = 'none';
     }
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // AUTO-FILL SLIDERS from GMM tissue_counts
+  // AUTO-FILL SLIDERS from K-Means tissue_counts
   // tissue_counts: {"Necrotic": %, "Slough": %, "Granulation": %}
-  // Percentages are already normalised to 100% by the server.
-  // We round to nearest 5 so sliders snap cleanly.
+  // Server already normalises to 100%. Round to nearest 5 for slider snap.
   // ═══════════════════════════════════════════════════════════════
   function autoFillSliders(tissue_counts) {
-    let n = Math.round((tissue_counts['Necrotic']    || 0) / 5) * 5;
-    let s = Math.round((tissue_counts['Slough']      || 0) / 5) * 5;
-    let g = Math.round((tissue_counts['Granulation'] || 0) / 5) * 5;
+    var n = Math.round((tissue_counts['Necrotic']    || 0) / 5) * 5;
+    var s = Math.round((tissue_counts['Slough']      || 0) / 5) * 5;
+    var g = Math.round((tissue_counts['Granulation'] || 0) / 5) * 5;
 
-    // Clamp to [0,100] and correct rounding drift
     n = Math.max(0, Math.min(100, n));
     s = Math.max(0, Math.min(100, s));
     g = Math.max(0, Math.min(100, g));
 
-    const total = n + s + g;
+    // Absorb rounding drift into granulation
+    var total = n + s + g;
     if (total !== 100) {
-      // Adjust granulation to absorb rounding error
       g = Math.max(0, g + (100 - total));
     }
 
@@ -1066,27 +1029,25 @@
   // TISSUE SLIDERS
   // ═══════════════════════════════════════════════════════════════
   function updateTissue() {
-    const n = parseInt(document.getElementById('necrotic-pct').value);
-    const s = parseInt(document.getElementById('slough-pct').value);
-    const g = parseInt(document.getElementById('granulation-pct').value);
-    const total = n + s + g;
+    var n     = parseInt(document.getElementById('necrotic-pct').value);
+    var s     = parseInt(document.getElementById('slough-pct').value);
+    var g     = parseInt(document.getElementById('granulation-pct').value);
+    var total = n + s + g;
 
     document.getElementById('necrotic-val').textContent    = n + '%';
     document.getElementById('slough-val').textContent      = s + '%';
     document.getElementById('granulation-val').textContent = g + '%';
 
-    const warn = document.getElementById('tissue-warn');
-    warn.style.display = (total !== 100) ? 'block' : 'none';
+    document.getElementById('tissue-warn').style.display = (total !== 100) ? 'block' : 'none';
 
-    const bar = document.getElementById('tissue-bar');
+    var bar = document.getElementById('tissue-bar');
     if (total === 0) {
       bar.innerHTML = '<div class="tissue-bar-seg tissue-bar-empty" style="flex:1"></div>';
     } else {
-      bar.innerHTML = `
-        ${n > 0 ? `<div class="tissue-bar-seg seg-necrotic"    style="flex:${n}"></div>` : ''}
-        ${s > 0 ? `<div class="tissue-bar-seg seg-slough"      style="flex:${s}"></div>` : ''}
-        ${g > 0 ? `<div class="tissue-bar-seg seg-granulation" style="flex:${g}"></div>` : ''}
-      `;
+      bar.innerHTML =
+        (n > 0 ? '<div class="tissue-bar-seg seg-necrotic"    style="flex:' + n + '"></div>' : '') +
+        (s > 0 ? '<div class="tissue-bar-seg seg-slough"      style="flex:' + s + '"></div>' : '') +
+        (g > 0 ? '<div class="tissue-bar-seg seg-granulation" style="flex:' + g + '"></div>' : '');
     }
     updatePills();
   }
@@ -1094,9 +1055,9 @@
   // ═══════════════════════════════════════════════════════════════
   // TOGGLE BUTTONS (I, M, E)
   // ═══════════════════════════════════════════════════════════════
-  function selectToggle(field, value, el, isWarn = false) {
-    const group = el.closest('.toggle-group');
-    group.querySelectorAll('.toggle-btn').forEach(b => {
+  function selectToggle(field, value, el, isWarn) {
+    var group = el.closest('.toggle-group');
+    group.querySelectorAll('.toggle-btn').forEach(function(b) {
       b.classList.remove('selected', 'selected-warn');
     });
     el.classList.add(isWarn ? 'selected-warn' : 'selected');
@@ -1109,53 +1070,54 @@
   // PROFILE PILLS
   // ═══════════════════════════════════════════════════════════════
   function updatePills() {
-    const n = parseInt(document.getElementById('necrotic-pct').value);
-    const s = parseInt(document.getElementById('slough-pct').value);
-    const g = parseInt(document.getElementById('granulation-pct').value);
+    var n = parseInt(document.getElementById('necrotic-pct').value);
+    var s = parseInt(document.getElementById('slough-pct').value);
+    var g = parseInt(document.getElementById('granulation-pct').value);
 
-    const container = document.getElementById('profilePills');
+    var container = document.getElementById('profilePills');
     container.innerHTML = '';
 
-    const add = (cls, text) => {
-      const pill = document.createElement('span');
-      pill.className = `pill ${cls}`;
+    function addPill(cls, text) {
+      var pill       = document.createElement('span');
+      pill.className = 'pill ' + cls;
       pill.textContent = text;
       container.appendChild(pill);
-    };
+    }
 
-    add('pill-T', `T: N${n}% S${s}% G${g}%`);
-    add('pill-I', `I: ${toggleState.infection}`);
-    add('pill-M', `M: ${toggleState.moisture}`);
-    add('pill-E', `E: ${toggleState.edge}`);
+    addPill('pill-T', 'T: N' + n + '% S' + s + '% G' + g + '%');
+    addPill('pill-I', 'I: ' + toggleState.infection);
+    addPill('pill-M', 'M: ' + toggleState.moisture);
+    addPill('pill-E', 'E: ' + toggleState.edge);
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // SUBMIT TO RAG SERVER
+  // SUBMIT → POST /get_recommendation  (same-origin RAG server)
+  // Compatible with wound_app_02_v4.py AND wound_app_v5.py
   // ═══════════════════════════════════════════════════════════════
   async function submitAssessment() {
-    const n = parseInt(document.getElementById('necrotic-pct').value);
-    const s = parseInt(document.getElementById('slough-pct').value);
-    const g = parseInt(document.getElementById('granulation-pct').value);
+    var n = parseInt(document.getElementById('necrotic-pct').value);
+    var s = parseInt(document.getElementById('slough-pct').value);
+    var g = parseInt(document.getElementById('granulation-pct').value);
 
     if (n + s + g !== 100) {
       alert('Tissue percentages must total exactly 100%. Please adjust the sliders.');
       return;
     }
 
-    const infection = document.getElementById('infection').value;
-    const moisture  = document.getElementById('moisture').value;
-    const edge      = document.getElementById('edge').value;
-    const notes     = document.getElementById('notes').value.trim();
+    var infection = document.getElementById('infection').value;
+    var moisture  = document.getElementById('moisture').value;
+    var edge      = document.getElementById('edge').value;
+    var notes     = document.getElementById('notes').value.trim();
 
-    const loader       = document.getElementById('loader');
-    const responseCard = document.getElementById('responseCard');
-    const btn          = document.getElementById('btnSubmit');
+    var loader       = document.getElementById('loader');
+    var responseCard = document.getElementById('responseCard');
+    var btn          = document.getElementById('btnSubmit');
 
     loader.style.display       = 'block';
     responseCard.style.display = 'none';
     btn.disabled               = true;
 
-    const formData = new FormData();
+    var formData = new FormData();
     formData.append('necrotic_pct',      n);
     formData.append('slough_pct',        s);
     formData.append('granulation_pct',   g);
@@ -1163,24 +1125,24 @@
     formData.append('moisture',          moisture);
     formData.append('edge',              edge);
     formData.append('notes',             notes);
-    formData.append('tissue_confidence', state.gmmConfidence);
+    formData.append('tissue_confidence', state.kmeansConfidence);
 
     try {
-      const resp = await fetch('/get_recommendation', { method: 'POST', body: formData });
-      const data = await resp.json();
+      var resp = await fetch('/get_recommendation', { method: 'POST', body: formData });
+      var data = await resp.json();
 
-      const badge = document.getElementById('confBadge');
+      var badge         = document.getElementById('confBadge');
       badge.textContent = data.confidence_label || '—';
       badge.className   = 'confidence-badge conf-' + (data.confidence_label || 'LOW');
 
       document.getElementById('confScore').textContent =
-        data.confidence_score != null
-          ? `${Math.round(data.confidence_score * 100)}% confidence`
+        (data.confidence_score != null)
+          ? Math.round(data.confidence_score * 100) + '% confidence'
           : '';
 
-      const fusionEl = document.getElementById('retrievalNotes');
+      var fusionEl = document.getElementById('retrievalNotes');
       if (data.retrieval_notes && data.retrieval_notes.length > 0) {
-        fusionEl.innerHTML = data.retrieval_notes.map(n => `<p>${n}</p>`).join('');
+        fusionEl.innerHTML     = data.retrieval_notes.map(function(n){ return '<p>' + n + '</p>'; }).join('');
         fusionEl.style.display = 'block';
       } else {
         fusionEl.style.display = 'none';
@@ -1189,12 +1151,12 @@
       document.getElementById('markdownOutput').innerHTML =
         marked.parse(data.result || '');
 
-      const chipsEl = document.getElementById('sourceChips');
+      var chipsEl = document.getElementById('sourceChips');
       chipsEl.innerHTML = '';
       if (data.sources && data.sources.length > 0) {
-        [...new Set(data.sources)].forEach(src => {
-          const chip = document.createElement('span');
-          chip.className   = 'source-chip';
+        Array.from(new Set(data.sources)).forEach(function(src) {
+          var chip       = document.createElement('span');
+          chip.className = 'source-chip';
           chip.textContent = src;
           chipsEl.appendChild(chip);
         });
@@ -1205,7 +1167,7 @@
 
     } catch (err) {
       document.getElementById('markdownOutput').innerHTML =
-        `<p style="color:var(--low)">Error: ${err.message}</p>`;
+        '<p style="color:var(--low)">Error: ' + err.message + '</p>';
       document.getElementById('responseCard').style.display = 'block';
     } finally {
       loader.style.display = 'none';
@@ -1218,18 +1180,17 @@
   // ═══════════════════════════════════════════════════════════════
   updateTissue();
 
-  // Drag-and-drop on upload zone
-  const zone = document.getElementById('uploadZone');
-  zone.addEventListener('dragover',  e => { e.preventDefault(); zone.classList.add('drag-over'); });
-  zone.addEventListener('dragleave', ()  => zone.classList.remove('drag-over'));
-  zone.addEventListener('drop', e => {
+  // Drag-and-drop
+  var zone = document.getElementById('uploadZone');
+  zone.addEventListener('dragover',  function(e) { e.preventDefault(); zone.classList.add('drag-over'); });
+  zone.addEventListener('dragleave', function()  { zone.classList.remove('drag-over'); });
+  zone.addEventListener('drop', function(e) {
     e.preventDefault();
     zone.classList.remove('drag-over');
-    const file = e.dataTransfer.files[0];
+    var file = e.dataTransfer.files[0];
     if (file && file.type.startsWith('image/')) {
-      const input = document.getElementById('imageFile');
-      // Manually trigger the onImageSelected flow
-      const dt = new DataTransfer();
+      var input = document.getElementById('imageFile');
+      var dt    = new DataTransfer();
       dt.items.add(file);
       input.files = dt.files;
       onImageSelected({ target: { files: [file] } });
