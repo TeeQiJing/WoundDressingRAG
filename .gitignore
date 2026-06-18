@@ -20,9 +20,7 @@ wound_dressing_rag_ingestion_v2.ipynb
 wound_dressing_rag.ipynb
 
 # --- Evaluation Results (RAGAS & V1 wound apps) ---
-ragas_eval_00/
-ragas_eval_01/
-ragas_eval_02/
+ragas_eval_0*/
 RAGAS_EVAL/
 ragas_testset/
 RAGAS_EVALUATION_GUIDE.md
