@@ -1,0 +1,104 @@
+Retrived Contexts (same for all 3 llms)
+Source 1: "RAWATAN YANG DISARANKAN (Treatment Recommendation) — Wound Type 5\n\nClinical Context (from T.I.M.E. algorithm):\n  • Necrosis/slough: >25% of wound surface\n  • Wound infection: NO\n  • Moisture/exudate: dry/minimal\n  • Requires hospital referral: No\n\nWound Type 5 Description:\n  Dry, non-infected wound with >25% slough/necrotic tissue\n\nRecommended Dressing Materials:\n  1.Hydrogel 2.Hydrocolloid 3.Polymeric membrane\n\nAntibiotic Recommendation:\n  No\n\nSurgical / Procedural Recommendation:\n  1. Debridement is needed\n\n(Reference: Garis Panduan Perkhidmatan Penjagaan Luka di Fasiliti Kesihatan Primer,\n Ministry of Health Malaysia 2019; based on Wound Care Manual 2014, pp.164–167)",
+Source 2: "2. Absorbent Dressings \nAbsorbent dressings play an important role in the management \nof moderate- heavily exudative wounds. Teir main function lies \nin absorbing exudates whilst minimally adhering to the wound \nbed11. Te amount of fluids that can be handled varies with each\nproduct. Tese dressings are more costly compared to the \ntraditional gauze but they have been found to reduce overall cost \nand treatment time11.\nAlginates - Alginates are composed of calcium or sodium salts of \nalginic acid derived from brown seaweed (Phaeophyceae)4,13. \nTey are available in sheets, ribbons, beads or pads10. Alginates \npartially dissolve on contact with wound fluid to form a gel that \nis able to absorb up to 20 times its own weight hence it is \nrecommended to be used on wounds with moderate to heavy \nlevel of exudate5,11. Tey promote healing and granulation by \nmaintaining a physiologically moist environment ideal for \nhealing. An important advantage of alginates lies in its \nhaemostatic property allowing it for use in minor bleeds4,11. \nSome have added silver for antimicrobial effects. Alginate \ndressings can be used to fill a cavity but should always be covered \nwith a secondary dressing. Issues limiting the use of alginates \ninclude peri-wound maceration and residual fibres in the wound \nafter removal11.\nHydrofiber - Tese are white fibrous dressings compose of \n100% \nHydrofiber \n(sodium \ncarboxymethylycellulose)4,10. \nHydrofibers are best used for moderately exudative wounds \nbecause of its capacity to absorb large amounts of wound exudate \nand bacteria to create a soft, cohesive gel that conforms to the \nwound surface4,10. Tis helps with autolysis and removal of \nnecrotic material from the wound surface. Some have added \nsilver for its antimicrobial properties4. It can be easily removed in \none piece without causing trauma to the underlying wound4,10.\nFoam dressings - Tese are semi occlusive dressings \nmanufactured as polyurethrane or silicone foams. Tey are \nnon-adhesive and much thicker than most other dressings. Being \nsoft and conformable, they can provide padding over bony \nprominences such as heel, ankle, sacrum and hip10. Foams are \nalso absorbent and can be used over mildly and moderately \nexudative wounds10.",
+Source 3: "WCM Modern/Advanced Dressing — 3. Hydro‐ colloid\n\nPurpose: Provide moist environment Absorb exudates Bacterial barrier\nAdvantages: Cleans and debrides by autolysis Easy to use Cost effective Promotes granulation tissue Effective for low to moderate exuding wounds Waterproof\nDisadvantages: Unpleasant odour Forms a yellow liquid gel Difficult to use in cavities Maceration of skin around wound\nPractical Usage / Application: Apply the adhesive side onto the wound without touching the wound bed A yellow liquid is seen after the dressing is left in situ which needs to be cleansed Frequency of dressing change: 2 to 5 days\n\n(Source: Wound Care Manual, First Edition 2014, MOH Malaysia, Chapter 14, pp 146–149)",
+Source 4: "1. Moisture Retentive Dressings \nMoisture in the wound environment is needed to increase \nepidermal cell movement, retain growth factors, increase \nangiogenesis and decrease fibrosis10. Tese dressings not only \nserve as an effective barrier to trauma and microbes but allow for \nless frequent dressing change and reduce pain and scar \nformation10.\nHydrocolloids \n- \nMade \nfrom \ngelatin, \nsodium \ncarboxymethylcellulose or pectin with a polyurethrane \nwaterproof outer layer, these are adhesive, occlusive and \nconformable dressings11. By trapping protein and cytokine- \ncontaining \nexudate, \nhydrocolloids \npromote \nautolytic \ndebridement, increase cellular proliferation, and encourage \ngranulation tissue formation and epithelialisation of low to \nmoderately exudative wounds4,5,10,11. Te advantage of this \ndressing is that it can be left in place for 2-4 days provided that \nthe wound is not infected10. Users must be aware of the possible \nmaceration to surrounding skin and its tendency to produce a \nbrown and malodorous exudate often mistaken for infective \nexudates10,11.\nHydrogels - Tey are composed of a matrix of insoluble \nmodified carboxymethycellulose polymers with propylene glycol \nhumectant4. Hydrogels contain 60-70% water and are available \nin sheets or liquid gel dressings embedded in gauze12. Tese \nsoothing and absorbent dressings are most ideal for wound \nrehydration facilitating natural autolysis of necrotic tissue4,5. It is \nnon-adhesive, easy to use (requires change every 2-3 days), cause \nminimal pain on removal and is cost effective11. A secondary \ndressing is usually needed to hold hydrogels close to the wound \nbed.\nFilms - Films are made from thin and semi-permeable sheets of \npolyurethane5,12. Tey are most useful in holding primary \ndressings in place especially over the joint areas and uneven \nwound surfaces as they are highly adherent and flexible5,12. Tey \nare frequently used to protect the skin from friction and shear \nforces but extra caution must be practiced when removing these \nhighly adhesive dressings7,10. Being transparent and permeable to \nair and water vapour, the wound bed and moisture level is easily \nvisualised5,10.",
+Source 5: "RCH NURSING GUIDELINE — Wound Assessment: Infection/Inflammation, Odour, and Biofilm\nSource: The Royal Children's Hospital Melbourne. Wound Assessment and Management\nNursing Guideline. Melbourne: RCH; February 2023.\nURL: https://www.rch.org.au/rchcpg/hospital_clinical_guideline_index/Wound_assessment_and_management/\n\n─────────────────────────────────────────────────────────────────────────────────\nI — INFECTION / INFLAMMATION\n─────────────────────────────────────────────────────────────────────────────────\nInflammation is an essential part of wound healing; however, infection causes tissue\ndamage and impedes wound healing.\n\nInfection spectrum — from lowest to highest burden:\n\nContamination:\n  The presence of microorganisms that are contained and do not multiply.\n  Does not provoke a host response so healing is not impaired.\n  Antimicrobials are NOT indicated.\n\nColonisation:\n  Microorganisms multiply but do not provoke a host response.\n  The infection is contained but wound healing may be delayed.\n  Antimicrobials are NOT indicated.\n\nLocal infection:\n  Invasion by an agent that, under favourable conditions, multiplies and produces\n  effects that are injurious to the patient. Microorganisms and bacteria move into\n  the wound tissue and invoke a host response. Healing is impaired and can lead to\n  wound breakdown.\n  Topical antimicrobials ARE indicated.\n\nSpreading and systemic infection:\n  Microorganisms spread from the wound through the vascular and/or lymphatic systems,\n  involving either a part of the body (spreading) or the whole body (systemic).\n  Healing is impaired. A systemic approach is needed:\n  → Topical antimicrobials AND systemic antibiotics to prevent sepsis.\n\nBiofilms:\n  Represent a survival mechanism of microorganisms and are therefore ubiquitous in nature. They are complex, slime-encased\n  communities of microbes which are often seen as slime layers on objects in water or at water-air interfaces. \n  The degree of bioburden in the wound from the microorganisms is indicated by:\n    - Poor response to antimicrobial or antibiotic treatment\n    - Delayed wound healing\n    - Increase in exudate or inflammation\n  Management: surfactants or antiseptics (e.g. Prontosan™) may be used for biofilm\n  or infected wounds.\n\n─────────────────────────────────────────────────────────────────────────────────\nODOUR\n─────────────────────────────────────────────────────────────────────────────────\nOdour can be a sign of infection. Classified as:\n  No odour\n  Slight malodour: odour detected when the dressing is removed\n  Moderate malodour: odour detected upon entering the room when the dressing is removed\n  Strong malodour: odour detected upon entering the room when dressing is intact\n\nIf any of the following clinical indicators are present — fever, pain, discharge or\ncellulitis — a medical review should be initiated and consider a Microscopy & Culture\nWound Swab (MCS).\n",
+Source 6: "Tey have an additional benefit of \nproviding thermal insulation and moisture vapour and oxygen to \nthe wound, allowing for enhanced rates of wound healing5. \nSome have added silver for antimicrobial effects and they can last \nup to seven days."
+
+
+Augmented Generated Wound Dressing Recommedations from LLMs: the number at end of sentences showing the evidence source number the LLM get from
+1. gpt-4o-mini
+Primary Dressing
+Hydrocolloid dressing is recommended for this wound type 1.
+
+Secondary Dressing
+A secondary dressing may not be necessary if the hydrocolloid dressing is adequately adherent and provides sufficient protection. However, if additional absorption is needed, a foam dressing can be used as a secondary dressing 2.
+
+Rationale by T.I.M.E. Factor
+Tissue: The wound bed contains a significant amount of slough (40%) and granulation tissue (55%), which indicates that a dressing that promotes autolytic debridement and maintains a moist environment is essential. Hydrocolloids are effective in promoting granulation and autolytic debridement 4.
+Infection: There are no signs of infection, which supports the use of a hydrocolloid dressing that can manage exudate without introducing additional risk 1.
+Moisture: The wound is producing moderate exudate, and hydrocolloids are suitable for low to moderate exuding wounds, helping to maintain a balanced moisture level 4.
+Edge: The non-advancing wound edge suggests delayed healing, and hydrocolloids can help facilitate healing by providing a moist environment conducive to cellular proliferation 4.
+Contraindicated Dressings
+The following dressings are CONTRAINDICATED in this case:
+
+Alginates (due to the presence of slough and granulation tissue, which may not require the high absorption capacity of alginates) 2.
+Hydrofiber (not necessary given the moderate exudate and the need for autolytic debridement) 2.
+Antibiotic Considerations
+Antibiotic therapy is not indicated as there are no signs of infection present 5.
+
+Referral / Escalation
+Referral is not required at this stage, as the wound is not infected and can be managed with appropriate dressing and care 1.
+
+Dressing Change Frequency
+The hydrocolloid dressing can be left in place for 2 to 5 days, depending on the level of exudate and the condition of the wound 3.
+
+Application Tips
+Ensure the skin around the wound is clean and dry before applying the hydrocolloid dressing.
+Apply the dressing without touching the wound bed to avoid contamination.
+Monitor for any signs of maceration or excessive exudate, which may necessitate more frequent changes 4.
+Clinical Notes
+The tenderness and soreness experienced may be due to the wound's sensitivity and the presence of slough. It is important to monitor the wound for any changes, especially if the yellowish material appears to increase or if any signs of infection develop 5
+
+2. Gemini 2.5 Flash
+Primary Dressing
+Hydrocolloid dressing 1.
+
+Secondary Dressing
+Insufficient guideline evidence retrieved for this point. Hydrocolloid dressings are adhesive and occlusive, typically not requiring a secondary dressing 4.
+
+Rationale by T.I.M.E. Factor
+T (Tissue): The wound presents with 40% slough and 5% necrosis (45% non-viable load), which is >25% slough/necrotic tissue 1. Hydrocolloids promote autolytic debridement, which helps to clean and debride the wound by facilitating the natural removal of necrotic material 34. They also encourage granulation tissue formation 34.
+I (Infection): The wound is explicitly stated as "Not infected" (Clinical Context). Hydrocolloids can be left in place for 2-4 days provided the wound is not infected 4.
+M (Moisture): The wound has moderate exudate (Clinical Context). Hydrocolloid dressings are effective for low to moderate exuding wounds and are designed to absorb exudates while maintaining a moist environment conducive to healing 34.
+E (Edge): The non-advancing, stalled wound edge suggests delayed healing (Clinical Context). Hydrocolloids encourage granulation tissue formation and epithelialisation, which can help to stimulate wound edge advancement 4.
+Contraindicated Dressings
+The following dressings are CONTRAINDICATED in this case: Insufficient guideline evidence retrieved for this point.
+
+Antibiotic Considerations
+Antibiotic therapy is not indicated. The wound is explicitly stated as "Not infected" (Clinical Context). Antimicrobials are not indicated for contamination or colonization 5, and the binding clinical algorithm also recommends "No" for antibiotics in this wound type 1.
+
+Referral / Escalation
+Referral is not required at this stage. The binding clinical algorithm for this wound type indicates "Requires hospital referral: No" 1. While the patient reports tenderness and soreness, there are no other clinical indicators such as fever, discharge, or cellulitis that would necessitate a medical review for infection based on the provided guidelines 5.
+
+Dressing Change Frequency
+Hydrocolloid dressings should be changed every 2 to 5 days 3. They can be left in place for 2-4 days provided the wound is not infected 4.
+
+Application Tips
+Apply the adhesive side of the hydrocolloid dressing onto the wound without touching the wound bed 3. After the dressing has been in situ, a yellow liquid may be seen, which needs to be cleansed during dressing changes 3.
+
+Clinical Notes
+Debridement is needed for the 45% non-viable tissue (5% necrosis, 40% slough) 1. The tenderness and soreness reported by the patient, along with the non-advancing wound edge, indicate delayed healing, which the chosen dressing aims to address by promoting autolytic debridement and a moist healing environment 34.
+
+3. Qwen3.5-35B-A3B
+Primary Dressing
+Hydrogel is the recommended primary dressing for this case 1. Hydrocolloid is an alternative recommended primary dressing 1. Polymeric membrane is an alternative recommended primary dressing 1.
+
+Secondary Dressing
+A secondary dressing is required to hold the hydrogel in place close to the wound bed 4. If an alginate or hydrofiber is used (though not the primary recommendation from Source 1), it must always be covered with a secondary dressing 2.
+
+Rationale by T.I.M.E. Factor
+Tissue: The wound has >25% necrotic/slough tissue (45% non-viable load), which requires debridement 1. Hydrogels are ideal for wound rehydration and facilitating the natural autolysis of necrotic tissue 4. Hydrocolloids also promote autolytic debridement 3. Infection: There are no signs of infection; therefore, the wound is not infected 1. Hydrocolloids can be left in place for 2-4 days provided the wound is not infected 4. Moisture: The wound has moderate exudate. While Source 1 suggests "dry/minimal" moisture for the algorithm, the clinical presentation of "yellowish, soft stuff" (slough) and "moderate exudate" necessitates a dressing that manages moisture while rehydrating the slough. Hydrogels are soothing and absorbent, facilitating autolysis 4. Hydrocolloids are effective for low to moderately exuding wounds 3. Edge: The non-advancing edge suggests delayed healing. Hydrocolloids encourage granulation tissue formation and epithelialization 4. Hydrogels promote a physiologically moist environment ideal for healing 2.
+
+Contraindicated Dressings
+The following dressings are CONTRAINDICATED in this case:
+
+Dry Gauze: Not recommended as it does not maintain a moist environment required for autolysis and may cause trauma on removal 4.
+Antiseptics (e.g., Povidone-iodine, Hydrogen Peroxide): Not indicated as there is no infection; they can damage healthy tissue and delay healing 5.
+Hydrocolloids on heavily exudative wounds: While the wound is moderate, if exudate increases significantly, hydrocolloids may cause maceration 3.
+Alginates/Hydrofibers as primary for dry/necrotic wounds: These are best for moderate to heavy exudate and may dry out a wound requiring rehydration for autolysis 2.
+Antibiotic Considerations
+Antibiotic therapy is not indicated. The clinical assessment confirms the wound is not infected 1. Antimicrobials are not indicated for contamination or colonization, which do not provoke a host response 5. Topical antimicrobials are only indicated for local infection, which is not present 5.
+
+Referral / Escalation
+Referral is not required at this stage. The clinical algorithm for Wound Type 5 explicitly states that hospital referral is not required 1. Referral is only necessary if there are signs of spreading or systemic infection, which are absent 5.
+
+Dressing Change Frequency
+Hydrogel dressings should be changed every 2-3 days 4. Hydrocolloid dressings should be changed every 2 to 5 days 3. Hydrocolloids can be left in place for 2-4 days provided the wound is not infected 4.
+
+Application Tips
+Apply the hydrocolloid adhesive side onto the wound without touching the wound bed directly if possible, though hydrogels are non-adhesive and require a secondary dressing (Source 3, Source 4). A yellow liquid may be seen after the hydrocolloid is left in situ; this is a normal byproduct of autolysis and needs to be cleansed 3. Ensure the surrounding skin is protected from maceration, as hydrocolloids can cause maceration of the skin around the wound 3. If the wound is tender, ensure the dressing is non-adherent to the wound bed to minimize pain on removal 4.
+
+Clinical Notes
+The patient reports tenderness and soreness, particularly with clothing friction; hydrocolloids and hydrogels provide a barrier to trauma and microbes, reducing pain and scar formation 4. The "yellowish, soft stuff" is slough, which requires autolytic debridement facilitated by hydrogels or hydrocolloids 4. The "dark scab" at the edge indicates non-viable tissue that needs to be managed via the moist environment provided by the recommended dressings 1. The wound is stalled, and the recommended dressings promote granulation and epithelialization to advance the healing process 4.
