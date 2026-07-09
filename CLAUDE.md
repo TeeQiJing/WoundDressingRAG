@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project: VerdaSense
 
-AI-degree FYP at Universiti Malaya. A RAG-based clinical decision support system for wound dressing recommendation grounded in the T.I.M.E. assessment framework (Tissue, Infection, Moisture, Edge). FYP1 (proposal + ablation) is complete; FYP2 (conversational RAG extension) is in planning — see `MDs/FYP2 Migration/`.
+AI-degree FYP at Universiti Malaya. A RAG-based clinical decision support system for wound dressing recommendation grounded in the T.I.M.E. assessment framework (Tissue, Infection, Moisture, Edge). FYP1 (proposal + ablation) is complete; FYP2 (multimodal RAG extension) is in **active development — a working multimodal prototype exists** (`wound_app_multimodal.py`). Authoritative plans: `MDs/FYP2 Migration/VerdaSense_FYP2_Master_Plan.md` (living master plan) + `VerdaSense_FYP2_Ablation_Map_v5.md` (eval plan) + `VerdaSense_FYP2_Testset_Construction_and_Review_Plan.md` (testset + Ms Saw review). See **FYP2 Current Status** at the bottom of this file.
 
 ## Running the App
 
@@ -13,6 +13,14 @@ uvicorn wound_app_unimodal:app --reload
 ```
 
 The app loads the BGE embedding model and ChromaDB on startup (~15–30 s). Requires a CUDA-capable GPU (falls back to CPU but is slow).
+
+**FYP2 multimodal app** (runs beside the unimodal one, port 8001):
+
+```bash
+uvicorn wound_app_multimodal:app --reload --port 8001
+```
+
+Same CV pipeline + manual I/M/E input; adds a **VLM caption** (GPT-4o-mini-Vision / Gemini-2.5-Flash-Vision) feeding generation, VLM-derived etiology + depth (shown in UI), a **patient-friendly output** with a **Dev/Prod toggle** (Dev = citations + evidence + caption internals; Prod = product gallery), **token-by-token SSE streaming** (`/get_recommendation_stream`), and a static **DyaMed product gallery**. Serves `templates/wound_index_multimodal.html`. Uses the **v5 KB** (below). Etiology + depth are **deferred from FYP2 scope** (kept in code, excluded from the ablation per supervisor).
 
 ## Environment Variables
 
@@ -61,6 +69,8 @@ Three models in `MODEL_REGISTRY`: `gpt-4o-mini` (OpenAI), `gemini-2.5-flash` (Go
 
 `ingestion_R4_additional_models.ipynb` — same chunks re-embedded with BGE (`db_wound_care_v4_bge/`) and E5 (`db_wound_care_v4_e5/`) for the R4 ablation.
 
+`ingestion_DYAMED_surgeon_images.ipynb` (FYP2) — transcribes the KK Sultan Ismail / DyaMed Biotech clinical noticeboard photos in `surgeon_images/` into a **9th KB source** → `ingestion_output_ai/DYAMED_clinical_protocol_kept.json` (22 chunks: 8 per-wound-type application protocols tagged `wound_type`, 9 product monographs, 3 dressing-selection trees, T.I.M.E.→product map, S&N rationale). Fills the application-protocol + product-name gaps. **Loaded into the v5 stores** (`db_wound_care_v5_bge` / `db_wound_care_v5_medembed`, 160 chunks / 9 sources) — the active FYP2 KB; product monographs carry the Part 14 `dressing_class` + `moh_category` bridge.
+
 **Note on RCH source:** RCH chunks are paediatric-only. The FYP2 fix adds `"population": "paediatric"` metadata and a retrieval filter excluding RCH for adult patients.
 
 ## Evaluation
@@ -95,10 +105,34 @@ RAGAS judge is always `gpt-4o-mini` + `text-embedding-3-small` (never changed). 
 
 ## FYP2 Plans
 
-See `MDs/FYP2 Migration/VerdaSense_FYP2_Migration_Rationale.md` and `VerdaSense_FYP2_Comprehensive_Plan.md`. Key planned changes:
+Authoritative source: `MDs/FYP2 Migration/VerdaSense_FYP2_Master_Plan.md` (consult before any FYP2 work). The older `VerdaSense_FYP2_Migration_Rationale.md` / `..._Comprehensive_Plan.md` are superseded background.
 
-- Add conversational multi-turn RAG tab (Proposal B — highest priority)
-- Fix `classify_wound()`: all locally infected wounds should set `referral_required=True`
-- RCH metadata fix: add `population: paediatric` filter to retrieval
-- Add debridement guidance to prompt for wound types 5–8 (necrotic burden > 30%)
-- New ablation experiments: R6 (wound category metadata filter), R7 (conversation history retrieval), G4 (multi-turn), G5 (OOD abstention rate)
+**Direction shift:** FYP2 is **multimodal RAG**, *not* conversational RAG (conversational was dropped). A VLM (GPT-4o-Vision / Gemini Vision; **no fine-tuning** — the task is captioning, not classification) directly observes the wound photo and produces a multi-aspect clinical caption that feeds the **generation stage only**.
+
+**Why generation-only (R5 result):** Injecting captions into *retrieval* hurt it (R5-B: −6.6 pp CR, −18.75 pp HR@6) — guideline text and visual-appearance language are different semantic registers BGE-large can't bridge. So retrieval stays exactly as FYP1; the caption is a third input to the LLM alongside retrieved chunks + the T.I.M.E. payload, letting it cross-validate (and flag) CV-label errors.
+
+**Two-layer hybrid (the "why RAG vs rules" answer):** Layer 1 (rules) — `classify_wound()` + Sub-query A pinned retrieval — decides the *dressing category* deterministically. Layer 2 (RAG evidence) — Sub-query B/C + VLM caption — supplies the *why / how / when / patient-specific* (mechanism, application steps, change frequency, allergies, comorbidities) that no rule table or zero-shot LLM provides. FA: 0.69 zero-shot → 0.81 grounded.
+
+**Pain-point resolutions:** (1) multimodal as above; (2) hybrid framing above; (3) add `wound_depth` field (superficial/cavity, from VLM + optional patient self-report) → cavity-filling dressing forms; full etiology classification dropped (Ms Saw: dressings are T.I.M.E.-driven, not etiology-driven, except vascular) — reduced to a single DFU flag; (4) product gallery showing brands/images after a recommendation; (5) conversational RAG dropped.
+
+**Concrete changes:**
+- New 9th KB source (DyaMed/KKSI) — see `ingestion_DYAMED_surgeon_images.ipynb`; load into `db_wound_care_v4_bge/`, mapping `wound_type`/`wound_category`/`authority`/`guideline_type` into ChromaDB metadata.
+- `classify_wound()` referral/antibiotic logic already matches the MOH algorithm (referral = WT6/7/8; antibiotic = WT3/4/7/8) — **no change needed**; the earlier "all locally infected → referral" fix was cancelled as clinically incorrect (over-refers). Borderline infection→referral is an image-dependent *advisory* judgment handled by the multimodal generation layer, not a hard rule. See master plan Part 12.
+- RCH paediatric metadata fix (above).
+- Add debridement guidance to the prompt for wound types 5–8.
+
+**FYP2 ablations (FYP1 R1–R5/G1–G3 are fixed):** G1-E (clinical prompt fixes), G4-A (caption vs none), G4-B (GPT-4o-V vs Gemini-V), G4-C (wound-depth field), G4-D (DFU flag), R6 (depth metadata filter), **H1 (blinded clinical eval by Ms Saw — highest-priority deliverable)**. *(Post-supervisor: G4-C/G4-D/R6 — depth + etiology — are **deferred**; the revised eval plan is `VerdaSense_FYP2_Ablation_Map_v5.md`.)*
+
+**Ablation status (2026-07-03):** **G4-P ✅** (added P4=blind; blind caught 100% of adversarial discrepancies vs 14–19% label-shown; winner P4-blind is live; = VLM-DISC 100%) and **G4-A ✅** (34-case: blind caption FA-/safety-neutral, ΔFA −0.8 pp, ΔSafety −1 pp; the pilot's per-category "wins" (B/F +12 pp) were small-n noise, collapsed at n=6 → FA can't credit the caption; **directionality finding**: caption is an asset when the image reveals danger the labels miss (Cat G), a liability when danger is in the notes + image looks clean (`spreading_infection` → caption "clean" pulled advice off the antimicrobial) → caption must stay advisory, never override notes/label escalation). Write-ups: `MDs/Generation Ablation/G4P_VLM_Prompt_Strategy_Analysis.md` + `G4A_Multimodal_Caption_Analysis.md`. **Read G4-A only with G4-P.** **G4-B ✅** (VLM comparison under blind prompt): **`gpt-4o-mini`-V wins decisively** — 0 refusals, 100% VLM-DISC, 86% tissue acc; **`gemini-2.5-flash` refused 41% of clinical images** (empty/`BlockedReason.OTHER`, concentrated on infected/necrotic/adversarial; clean Cat F = 0 refusals). A `safety_settings=BLOCK_NONE` test recovered 0/5 — the block is **non-configurable** on the Developer API → Gemini disqualified; keep gpt-4o-mini. `MDs/Generation Ablation/G4B_VLM_Comparison_Analysis.md`. **G4-C ✅** (open-source VLMs via OpenRouter, blind prompt, reasoning-off like G3): 4 arms — **Qwen2.5-VL-72B, Qwen3-VL-235B, Gemma-3-27B, Gemma-4-26B**. **All ~0% refusals** (vs Gemini 41%) → open models solve the refusal problem. **Key methodological finding: VLM-DISC is gameable** — Gemma-3 scores 100% VLM-DISC but by over-calling "Infected" on 95% of clean wounds (49% infection acc) → DISC must be read *with* non-adversarial accuracy. **Best open = Qwen2.5-VL-72B** (infection 76% > GPT's 73%, tissue 85%≈86%, 6× cheaper, self-hostable = data sovereignty), but lower DISC (71% vs 100%). Bigger≠better (Qwen3-VL-235B lost to Qwen2.5-VL-72B). GPT-4o-mini stays best single choice. `MDs/Generation Ablation/G4C_OpenSource_VLM_Analysis.md`. Still open: VLM-ACC, H1.
+
+## FYP2 Current Status (Jun 2026)
+
+**Supervisor decisions:** multimodal is the right move but **evaluation is the deliverable** (don't stack features); **etiology + wound-depth deferred**; patient-friendly output ✅; Dev mode is the evaluation mode (ablation ignores the product gallery); H1 + UAT with Ms Saw confirmed.
+
+**Built (prototype):** `wound_app_multimodal.py` + `templates/wound_index_multimodal.html` — v5 BGE KB, VLM caption/etiology/depth, patient-friendly G1-F output, Dev/Prod toggle, multimodal On/Off A/B (= live G4-A), SSE streaming, DyaMed product gallery. Two generation guardrails baked into `PATIENT_SYSTEM_PROMPT`: **contraindication-consistency** (MOH algorithm overrides local protocol; no dressing in both a recommendation and "avoid") and **exudate-tier matching** (Flaminal Hydro↔Forte). See Master Plan **Part 17**.
+
+**Active FYP2 stores:** `db_wound_care_v5_bge` (R4-B winner, used by the app) + `db_wound_care_v5_medembed` (twin). FYP1 used `db_wound_care_v4_bge`.
+
+**Testset v5:** built by `ragas_testset/wound_testset_builder_v5.py` → `ragas_testset/wound_testset_v5.json` (**34 curated cases** — A:8 WT1–8 · B:6 comorbidity/contraindication · C:4 escalation · D:3 depth/cavity · E:3 complex-chronic · F:3 image-robustness · G:7 adversarial TIME↔image). Expanded from 21 (2026-07-03): B/C are note-driven (reuse curated images), D/E/F use new Gemini-validated images. Every new case's live-classifier referral/antibiotic matches gold; all 34 pass the end-to-end sanity run. Patient-friendly `reference` with `[S#]` cites, **ranked+graded `reference_contexts`** (MRR/NDCG), `conditional_contraindications` field. **Full image curation + Gemini-Pro cross-validation complete (2026-07-02)** — every case validated three ways (Claude read ↔ gold label ↔ Gemini blind read); all 21 images resolve, Cat A classifies cleanly WT1→WT8. Images in `ragas_testset/wound_images/` (14 distinct), sourced from the Kaggle wound-segmentation dataset `wound_images_dataset/` (fusc/medetec/wsnet). Rebuild view via `ragas_testset/build_testset_viewer.py` → `testset_viewer.html`. **Curation finding:** WT3/WT4 ("infected + low non-viable%") is intrinsically hard to photograph — clean granulating beds read as not-infected, visibly infected beds are slough-heavy (NV out of range); infection at these types is peri-wound/clinical, not bed-visible (supports keeping the CV/clinical infection label rather than overriding from the image). See memory `testset_v5_curation.md`.
+
+**Pending Ms Saw (sent via WhatsApp):** 5 inter-guideline KB conflicts (C1 carbon/Zorflex across WT1–7 vs MOH WT8-only; C2 Drawtex hydroconductive; C3 Drawtex vs Gauze&Gamgee secondary; C4 alginogel on dry WT7; C5 foam-secondary on dry WT3/7) + Q8 brand-scope (DyaMed-only vs include Aquacel Ag/Activon honey). See Master Plan **Part 17.3** / **Part 18**.
