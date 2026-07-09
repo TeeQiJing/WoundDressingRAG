@@ -34,3 +34,9 @@ chunk_visualiser_unstructured*.py
 dist/
 build/
 node_modules/
+# --- FYP2 large data / temp (do not commit) ---
+wound_images_dataset/
+scratch_montage/
+db_wound_care_v5_bge/
+db_wound_care_v5_medembed/
+*.stackdump
