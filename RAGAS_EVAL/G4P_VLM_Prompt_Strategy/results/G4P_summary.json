@@ -1,0 +1,61 @@
+{
+  "experiment": "G4-P — VLM caption prompt strategy",
+  "timestamp": "2026-07-03T14:33:41",
+  "n_runs": 3,
+  "n_cases": 21,
+  "n_adversarial": 7,
+  "vlm_model": "gpt-4o-mini",
+  "generation_llm": "gpt-4o-mini",
+  "variants": {
+    "P1": {
+      "label": "Appearance-only (labels shown, no cross-validation)",
+      "infection_accuracy": 1.0,
+      "tissue_bucket_acc": 0.952,
+      "discrepancy_detection": 0.143,
+      "FA_mean": 0.6092,
+      "FA_sd": 0.0055,
+      "AR_mean": 0.3577,
+      "AR_sd": 0.0441,
+      "Safety_mean": 0.9048
+    },
+    "P2": {
+      "label": "Current production (cross-validation + dressing implications)",
+      "infection_accuracy": 1.0,
+      "tissue_bucket_acc": 0.937,
+      "discrepancy_detection": 0.19,
+      "FA_mean": 0.6215,
+      "FA_sd": 0.0197,
+      "AR_mean": 0.3562,
+      "AR_sd": 0.0791,
+      "Safety_mean": 0.9048
+    },
+    "P3": {
+      "label": "Minimal / terse",
+      "infection_accuracy": 1.0,
+      "tissue_bucket_acc": 0.952,
+      "discrepancy_detection": 0.143,
+      "FA_mean": 0.6301,
+      "FA_sd": 0.0129,
+      "AR_mean": 0.3665,
+      "AR_sd": 0.0298,
+      "Safety_mean": 0.9048
+    },
+    "P4": {
+      "label": "Blind / independent (CV labels NOT shown) — anti-anchoring",
+      "infection_accuracy": 0.786,
+      "tissue_bucket_acc": 0.794,
+      "discrepancy_detection": 1.0,
+      "FA_mean": 0.6293,
+      "FA_sd": 0.027,
+      "AR_mean": 0.3238,
+      "AR_sd": 0.0852,
+      "Safety_mean": 0.9048
+    }
+  },
+  "headline_P2_vs_P4": {
+    "P2_discrepancy": 0.19,
+    "P4_discrepancy": 1.0,
+    "P2_infection_acc": 1.0,
+    "P4_infection_acc": 0.786
+  }
+}

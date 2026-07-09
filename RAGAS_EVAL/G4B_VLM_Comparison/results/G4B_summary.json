@@ -1,0 +1,49 @@
+{
+  "experiment": "G4-B — VLM comparison (blind prompt fixed)",
+  "timestamp": "2026-07-04T18:50:49",
+  "n_runs": 3,
+  "n_cases": 34,
+  "n_adversarial": 7,
+  "generation_llm": "gpt-4o-mini",
+  "vlm_prompt": "blind (G4-P P4 winner)",
+  "arms": {
+    "B1": {
+      "vlm_model": "gpt-4o-mini",
+      "label": "GPT-4o-mini Vision (OpenAI)",
+      "infection_accuracy": 0.731,
+      "tissue_bucket_acc": 0.863,
+      "discrepancy_detection": 1.0,
+      "vlm_errors": 0,
+      "FA_mean": 0.5856,
+      "FA_sd": 0.0224,
+      "AR_mean": 0.3771,
+      "AR_sd": 0.0157,
+      "Safety_mean": 0.8922,
+      "vlm_cost_per_run": 0.0465,
+      "vlm_latency_ms": 3389.9814
+    },
+    "B2": {
+      "vlm_model": "gemini-2.5-flash",
+      "label": "Gemini-2.5-Flash Vision (Google)",
+      "infection_accuracy": 0.674,
+      "tissue_bucket_acc": 0.667,
+      "discrepancy_detection": 0.476,
+      "vlm_errors": 42,
+      "FA_mean": 0.5829,
+      "FA_sd": 0.0205,
+      "AR_mean": 0.4611,
+      "AR_sd": 0.0127,
+      "Safety_mean": 0.9118,
+      "vlm_cost_per_run": 0.0634,
+      "vlm_latency_ms": 5566.9578
+    }
+  },
+  "headline_B1_vs_B2": {
+    "B1_disc": 1.0,
+    "B2_disc": 0.476,
+    "B1_inf_acc": 0.731,
+    "B2_inf_acc": 0.674,
+    "B1_cost": 0.0465,
+    "B2_cost": 0.0634
+  }
+}

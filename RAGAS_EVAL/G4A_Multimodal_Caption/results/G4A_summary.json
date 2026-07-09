@@ -1,0 +1,84 @@
+{
+  "experiment": "G4-A — VLM caption vs no-caption",
+  "timestamp": "2026-07-04T15:22:04",
+  "n_runs": 3,
+  "n_cases": 34,
+  "generation_llm": "gpt-4o-mini",
+  "vlm_model": "gpt-4o-mini",
+  "ragas_judge": {
+    "llm": "gpt-4o-mini",
+    "embed": "text-embedding-3-small"
+  },
+  "fixed": {
+    "retrieval": "R1-C dense k=6",
+    "embedding": "BGE v5",
+    "prompt": "G1-F patient schema"
+  },
+  "arms": {
+    "A0": {
+      "label": "Unimodal baseline (no caption)",
+      "FA_mean": 0.6133,
+      "FA_sd": 0.0117,
+      "AR_mean": 0.4549,
+      "AR_sd": 0.0771,
+      "SafetyPass_mean": 0.9118,
+      "SafetyPass_sd": 0.0,
+      "gen_latency_ms_mean": 6484.0196,
+      "total_cost_usd_per_run_mean": 0.0251
+    },
+    "A1": {
+      "label": "Multimodal (VLM caption)",
+      "FA_mean": 0.605,
+      "FA_sd": 0.0136,
+      "AR_mean": 0.4177,
+      "AR_sd": 0.0596,
+      "SafetyPass_mean": 0.902,
+      "SafetyPass_sd": 0.017,
+      "gen_latency_ms_mean": 6767.402,
+      "total_cost_usd_per_run_mean": 0.0795
+    }
+  },
+  "delta_A1_minus_A0": {
+    "FA": -0.0083,
+    "AR": -0.0372,
+    "SafetyPass": -0.0098
+  },
+  "per_category_faithfulness": {
+    "A": {
+      "A0": 0.632,
+      "A1": 0.65,
+      "delta": 0.018
+    },
+    "B": {
+      "A0": 0.652,
+      "A1": 0.6282,
+      "delta": -0.0238
+    },
+    "C": {
+      "A0": 0.4303,
+      "A1": 0.4603,
+      "delta": 0.03
+    },
+    "D": {
+      "A0": 0.5702,
+      "A1": 0.6444,
+      "delta": 0.0742
+    },
+    "E": {
+      "A0": 0.5844,
+      "A1": 0.5051,
+      "delta": -0.0793
+    },
+    "F": {
+      "A0": 0.6978,
+      "A1": 0.6153,
+      "delta": -0.0825
+    },
+    "G": {
+      "A0": 0.6578,
+      "A1": 0.6382,
+      "delta": -0.0196
+    }
+  },
+  "skipped_cases_no_image": []
+}
